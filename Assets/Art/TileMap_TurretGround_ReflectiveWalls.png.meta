@@ -1,0 +1,4711 @@
+fileFormatVersion: 2
+guid: 514ba159026a1124095274fe4e259784
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c69eaf0805b79b46aa6dbc9c1cbc548
+      internalID: 978804097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6296ee28ce4f0c24e9c1e0a7938d4abd
+      internalID: -71153011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ae0625cb1a5224e8b6d09ad77b5a3c
+      internalID: 399216053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fd663f2b42eb442820366a94fdc4e7
+      internalID: -1299931087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4867ad37b984db49b118fabadf7c39e
+      internalID: 296128754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e449b1e82f620f4595e3cd84bf5b165
+      internalID: 2122216368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a806602c1e58304cbc68cb14cf88470
+      internalID: -1663733220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6bf410c3408624bb4c129004b905af
+      internalID: 1676689461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b06b6c32596e574ba3add843735ade4
+      internalID: -1564167087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6793bbb4d7583784493767beab162919
+      internalID: -1137430995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0ff22ec235ac84f8c04623592c25f3
+      internalID: -1121609353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233ddc0a3b735ff48904478e3907a254
+      internalID: 77634506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55b3d7e465bdbd479b6c1a47c77b837
+      internalID: 159504145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6320199e51e591f4badc9c727791a7a2
+      internalID: 830885059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fda129862c242741941115e2208e8a9
+      internalID: 840073884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c27a1474e5b23646813b33fd7ba261d
+      internalID: 295440848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42c29f289d18e64099434f4bfd0a4dd
+      internalID: 1674913912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740b3e44f62307946b5e012b679129d9
+      internalID: -1844717476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae9276661a3f224482d5173a4be2194
+      internalID: -1973348954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3eb728e61cbbe40875680dd6965fc1
+      internalID: -1422197015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7414dee75237c374fbe288313c06fa28
+      internalID: 722123654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3f8e7b15aa2a74ebbc8867560ce8bc
+      internalID: 1533677629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535321df316a2ff46a2a6933233be9c3
+      internalID: 1311032670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 427
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7508366de14c78c45b63dff5266a0321
+      internalID: 1143952918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf7e06818b1c1940891ed57f69dc11b
+      internalID: -8091699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2459b68dda843c84dac6858e795da563
+      internalID: 521409273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d031c1da5bf5214a9c3fb41a555fb63
+      internalID: 605482362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5e91ca37b0f4e4f83c8c8171929f7a
+      internalID: -85490055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02023a8b0a9e9164da83edcdb210e4dd
+      internalID: -1902416542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a166f452169b2574ea4c6f7822c91e4a
+      internalID: -672775993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e618b711d9b51f42a9d18f0cd838a62
+      internalID: 312424039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6772ff50897604f92f5ebf75ff42a2
+      internalID: -177097448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb96e8d061681a4091bc649cc611a32
+      internalID: -2060290827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a666706a209fd904bbcd7387f1afc038
+      internalID: -2124686848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8624fb3e2976244971dbbae06f964c
+      internalID: 290799985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8184f6efbc7824ca523933390f2366
+      internalID: 899840091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9426dd08e423143b0005e4e846cb9e
+      internalID: 1845303825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3867c83c3f9824448b9c9bfedbeb548
+      internalID: 1659614868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f67f6fda324415479a7c334ad30e8e8
+      internalID: -1002705758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3b96de2c3fbd34483c79a7f3cb6207
+      internalID: 699694682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c93fa6ae9e02f04d92d97cd8b298a57
+      internalID: 490950091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_41
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1ef782d47c02749b39705bee0daedb
+      internalID: -653314638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7790f53a5c75440b1b5ca068f94b4b
+      internalID: -2046237841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_43
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe7245e4461d274e92a91ff2e89a491
+      internalID: -1028162353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_44
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c280b7a4ec7b3488daf7848bc99865
+      internalID: -1005767919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_45
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d076002e2b98064fa8b5a2ba4e1857b
+      internalID: 1655914770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcc847219863b54e8cac4d0e1e94f3c
+      internalID: 932964619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_47
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b5f527a6452e34b80b6a8fd160f7ab
+      internalID: -990990597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_48
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b924d0f0008f04eba9e149a72af999
+      internalID: 947850412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_49
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6889e0d01f7844f479f50077657cf1e6
+      internalID: -81159550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f5d2b4334b00e46b3f27e62f98d093
+      internalID: 1313224749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_51
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94bc5efc817e9446b3f6400be10f8f6
+      internalID: 1962124725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a038a1e68392b4a8421c70c1754065
+      internalID: 1704714304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ba778866e12f14c831838022d0ea87
+      internalID: -938646186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d7f0c3d7feced428646841bb9618fd
+      internalID: -1525435060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f660f4189afb77b4e9e102b41075e7ba
+      internalID: -767233555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9273a2e4fb9e69040a2282cb31229f3a
+      internalID: -256341623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6691e178a2429174e819991f7134cb8d
+      internalID: -2036509851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee65d2b82fc08c249bcb5f2fce28d5ee
+      internalID: -419779803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_59
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cbf3c52473dd445864536cc50eafdb
+      internalID: -1983151079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_60
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11efae2d404048d468182796fd379e6f
+      internalID: 805768696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_61
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425ae652240d8bc4d98fcfe73c6baf23
+      internalID: 475953764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5f731d898645c48a751a45ea21157d
+      internalID: -709270266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_63
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 331
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e3d8e5c73fb0a4a9bd5a13cf19784f
+      internalID: 1740930661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afbf7e1b320c6448ba1cfcb03cc5825
+      internalID: 1931542785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_65
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74d1fa2bdc92774aa17b40b654ae480
+      internalID: 799166886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128c0dbad631f8444a0635ddf90745eb
+      internalID: 1987125259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_67
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee3d363e339f714c8bd5db546e3dc44
+      internalID: -748179910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_68
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fac5d96fdb12254f97f8a63b4a7bdf6
+      internalID: 1748176704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_69
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2af3f4eecb3ed43beed37787eb9c5e
+      internalID: 513287335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_70
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10da06b4fc54e5c4fb223c42f91e2d43
+      internalID: -2088758338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_71
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddda1207e5a18a4f86b4ad4fd8e48d6
+      internalID: -718524602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_72
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805a712104801b54686413e109578a31
+      internalID: -707341146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_73
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d210e6f618e9f014185d208596ad1c6a
+      internalID: -202334212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_74
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7852e95525b5144ae5279a762e8b4b
+      internalID: -1932414159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_75
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b44ec1c35783b4c867417054033834
+      internalID: 1589782808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_76
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ed019e98e158247948abace8483a65
+      internalID: 961030591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_77
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18547bf5840e9d041b5785af43c0df67
+      internalID: -213348924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_78
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e7cea8c4c88b942ba98ef0d5b55ece
+      internalID: -1295724498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_79
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653c4d6f71abbce4288dc897735e6d2c
+      internalID: 8659964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_80
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad35f5e8f4cada40a11d3203258a510
+      internalID: -182286718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_81
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a00496e88232dc4191cc8d2aff5cfc2
+      internalID: -1288467417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbb0dfd9277dfb47a34fc0afe37b993
+      internalID: 974000225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_83
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac319d745a1287489155377a0938a19
+      internalID: -1153901522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_84
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01edbd35ca4b524b9ba2ce15eb8fe25
+      internalID: 315018979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_85
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdfdddfbf6225344b36926ef9adb3df
+      internalID: 717293229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d37f609fce62a4b968e3b6c3d29bdc
+      internalID: -1228699062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_87
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a15b975cb81e944aaa23192e381fe58
+      internalID: 653390788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_88
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b971a76cff1b6449de450fb23a159f
+      internalID: -1795782689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_89
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84808eff279d3a4a9c80736eddf21d1
+      internalID: -2043275860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_90
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c959b8f0d35cfb4484167468a03af98
+      internalID: -510253977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6c80b13bf25ec41b39e7cb9cae2725
+      internalID: -655708350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29d02b67fa0f134ea0b047f882974bb
+      internalID: 382644320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_93
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6089b5cf64eb19446b80f9e02d6319d2
+      internalID: -409119340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847edc8c63239f447aa16cb1ac48653f
+      internalID: -414302105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_95
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70eedf392e1f7174bbfc7dad91b35337
+      internalID: 964096351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_96
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac92acd0d8ed3894bb5e046c99d4201d
+      internalID: -1263219519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_97
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84d2f1fa3a022b45b5d9610ddd20dbe
+      internalID: -2127286828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_98
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032904088502eb04ebe8ed03ef1d1c7c
+      internalID: -763877440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_99
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c191e6790c2800b4697655762f3ffadc
+      internalID: -957207600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_100
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 267
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc6137b344b1234da9ed281fbdbede7
+      internalID: 506276944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_101
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 267
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8128bd052b40e54ab84bd114a996732
+      internalID: -2001639091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_102
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 267
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578590f34ed3b41409f0f89875450ff5
+      internalID: 242185306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_103
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 267
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8232c7b76198bee4eb3b6b89bf6f08a7
+      internalID: 601361699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_104
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 267
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc8824543399944fba6822c5c6f524c
+      internalID: 166023063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_105
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 267
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cb34f3c9b20dd49bc0140b2441777d
+      internalID: 578848076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_106
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 251
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a90c05b6e943f747a89a7fe61fa9a0a
+      internalID: -1203772908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_107
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 251
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ab9d1708965794ab5adb15fd15c792
+      internalID: 1061557712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_108
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 251
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee135698ca178d047aec72c08ac90e95
+      internalID: 1515274233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_109
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 251
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac51643c8314174fa87ab0b3b973961
+      internalID: 2004178474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_110
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 251
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49ccb954c1870c4589a1ad3359b00d9
+      internalID: 1594767772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_111
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 251
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04ceefa71bb86a45b81e7af69b51cca
+      internalID: -1696040348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_112
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32217cc411447e24396be721f3c7783c
+      internalID: -1390650154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365b10b65da803148898592523b98245
+      internalID: 1954325000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498b5928b859fe64c92d184f95d5b3fa
+      internalID: -498950262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_115
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9091efd6e4352a4fb5cdbf0efe707d9
+      internalID: -546975864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8898b3300546640bd39e8fefd02c66
+      internalID: -506568892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_117
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3774e2b2dc80743b6babd09bb40a7a
+      internalID: 1557411494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 219
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cad31ec387a614ebab07a63c12d7fa
+      internalID: -2001880797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_119
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 219
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3640e46a98f6abd459d71e0c2bec4ba7
+      internalID: 924913397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_120
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 219
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc89259ae39697e4ca12d912261aa1cf
+      internalID: -60050349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_121
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 219
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083ca8325d1b6204397e26dd04d6a0f3
+      internalID: -397663462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_122
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 219
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8366c73510ff5cd478e07c2e56af8b15
+      internalID: 1907190399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_123
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 219
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f665c41a997abed4a9eb791365acf7b5
+      internalID: -392161122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_124
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fbaaca5911de940bfa346b21447e29
+      internalID: 1968885252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_125
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96688995632642a4e900500675396777
+      internalID: 1575566354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_126
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801df3ada3bb5c34dac8d1ffc195bb6c
+      internalID: 459352903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_127
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add85925d073df5438135a661c8e569e
+      internalID: 710152337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_128
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bc114cb642dfe4e923234325cc30f0
+      internalID: -460023827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_129
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81878c7a99fb06f43b5f9f00c75c2eae
+      internalID: -1896506886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_130
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3494686c0652cb142aa42d5146a491c6
+      internalID: -988478399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_131
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98cd3ae5b7e23f479e89e834f06968d
+      internalID: 851228753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_132
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06201d48bcfd1e4bbfcfe2c08803498
+      internalID: 623173168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_133
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196fc3c7ebcfa4040aebe04d6da96eac
+      internalID: -608378963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600c71a0f1df9ab4fac5e29f0bd42e58
+      internalID: -1793823942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_135
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fe0a43b3e03de4f829037662d7c3eb
+      internalID: -1682931234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_136
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 139
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5611b346dd8c9489ed54d095cd4215
+      internalID: -1029871060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_137
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 139
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8419f6301c89a6b428c82d5c3a3b66c3
+      internalID: -386737336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_138
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 139
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a17db955933d1f42bf8148b7d4e1ad3
+      internalID: 1105007524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_139
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 139
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e0f2e9d66cda24cb65c3d0f256bf6c
+      internalID: -146194182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_140
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 139
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c665089f2052e34abbfbc0b6ac950fc
+      internalID: -1128989749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_141
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 139
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8451c15a7379b234aa87939d045e4827
+      internalID: 871282725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_142
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3089ded75a9b8e34da35a920963f2682
+      internalID: -928860766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_143
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36b440ae84dd454ea8b5e9c2db25fce
+      internalID: 900094632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_144
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fe4b95d62611f46b68b5299cfa7899
+      internalID: 1965472640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_145
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1b387119086924484237d6729e32dd
+      internalID: -2122401692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_146
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9337da36243ead04da6f920293efe7c8
+      internalID: 353017831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_147
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cd784211e708846908d9b307e1f8cf
+      internalID: -334743093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_148
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0faa14c404ea3043aa5a6a32ca48f6a
+      internalID: -1168754278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_149
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70edfa21d60e60489aa78c132580b52
+      internalID: -216125746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_150
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0425679489fe749847860195e7d33e
+      internalID: -15814066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_151
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b6ef20184ed3c40a67b6f3cc4b216c
+      internalID: 1503299732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_152
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c371df0cc339ddb4e8c9f8129e8cd946
+      internalID: 1736143375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_153
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac4fe49e9490fc4db27f9fd7bb59b72
+      internalID: 88281917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_154
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea387800ed880414abd0d58c0685a012
+      internalID: 1040518858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_155
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccd9ca667e0d63478a7d06328facde1
+      internalID: 1947560930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_156
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b88ba40dd8119d459a2e4ad6ff4ac0e
+      internalID: 787031069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_157
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11401624af88327478a7cb3147dcfbc4
+      internalID: -326963400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_158
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3b92c894acfa343ad60cbb4274ea31
+      internalID: -344957849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_159
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 107
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320781448bb8c474186f076d90cd7dca
+      internalID: -1085559485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_160
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2f068a8f13b7d43b58af1648f20484
+      internalID: -465496133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_161
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247bf7e4a9a89e046a358dca931c6c52
+      internalID: -1569547241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_162
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc8bbe6dd418704aaac3e37dd885a43
+      internalID: -124608531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_163
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752779cb4713ad34b9f379bfa8e696ef
+      internalID: 3266274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_164
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487fa94d0d20b354280b8dbe3772e71a
+      internalID: -2012367891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_165
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d577ab9640c6db49b7c4616949f45ad
+      internalID: -1205226994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_166
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734370fc139b6d64d80bea3280362d1c
+      internalID: 1387328059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_167
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640bedc36f8e76b41bc8d225e82ddd06
+      internalID: -1073749349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_168
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0437c7b54a4934d9f0798f3e38fa08
+      internalID: 1971943631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_169
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b68aef83884fe04a9218bf56172e3f9
+      internalID: 58689040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_170
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e5c28a3aef43f4d904aad3b88f44ef
+      internalID: -801150987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_171
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da30646f48cf2d4b960e4e073765e55
+      internalID: 1413700135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_172
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa653b69fb4b0445b3fdc60567fdf7e
+      internalID: 1543142224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_173
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0c18db2a1754d48bc53723c175ab21
+      internalID: 645949980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_174
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e67219c820b2344a39f28318e1ff25
+      internalID: -1707948809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_175
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4ce8962c527e541a5a06a67ce16b4e
+      internalID: 128781730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_176
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d87edf3c2fcfc4a9953d9fb9309f4f
+      internalID: -2070613462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_177
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ce63f454ab0954aa4d9942ebfe8d18
+      internalID: 1677900811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_178
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46564a9eb6764bd4598e2d77fe97fb22
+      internalID: 2114114753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_179
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c6cad224679d84cba87cee5ddca84f
+      internalID: -864396517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_180
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a4448c6c250b24bba8093f4381bb8d
+      internalID: -2040358899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_181
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516f7e19b95ca7f4b9d54abe31747d95
+      internalID: -1009894698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_182
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff879854c56d3b46825b44ab18d8ad0
+      internalID: 1746299263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_183
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9a3e943f7923145acf8fa0ce797a42
+      internalID: 874855186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_184
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c6c438e4e263f4ca26860a3a69e44c
+      internalID: 850141621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_185
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b14097e68ba034db5e2ab27bfed093
+      internalID: -678296721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_186
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fdfc8424d2a13488e6a5ddd0f60ce2
+      internalID: 1631188938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_187
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf72a70c69190b40a2324bdb47c73cd
+      internalID: 392641917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_188
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0109f87165c80645bb5a5003a3db039
+      internalID: -362026583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_189
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a1ef1fd8a4782409ca51bb5dffd4cb
+      internalID: -550758105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_190
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f39a5a0c5b00748a9eb2af3a2e63c9
+      internalID: 1722539999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_191
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405e05c13ddc6514e8154769cff1e924
+      internalID: 563266125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_192
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a22c415d57fcb4c8a1c116dedd3397
+      internalID: 377758223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_193
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c688c8bd5dc7d4ab3e0bfe13a03c11
+      internalID: -1571530514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_194
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb1ba32c562b9a4289d7bd885a3973e
+      internalID: -2032760114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_195
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9972d672f96e44e9aceac3a21f1657
+      internalID: -1668910588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_196
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bf1fbb012312644ac5959f18ad6dfe
+      internalID: 500814839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_197
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2a3cbbbcbd5984e9507ed6a1fa26e5
+      internalID: 1071330435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_198
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9571f9d663dd73747bb491f98bc119cf
+      internalID: 182302872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_199
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620f2df448713ea40bdeb655e5f163c4
+      internalID: 380013300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_200
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5257bcf5660f43e41bf02e3a7df4d36c
+      internalID: 2115294389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_201
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defd99758bbab4348b6ba398a7ad8358
+      internalID: 430199675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_202
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be996d273658c346bbf203b7fdb91b9
+      internalID: -813230317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_203
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d884881bdef51194983bb90c76a9c7c0
+      internalID: 603062078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_204
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd337c88e5483a14785c9095b8dea22b
+      internalID: 1198391497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_205
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba604e4a330e84d43a4620da0c627130
+      internalID: -1204449853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_206
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b82a9b57e4c5547a074c9aad189d78
+      internalID: 1229016533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_TurretGround_ReflectiveWalls_207
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0999c918fb9a184cad7d7ffbef17027
+      internalID: -1598221843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TileMap_TurretGround_ReflectiveWalls_178: 2114114753
+      TileMap_TurretGround_ReflectiveWalls_159: -1085559485
+      TileMap_TurretGround_ReflectiveWalls_72: -707341146
+      TileMap_TurretGround_ReflectiveWalls_198: 182302872
+      TileMap_TurretGround_ReflectiveWalls_111: -1696040348
+      TileMap_TurretGround_ReflectiveWalls_153: 88281917
+      TileMap_TurretGround_ReflectiveWalls_105: 578848076
+      TileMap_TurretGround_ReflectiveWalls_181: -1009894698
+      TileMap_TurretGround_ReflectiveWalls_182: 1746299263
+      TileMap_TurretGround_ReflectiveWalls_102: 242185306
+      TileMap_TurretGround_ReflectiveWalls_123: -392161122
+      TileMap_TurretGround_ReflectiveWalls_70: -2088758338
+      TileMap_TurretGround_ReflectiveWalls_205: -1204449853
+      TileMap_TurretGround_ReflectiveWalls_99: -957207600
+      TileMap_TurretGround_ReflectiveWalls_24: -8091699
+      TileMap_TurretGround_ReflectiveWalls_40: 490950091
+      TileMap_TurretGround_ReflectiveWalls_22: 1311032670
+      TileMap_TurretGround_ReflectiveWalls_25: 521409273
+      TileMap_TurretGround_ReflectiveWalls_129: -1896506886
+      TileMap_TurretGround_ReflectiveWalls_200: 2115294389
+      TileMap_TurretGround_ReflectiveWalls_164: -2012367891
+      TileMap_TurretGround_ReflectiveWalls_186: 1631188938
+      TileMap_TurretGround_ReflectiveWalls_131: 851228753
+      TileMap_TurretGround_ReflectiveWalls_9: -1137430995
+      TileMap_TurretGround_ReflectiveWalls_196: 500814839
+      TileMap_TurretGround_ReflectiveWalls_184: 850141621
+      TileMap_TurretGround_ReflectiveWalls_180: -2040358899
+      TileMap_TurretGround_ReflectiveWalls_21: 1533677629
+      TileMap_TurretGround_ReflectiveWalls_47: -990990597
+      TileMap_TurretGround_ReflectiveWalls_37: 1659614868
+      TileMap_TurretGround_ReflectiveWalls_136: -1029871060
+      TileMap_TurretGround_ReflectiveWalls_150: -15814066
+      TileMap_TurretGround_ReflectiveWalls_78: -1295724498
+      TileMap_TurretGround_ReflectiveWalls_203: 603062078
+      TileMap_TurretGround_ReflectiveWalls_144: 1965472640
+      TileMap_TurretGround_ReflectiveWalls_3: -1299931087
+      TileMap_TurretGround_ReflectiveWalls_110: 1594767772
+      TileMap_TurretGround_ReflectiveWalls_48: 947850412
+      TileMap_TurretGround_ReflectiveWalls_143: 900094632
+      TileMap_TurretGround_ReflectiveWalls_114: -498950262
+      TileMap_TurretGround_ReflectiveWalls_191: 563266125
+      TileMap_TurretGround_ReflectiveWalls_104: 166023063
+      TileMap_TurretGround_ReflectiveWalls_189: -550758105
+      TileMap_TurretGround_ReflectiveWalls_92: 382644320
+      TileMap_TurretGround_ReflectiveWalls_183: 874855186
+      TileMap_TurretGround_ReflectiveWalls_145: -2122401692
+      TileMap_TurretGround_ReflectiveWalls_50: 1313224749
+      TileMap_TurretGround_ReflectiveWalls_68: 1748176704
+      TileMap_TurretGround_ReflectiveWalls_12: 159504145
+      TileMap_TurretGround_ReflectiveWalls_175: 128781730
+      TileMap_TurretGround_ReflectiveWalls_140: -1128989749
+      TileMap_TurretGround_ReflectiveWalls_84: 315018979
+      TileMap_TurretGround_ReflectiveWalls_206: 1229016533
+      TileMap_TurretGround_ReflectiveWalls_15: 295440848
+      TileMap_TurretGround_ReflectiveWalls_193: -1571530514
+      TileMap_TurretGround_ReflectiveWalls_202: -813230317
+      TileMap_TurretGround_ReflectiveWalls_43: -1028162353
+      TileMap_TurretGround_ReflectiveWalls_121: -397663462
+      TileMap_TurretGround_ReflectiveWalls_161: -1569547241
+      TileMap_TurretGround_ReflectiveWalls_56: -256341623
+      TileMap_TurretGround_ReflectiveWalls_91: -655708350
+      TileMap_TurretGround_ReflectiveWalls_134: -1793823942
+      TileMap_TurretGround_ReflectiveWalls_51: 1962124725
+      TileMap_TurretGround_ReflectiveWalls_11: 77634506
+      TileMap_TurretGround_ReflectiveWalls_53: -938646186
+      TileMap_TurretGround_ReflectiveWalls_26: 605482362
+      TileMap_TurretGround_ReflectiveWalls_33: -2124686848
+      TileMap_TurretGround_ReflectiveWalls_167: -1073749349
+      TileMap_TurretGround_ReflectiveWalls_103: 601361699
+      TileMap_TurretGround_ReflectiveWalls_133: -608378963
+      TileMap_TurretGround_ReflectiveWalls_55: -767233555
+      TileMap_TurretGround_ReflectiveWalls_147: -334743093
+      TileMap_TurretGround_ReflectiveWalls_160: -465496133
+      TileMap_TurretGround_ReflectiveWalls_169: 58689040
+      TileMap_TurretGround_ReflectiveWalls_207: -1598221843
+      TileMap_TurretGround_ReflectiveWalls_77: -213348924
+      TileMap_TurretGround_ReflectiveWalls_201: 430199675
+      TileMap_TurretGround_ReflectiveWalls_155: 1947560930
+      TileMap_TurretGround_ReflectiveWalls_195: -1668910588
+      TileMap_TurretGround_ReflectiveWalls_148: -1168754278
+      TileMap_TurretGround_ReflectiveWalls_95: 964096351
+      TileMap_TurretGround_ReflectiveWalls_132: 623173168
+      TileMap_TurretGround_ReflectiveWalls_90: -510253977
+      TileMap_TurretGround_ReflectiveWalls_157: -326963400
+      TileMap_TurretGround_ReflectiveWalls_29: -672775993
+      TileMap_TurretGround_ReflectiveWalls_6: -1663733220
+      TileMap_TurretGround_ReflectiveWalls_19: -1422197015
+      TileMap_TurretGround_ReflectiveWalls_81: -1288467417
+      TileMap_TurretGround_ReflectiveWalls_172: 1543142224
+      TileMap_TurretGround_ReflectiveWalls_109: 2004178474
+      TileMap_TurretGround_ReflectiveWalls_149: -216125746
+      TileMap_TurretGround_ReflectiveWalls_126: 459352903
+      TileMap_TurretGround_ReflectiveWalls_158: -344957849
+      TileMap_TurretGround_ReflectiveWalls_94: -414302105
+      TileMap_TurretGround_ReflectiveWalls_163: 3266274
+      TileMap_TurretGround_ReflectiveWalls_5: 2122216368
+      TileMap_TurretGround_ReflectiveWalls_79: 8659964
+      TileMap_TurretGround_ReflectiveWalls_93: -409119340
+      TileMap_TurretGround_ReflectiveWalls_8: -1564167087
+      TileMap_TurretGround_ReflectiveWalls_52: 1704714304
+      TileMap_TurretGround_ReflectiveWalls_122: 1907190399
+      TileMap_TurretGround_ReflectiveWalls_69: 513287335
+      TileMap_TurretGround_ReflectiveWalls_146: 353017831
+      TileMap_TurretGround_ReflectiveWalls_35: 899840091
+      TileMap_TurretGround_ReflectiveWalls_165: -1205226994
+      TileMap_TurretGround_ReflectiveWalls_171: 1413700135
+      TileMap_TurretGround_ReflectiveWalls_192: 377758223
+      TileMap_TurretGround_ReflectiveWalls_16: 1674913912
+      TileMap_TurretGround_ReflectiveWalls_87: 653390788
+      TileMap_TurretGround_ReflectiveWalls_28: -1902416542
+      TileMap_TurretGround_ReflectiveWalls_194: -2032760114
+      TileMap_TurretGround_ReflectiveWalls_67: -748179910
+      TileMap_TurretGround_ReflectiveWalls_17: -1844717476
+      TileMap_TurretGround_ReflectiveWalls_14: 840073884
+      TileMap_TurretGround_ReflectiveWalls_96: -1263219519
+      TileMap_TurretGround_ReflectiveWalls_116: -506568892
+      TileMap_TurretGround_ReflectiveWalls_151: 1503299732
+      TileMap_TurretGround_ReflectiveWalls_20: 722123654
+      TileMap_TurretGround_ReflectiveWalls_188: -362026583
+      TileMap_TurretGround_ReflectiveWalls_107: 1061557712
+      TileMap_TurretGround_ReflectiveWalls_27: -85490055
+      TileMap_TurretGround_ReflectiveWalls_118: -2001880797
+      TileMap_TurretGround_ReflectiveWalls_75: 1589782808
+      TileMap_TurretGround_ReflectiveWalls_60: 805768696
+      TileMap_TurretGround_ReflectiveWalls_108: 1515274233
+      TileMap_TurretGround_ReflectiveWalls_98: -763877440
+      TileMap_TurretGround_ReflectiveWalls_66: 1987125259
+      TileMap_TurretGround_ReflectiveWalls_137: -386737336
+      TileMap_TurretGround_ReflectiveWalls_204: 1198391497
+      TileMap_TurretGround_ReflectiveWalls_120: -60050349
+      TileMap_TurretGround_ReflectiveWalls_63: 1740930661
+      TileMap_TurretGround_ReflectiveWalls_115: -546975864
+      TileMap_TurretGround_ReflectiveWalls_36: 1845303825
+      TileMap_TurretGround_ReflectiveWalls_199: 380013300
+      TileMap_TurretGround_ReflectiveWalls_83: -1153901522
+      TileMap_TurretGround_ReflectiveWalls_32: -2060290827
+      TileMap_TurretGround_ReflectiveWalls_2: 399216053
+      TileMap_TurretGround_ReflectiveWalls_23: 1143952918
+      TileMap_TurretGround_ReflectiveWalls_1: -71153011
+      TileMap_TurretGround_ReflectiveWalls_138: 1105007524
+      TileMap_TurretGround_ReflectiveWalls_57: -2036509851
+      TileMap_TurretGround_ReflectiveWalls_71: -718524602
+      TileMap_TurretGround_ReflectiveWalls_100: 506276944
+      TileMap_TurretGround_ReflectiveWalls_59: -1983151079
+      TileMap_TurretGround_ReflectiveWalls_73: -202334212
+      TileMap_TurretGround_ReflectiveWalls_62: -709270266
+      TileMap_TurretGround_ReflectiveWalls_61: 475953764
+      TileMap_TurretGround_ReflectiveWalls_88: -1795782689
+      TileMap_TurretGround_ReflectiveWalls_31: -177097448
+      TileMap_TurretGround_ReflectiveWalls_119: 924913397
+      TileMap_TurretGround_ReflectiveWalls_7: 1676689461
+      TileMap_TurretGround_ReflectiveWalls_173: 645949980
+      TileMap_TurretGround_ReflectiveWalls_76: 961030591
+      TileMap_TurretGround_ReflectiveWalls_185: -678296721
+      TileMap_TurretGround_ReflectiveWalls_112: -1390650154
+      TileMap_TurretGround_ReflectiveWalls_39: 699694682
+      TileMap_TurretGround_ReflectiveWalls_117: 1557411494
+      TileMap_TurretGround_ReflectiveWalls_44: -1005767919
+      TileMap_TurretGround_ReflectiveWalls_49: -81159550
+      TileMap_TurretGround_ReflectiveWalls_46: 932964619
+      TileMap_TurretGround_ReflectiveWalls_0: 978804097
+      TileMap_TurretGround_ReflectiveWalls_125: 1575566354
+      TileMap_TurretGround_ReflectiveWalls_177: 1677900811
+      TileMap_TurretGround_ReflectiveWalls_168: 1971943631
+      TileMap_TurretGround_ReflectiveWalls_176: -2070613462
+      TileMap_TurretGround_ReflectiveWalls_97: -2127286828
+      TileMap_TurretGround_ReflectiveWalls_127: 710152337
+      TileMap_TurretGround_ReflectiveWalls_154: 1040518858
+      TileMap_TurretGround_ReflectiveWalls_135: -1682931234
+      TileMap_TurretGround_ReflectiveWalls_124: 1968885252
+      TileMap_TurretGround_ReflectiveWalls_174: -1707948809
+      TileMap_TurretGround_ReflectiveWalls_86: -1228699062
+      TileMap_TurretGround_ReflectiveWalls_128: -460023827
+      TileMap_TurretGround_ReflectiveWalls_18: -1973348954
+      TileMap_TurretGround_ReflectiveWalls_58: -419779803
+      TileMap_TurretGround_ReflectiveWalls_152: 1736143375
+      TileMap_TurretGround_ReflectiveWalls_34: 290799985
+      TileMap_TurretGround_ReflectiveWalls_142: -928860766
+      TileMap_TurretGround_ReflectiveWalls_187: 392641917
+      TileMap_TurretGround_ReflectiveWalls_162: -124608531
+      TileMap_TurretGround_ReflectiveWalls_4: 296128754
+      TileMap_TurretGround_ReflectiveWalls_101: -2001639091
+      TileMap_TurretGround_ReflectiveWalls_85: 717293229
+      TileMap_TurretGround_ReflectiveWalls_38: -1002705758
+      TileMap_TurretGround_ReflectiveWalls_65: 799166886
+      TileMap_TurretGround_ReflectiveWalls_45: 1655914770
+      TileMap_TurretGround_ReflectiveWalls_166: 1387328059
+      TileMap_TurretGround_ReflectiveWalls_141: 871282725
+      TileMap_TurretGround_ReflectiveWalls_13: 830885059
+      TileMap_TurretGround_ReflectiveWalls_80: -182286718
+      TileMap_TurretGround_ReflectiveWalls_82: 974000225
+      TileMap_TurretGround_ReflectiveWalls_130: -988478399
+      TileMap_TurretGround_ReflectiveWalls_10: -1121609353
+      TileMap_TurretGround_ReflectiveWalls_106: -1203772908
+      TileMap_TurretGround_ReflectiveWalls_74: -1932414159
+      TileMap_TurretGround_ReflectiveWalls_139: -146194182
+      TileMap_TurretGround_ReflectiveWalls_89: -2043275860
+      TileMap_TurretGround_ReflectiveWalls_156: 787031069
+      TileMap_TurretGround_ReflectiveWalls_190: 1722539999
+      TileMap_TurretGround_ReflectiveWalls_41: -653314638
+      TileMap_TurretGround_ReflectiveWalls_64: 1931542785
+      TileMap_TurretGround_ReflectiveWalls_42: -2046237841
+      TileMap_TurretGround_ReflectiveWalls_170: -801150987
+      TileMap_TurretGround_ReflectiveWalls_179: -864396517
+      TileMap_TurretGround_ReflectiveWalls_197: 1071330435
+      TileMap_TurretGround_ReflectiveWalls_54: -1525435060
+      TileMap_TurretGround_ReflectiveWalls_30: 312424039
+      TileMap_TurretGround_ReflectiveWalls_113: 1954325000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: f15525f3717847f4489d668563da4dc9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4584
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3613cf620a430c54695dfe97d15d4fc1
+      internalID: 647947156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 4584
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92d2d819b299e8458ce43e9cffe71e5
+      internalID: -834691938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 4584
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3019a6844ff04e468121f096b7dc2ff
+      internalID: 806144224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 6717
+        y: 4584
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf82da3e9d8a0c4490d673ea096f071
+      internalID: -203402829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3438
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f1ebb96d0f75145a6817c1a1e6348a
+      internalID: 437030975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 3438
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b6c6b7e014bc14991add786c1ec0e0
+      internalID: 256949800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 3438
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd46e4199b576f341b564e534d6e44c7
+      internalID: 1620953827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6717
+        y: 3438
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b56e92496b14245b6b7b675b3b7c0b
+      internalID: 1707518147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2292
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629504d9e091e9147b771034b3efeef3
+      internalID: 528518480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 2292
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434094f37186b69408b41af57f88a5d8
+      internalID: 1351302492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 2292
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0947a9e468fee4da0ebfa294fd1462
+      internalID: 897080759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6717
+        y: 2292
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297c6cb46dc061b489308262a1294927
+      internalID: 2050634782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1146
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27cd33dd701ff849be204b324865e14
+      internalID: 1914691488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 1146
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11874ece873ee494d810f2e1bd4e2d8f
+      internalID: 1218821159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 1146
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19d7a68f201d954cbaf1dbfd32e6a6e
+      internalID: -1822303455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6717
+        y: 1146
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67172011f2c61f9479ed17590077cdb3
+      internalID: -261571582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760813c11df15254b896303b2c251744
+      internalID: -2078015337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 0
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723e937f67ee491439ee3f624200ec9b
+      internalID: 140949334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 0
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7bd0bb0c273884c9165a2d10411b29
+      internalID: 1080132285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretMap_BackGround_Part2-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 6717
+        y: 0
+        width: 2239
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5286a4924722dd48a96ced5e2cdec37
+      internalID: 1225286722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TurretMap_BackGround_Part2-Sheet_16: -2078015337
+      TurretMap_BackGround_Part2-Sheet_5: 256949800
+      TurretMap_BackGround_Part2-Sheet_17: 140949334
+      TurretMap_BackGround_Part2-Sheet_1: -834691938
+      TurretMap_BackGround_Part2-Sheet_15: -261571582
+      TurretMap_BackGround_Part2-Sheet_7: 1707518147
+      TurretMap_BackGround_Part2-Sheet_10: 897080759
+      TurretMap_BackGround_Part2-Sheet_11: 2050634782
+      TurretMap_BackGround_Part2-Sheet_13: 1218821159
+      TurretMap_BackGround_Part2-Sheet_12: 1914691488
+      TurretMap_BackGround_Part2-Sheet_0: 647947156
+      TurretMap_BackGround_Part2-Sheet_2: 806144224
+      TurretMap_BackGround_Part2-Sheet_18: 1080132285
+      TurretMap_BackGround_Part2-Sheet_4: 437030975
+      TurretMap_BackGround_Part2-Sheet_3: -203402829
+      TurretMap_BackGround_Part2-Sheet_6: 1620953827
+      TurretMap_BackGround_Part2-Sheet_9: 1351302492
+      TurretMap_BackGround_Part2-Sheet_14: -1822303455
+      TurretMap_BackGround_Part2-Sheet_8: 528518480
+      TurretMap_BackGround_Part2-Sheet_19: 1225286722
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,861 @@
+fileFormatVersion: 2
+guid: 59e021968c1b7d841b9d38c4e598115b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 144
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a3d66bedd908c4c93e7227f0877be2
+      internalID: -1151491821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662a290dc7442fd409c0ac1da9dda6ec
+      internalID: -1067383064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35157364fdb834f4eb2d48e7d602a6ad
+      internalID: 1946035731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6c29721d9fc1e4ea394788d7cf539d
+      internalID: -958900887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51465398d46a707498ec4f4a0d31b4cb
+      internalID: 1014312753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d39250f612df3a4e883c846b5759d85
+      internalID: -1850025642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72916f6a4509cd44598967a89254d69f
+      internalID: 2134411991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6048
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7572a5fdf96804041ab4d4f5f0ca4852
+      internalID: -337133554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5c3213186eea24d85ddd9986366ebf
+      internalID: 494259850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 2592
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a66b04840eff644c8c34d55be886247
+      internalID: -1678233426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62b25a4cf36a9149bec2d35f0c32a6f
+      internalID: -1560558532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cdb69a0638bb741a2eaa5ec9f3d30d
+      internalID: -357667904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e3ab3d6aac0dd4883c5eff57ad2110
+      internalID: -901566999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820c5e1b0446a6043b0da9b3056f41bb
+      internalID: 241627279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac3b6f6df049714491ee7e72bfaaf7a
+      internalID: 248761385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003fdc316e75ab143b02e60bd2a4eb20
+      internalID: -1306105132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373f3a8a5a782dc4ab0a0041c1debb79
+      internalID: -1353519060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 6048
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9612722c32288e408a52c7de66d9311
+      internalID: 694229941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37178df685d2e2468213fd02c4ba701
+      internalID: 1214130185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 1728
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac9ab30ba3ce15439cf51d4f15f4a74
+      internalID: 153121407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c36e98ffe443d44a4052e27f237a6a
+      internalID: -1550156495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcc6987a3b01734789ff45e13017d2f
+      internalID: -2097478521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480ab9739c971024681a7a9194e642cd
+      internalID: -1945598950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9a99f29ee72a547b63f2447dcf069a
+      internalID: -763900523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddb32eef5b7c9947aab9f79ff8e5f9d
+      internalID: -1843995324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4b09809bbb6d34f81f8640a2b421ab
+      internalID: 786918319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3211456517c2f554398b80de7a5502c4
+      internalID: -1755758994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 6048
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21da69025c7127498d7f6b1bb8baf62
+      internalID: 1651101352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730f49615e5f3804ebbf99d38bd70965
+      internalID: 1715557104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 864
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd8fbced21c923478398dc2c82e1073
+      internalID: 174723074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2ec002444bb7a4da9037f1c3db997e
+      internalID: 1855510951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb891d8517e88947b8234ce4f4495d8
+      internalID: 1973488155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchWakeUp-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 864
+        height: 864
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacd3759cf8ac8d4f879ae212cab39f0
+      internalID: 958438849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      witchWakeUp-Sheet_17: 694229941
+      witchWakeUp-Sheet_19: 153121407
+      witchWakeUp-Sheet_4: 1014312753
+      witchWakeUp-Sheet_20: -1550156495
+      witchWakeUp-Sheet_2: 1946035731
+      witchWakeUp-Sheet_9: -1678233426
+      witchWakeUp-Sheet_21: -2097478521
+      witchWakeUp-Sheet_32: 958438849
+      witchWakeUp-Sheet_10: -1560558532
+      witchWakeUp-Sheet_5: -1850025642
+      witchWakeUp-Sheet_22: -1945598950
+      witchWakeUp-Sheet_3: -958900887
+      witchWakeUp-Sheet_15: -1306105132
+      witchWakeUp-Sheet_0: -1151491821
+      witchWakeUp-Sheet_8: 494259850
+      witchWakeUp-Sheet_27: 1651101352
+      witchWakeUp-Sheet_29: 174723074
+      witchWakeUp-Sheet_1: -1067383064
+      witchWakeUp-Sheet_13: 241627279
+      witchWakeUp-Sheet_18: 1214130185
+      witchWakeUp-Sheet_30: 1855510951
+      witchWakeUp-Sheet_11: -357667904
+      witchWakeUp-Sheet_6: 2134411991
+      witchWakeUp-Sheet_25: 786918319
+      witchWakeUp-Sheet_24: -1843995324
+      witchWakeUp-Sheet_23: -763900523
+      witchWakeUp-Sheet_16: -1353519060
+      witchWakeUp-Sheet_14: 248761385
+      witchWakeUp-Sheet_26: -1755758994
+      witchWakeUp-Sheet_28: 1715557104
+      witchWakeUp-Sheet_31: 1973488155
+      witchWakeUp-Sheet_7: -337133554
+      witchWakeUp-Sheet_12: -901566999
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

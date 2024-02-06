@@ -1,0 +1,773 @@
+fileFormatVersion: 2
+guid: c734e76b680c525449e69c48c6e247b8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93c8fef414d69a48a63eb8d5c301dff
+      internalID: 879620021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa157e8799fe86408852562be2e48ec
+      internalID: -813646531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_2
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df991380e080db468542e51f98d078a
+      internalID: 427020108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_3
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee11518351f84a4daa1ab69035badcb
+      internalID: 1451884901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_4
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb7384cd7c1583499492667311f36ee
+      internalID: -1813257108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_5
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff1364aacc71414aaffa416c1e07cde
+      internalID: -523865700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e155c14b52d5ad64ea0d95a79b43ec0e
+      internalID: -544775060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 432
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5202a15a142ca14eb073a70f48f7fc2
+      internalID: 1537871889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c920ff8c6ea4444f9ee2eb633dafd94
+      internalID: -1501792396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_9
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de9222037e7b52488131e5d63eeddf3
+      internalID: -84537914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_10
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a399e9d91b7d7b247938477534d7ae0a
+      internalID: -1947746829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_11
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45874d3367752b24e8d6d7df54caa22c
+      internalID: 719489393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_12
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753b8be1f1099b6469686b33cae072a4
+      internalID: -6727962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_13
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0382264ed372e944cac003fb59e7684b
+      internalID: -1151354092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e83bddbbc0594b49ac91cd578183b3a
+      internalID: -230931985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 288
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33881a48d13d3946b0aae90952d41f2
+      internalID: 181364627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09738500f69f6264ab16bc86a5abe9d1
+      internalID: -504854353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_17
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e687baca46bd5c743941264a1544f1e5
+      internalID: 1704074452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_18
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db52d35f099374a4494ef5aa830b1107
+      internalID: -776285227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_19
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5193d702812eaf408f484f1cf68a2f7
+      internalID: -1890037883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_20
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c19f4920286c3946b9526f885956998
+      internalID: 1948802413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_21
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6102f3d3bd53a4ab34232634c435d2
+      internalID: 1726347757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e522b085d660cd843beedbbe9c0ab4e4
+      internalID: -875528923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 144
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4421b8a3a13a7146a596033c7b60679
+      internalID: -96064280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c038cf86f1363cc44a0a45ead9dc218e
+      internalID: 1093659066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_25
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9028913852c7be04f8f539a7ba235f28
+      internalID: -1230904136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_26
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a58a2b88367b5744b61aa81bf05699a
+      internalID: 1720264915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_27
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc80fb47a3f223b4ab44d7125cd4e731
+      internalID: -267847871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretTopCharge-Sheet (1)_28
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 194
+        height: 144
+      alignment: 9
+      pivot: {x: 0.587996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab69dd79056735b45b5f3d076b64060a
+      internalID: -238654731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TurretTopCharge-Sheet (1)_19: -1890037883
+      TurretTopCharge-Sheet (1)_5: -523865700
+      TurretTopCharge-Sheet (1)_7: 1537871889
+      TurretTopCharge-Sheet (1)_24: 1093659066
+      TurretTopCharge-Sheet (1)_13: -1151354092
+      TurretTopCharge-Sheet (1)_20: 1948802413
+      TurretTopCharge-Sheet (1)_6: -544775060
+      TurretTopCharge-Sheet (1)_11: 719489393
+      TurretTopCharge-Sheet (1)_25: -1230904136
+      TurretTopCharge-Sheet (1)_2: 427020108
+      TurretTopCharge-Sheet (1)_18: -776285227
+      TurretTopCharge-Sheet (1)_12: -6727962
+      TurretTopCharge-Sheet (1)_21: 1726347757
+      TurretTopCharge-Sheet (1)_0: 879620021
+      TurretTopCharge-Sheet (1)_23: -96064280
+      TurretTopCharge-Sheet (1)_16: -504854353
+      TurretTopCharge-Sheet (1)_15: 181364627
+      TurretTopCharge-Sheet (1)_22: -875528923
+      TurretTopCharge-Sheet (1)_3: 1451884901
+      TurretTopCharge-Sheet (1)_26: 1720264915
+      TurretTopCharge-Sheet (1)_27: -267847871
+      TurretTopCharge-Sheet (1)_9: -84537914
+      TurretTopCharge-Sheet (1)_14: -230931985
+      TurretTopCharge-Sheet (1)_4: -1813257108
+      TurretTopCharge-Sheet (1)_17: 1704074452
+      TurretTopCharge-Sheet (1)_8: -1501792396
+      TurretTopCharge-Sheet (1)_10: -1947746829
+      TurretTopCharge-Sheet (1)_1: -813646531
+      TurretTopCharge-Sheet (1)_28: -238654731
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

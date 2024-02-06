@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - bullet
+  - Explosion
+  - ToxicSewage
+  - bullet_Shotgun
+  - Bullet_Sniper
+  - portal
+  - Turret
+  - bullet_Turret
+  - Bullet_MinGun
+  - Bullet_RPG
+  - GunGranter
+  - bullet_FlameThrower
+  - HealingBox_LandZone
+  - DeployedHealingDrone
+  - MagicBook
+  - Lectern
+  - Lightning
+  - Interactable
+  - radius_witch
+  - moneyBag
+  - HoldInteractable
+  - bullet_SMG
+  - WandExplosion
+  - MagicRock
+  - RockCollection
+  - Bullet_Grenade
+  - Barrel
+  - Target
+  - MushroomPropel
+  - TargetBulletBox
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - FallDectection
+  - Water
+  - UI
+  - SUPER_UI
+  - Bullets_Ignore
+  - Obsticals
+  - PostProccsing
+  - NoPost
+  - TraversableWalls
+  - GhostPlayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3469531241
+    locked: 0
+  - name: ground
+    uniqueID: 3292051419
+    locked: 0
+  - name: wall
+    uniqueID: 1716009707
+    locked: 0
+  - name: Barrel
+    uniqueID: 3194123565
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 4101860335
+    locked: 0
+  - name: Gun
+    uniqueID: 1435773339
+    locked: 0
+  - name: foreGround
+    uniqueID: 2683808095
+    locked: 0

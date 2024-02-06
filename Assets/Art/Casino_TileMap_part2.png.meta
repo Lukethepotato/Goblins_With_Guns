@@ -1,0 +1,4469 @@
+fileFormatVersion: 2
+guid: a6f8963c1875c704b8a5ea5bd422e04c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_0
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f204353a35f9f2249869a6d56c440bf0
+      internalID: -649478045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_1
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07abfa6a264420e4493c92201f709cb3
+      internalID: 733830359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_2
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0f66715891e354993b0db8e1233d10
+      internalID: -1289964129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_3
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5522a61bc32c3e7479db3eed311b08ee
+      internalID: -1828048747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1debf04f08393f041883d47a5bf7627f
+      internalID: 1492377389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_5
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89641e9107da6ac4a87f76e0744920ac
+      internalID: 1256042621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_6
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3ecab5fefa2aa4898b99d736987e81
+      internalID: -1439606738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_7
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3518c706e0b294f999a0384e466a21
+      internalID: -471431388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_8
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e81f231b05a8a419bff90f029fbf31
+      internalID: 1418508483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_9
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636d5a5170691944d947f9080002ff2b
+      internalID: 51634968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_10
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ba4b2d3b05f0747b4cb947e80e870a
+      internalID: 1143289126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_11
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2febdf6a9fbd4449a1678def285ed7
+      internalID: 1680537160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc400d2de5352b4bbd822aa26206d2d
+      internalID: 658031191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_13
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6912b5ce0e1f96340b5e7fecabd45e9e
+      internalID: 1564022884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_14
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a127596054117c499cd1fa0764d09ee
+      internalID: 223295754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_15
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c3c1ec52279a345ad0ef98b0f3d924
+      internalID: 1886348835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_16
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d00e93b15009d45a1954f8be54cbcf
+      internalID: -484740028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_17
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 607
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575ab1a4446599a45a22bfbc8925936c
+      internalID: -32831716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_18
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dfa49796cdea74f8da49f4a9386c9c
+      internalID: -855837785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_19
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068f0d606abbb6a4db6b7ada4e96f96c
+      internalID: -944957965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_20
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a178c89005c4f448746751085c0d50
+      internalID: -1426510957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb402596b0605da44b51b7ecf7712f7f
+      internalID: 1622147567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003d35dbe2239dd49ad00b862c98790b
+      internalID: -491272783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_23
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191343b3d4ae27a4a8f92ff71f9c156b
+      internalID: -1016739101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8652284f0bf4da44ca2a891aad9a9940
+      internalID: 975976062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_25
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb2dc71e9056fa4bad41ed6f44f6e0f
+      internalID: 813444464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_26
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b723fc37d9c3d4f44b9032f635bc6ae6
+      internalID: -228083227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_27
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b50f500c39aad49a15206ed7c92903
+      internalID: 1621141925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_28
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c66060d35efab4c8e8d5aa63c2fdb3
+      internalID: -1769471791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_29
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be912e46d6de5a743a5d846fc7cc4fd3
+      internalID: -1217913703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_30
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cadb573cdb05a4dbf9398b6493c4fc
+      internalID: 55445359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_31
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe65cf1b9db5034eb970682e6a9fadd
+      internalID: -1727053168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_32
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3188acfb77075594d98fc250055c0d20
+      internalID: -645223127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_33
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d89f58816c08f446bc9001c2a644844
+      internalID: 226371401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_34
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ce07202992ed940b6a6f20bfeab3e5
+      internalID: 1732204855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_35
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 591
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944e8a997350dd344b310498547eced3
+      internalID: 1170487955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_36
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a6a09c484da89449ba8af99dbaa79b
+      internalID: 5448412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_37
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abbef2411ea2bf43a5e7706d52f7e1b
+      internalID: -1555058533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_38
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1518c76f9a7235e4bbae4839c2f902a5
+      internalID: -363259841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_39
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f9e64a06ad92449b36c80b0d02a8da
+      internalID: -156241865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_40
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eecc17c950a4fc418fae72efc3b5a3a
+      internalID: -1130288784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_41
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e29027a5f2badd47aa92b55ac3003a6
+      internalID: -1844836137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_42
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49aec237997963641be35c84dda3a414
+      internalID: -1314540683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_43
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505dba5e4428338449a94e37b0223e73
+      internalID: 1796038234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_44
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11eb67fd2e2f9d74b90d76e06b875b66
+      internalID: 1793951294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_45
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e47ea060c161d4fa9447aa89c22bcf
+      internalID: -719999843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_46
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191d784093f988b428186a8b1fb3c4e6
+      internalID: -25161745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_47
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd8962f974583b4f89025e9ba7ece7c
+      internalID: -2140199550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_48
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e988dee682dd42f4b87384f612c36583
+      internalID: -991348072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_49
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7a5fab4e061744bab1778edf520f72
+      internalID: -380281953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_50
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68c92bcf6321064eab48c967f9d8709
+      internalID: -1616165716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_51
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaea79fdd1cff4b4986b579d2422e977
+      internalID: -605944528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_52
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05fb68dbdea45c4ca0dd5734bca37af
+      internalID: -932458982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_53
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 575
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642d3fd85751513408b9fb8c8c02b5b9
+      internalID: -2107452421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_54
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c5b95b4aeef4041ab82918b0b08645
+      internalID: 1001667599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_55
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08c7728cf90bb44f920f5a084071d06
+      internalID: 1358176736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_56
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33ede5d2fcc6394aafe1165e81e45e0
+      internalID: 1327268632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_57
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3397d3fc6310e55489307291f3bd86a5
+      internalID: -525711218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_58
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e951ad3894d907b4bba381a691233d65
+      internalID: -1872891967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_59
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff61cfa9b88e16438d29a94b0e26674
+      internalID: 750670913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_60
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c931e58e80fc2bf498d1d039107264b2
+      internalID: -591274248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_61
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea12ade9bca0334e838a40222e4b8c1
+      internalID: 1391286212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_62
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6953d216c63f2b34cae98df63941e5eb
+      internalID: -1101403331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_63
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8eb7189030cf9346b80d5936b318e2f
+      internalID: 1032415674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_64
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3689cec833cab459a45243e00764ca
+      internalID: -349698323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_65
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eefe923862b192409ea8d5a93694503
+      internalID: 1466336661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_66
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d82851bf5b94714a8e9af0b1e8e3339
+      internalID: 1822400432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_67
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e393e70fbb4a541b7b789951f31b60
+      internalID: 314285418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_68
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827ed43c51954924185a69af4432a71d
+      internalID: 785099868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_69
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779da8157e3276441984c5c754ddd0bf
+      internalID: -1855140404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_70
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eeaa21a8709ba943a3b4b7ff0791848
+      internalID: -485766576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_71
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 559
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26181da333e9b2942a910b4a0c369084
+      internalID: 2092888171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_72
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72df884176eaa4d43875f63e8b4fcb55
+      internalID: 1275019035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_73
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefbe8456b6662a48ab4e46949df2dd8
+      internalID: 6769137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_74
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba6b23e5029e8949a685f8c6f3fa8e7
+      internalID: 382151775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_75
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaf25d05ea26ca4483da2d682de46d7
+      internalID: -2000245492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_76
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff7a20e35c09df4c88bc55d4922543d
+      internalID: -406000350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_77
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6a6b65df8e78547a030b265b87ab50
+      internalID: 1370629531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_78
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c33d68a5af406d4a8f63594e8a59257
+      internalID: -1455188196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_79
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8e13058ecd8244f9e4b07c817b870c
+      internalID: -37836749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_80
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a971d62463a6e4396099bf9c9bf517
+      internalID: 33765227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_81
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b621b0f386bf2a24dbf9783e6dde46d2
+      internalID: 1669098360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_82
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1b57a6b544da94e9d7733df023fb70
+      internalID: -1750174942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_83
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a842e1403030e4aa275f9e2e591808
+      internalID: -1445261949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_84
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e41b621723ad0f45b3e5667e98375f8
+      internalID: 1622096655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_85
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058666c53f1a55a4597a3ccd8ab476fa
+      internalID: -2097275966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_86
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a62cdb20c65ff4889f54a88c8333c1
+      internalID: 335255137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_87
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346bd74107685d447ad08fce7b7973f1
+      internalID: -1558089045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_88
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577a72d78dd84a94fa1ce19a53da486f
+      internalID: -1104065721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_89
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 543
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41c9b383366a0340a5880e6793cce1c
+      internalID: 1619011632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_90
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbad6a6d6ec651a40bf9be3243b0ce82
+      internalID: 14289054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_91
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b59d9f3ec2a1a47b3d7756ae10e676
+      internalID: -430947947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_92
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ccdae08e0a17244b1df8c0bce65e72
+      internalID: 1527522530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_93
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2e693b32351d3489333c65c9dadcd6
+      internalID: 69878553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_94
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21503108d3a5044a9a1da3c80e436f9
+      internalID: 703630526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_95
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7b92153421663498c75159137636a7
+      internalID: -673243152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_96
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18fc71355062ac42b4c63d36ce3ddaa
+      internalID: -1713638454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_97
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b74d275425f474cb353589fd5eb60d
+      internalID: 1251066466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_98
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b16b457858e78842b26442ca85f048b
+      internalID: -2104376399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_99
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6fed57a4fa910449b2cb097da302ed
+      internalID: -906670696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_100
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f868efaf169a6f41abe96769caa1742
+      internalID: 1551838841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_101
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d5dff38af54734fba18d1c01c4680d
+      internalID: -574225909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_102
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7caa2b5f3d8884f883bde256b5ed37
+      internalID: -1280692026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_103
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf34f3942fae7745a852321655f90a2
+      internalID: -485818906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_104
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9561cf845b63b0e48b11bf1cb5c25729
+      internalID: 1030907635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_105
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9588377228f729143ade6ddee5e1ec42
+      internalID: 1297692102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_106
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adcc40f6236f1c46950acf163e1fc34
+      internalID: -225767949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_107
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 527
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d833bcb0821394a836d76381794757
+      internalID: -235039414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_108
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 447
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792295b5d51d86e4e8bf530f62f7c680
+      internalID: 97166998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_109
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 447
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2200f955dda8f94395f573e74944d88
+      internalID: -1471527538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_110
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 447
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedf760e7ea565e40aa9716425e9b662
+      internalID: -98049621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_111
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 447
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9d5956fe7d30041b7885ffdf317774
+      internalID: 628209275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_112
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 447
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f432862f2c07f047901c2b51475214d
+      internalID: 1213316774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_113
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 447
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f05ba284bb173e4d959ac59528aa609
+      internalID: -1168953464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_114
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028e27f23ba811143b65d2d6314561b6
+      internalID: 1329511911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_115
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6771de39b3f50a648a8898bb0a77f8c8
+      internalID: -980523723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_116
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c9829a9af9e504e8f322f286c792e8
+      internalID: -422748811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_117
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14af1715fc3623645bc9ac8aaa02aab4
+      internalID: 1180497865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_118
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe29a7fe10bf8943bfa4bde6043800f
+      internalID: -1299256230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_119
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f62a9ed7685114ea8ae327983e3db0
+      internalID: -1431873912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_120
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b9bbd5cbd6ee5429d1e0b1a8ec8da7
+      internalID: 1757123510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_121
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a39a83cd7535a640bff01999582d854
+      internalID: -891723389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_122
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21229ab8f35fe1429f843c7f063e908
+      internalID: -172199301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_123
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1852799e16b68ea4aa38ae51014fd39b
+      internalID: 809570766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_124
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 431
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e899ff79720894699a3a217b541336
+      internalID: 1463845567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_125
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09681dbe9469ab649b03ddee0da7597b
+      internalID: 953396124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_126
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04e6a4bb5d2fc04ca5a6b33a3be4e29
+      internalID: 230780335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_127
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb09dd334719a504c9a7f93f0ba65d67
+      internalID: -31527804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_128
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9526dddcfaf3a24e999feb66a4ac045
+      internalID: 1800960336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_129
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cc2258f1d2aeb4cb48fc2939f0a07a
+      internalID: -1855563176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_130
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186d5f785afc2534c95d5d83b184a0df
+      internalID: -914099425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_131
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b571a342a56ca0d4f92e8b6adebdd2ad
+      internalID: -786343957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_132
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a024a49928420849a1f86d948ff6ad3
+      internalID: 1886922633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_133
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6148ed61d236ad408b53cb2700289af
+      internalID: 2049881176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_134
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebd6ab6b9203764f917b8b47eb774b9
+      internalID: -1729748302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_135
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5589aba940f576241839d1f2181c542e
+      internalID: -1276188143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_136
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ba24ec9ce2f484dbb7ac26f4e06d2e
+      internalID: 24362884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_137
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b7a2b3fc0848e40b3b8b5199d98731
+      internalID: -1579345042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_138
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b577c2f7831860240ade79ed9171fd7d
+      internalID: -226436986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_139
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee91c66cfb4c53d4bb4ec83b8208fd0a
+      internalID: -1505578498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_140
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d28fe00c58bd348937f35b031fae84
+      internalID: -459265366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_141
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42b84b87cc83874b86b06910d03b324
+      internalID: 1695199534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_142
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2392aabc9831a54cadec5f5fbcfcbb9
+      internalID: 304734784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_143
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d81979d194a324d96b12cf0c3541e9
+      internalID: -904218394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_144
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7b471ef3ec3744aa3a5edd0ab2b276
+      internalID: -208320729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_145
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c751522e29194e40aa4cd18e7143357
+      internalID: 978885381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_146
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354761950ad065c4fa7c873e053d4fdd
+      internalID: 1195600484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_147
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c180714d65e9b7b45a0fdf1b5090308e
+      internalID: -128362002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_148
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de615de812923c0418bf24a70cb40bb1
+      internalID: 1515495221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_149
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f540518e1e48141b855d12b08968bb
+      internalID: 1831046167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_150
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8959d45390b50a4f83885f39289d805
+      internalID: -1301791243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_151
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 383
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a6f9a255b9ad74285a8652eeeccb42
+      internalID: 1340908987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_152
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 383
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5d2a7ed4def184ba9e16224f3b75c1
+      internalID: -595014964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_153
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 383
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d9b199bfb74b24181fff7c7377627d
+      internalID: 616499397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_154
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 383
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c553ec4998b824b9c7ed1954b2cfb2
+      internalID: 1987291873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_155
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 383
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95e836263461f349b925f69a02c298e
+      internalID: 1762661055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_156
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 383
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5b86d4a605897408bb25d5c390ea3d
+      internalID: 17941043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_157
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 367
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0706a5060b7f0ab43bad2a07d92c5c53
+      internalID: -1893785846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_158
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 367
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114237a375646044d8df8bb880300c6d
+      internalID: 203979339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_159
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 367
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cb1c0e3e695e845a1c81946faa66ff
+      internalID: -2073661147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_160
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 367
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27969ccefaed36b4c95054e2c120fd21
+      internalID: -847051131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_161
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 303
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eeba0969c698b648810f38979f0c259
+      internalID: -1574856316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_162
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 303
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2ca2b0bf1895047a71d90be3a894da
+      internalID: -58368511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_163
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 303
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf17382dbf1ef341888cae892d2508e
+      internalID: 1441612553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_164
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 303
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338ffe0257f5ae7418699c3b9de592dc
+      internalID: 464665958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_165
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 287
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46369db9d7cfbbe4581bef541fcb2e2d
+      internalID: 1297497569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_166
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 287
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca01c50b753a9ee4ab256056dd7ea7bb
+      internalID: 329701004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_167
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 287
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a974703a27f59f45bd5af0c7df0a134
+      internalID: 1051293413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_168
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 287
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbd458a6e7d1534b9936e825695ec81
+      internalID: -1002025585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_169
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 287
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b148ef63bb8a8fa4d820ec0034177e8b
+      internalID: 2075382278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_170
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 287
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191f7d68a8375b148a7cd43728743fbe
+      internalID: 1876345189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_171
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c01bdd370681bd4b95a58f4419eceeb
+      internalID: 467425963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_172
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8a63f25cc26a64ea2a08567d7de61b
+      internalID: -837098130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_173
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6b782808cea6742a1a347c869a3726
+      internalID: -1184886545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_174
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327607e9d48bba84c8bb3a78168c9cc1
+      internalID: 187711703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_175
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af32f8904ab168540b2d6055f15b6123
+      internalID: -48749623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_176
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37eb2bc6b7788c4e96156fa846eada5
+      internalID: -707816165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_177
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ea5a02299b59b40b1967809a5fc16e
+      internalID: -1847719143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_178
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 271
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc417f9dffae71144844b2ef40f67113
+      internalID: 554833635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_179
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e894342b8f8ea394ca46531e8d4f6d2e
+      internalID: 1113761482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_180
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bef406c3ba9484f9852f169f57b6f7
+      internalID: 1537049558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_181
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8277e93c0743241af1d23d2e3a2fc9
+      internalID: -1117783505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_182
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baf5677a8779c1458468a74bceaac1f
+      internalID: -179962503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_183
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658d795336b730345beea9f73cd7d77d
+      internalID: 1501029375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_184
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c6c1f132eba294bb37712db6ba4f3d
+      internalID: -300022529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_185
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e370474590eee4b9d68c26cc9ce7d9
+      internalID: -601350951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_186
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b253a34bbec1f44a981de1a2dcdf0d
+      internalID: 942885601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_187
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f54c870e5e153947b8900990e09d4eb
+      internalID: -430180745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_188
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da26ce3492e7b547abfaaba8d0b1f03
+      internalID: 246086428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_189
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3435a4d53dd404a9026e3c197113a2
+      internalID: 163025266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_190
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9836d5bec4445da4b8475794a90f5cd4
+      internalID: -1517980532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_191
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da67da282d3522049b45f7f4fc495ede
+      internalID: -650869407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_192
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1546dd03f72174d4395a3a5e8f332113
+      internalID: -310297939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_193
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 223
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65849d56a442554ab56d917c31a1008
+      internalID: -557878855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_194
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 223
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef21e517b017764cafed2a166a27449
+      internalID: -1211160682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_195
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 223
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7b733381a1be3458d0e0fc2e912746
+      internalID: -2113576416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casino_TileMap_part2_196
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 223
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab884ef21e6fd0c4ab84d16a3990b922
+      internalID: -1491235334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Casino_TileMap_part2_163: 1441612553
+      Casino_TileMap_part2_172: -837098130
+      Casino_TileMap_part2_83: -1445261949
+      Casino_TileMap_part2_69: -1855140404
+      Casino_TileMap_part2_93: 69878553
+      Casino_TileMap_part2_106: -225767949
+      Casino_TileMap_part2_59: 750670913
+      Casino_TileMap_part2_19: -944957965
+      Casino_TileMap_part2_16: -484740028
+      Casino_TileMap_part2_191: -650869407
+      Casino_TileMap_part2_140: -459265366
+      Casino_TileMap_part2_37: -1555058533
+      Casino_TileMap_part2_43: 1796038234
+      Casino_TileMap_part2_171: 467425963
+      Casino_TileMap_part2_78: -1455188196
+      Casino_TileMap_part2_27: 1621141925
+      Casino_TileMap_part2_84: 1622096655
+      Casino_TileMap_part2_161: -1574856316
+      Casino_TileMap_part2_18: -855837785
+      Casino_TileMap_part2_7: -471431388
+      Casino_TileMap_part2_58: -1872891967
+      Casino_TileMap_part2_71: 2092888171
+      Casino_TileMap_part2_70: -485766576
+      Casino_TileMap_part2_136: 24362884
+      Casino_TileMap_part2_146: 1195600484
+      Casino_TileMap_part2_183: 1501029375
+      Casino_TileMap_part2_139: -1505578498
+      Casino_TileMap_part2_61: 1391286212
+      Casino_TileMap_part2_119: -1431873912
+      Casino_TileMap_part2_56: 1327268632
+      Casino_TileMap_part2_176: -707816165
+      Casino_TileMap_part2_77: 1370629531
+      Casino_TileMap_part2_9: 51634968
+      Casino_TileMap_part2_145: 978885381
+      Casino_TileMap_part2_182: -179962503
+      Casino_TileMap_part2_3: -1828048747
+      Casino_TileMap_part2_148: 1515495221
+      Casino_TileMap_part2_128: 1800960336
+      Casino_TileMap_part2_13: 1564022884
+      Casino_TileMap_part2_86: 335255137
+      Casino_TileMap_part2_60: -591274248
+      Casino_TileMap_part2_157: -1893785846
+      Casino_TileMap_part2_6: -1439606738
+      Casino_TileMap_part2_42: -1314540683
+      Casino_TileMap_part2_94: 703630526
+      Casino_TileMap_part2_141: 1695199534
+      Casino_TileMap_part2_131: -786343957
+      Casino_TileMap_part2_53: -2107452421
+      Casino_TileMap_part2_72: 1275019035
+      Casino_TileMap_part2_184: -300022529
+      Casino_TileMap_part2_21: 1622147567
+      Casino_TileMap_part2_102: -1280692026
+      Casino_TileMap_part2_137: -1579345042
+      Casino_TileMap_part2_111: 628209275
+      Casino_TileMap_part2_190: -1517980532
+      Casino_TileMap_part2_52: -932458982
+      Casino_TileMap_part2_33: 226371401
+      Casino_TileMap_part2_101: -574225909
+      Casino_TileMap_part2_147: -128362002
+      Casino_TileMap_part2_80: 33765227
+      Casino_TileMap_part2_120: 1757123510
+      Casino_TileMap_part2_185: -601350951
+      Casino_TileMap_part2_17: -32831716
+      Casino_TileMap_part2_39: -156241865
+      Casino_TileMap_part2_133: 2049881176
+      Casino_TileMap_part2_144: -208320729
+      Casino_TileMap_part2_109: -1471527538
+      Casino_TileMap_part2_62: -1101403331
+      Casino_TileMap_part2_20: -1426510957
+      Casino_TileMap_part2_67: 314285418
+      Casino_TileMap_part2_26: -228083227
+      Casino_TileMap_part2_98: -2104376399
+      Casino_TileMap_part2_187: -430180745
+      Casino_TileMap_part2_174: 187711703
+      Casino_TileMap_part2_63: 1032415674
+      Casino_TileMap_part2_156: 17941043
+      Casino_TileMap_part2_64: -349698323
+      Casino_TileMap_part2_66: 1822400432
+      Casino_TileMap_part2_89: 1619011632
+      Casino_TileMap_part2_196: -1491235334
+      Casino_TileMap_part2_79: -37836749
+      Casino_TileMap_part2_129: -1855563176
+      Casino_TileMap_part2_164: 464665958
+      Casino_TileMap_part2_173: -1184886545
+      Casino_TileMap_part2_117: 1180497865
+      Casino_TileMap_part2_108: 97166998
+      Casino_TileMap_part2_143: -904218394
+      Casino_TileMap_part2_96: -1713638454
+      Casino_TileMap_part2_149: 1831046167
+      Casino_TileMap_part2_14: 223295754
+      Casino_TileMap_part2_73: 6769137
+      Casino_TileMap_part2_123: 809570766
+      Casino_TileMap_part2_114: 1329511911
+      Casino_TileMap_part2_0: -649478045
+      Casino_TileMap_part2_150: -1301791243
+      Casino_TileMap_part2_91: -430947947
+      Casino_TileMap_part2_142: 304734784
+      Casino_TileMap_part2_169: 2075382278
+      Casino_TileMap_part2_44: 1793951294
+      Casino_TileMap_part2_45: -719999843
+      Casino_TileMap_part2_121: -891723389
+      Casino_TileMap_part2_165: 1297497569
+      Casino_TileMap_part2_28: -1769471791
+      Casino_TileMap_part2_100: 1551838841
+      Casino_TileMap_part2_85: -2097275966
+      Casino_TileMap_part2_5: 1256042621
+      Casino_TileMap_part2_12: 658031191
+      Casino_TileMap_part2_30: 55445359
+      Casino_TileMap_part2_181: -1117783505
+      Casino_TileMap_part2_162: -58368511
+      Casino_TileMap_part2_135: -1276188143
+      Casino_TileMap_part2_57: -525711218
+      Casino_TileMap_part2_23: -1016739101
+      Casino_TileMap_part2_76: -406000350
+      Casino_TileMap_part2_158: 203979339
+      Casino_TileMap_part2_134: -1729748302
+      Casino_TileMap_part2_105: 1297692102
+      Casino_TileMap_part2_126: 230780335
+      Casino_TileMap_part2_166: 329701004
+      Casino_TileMap_part2_178: 554833635
+      Casino_TileMap_part2_51: -605944528
+      Casino_TileMap_part2_47: -2140199550
+      Casino_TileMap_part2_87: -1558089045
+      Casino_TileMap_part2_4: 1492377389
+      Casino_TileMap_part2_175: -48749623
+      Casino_TileMap_part2_193: -557878855
+      Casino_TileMap_part2_35: 1170487955
+      Casino_TileMap_part2_159: -2073661147
+      Casino_TileMap_part2_116: -422748811
+      Casino_TileMap_part2_10: 1143289126
+      Casino_TileMap_part2_151: 1340908987
+      Casino_TileMap_part2_36: 5448412
+      Casino_TileMap_part2_103: -485818906
+      Casino_TileMap_part2_122: -172199301
+      Casino_TileMap_part2_118: -1299256230
+      Casino_TileMap_part2_107: -235039414
+      Casino_TileMap_part2_155: 1762661055
+      Casino_TileMap_part2_49: -380281953
+      Casino_TileMap_part2_32: -645223127
+      Casino_TileMap_part2_46: -25161745
+      Casino_TileMap_part2_82: -1750174942
+      Casino_TileMap_part2_115: -980523723
+      Casino_TileMap_part2_110: -98049621
+      Casino_TileMap_part2_195: -2113576416
+      Casino_TileMap_part2_152: -595014964
+      Casino_TileMap_part2_160: -847051131
+      Casino_TileMap_part2_188: 246086428
+      Casino_TileMap_part2_2: -1289964129
+      Casino_TileMap_part2_92: 1527522530
+      Casino_TileMap_part2_154: 1987291873
+      Casino_TileMap_part2_112: 1213316774
+      Casino_TileMap_part2_168: -1002025585
+      Casino_TileMap_part2_22: -491272783
+      Casino_TileMap_part2_34: 1732204855
+      Casino_TileMap_part2_170: 1876345189
+      Casino_TileMap_part2_24: 975976062
+      Casino_TileMap_part2_130: -914099425
+      Casino_TileMap_part2_153: 616499397
+      Casino_TileMap_part2_15: 1886348835
+      Casino_TileMap_part2_75: -2000245492
+      Casino_TileMap_part2_194: -1211160682
+      Casino_TileMap_part2_125: 953396124
+      Casino_TileMap_part2_40: -1130288784
+      Casino_TileMap_part2_48: -991348072
+      Casino_TileMap_part2_97: 1251066466
+      Casino_TileMap_part2_81: 1669098360
+      Casino_TileMap_part2_41: -1844836137
+      Casino_TileMap_part2_50: -1616165716
+      Casino_TileMap_part2_113: -1168953464
+      Casino_TileMap_part2_132: 1886922633
+      Casino_TileMap_part2_180: 1537049558
+      Casino_TileMap_part2_138: -226436986
+      Casino_TileMap_part2_88: -1104065721
+      Casino_TileMap_part2_179: 1113761482
+      Casino_TileMap_part2_54: 1001667599
+      Casino_TileMap_part2_55: 1358176736
+      Casino_TileMap_part2_177: -1847719143
+      Casino_TileMap_part2_186: 942885601
+      Casino_TileMap_part2_68: 785099868
+      Casino_TileMap_part2_90: 14289054
+      Casino_TileMap_part2_189: 163025266
+      Casino_TileMap_part2_11: 1680537160
+      Casino_TileMap_part2_31: -1727053168
+      Casino_TileMap_part2_99: -906670696
+      Casino_TileMap_part2_25: 813444464
+      Casino_TileMap_part2_127: -31527804
+      Casino_TileMap_part2_95: -673243152
+      Casino_TileMap_part2_74: 382151775
+      Casino_TileMap_part2_104: 1030907635
+      Casino_TileMap_part2_124: 1463845567
+      Casino_TileMap_part2_1: 733830359
+      Casino_TileMap_part2_29: -1217913703
+      Casino_TileMap_part2_38: -363259841
+      Casino_TileMap_part2_167: 1051293413
+      Casino_TileMap_part2_65: 1466336661
+      Casino_TileMap_part2_192: -310297939
+      Casino_TileMap_part2_8: 1418508483
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

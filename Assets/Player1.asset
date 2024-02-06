@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d520ed38c03a07459c9f512971d47e5, type: 3}
+  m_Name: Player1
+  m_EditorClassIdentifier: 
+  health: 65
+  fireForece: 16
+  timeBetweenShots: 0.25
+  magazineSize: 11
+  bulletReloadTime: 0.85
+  bulletsInChamber: 7
+  letterIn: 0
+  moveInput: {x: 0, y: 0}
+  Aim: {x: 0, y: 0}
+  livesLeft: 3
+  touchingSewage: 0
+  isTurret: 0
+  oringalColor: {r: 1, g: 1, b: 1, a: 1}
+  turretDisabled: 0
+  burning: 0
+  movementSpeed: 18
+  magicBooksHeld: 0
+  canMove: 1
+  fatigue: 1
+  telaporting: 1
+  buff: 0
+  state: 0
+  direction: 2
+  firing: 0
+  money: 25
+  wheelActivate: 0
+  freeze: 0
+  joyStickDown: 1
+  inGame: 1
+  playerName: 
+  playerIndex: 1
+  gunChosen: 9
+  oringalGunChosen: 9
+  hasDied: 0
+  rolling: 0
+  invincble: 0
+  isReloading: 0
+  isGamePad: 0
+  rematchSetUpComplete: 1
+  lightingGoblin: 0
+  perks: 000001000000000000000000
+  perkOwned: 2
+  rocksCollected: 3
+  magicRockMult: 1
+  inRollState: 0
+  recoilGun: 0
+  recoilPower: 9500
+  revUpTime: 0
+  BulletSpread: {x: 250, y: 280}
+  ActiveMoveInput: {x: 0, y: 0}
+  damageDealtMult: 1
+  damageTakeMult: 1
+  orinagalChamberSize: 11
