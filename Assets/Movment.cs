@@ -19,6 +19,7 @@ public class Movment : MonoBehaviour
     {
         RB= gameObject.GetComponent<Rigidbody2D>();
         playInput = gameObject.GetComponent<PlayerInput>();
+        playSOs[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
     }
 
     public void OnMove(InputAction.CallbackContext cxt)
@@ -45,7 +46,7 @@ public class Movment : MonoBehaviour
         {
             MoveDirection = new Vector2(curentInput.x, curentInput.y).normalized;
         }
-        
+
 
         playSOs[playInput.playerIndex].moveInput = moveInput;
 
@@ -60,9 +61,16 @@ public class Movment : MonoBehaviour
             MoveDirection = Vector2.zero;
         }
 
-        if (playSOs[playInput.playerIndex].perkOwned == 2)
+        if (playSOs[playInput.playerIndex].state == 0)
         {
-            playSOs[playInput.playerIndex].movementSpeed = mainSO.scoutSpeed;
+            if (playSOs[playInput.playerIndex].perkOwned == 2)
+            {
+                playSOs[playInput.playerIndex].movementSpeed = mainSO.scoutSpeed;
+            }
+            else
+            {
+                playSOs[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+            }
         }
     }
 

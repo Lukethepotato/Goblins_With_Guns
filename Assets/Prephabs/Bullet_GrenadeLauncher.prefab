@@ -134,6 +134,7 @@ MonoBehaviour:
   speedUpMultiply: 0.0001
   noBouce: 0
   ghostBullet: 0
+  ghostBulletDamage: 0
   deadBulletMin: 0
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
@@ -282,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 1042787403431584625}
-  radius: 5.5
+  radius: 6
   sides: 15
   width: 0.35
   finalRadius: 0

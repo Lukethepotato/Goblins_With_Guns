@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3d4c206828c444a8cc0dcfd4ee3100, type: 3}
+  m_Name: TriviaSO_1 1
+  m_EditorClassIdentifier: 
+  type: 1
+  WinnerEffect: 1
+  LoserEffect: 0
+  winnerEffected: 0
+  effectors: 
+  prompt: Whats the best THING ever created?
+  timeLimit: 10
+  VoteOptions: []
+  voteType: 0
+  MultipleChoiceOptions:
+  - Skyrim
+  - Angry Birds
+  - Goblins with guns
+  - The Bible
+  submisions: []

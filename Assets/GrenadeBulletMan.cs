@@ -13,6 +13,7 @@ public class GrenadeBulletMan : MonoBehaviour
     private bool inplode = false;
     private GameObject player;
     public GameObject staFirepoint;
+    private bool asisgned = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,15 +24,23 @@ public class GrenadeBulletMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inplode && playSO[bulletData.owner].moveInput != Vector2.zero)
+        if (inplode)
         {
-            GameObject explosivo = Instantiate(explosion, (Vector2)player.transform.position - playSO[bulletData.owner].moveInput, Quaternion.identity);
-            explosivo.GetComponent<GrenadeExplosionEffectMan>().Asignment(bulletData.owner, bulletData.perk, bulletData.rockMult);
-            Destroy(gameObject);
+            if (playSO[bulletData.owner].moveInput != Vector2.zero)
+            {
+                GameObject explosivo = Instantiate(explosion, (Vector2)player.transform.position - playSO[bulletData.owner].moveInput, Quaternion.identity);
+                explosivo.GetComponent<GrenadeExplosionEffectMan>().Asignment(bulletData.owner, bulletData.perk, bulletData.rockMult);
+                Destroy(gameObject);
+                print("Inplode");
+            }
+            else
+            {
+                GameObject explosivo = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+                explosivo.GetComponent<GrenadeExplosionEffectMan>().Asignment(bulletData.owner, bulletData.perk, bulletData.rockMult);
+                Destroy(gameObject);
+            }
 
-        }
-
-        if (timeBeforeExplode < 0)
+        }else if (timeBeforeExplode < 0 && inplode == false)
         {
             GameObject explosivo = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
             explosivo.GetComponent<GrenadeExplosionEffectMan>().Asignment(bulletData.owner, bulletData.perk, bulletData.rockMult);
@@ -39,6 +48,7 @@ public class GrenadeBulletMan : MonoBehaviour
             GameObject firepoint = Instantiate(staFirepoint, gameObject.transform.position, gameObject.transform.rotation);
             firepoint.GetComponent<StationaryFirepoint_Data>().Assigment(bulletData.owner, bulletData.perk, 1);
             Destroy(gameObject);
+            print("Outplode");
         }
 
 
@@ -49,15 +59,22 @@ public class GrenadeBulletMan : MonoBehaviour
 
     public void TimeBeforeExpodeAssigment(float time, GameObject playerSet)
     {
-        if (time < 0)
+        if (asisgned == false)
         {
-            inplode = true;
+            if (time < 0)
+            {
+                inplode = true;
+                print("InplodeTrue");
+            }
+            else
+            {
+                timeBeforeExplode = time;
+                inplode= false;
+                print("InplodeFalse");
+            }
+            asisgned= true;
+            player = playerSet;
+            print(time);
         }
-        else
-        {
-            timeBeforeExplode = time;
-        }
-
-        player = playerSet;
     }
 }

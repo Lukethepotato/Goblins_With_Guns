@@ -153,6 +153,7 @@ public class PlayerMagicBookManager : MonoBehaviour
         SR.enabled= false;
         playSO[playInput.playerIndex].lightingGoblin = true;
         yield return new WaitForSeconds(activationTime);
+        lightningTrig.SetActive(true);
         GameObject.Find("Canvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
         GameObject.Find("Canvas").GetComponent<CanvasButtonPrompts>().DisplayTheText("fire", inputDectect.GetControlType());
         SR.enabled = true;
@@ -186,6 +187,7 @@ public class PlayerMagicBookManager : MonoBehaviour
         handsSR.startUpAnimationPlayed = false;
         Instantiate(instanBooks, new Vector2(0, 0), Quaternion.identity);
         mainSO.playerInLightning = false;
+        lightningTrig.SetActive(false);
 
     }
 

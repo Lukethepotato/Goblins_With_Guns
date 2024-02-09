@@ -72,7 +72,7 @@ public class damageTaking : MonoBehaviour
 
         if (knockBack)
         {
-            RB.AddForce(knockbackPosition * knockbackAmount * Time.deltaTime);
+            RB.AddForce(-knockbackPosition * knockbackAmount * Time.deltaTime);
         }
 
         if (playSO[playInput.playerIndex].health < 1 && playSO[playInput.playerIndex].burning && mainSO.freezeAllPlayer == false)

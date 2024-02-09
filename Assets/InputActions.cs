@@ -109,7 +109,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Heal"",
+                    ""name"": ""Perk"",
                     ""type"": ""Button"",
                     ""id"": ""d32e84b7-5ca0-4c57-98d3-c00929ab9768"",
                     ""expectedControlType"": ""Button"",
@@ -390,7 +390,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Heal"",
+                    ""action"": ""Perk"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -401,7 +401,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Heal"",
+                    ""action"": ""Perk"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -987,7 +987,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_TurretFire = m_Player.FindAction("TurretFire", throwIfNotFound: true);
         m_Player_Charge = m_Player.FindAction("Charge", throwIfNotFound: true);
-        m_Player_Heal = m_Player.FindAction("Heal", throwIfNotFound: true);
+        m_Player_Perk = m_Player.FindAction("Perk", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1068,7 +1068,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_TurretFire;
     private readonly InputAction m_Player_Charge;
-    private readonly InputAction m_Player_Heal;
+    private readonly InputAction m_Player_Perk;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -1082,7 +1082,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @TurretFire => m_Wrapper.m_Player_TurretFire;
         public InputAction @Charge => m_Wrapper.m_Player_Charge;
-        public InputAction @Heal => m_Wrapper.m_Player_Heal;
+        public InputAction @Perk => m_Wrapper.m_Player_Perk;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1119,9 +1119,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Charge.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCharge;
                 @Charge.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCharge;
                 @Charge.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCharge;
-                @Heal.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHeal;
-                @Heal.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHeal;
-                @Heal.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHeal;
+                @Perk.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPerk;
+                @Perk.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPerk;
+                @Perk.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPerk;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1153,9 +1153,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Charge.started += instance.OnCharge;
                 @Charge.performed += instance.OnCharge;
                 @Charge.canceled += instance.OnCharge;
-                @Heal.started += instance.OnHeal;
-                @Heal.performed += instance.OnHeal;
-                @Heal.canceled += instance.OnHeal;
+                @Perk.started += instance.OnPerk;
+                @Perk.performed += instance.OnPerk;
+                @Perk.canceled += instance.OnPerk;
             }
         }
     }
@@ -1321,7 +1321,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnTurretFire(InputAction.CallbackContext context);
         void OnCharge(InputAction.CallbackContext context);
-        void OnHeal(InputAction.CallbackContext context);
+        void OnPerk(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

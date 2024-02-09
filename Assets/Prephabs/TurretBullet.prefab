@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -3046974804371432166}
   - component: {fileID: 4475897486484202868}
   - component: {fileID: 2886644770795068988}
+  - component: {fileID: 8794267092490120069}
   m_Layer: 7
   m_Name: TurretBullet
   m_TagString: bullet
@@ -231,3 +232,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stationaryFirepoint: {fileID: 3433669826173071499, guid: 6cf8593d5265eca46b6bfe763cfc7e24, type: 3}
   timeUntillExplode: 0.75
+--- !u!114 &8794267092490120069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045382510868268063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b066c02643d17449a09aac7645020d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: 0
+  perk: 0
+  rockMult: 0
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}

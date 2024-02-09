@@ -74,13 +74,17 @@ public class PlayerSO_Manager : MonoBehaviour
             {
                 gameObject.transform.position = mainSO.playersSpawnLocations[Random.Range(0, mainSO.playersSpawnLocations.Length)];
             }
-            if (playSO[playInput.playerIndex].perkOwned != 4)
+
+            if (playSO[playInput.playerIndex].perkOwned == 4)
             {
-                playSO[playInput.playerIndex].health = 100;
+                playSO[playInput.playerIndex].health = mainSO.startingVampireHealth;
+            }else if (playSO[playInput.playerIndex].perkOwned == 2)
+            {
+                playSO[playInput.playerIndex].health = mainSO.scoutHealth;
             }
             else
             {
-                playSO[playInput.playerIndex].health = mainSO.startingVampireHealth;
+                playSO[playInput.playerIndex].health = 100;
             }
             BoxCollider2D.enabled = true;
             floorColl.enabled = true;

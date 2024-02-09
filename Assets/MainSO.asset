@@ -42,7 +42,7 @@ MonoBehaviour:
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
   startingTimer: 90
-  currentTimer: 56.465878
+  currentTimer: 31.014929
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
@@ -66,3 +66,9 @@ MonoBehaviour:
   scoutSpeed: 18
   scoutHealth: 65
   maxWidowMult: 5
+  chosenTrivia: {fileID: 11400000, guid: cd19b835d0619e54a9825ed05335d689, type: 2}
+  inHalfTime: 1
+  displayHalfTimeInput: 0
+  halfTimeCount: 1
+  maxHalfTimes: 1
+  halfTimeEnabled: 1

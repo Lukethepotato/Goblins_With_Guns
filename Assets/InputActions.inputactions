@@ -87,7 +87,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Heal",
+                    "name": "Perk",
                     "type": "Button",
                     "id": "d32e84b7-5ca0-4c57-98d3-c00929ab9768",
                     "expectedControlType": "Button",
@@ -368,7 +368,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Heal",
+                    "action": "Perk",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -379,7 +379,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Heal",
+                    "action": "Perk",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

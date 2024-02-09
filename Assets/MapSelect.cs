@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 public class MapSelect : MonoBehaviour
 {
     public MainSO mainSO;
+    public GameObject scroll;
+    public MainScene_Scroll scrollScript;
+    private void Start()
+    {
+        scrollScript = scroll.GetComponent<MainScene_Scroll>();
+    }
     public void mapSelected(int mapId)
     {
         mainSO.map = mapId;
-        gameObject.SetActive(false);
-        mainSO.preGameSetUp = true;
+        scrollScript.MapSelected();
     }
 }

@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50624186214902093}
-  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.47129425, y: 54.653297, z: 0}
-  m_LocalScale: {x: 7.8549047, y: -7.395575, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.06, y: -7.390001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2793174626724428516}
-  m_RootOrder: 0
+  m_Father: {fileID: 6597591818688195371}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &2354721335152049125
 CircleCollider2D:
@@ -235,6 +235,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 0, y: 0}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &2357325126283765243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,6 +621,106 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 1
+--- !u!1 &801234120175970389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3798247691520902357}
+  - component: {fileID: 4115592751169508091}
+  - component: {fileID: 4729548510681576450}
+  - component: {fileID: 4197908761542564927}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3798247691520902357
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801234120175970389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6597591818688195371}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &4115592751169508091
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801234120175970389}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &4729548510681576450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801234120175970389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &4197908761542564927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801234120175970389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &961748439935433541
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +1060,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 0, y: 0}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &4923069086888269864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,7 +1402,7 @@ Transform:
   - {fileID: 4049177058656572354}
   - {fileID: 4709302919273278131}
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4798579464933918698
 MonoBehaviour:
@@ -1735,6 +1839,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 0, y: 0}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &4469572432927709105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1943,7 +2049,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4198688477583472400
 SpriteRenderer:
@@ -2571,6 +2677,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 269.864, y: 269.864}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &3340841321027630414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2978,6 +3086,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 260, y: 280}
   revupTime: 0.1
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &1532871902351057563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3257,7 +3367,7 @@ Transform:
   m_Children:
   - {fileID: 2910731100970707687}
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8674106144518693650
 MonoBehaviour:
@@ -3436,6 +3546,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 250, y: 280}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &3987188693456745866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3618,7 +3730,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4139001012321261571
 BoxCollider2D:
@@ -3690,7 +3802,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2447818415680500609
 SpriteRenderer:
@@ -4354,6 +4466,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 269.864, y: 269.864}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &7691450014430240196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4663,7 +4777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6393877084770929612
 Transform:
   m_ObjectHideFlags: 0
@@ -4768,7 +4882,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 23
-  ReloadTime: 5
+  ReloadTime: 0
   ChamberSize: 1
   timeInBetweenShots: 0.2
   recoil: 0
@@ -4780,6 +4894,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 0, y: 0}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 1
 --- !u!114 &729816599429556360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5495,7 +5611,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7524499772460784830
 BoxCollider2D:
@@ -5707,6 +5823,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 0, y: 0}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &2592033850301784048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5889,6 +6007,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 269.864, y: 269.864}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &7594390715876349716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6014,6 +6134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3798247691520902357}
   - {fileID: 7958395353303181264}
   - {fileID: 6385280129703997825}
   - {fileID: 7560024915455282105}
@@ -6022,6 +6143,7 @@ Transform:
   - {fileID: 3683061660691930885}
   - {fileID: 3656249639605434877}
   - {fileID: 8184625020360708055}
+  - {fileID: 4577193900243459810}
   - {fileID: 2793174626724428516}
   - {fileID: 6762994327018305042}
   - {fileID: 246361505861664636}
@@ -7272,7 +7394,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2997425246898995136
 MonoBehaviour:
@@ -7608,6 +7730,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 0, y: 0}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &8562374793696851240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7662,7 +7786,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2417949214531743348
 BoxCollider2D:
@@ -8198,6 +8322,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 240, y: 300}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &509868446969844669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8628,10 +8754,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.127309, y: -0.135216, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4577193900243459810}
+  m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7316070278655613047
 MonoBehaviour:
@@ -8861,6 +8986,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 265, y: 275}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &2563975902713488140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9082,7 +9209,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8192991346701230192
 GameObject:
@@ -9413,7 +9540,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9713,7 +9840,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4075459565021016830
 SpriteRenderer:
@@ -9998,6 +10125,8 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 0, y: 0}
   revupTime: 0
   remoSpeedDe: 0
+  contstantFireSpeedUpdate: 0
+  isTurret: 0
 --- !u!114 &7311277139737312274
 MonoBehaviour:
   m_ObjectHideFlags: 0

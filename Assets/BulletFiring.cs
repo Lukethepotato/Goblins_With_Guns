@@ -12,6 +12,7 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class BulletFiring : MonoBehaviour
 {
+    //big fat fucking balls
     public GameObject[] bulletPrephab;
     public Transform[] firePoint;
     //public Rigidbody2D[] firePointRBs; 
@@ -68,6 +69,7 @@ public class BulletFiring : MonoBehaviour
     public float minigunRevSpeed;
     private bool minigunBust = false;
     public int minTurretCharge = 37;
+    private bool outOfTurret = true;
 
     // Start is called before the first frame update
     void Start()
@@ -98,8 +100,15 @@ public class BulletFiring : MonoBehaviour
 
         if (playerSO[playInput.playerIndex].isTurret == false)
         {
+            outOfTurret = true;
             turretValueSetting.bulletSpeed = baseTurretBulletSpeed;
             turretBulletSize = 0;
+        }
+
+        if (playerSO[playInput.playerIndex].isTurret == false && outOfTurret)
+        {
+            outOfTurret= false;
+            chargingTurret = true;
         }
 
         if (playerSO[playInput.playerIndex].gunChosen != 6)
@@ -185,6 +194,8 @@ public class BulletFiring : MonoBehaviour
             revAmount = 0;
             revTimeLeft = playerSO[playInput.playerIndex].revUpTime;
         }
+
+        //big fwqat fucking boobs
     }
 
     public void FireBullet()
@@ -326,11 +337,6 @@ public class BulletFiring : MonoBehaviour
                 chargingBow = false;
                 firingBullet = true;
             }
-            else if (ctx.canceled)
-            {
-                playerSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
-                chargingBow = false;
-            }
         }
     }
 
@@ -367,7 +373,7 @@ public class BulletFiring : MonoBehaviour
                 startedCharging = true;
                 pillTimeToExplode -= Time.deltaTime;
 
-                if (pillTimeToExplode < 0)
+                if (pillTimeToExplode < -.01f)
                 {
                     charging= false;
                 }
@@ -428,7 +434,6 @@ public class BulletFiring : MonoBehaviour
                     FireBullet();
                 }
             }
-
             if (playerSO[playInput.playerIndex].recoilPower > 0)
             {
                 StartCoroutine(Recoil());

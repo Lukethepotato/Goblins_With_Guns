@@ -5,22 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/StartScene_BackUp.unity
     guid: 19e6a5225ec5ac14aa9772374e6ff36d
   - enabled: 1
-    path: Assets/Scenes/OnlineScenes/Lobby.unity
-    guid: d87b837f4cc3ecc45868e0ecdfb2a021
-  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/OnlineScenes/ConnectToServer.unity
-    guid: a0b7b0cd365749943a288d132a4d17bf
-  - enabled: 1
-    path: Assets/Scenes/OnlineScenes/OnlineScene.unity
-    guid: 11f64b5753b5c0c4aba0296ce9263587
   m_configObjects: {}

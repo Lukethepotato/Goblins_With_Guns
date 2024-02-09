@@ -37,6 +37,10 @@ public class MainSO_Manager : MonoBehaviour
     {
         mainSO.preGameSetUp = false;
         mainSO.map = 0;
+        mainSO.inHalfTime = false;
+        mainSO.displayHalfTimeInput= false;
+        mainSO.chosenTrivia = null;
+        mainSO.halfTimeCount= 0;
     }
 
     // Update is called once per frame

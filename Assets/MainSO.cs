@@ -45,4 +45,10 @@ public class MainSO : ScriptableObject
     public float scoutSpeed;
     public float scoutHealth;
     public int maxWidowMult;
+    public TriviaSO chosenTrivia;
+    public bool inHalfTime;
+    public bool displayHalfTimeInput;
+    public int halfTimeCount;
+    public int maxHalfTimes;
+    public bool halfTimeEnabled;
 }

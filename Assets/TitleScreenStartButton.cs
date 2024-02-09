@@ -31,6 +31,6 @@ public class TitleScreenStartButton : MonoBehaviour
     {
         animMan.ChangeAnimationState("TitleScreenEnd");
         yield return new WaitForSeconds(animTime);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }
