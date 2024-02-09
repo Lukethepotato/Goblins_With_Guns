@@ -7,6 +7,7 @@ public class TitleScreenStartButton : MonoBehaviour
 {
     public GameObject pannel;
     public AnimationManager animMan;
+    public GameObject gameModeSelect;
     public float animTime;
 
     // Start is called before the first frame update
@@ -31,6 +32,7 @@ public class TitleScreenStartButton : MonoBehaviour
     {
         animMan.ChangeAnimationState("TitleScreenEnd");
         yield return new WaitForSeconds(animTime);
-        SceneManager.LoadScene(1);
+        gameModeSelect.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
