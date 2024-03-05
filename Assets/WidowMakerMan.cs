@@ -32,7 +32,7 @@ public class WidowMakerMan : MonoBehaviour
 
             playSO[playInput.playerIndex].bulletReloadTime = (playSO[playInput.playerIndex].orinagalReloadSpeed * playSO[playInput.playerIndex].magazineSize) / playSO[playInput.playerIndex].orinagalChamberSize;
 
-            if (playSO[playInput.playerIndex].health < pastHealth)
+            if (playSO[playInput.playerIndex].health < pastHealth || mainSO.suddenDeathInitiated)
             {
                 resetChamber = true;
                 print("ResetChamber");

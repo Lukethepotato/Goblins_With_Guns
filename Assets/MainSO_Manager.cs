@@ -28,6 +28,7 @@ public class MainSO_Manager : MonoBehaviour
         mainSO.rockMulptChange = baseRockMult;
         mainSO.inSuddenDeath= false;
         mainSO.playerInLightning= false;
+        mainSO.playStartUpMov = true;
         
 
         //mainSO.rockMulptChange /= playerManager.playerCount;

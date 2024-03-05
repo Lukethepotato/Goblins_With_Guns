@@ -21,12 +21,16 @@ public class groundColliderDamageTaking : MonoBehaviour
     private bool inCourtine = false;
     private Collider2D collsion;
     public Vector2 curPos;
+    public BoxCollider2D mainObjectColl;
+    public Vector2 oldPos;
+    private bool inCoyoteJump = false;
     // Start is called before the first frame update
     void Start()
     {
         playInput= mainObject.GetComponent<PlayerInput>();
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         animMan = mainObject.GetComponent<AnimationManager>();
+        mainObjectColl = mainObject.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -45,43 +49,45 @@ public class groundColliderDamageTaking : MonoBehaviour
 
         if (raycast)
         {
-            mainObject.transform.position = curPos * closestPointMult;
+            mainObject.transform.position = oldPos * closestPointMult;
             raycast = false;
             playSO[playInput.playerIndex].touchingSewage = false;
             inCourtine = false;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage && mainSO.freezeAllPlayer ==false && raycast == false)
+        if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage && mainSO.freezeAllPlayer == false && raycast == false && playSO[playInput.playerIndex].touchingSewage == false && playSO[playInput.playerIndex].health > 0)
         {
             playSO[playInput.playerIndex].health -= sewageDamage;
             playSO[playInput.playerIndex].touchingSewage = true;
             print("shouldDie");
-            if (playSO[playInput.playerIndex].health > 0 && inCourtine == false)
+            if (inCourtine == false)
             {
                 StartCoroutine(sewageNonKill());
                 inCourtine = true;
                 collsion = other;
             }
         }
-        else if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage == false)
+        else if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage == false && inCoyoteJump == false)
         {
             StartCoroutine(CoytoeJump());
+            inCoyoteJump = true;
         }
-        else if (checkIfTouchingSewage == false && raycast == false && inCourtine == false)
+        else if (checkIfTouchingSewage == false && raycast == false && inCourtine == false && playSO[playInput.playerIndex].touchingSewage)
         {
             playSO[playInput.playerIndex].touchingSewage = false;
         }
+
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("ToxicSewage"))
+        if (collision.gameObject.CompareTag("ToxicSewage"))
         {
-            curPos = gameObject.transform.position;
-            print("curPos");
+            oldPos = gameObject.transform.position;
         }
     }
 
@@ -99,10 +105,12 @@ public class groundColliderDamageTaking : MonoBehaviour
             checkIfTouchingSewage = false;
             
         }
+        inCoyoteJump = false;
     }
 
     IEnumerator sewageNonKill()
     {
+        mainObjectColl.isTrigger= true;
         playSO[playInput.playerIndex].freeze = true;
         playSO[playInput.playerIndex].invincble= true;
         print("acid");
@@ -112,6 +120,7 @@ public class groundColliderDamageTaking : MonoBehaviour
         playSO[playInput.playerIndex].freeze = false;
         playSO[playInput.playerIndex].invincble = false;
         raycast = true;
+        mainObjectColl.isTrigger= false;
 
     }
 }

@@ -17,12 +17,15 @@ public class InteractDisplay : MonoBehaviour
     private bool holding = false;
     private InteractionInputDectection interactionDectection;
     public PlayerInput playInput;
+    public InputDecection inputDetect;
+    public GameObject inputObject;
 
     // Start is called before the first frame update
     void Start()
     {
         playInput = gameObject.GetComponent<PlayerInput>();
-        setText = gameObject.GetComponentInChildren<SetTextToTextBox>();
+        setText = inputObject.GetComponent<SetTextToTextBox>();
+        inputDetect = gameObject.GetComponent<InputDecection>();
     }
 
     // Update is called once per frame
@@ -35,7 +38,7 @@ public class InteractDisplay : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Interactable") && interacted == false)
         {
-            setText.DisplayText();
+            setText.DisplayText(inputDetect.DisplayButton("interact") +" to interact");
             interactionDectection = collision.gameObject.GetComponent<InteractionInputDectection>();
             inZone= true;
         }
@@ -46,7 +49,7 @@ public class InteractDisplay : MonoBehaviour
 
         if (collision.gameObject.CompareTag("HoldInteractable") && holding == false)
         {
-            setText.DisplayText();
+            setText.DisplayText("hold " + inputDetect.DisplayButton("interact") + " to interact");
             interactionDectection = collision.gameObject.GetComponent<InteractionInputDectection>();
             inHoldZone = true;
         }

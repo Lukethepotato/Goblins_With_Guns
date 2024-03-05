@@ -69,7 +69,8 @@ public class ReadyUpManager : MonoBehaviour
             Destroy(setupObject);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            mainSO.setUpOver = true;
+            mainSO.inStartUpMov= true;
+            GameObject.Find("MainCanvas").GetComponent<MapStartUpMovMan>().start();
         }
     }
 }

@@ -154,8 +154,8 @@ public class PlayerMagicBookManager : MonoBehaviour
         playSO[playInput.playerIndex].lightingGoblin = true;
         yield return new WaitForSeconds(activationTime);
         lightningTrig.SetActive(true);
-        GameObject.Find("Canvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
-        GameObject.Find("Canvas").GetComponent<CanvasButtonPrompts>().DisplayTheText("fire", inputDectect.GetControlType());
+        GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
+        GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().DisplayTheText("fire", inputDectect.GetControlType());
         SR.enabled = true;
         handsSR.playerGoneWizard = true;
         SR.sortingLayerName = "foreGround";

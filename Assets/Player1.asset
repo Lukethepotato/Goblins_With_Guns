@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d520ed38c03a07459c9f512971d47e5, type: 3}
   m_Name: Player1
   m_EditorClassIdentifier: 
-  health: -21.053825
-  fireForece: 33
-  timeBetweenShots: 0.25
-  magazineSize: 1
+  health: 100
+  fireForece: 15
+  timeBetweenShots: 0.7
+  magazineSize: 0
   bulletReloadTime: 1
-  bulletsInChamber: 0
+  bulletsInChamber: -1
   letterIn: 0
   moveInput: {x: 0, y: 0}
   Aim: {x: 0, y: 0}
@@ -35,16 +35,16 @@ MonoBehaviour:
   buff: 0
   state: 0
   direction: 2
-  firing: 0
-  money: 25
+  firing: 1
+  money: 75
   wheelActivate: 0
   freeze: 0
   joyStickDown: 1
-  inGame: 0
+  inGame: 1
   playerName: 
   playerIndex: 1
-  gunChosen: 10
-  oringalGunChosen: 10
+  gunChosen: 6
+  oringalGunChosen: 0
   hasDied: 0
   rolling: 0
   invincble: 0
@@ -52,17 +52,18 @@ MonoBehaviour:
   isGamePad: 0
   rematchSetUpComplete: 1
   lightingGoblin: 0
-  perks: 010000000000000000000000
-  perkOwned: 0
+  perks: 000000000000000000010000
+  perkOwned: 9
   rocksCollected: 3
   magicRockMult: 1
   inRollState: 0
   recoilGun: 0
   recoilPower: 10500
   revUpTime: 0
-  BulletSpread: {x: 0, y: 0}
+  BulletSpread: {x: 269.864, y: 269.864}
   ActiveMoveInput: {x: 0, y: 0}
   damageDealtMult: 1
   damageTakeMult: 1
-  orinagalChamberSize: 1
+  orinagalChamberSize: 0
   orinagalReloadSpeed: 1
+  respawning: 0

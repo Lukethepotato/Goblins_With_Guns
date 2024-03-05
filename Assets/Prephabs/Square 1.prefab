@@ -1524,7 +1524,6 @@ MonoBehaviour:
   bowChargeSpeed: 25
   baseBowSpeed: 15
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
-  shootMoveSpeed: 9
   turretValueSetting: {fileID: 6794347404038578752}
   smgValueSetting: {fileID: 7186598803233637193}
   turret: {fileID: 5313990430703508449}
@@ -2517,6 +2516,7 @@ Transform:
   - {fileID: 2532168570909718019}
   - {fileID: 5981939414648724305}
   - {fileID: 3765318862219758162}
+  - {fileID: 6487925078600723119}
   m_Father: {fileID: 6385280129703997825}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3304,7 +3304,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1816284788240487175}
-  - {fileID: 1824674972143871661}
   m_Father: {fileID: 2910731100970707687}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3334,8 +3333,8 @@ MonoBehaviour:
   player: {fileID: 6597591818688195374}
   playInput: {fileID: 6597591818688195373}
   textObject: {fileID: 7685656083164886645}
-  animObject: {fileID: 4620457869929832637}
-  animManager: {fileID: 6427919078216158269}
+  animObject: {fileID: 3459301174865910054}
+  animManager: {fileID: 6474451502275795690}
 --- !u!1 &3221826958357277730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,6 +3639,136 @@ Transform:
   m_Father: {fileID: 2117800655688604538}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3459301174865910054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6487925078600723119}
+  - component: {fileID: 3403880042008290373}
+  - component: {fileID: 6474451502275795690}
+  - component: {fileID: 8343895186933162293}
+  m_Layer: 10
+  m_Name: ReloadAnim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6487925078600723119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459301174865910054}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.59, y: 1.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2910731100970707687}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3403880042008290373
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459301174865910054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55f2a22c93b7dea49a1f23c20c4b568a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &6474451502275795690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459301174865910054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae944d207c0e8334194449a3f4f254c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  ROLL: Roll
+  ROLL_FORWARD: Roll_Forward
+  IDLE: Idle
+  Run_Forward: Run_Forward
+  Run_Forward_Left: Run_Forward_Left
+  Run_Forward_Right: Run_Forward_Right
+  Run_Backward: Run_Backward
+  Run_Backward_Right: Run_Backward_Right
+  Run_Backward_Left: Run_Backward_Left
+  Roll_Left: Roll_Left
+  Roll_Right: Roll_Right
+--- !u!212 &8343895186933162293
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459301174865910054}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.0625, y: 0.9375}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &3627499905969073908
 GameObject:
   m_ObjectHideFlags: 0
@@ -4175,141 +4304,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &4620457869929832637
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1824674972143871661}
-  - component: {fileID: 4389488417011813770}
-  - component: {fileID: 1351753605147855475}
-  - component: {fileID: 6427919078216158269}
-  m_Layer: 10
-  m_Name: ReloadAnim
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1824674972143871661
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4620457869929832637}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3765318862219758162}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.098, y: 2.089}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &4389488417011813770
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4620457869929832637}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.0625, y: 0.9375}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!95 &1351753605147855475
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4620457869929832637}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 46437ed85eb7fe146a9534dd1796ee76, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
---- !u!114 &6427919078216158269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4620457869929832637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae944d207c0e8334194449a3f4f254c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1351753605147855475}
-  ROLL: Roll
-  ROLL_FORWARD: Roll_Forward
-  IDLE: Idle
-  Run_Forward: Run_Forward
-  Run_Forward_Left: Run_Forward_Left
-  Run_Forward_Right: Run_Forward_Right
-  Run_Backward: Run_Backward
-  Run_Backward_Right: Run_Backward_Right
-  Run_Backward_Left: Run_Backward_Left
-  Roll_Left: Roll_Left
-  Roll_Right: Roll_Right
 --- !u!1 &4734036937487536187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5667,6 +5661,8 @@ MonoBehaviour:
   raycast: 0
   closestPointMult: 1.1
   curPos: {x: 0, y: 0}
+  mainObjectColl: {fileID: 4651436213466558394}
+  oldPos: {x: 0, y: 0}
 --- !u!1 &6487057882979446016
 GameObject:
   m_ObjectHideFlags: 0
@@ -6007,7 +6003,7 @@ MonoBehaviour:
   bulletSpreadMinMax: {x: 269.864, y: 269.864}
   revupTime: 0
   remoSpeedDe: 0
-  contstantFireSpeedUpdate: 0
+  contstantFireSpeedUpdate: 1
   isTurret: 0
 --- !u!114 &7594390715876349716
 MonoBehaviour:
@@ -6115,6 +6111,9 @@ GameObject:
   - component: {fileID: 8158837247224211172}
   - component: {fileID: 6258394661996819402}
   - component: {fileID: 8261567598479667289}
+  - component: {fileID: 1234652948131419284}
+  - component: {fileID: 8446648999636239375}
+  - component: {fileID: 6009975434799897377}
   m_Layer: 0
   m_Name: Square 1
   m_TagString: Player
@@ -6275,6 +6274,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
@@ -6282,6 +6293,18 @@ MonoBehaviour:
       - m_Target: {fileID: 8478601006325392988}
         m_TargetAssemblyTypeName: Aiming, Assembly-CSharp
         m_MethodName: HandleInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6322,6 +6345,18 @@ MonoBehaviour:
       - m_Target: {fileID: 4254264537255125555}
         m_TargetAssemblyTypeName: BuffGoblinManager, Assembly-CSharp
         m_MethodName: Fire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6387,10 +6422,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BorrowRoll, Assembly-CSharp
-        m_MethodName: OnRoll
-        m_Mode: 1
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6407,6 +6442,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Reloading, Assembly-CSharp
         m_MethodName: OnReload
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6447,6 +6494,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 59744e8c-b594-4bd9-84c4-72419d460473
     m_ActionName: Player/Interact[/XInputControllerWindows/buttonEast,/Keyboard/e]
   - m_PersistentCalls:
@@ -6454,6 +6513,18 @@ MonoBehaviour:
       - m_Target: {fileID: 5506736326944577345}
         m_TargetAssemblyTypeName: BulletFiring, Assembly-CSharp
         m_MethodName: TurretFire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6479,13 +6550,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2998b0f1-93e9-4442-95c5-f1fc94ace184
     m_ActionName: Player/Charge[/Mouse/leftButton,/XInputControllerWindows/rightTrigger]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 776979127849204456}
-        m_TargetAssemblyTypeName: Healing, Assembly-CSharp
-        m_MethodName: Heal
+      - m_Target: {fileID: 1234652948131419284}
+        m_TargetAssemblyTypeName: PerkButtonMan, Assembly-CSharp
+        m_MethodName: Perk
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6009975434799897377}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: EndMov
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6713,13 +6808,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
-  basicBulletDamage: 35
-  sniperBulletDamage: 100
-  shotgunBulletDamage: 25
-  miniGunDamage: 20
-  rocketDamage: 100
-  smgDamage: 20
-  flameThrowerBulletDamage: 22
   burnDamage: 5
   explosionPower: 750
   explosionDamage: 50
@@ -7046,9 +7134,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   interactDisplay: {fileID: 8534412847392143619}
-  setText: {fileID: 0}
+  setText: {fileID: 1600804324773929533}
   inZone: 0
   playInput: {fileID: 6597591818688195373}
+  inputDetect: {fileID: 7182986874569148130}
+  inputObject: {fileID: 8534412847392143619}
 --- !u!114 &5862841916172509697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7363,6 +7453,59 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
   pastHealth: 200
+--- !u!114 &1234652948131419284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d3bc49cda4e7e468d70d4592daa73f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  playInput: {fileID: 6597591818688195373}
+--- !u!114 &8446648999636239375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5bf01fd0a6706e489cdae2b4a584144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  canMakeTurret: 1
+  coolDown: 5
+  activeCoolDown: 0
+  sentry: {fileID: 3433669826173071499, guid: 3018be94b8b3915478d30ccb624c1d46, type: 3}
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+--- !u!114 &6009975434799897377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6202972b5aa78e41aa96205f18bb05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
 --- !u!1 &6600092420458733488
 GameObject:
   m_ObjectHideFlags: 0
@@ -8588,7 +8731,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.095, y: 0}
+  m_AnchoredPosition: {x: -0.29, y: 0}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7168541711412358128

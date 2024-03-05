@@ -28,4 +28,25 @@ public class InputDecection : MonoBehaviour
         }
     }
 
+    public string DisplayButton(string inputType)
+    {
+        if (inputType == "interact")
+        {
+            return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"interact\">";
+        }
+        else if (inputType == "fire")
+        {
+            return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"fire\">";
+        }
+        else if (inputType == "reload")
+        {
+            return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"reload\">";
+        }
+        else
+        {
+            return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"roll\">";
+        }
+        print("Displayed");
+    }
+
 }

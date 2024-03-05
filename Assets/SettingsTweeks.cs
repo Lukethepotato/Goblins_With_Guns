@@ -48,4 +48,9 @@ public class SettingsTweeks: MonoBehaviour
     {
         mainSO.startingTimer = length;
     }
+
+    public void PlayIntro(bool chosen)
+    {
+        mainSO.playStartUpMov = chosen;
+    }
 }

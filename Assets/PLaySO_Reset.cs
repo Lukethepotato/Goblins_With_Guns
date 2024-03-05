@@ -49,6 +49,9 @@ public class PLaySO_Reset : MonoBehaviour
         playSO[playInput.playerIndex].recoilGun = false;
         playSO[playInput.playerIndex].recoilPower = 0;
         playSO[playInput.playerIndex].freeze = false;
+        playSO[playInput.playerIndex].respawning= false;
+        playSO[playInput.playerIndex].resetGunStats = false;
+        playSO[playInput.playerIndex].perkButPressed= false;
 
         StartCoroutine(LateStart());
 

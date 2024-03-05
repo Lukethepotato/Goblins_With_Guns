@@ -43,8 +43,8 @@ public class GunSpreadDisplay : MonoBehaviour
     {
         polygonRenderer.SetWidth(width, width);
 
-        points[0].eulerAngles = new Vector3(0,0, playSO[playInput.playerIndex].BulletSpread.x);
-        points[1].eulerAngles = new Vector3(0,0, playSO[playInput.playerIndex].BulletSpread.y);
+        points[0].eulerAngles = new Vector3(0, 0, playSO[playInput.playerIndex].BulletSpread.x);
+        points[1].eulerAngles = new Vector3(0, 0, playSO[playInput.playerIndex].BulletSpread.y);
 
         points[0].transform.localPosition = points[0].transform.right * length;
         points[1].transform.localPosition = points[1].transform.right * length;
@@ -75,6 +75,15 @@ public class GunSpreadDisplay : MonoBehaviour
                     LeanTween.value(gameObject, length, 0, leenTweenSpeed).setEaseOutElastic().setOnUpdate(lengthSetting);
                 }
             }
+        }
+
+        if (playSO[playInput.playerIndex].health <= 0 || playSO[playInput.playerIndex].inRollState)
+        {
+            polygonRenderer.enabled = false;
+        }
+        else
+        {
+            polygonRenderer.enabled = true;
         }
 
     }

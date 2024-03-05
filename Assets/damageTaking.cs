@@ -10,13 +10,6 @@ public class damageTaking : MonoBehaviour
 {
     public Player_SO[] playSO;
     PlayerInput playInput;
-    public float basicBulletDamage;
-    public float sniperBulletDamage;
-    public float shotgunBulletDamage;
-    public float miniGunDamage;
-    public float rocketDamage;
-    public float smgDamage;
-    public float flameThrowerBulletDamage;
     public float burnDamage;
     public float explosionPower;
     public float explosionDamage;
@@ -46,6 +39,7 @@ public class damageTaking : MonoBehaviour
     private Vector2 knockbackPosition;
     public float moveInputDamp = 1;
     private float localDamageMult = 1;
+    
 
 
     // Start is called before the first frame update
@@ -153,118 +147,36 @@ public class damageTaking : MonoBehaviour
                 playSO[other.gameObject.GetComponent<BulletData>().owner].magazineSize += playSO[other.gameObject.GetComponent<BulletData>().owner].orinagalChamberSize;
                 print("Add Chamber");
             }
-        }
 
-        if (other.gameObject.CompareTag("bullet") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
-        {
-            if (playSO[playInput.playerIndex].isTurret == true)
+            if (other.gameObject.GetComponent<Bullet>().damage > 0 && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
             {
-                mainSO.turretHealth -= basicBulletDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-            }else if (playSO[playInput.playerIndex].isTurret == false)
-            {
-                playSO[playInput.playerIndex].health -= basicBulletDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+                if (playSO[playInput.playerIndex].isTurret == true)
+                {
+                    mainSO.turretHealth -= other.gameObject.GetComponent<Bullet>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+                    Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+                }
+                else if (playSO[playInput.playerIndex].isTurret == false)
+                {
+                    playSO[playInput.playerIndex].health -= other.gameObject.GetComponent<Bullet>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+                    Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+                }
+
+                if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4)
+                {
+                    other.gameObject.GetComponent<VampBulletMan>().AddHealth(other.gameObject.GetComponent<Bullet>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
+                }
             }
-
-            if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4)
-            other.gameObject.GetComponent<VampBulletMan>().AddHealth(basicBulletDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
-        }
-
-        if (other.gameObject.CompareTag("bullet_Shotgun") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
-        {
-            if (playSO[playInput.playerIndex].isTurret == true)
-            {
-                mainSO.turretHealth -= shotgunBulletDamage * playSO[playInput.playerIndex].damageTakeMult * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-                StartCoroutine(InvisibleFlash());
-
-            }
-            else if (playSO[playInput.playerIndex].isTurret == false)
-            {
-                playSO[playInput.playerIndex].health -= shotgunBulletDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-                StartCoroutine(InvisibleFlash());
-            }
-            if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4)
-                other.gameObject.GetComponent<VampBulletMan>().AddHealth(shotgunBulletDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
-        }
-
-        if (other.gameObject.CompareTag("Bullet_Sniper") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
-        {
-            if (playSO[playInput.playerIndex].isTurret == true)
-            {
-                mainSO.turretHealth -= other.gameObject.GetComponent<sniperBulletDamageIncrease>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-                StartCoroutine(InvisibleFlash());
-            }
-            else if (playSO[playInput.playerIndex].isTurret == false)
-            {
-                playSO[playInput.playerIndex].health -= other.gameObject.GetComponent<sniperBulletDamageIncrease>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-                print("fuckin' Ballz (:<");
-                StartCoroutine(InvisibleFlash());
-                StartCoroutine(HitImunityTime());
-            }
-            if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4)
-                other.gameObject.GetComponent<VampBulletMan>().AddHealth(other.gameObject.GetComponent<sniperBulletDamageIncrease>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
-        }
-
-        if (other.gameObject.CompareTag("bullet_SMG") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
-        {
-            if (playSO[playInput.playerIndex].isTurret == true)
-            {
-                mainSO.turretHealth -= smgDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-                StartCoroutine(InvisibleFlash());
-            }
-            else if (playSO[playInput.playerIndex].isTurret == false)
-            {
-                playSO[playInput.playerIndex].health -= smgDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-                Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-                print("hit");
-                StartCoroutine(InvisibleFlash());
-            }
-            if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4)
-                other.gameObject.GetComponent<VampBulletMan>().AddHealth(smgDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
-        }
-
-        if (other.gameObject.CompareTag("Bullet_MinGun") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
-        {
-            playSO[playInput.playerIndex].health -= miniGunDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-
-            Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-            print("hit");
-
-
-            if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4)
-                other.gameObject.GetComponent<VampBulletMan>().AddHealth(miniGunDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
-        }
-
-        if (other.gameObject.CompareTag("Bullet_RPG") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
-        {
-            playSO[playInput.playerIndex].health -= rocketDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-            Instantiate(explosionPrephab, transform.position, Quaternion.identity);
-            print("hit");
-            StartCoroutine(HitImunityTime());
-
-            if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4    )
-                other.gameObject.GetComponent<VampBulletMan>().AddHealth(rocketDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
 
         if (other.gameObject.CompareTag("bullet_FlameThrower") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
         {
-            playSO[playInput.playerIndex].health -= flameThrowerBulletDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
-            Instantiate(explosionPrephab, transform.position, Quaternion.identity);
             print("hit");
             StartCoroutine(HitImunityTime());
             if (playSO[playInput.playerIndex].burning == false)
             {
                 StartCoroutine(Burning());
             }
-
-            if (playSO[playInput.playerIndex].inGame && playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 4)
-                other.gameObject.GetComponent<VampBulletMan>().AddHealth(flameThrowerBulletDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
         }
 
     }
@@ -282,6 +194,7 @@ public class damageTaking : MonoBehaviour
         {
             playSO[playInput.playerIndex].health -= 100 * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
             Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
 
         if (other.gameObject.CompareTag("WandExplosion") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
@@ -294,6 +207,7 @@ public class damageTaking : MonoBehaviour
                 other.gameObject.GetComponent<VampBulletMan>().AddHealth(other.gameObject.GetComponent<WandExplosionDamage>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
 
             StartCoroutine(HitImunityTime());
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
 
     }
@@ -357,6 +271,7 @@ public class damageTaking : MonoBehaviour
             {
                 playSO[explosionID].health += (explosionDamage - distance) / 2;
             }
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             StartCoroutine(HitImunityTime());
         }
         explosionING = false;
@@ -392,30 +307,41 @@ public class damageTaking : MonoBehaviour
     {
         effectAnimMan.ChangeAnimationState("Effects_Burning");
         playSO[playInput.playerIndex].burning = true;
-        if (playSO[playInput.playerIndex].burning== true )
+        if (playSO[playInput.playerIndex].burning== true && playSO[playInput.playerIndex].health > 0)
         {
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             yield return new WaitForSeconds(burnIntervals);
         }
         playSO[playInput.playerIndex].burning = false;

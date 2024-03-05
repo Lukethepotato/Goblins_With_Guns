@@ -32,7 +32,7 @@ public class HomingMissleMan : MonoBehaviour
 
         for (int I = 0; I <= 3; I++)
         {
-            if (playSO[I].inGame && I != bulletData.owner)
+            if (playSO[I].inGame && I != bulletData.owner && playSO[I].touchingSewage == false)
             {
                 turnBack = false;
                 break;

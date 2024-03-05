@@ -106,8 +106,8 @@ public class BuffGoblinManager : MonoBehaviour
         playSO[playInput.playerIndex].freeze= true;
         animMan.ChangeAnimationState("Buff_Start");
         yield return new WaitForSeconds(startAnimTime);
-        GameObject.Find("Canvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
-        GameObject.Find("Canvas").GetComponent<CanvasButtonPrompts>().DisplayTheText("fire", inputDetect.GetControlType());
+        GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
+        GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().DisplayTheText("fire", inputDetect.GetControlType());
         playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
         playSO[playInput.playerIndex].canMove = true;
         playSO[playInput.playerIndex].freeze = false;

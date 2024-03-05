@@ -7,10 +7,11 @@ public class sniperBulletDamageIncrease : MonoBehaviour
     public float damage;
     public float damageIncreaseSpeed;
     public bool damageFalloff;
+    Bullet bulletScript;
     // Start is called before the first frame update
     void Start()
     {
-        
+        bulletScript = gameObject.GetComponent<Bullet>();
     }
 
     // Update is called once per frame
@@ -30,6 +31,8 @@ public class sniperBulletDamageIncrease : MonoBehaviour
             {
                 damage = 1;
             }
+
+            bulletScript.damage = damage;
         }
     }
 }

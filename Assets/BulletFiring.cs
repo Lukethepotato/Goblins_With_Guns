@@ -33,7 +33,6 @@ public class BulletFiring : MonoBehaviour
     public float bowChargeSpeed;
     public float baseBowSpeed;
     public MainSO mainSO;
-    public float shootMoveSpeed;
     public Gun_Value_Setting turretValueSetting;
     public Gun_Value_Setting smgValueSetting;
     public GameObject turret;
@@ -91,7 +90,7 @@ public class BulletFiring : MonoBehaviour
     {
         //randomBulletSpread = Random.Range(1 , 10);
 
-        if (canShoot && playerSO[playInput.playerIndex].bulletsInChamber > 0 && playerSO[playInput.playerIndex].isReloading == false && playerSO[playInput.playerIndex].rolling == false && isFiringContinously && playerSO[playInput.playerIndex].gunChosen != 4)
+        if (canShoot && playerSO[playInput.playerIndex].bulletsInChamber > 0 && playerSO[playInput.playerIndex].isReloading == false && playerSO[playInput.playerIndex].rolling == false && isFiringContinously && playerSO[playInput.playerIndex].gunChosen != 4 && playerSO[playInput.playerIndex].gunChosen != 6)
         {
             StartCoroutine(Fire());
         }
@@ -336,6 +335,7 @@ public class BulletFiring : MonoBehaviour
                 StartCoroutine(Fire());
                 chargingBow = false;
                 firingBullet = true;
+                print("money doney");
             }
         }
     }
@@ -344,7 +344,6 @@ public class BulletFiring : MonoBehaviour
     {
         if (chargingBow)
         {
-            playerSO[playInput.playerIndex].movementSpeed = shootMoveSpeed;
             plungerValueSetting.bulletSpeed += bowChargeSpeed * Time.deltaTime;
             
         }

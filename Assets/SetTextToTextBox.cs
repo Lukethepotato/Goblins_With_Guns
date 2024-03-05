@@ -33,34 +33,12 @@ public class SetTextToTextBox : MonoBehaviour
 
     private void Update()
     {
-        if (playInput.currentControlScheme == "Mouse")
-        {
-            deviceText = "KeyBoardSheet";
-        }
-        else 
-        {
-            deviceText = "XboxSheet";
-        }
-
-        if (mainSO.map == 10)
-        {
-            Text = casinoText;
-        }
-
-        if (interactDisplay.inZone == false && mainSO.map == 10)
-        {
-            textBox.text = "";
-        }
+        
     }
 
     public void DisplayText(string inputType)
     {
-        textBox.text = "<sprite=" + "\"" + deviceText + "\"" + " name=" + "\"" + inputType + "\"" + "> to jump";
-    }
-
-    public void DisplayText()
-    {
-        textBox.text = "<sprite=" + "\"" + deviceText + "\"" + " name=\"interact\">" + Text;
+        textBox.text = inputType;
     }
 
     public void UnDisplayText()

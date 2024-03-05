@@ -32,6 +32,7 @@ public class PlayerSO_Manager : MonoBehaviour
         vampPerkMan = gameObject.GetComponent<VampPerkMan>();
         floorColl = floorObject.GetComponent<BoxCollider2D>();
         playSO[playInput.playerIndex].inGame= true;
+        
     }
 
     // Update is called once per frame
@@ -59,11 +60,16 @@ public class PlayerSO_Manager : MonoBehaviour
 
     IEnumerator Respawn()
     {
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("KillSound");
         playInput.DeactivateInput();
         BoxCollider2D.enabled = false;
         floorColl.enabled = false;
         playSO[playInput.playerIndex].inGame = false;
         playSO[playInput.playerIndex].livesLeft -= 1;
+        if (playSO[playInput.playerIndex].livesLeft > 0)
+        {
+            playSO[playInput.playerIndex].respawning = true;
+        }
         yield return new WaitForSeconds(respawnTime);
         print("Life-1");
         if (playSO[playInput.playerIndex].livesLeft > 0)
@@ -88,6 +94,8 @@ public class PlayerSO_Manager : MonoBehaviour
             }
             BoxCollider2D.enabled = true;
             floorColl.enabled = true;
+            playSO[playInput.playerIndex].isReloading = false;
+            playSO[playInput.playerIndex].respawning = false;
         }
         gate = true;
     }

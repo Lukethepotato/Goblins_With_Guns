@@ -132,6 +132,7 @@ MonoBehaviour:
   speedUpMultiply: 0
   noBouce: 1
   ghostBullet: 0
+  ghostBulletDamage: 0
   deadBulletMin: 0.1
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
@@ -142,6 +143,9 @@ MonoBehaviour:
   playerDestroyTouch: 1
   bounceDullTime: 0.05
   bounceDull: 0
+  knockBackAmount: 5000
+  superKnockBackAmount: 25000
+  damage: 100
 --- !u!95 &2894471895751297964
 Animator:
   serializedVersion: 5
@@ -255,7 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eae85cc06dd29e45ad88a6b2eea1637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePointName: Firepoint_RPG
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
   - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}

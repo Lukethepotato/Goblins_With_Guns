@@ -42,23 +42,23 @@ public class Healing : MonoBehaviour
                 playSO[playerInput.playerIndex].freeze = false;
                 held = false;
             }
-        }
-    }
 
-    public void Heal(InputAction.CallbackContext ctx)
-    {
-        if (ctx.started && held == false)
-        {
-            held= true;
-            playSO[playerInput.playerIndex].freeze= true;
-            print("start");
-        }
-        if (ctx.canceled && held)
-        {
-            held= false;
-            StartCoroutine(UnHold());
-            print("end");
-            playSO[playerInput.playerIndex].freeze = false;
+            if (playSO[playerInput.playerIndex].perkOwned == 4)
+            {
+                if (playSO[playerInput.playerIndex].perkButPressed && held == false)
+                {
+                    held = true;
+                    playSO[playerInput.playerIndex].freeze = true;
+                    print("start");
+                }
+                if (playSO[playerInput.playerIndex].perkButPressed == false && held)
+                {
+                    held = false;
+                    StartCoroutine(UnHold());
+                    print("end");
+                    playSO[playerInput.playerIndex].freeze = false;
+                }
+            }
         }
     }
 

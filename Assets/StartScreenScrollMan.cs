@@ -23,6 +23,7 @@ public class StartScreenScrollMan : MonoBehaviour
         scrollAnim = scrollPannel.GetComponent<AnimationManager>();
         animFX = FX.GetComponent<AnimationManager>();
         StartCoroutine(StartUpCoroutine());
+        GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(2);
     }
 
     // Update is called once per frame

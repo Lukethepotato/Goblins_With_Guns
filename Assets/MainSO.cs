@@ -51,4 +51,12 @@ public class MainSO : ScriptableObject
     public int halfTimeCount;
     public int maxHalfTimes;
     public bool halfTimeEnabled;
+    public Vector2[] wayPoints;
+    public Vector2[] possibleLocas;
+    public bool playStartUpMov;
+    public bool inStartUpMov;
+    public float sentryTimeTweenShotsDamp;
+    public float sentryBulletSpeedDamp;
+    public float sentryDamageDamp;
+    public float sentryReloadDamp;
 }

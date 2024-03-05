@@ -13,9 +13,11 @@ public class GameOverButtonsScript : MonoBehaviour
     public GameObject inputMan;
     public GameObject gameOverUI;
     private bool courtineRunning = false;
+    MapMusicPlayer mapMusic;
     public void Start()
     {
-         playerInputManager = inputMan.GetComponent<PlayerInputManager>();
+        playerInputManager = inputMan.GetComponent<PlayerInputManager>();
+        mapMusic = gameObject.GetComponent<MapMusicPlayer>();  
     }
 
     private void Update()
@@ -40,11 +42,13 @@ public class GameOverButtonsScript : MonoBehaviour
         playSO[3].rematchSetUpComplete = false;
         print("rematch");
 
+        mapMusic.StopPlaying();
         SceneManager.LoadScene("MainScene");
     }
 
     public void Quit()
     {
+        mapMusic.StopPlaying();
         SceneManager.LoadScene(0);
     }
 

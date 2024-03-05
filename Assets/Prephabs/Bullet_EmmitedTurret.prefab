@@ -159,6 +159,7 @@ MonoBehaviour:
   bounceDull: 1
   knockBackAmount: 5000
   superKnockBackAmount: 15000
+  damage: 25
 --- !u!114 &-7518428992467370210
 MonoBehaviour:
   m_ObjectHideFlags: 0

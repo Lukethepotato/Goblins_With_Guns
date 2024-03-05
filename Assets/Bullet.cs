@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour
     public bool bounceDull;
     public float knockBackAmount = 5000;
     public float superKnockBackAmount = 25000;
+    public float damage;
     BulletData bulletData;
     Collider2D coll2d;
 
@@ -80,6 +81,11 @@ public class Bullet : MonoBehaviour
             {
                 destroyNow = true;
             }
+        }
+
+        if (collision.gameObject.CompareTag("Object"))
+        {
+            destroyNow = true;
         }
     }
 

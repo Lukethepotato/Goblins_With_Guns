@@ -13,6 +13,7 @@ public class CharacterBulletDisplay : MonoBehaviour
     public GameObject textObject;
     public GameObject animObject;
     public AnimationManager animManager;
+    private int pastLifes;
 
 
 
@@ -22,7 +23,8 @@ public class CharacterBulletDisplay : MonoBehaviour
         playInput = player.GetComponent<PlayerInput>();
         bulletText = textObject.GetComponent<TextMeshPro>();
         animManager = animObject.GetComponent<AnimationManager>();
-        animManager.ChangeAnimationState("UI_ReloadIdle");
+        animManager.ChangeAnimationState("ReloadIdle");
+        pastLifes = playSO[playInput.playerIndex].livesLeft;
     }
 
     // Update is called once per frame
@@ -31,12 +33,12 @@ public class CharacterBulletDisplay : MonoBehaviour
         if (playSO[playInput.playerIndex].isReloading == false)
         {
             bulletText.text = playSO[playInput.playerIndex].bulletsInChamber.ToString();
-            animManager.ChangeAnimationState("UI_ReloadIdle");
+            animManager.ChangeAnimationState("ReloadIdle");
         }
         else
         {
             bulletText.text = "";
-            animManager.ChangeAnimationState("UI_Reload");
+            animManager.ChangeAnimationState("ReloadAnim");
         }
     }
 }

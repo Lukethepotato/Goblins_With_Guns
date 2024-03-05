@@ -62,4 +62,7 @@ public class Player_SO : ScriptableObject
     public float damageTakeMult;
     public int orinagalChamberSize;
     public float orinagalReloadSpeed;
+    public bool respawning;
+    public bool resetGunStats;
+    public bool perkButPressed;
 }

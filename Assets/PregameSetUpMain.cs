@@ -22,5 +22,6 @@ public class PregameSetUpMain : MonoBehaviour
         {
             playMan.EnableJoining();
         }
+
     }
 }

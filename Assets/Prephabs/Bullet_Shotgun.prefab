@@ -147,6 +147,7 @@ MonoBehaviour:
   speedUpMultiply: 0.0007
   noBouce: 0
   ghostBullet: 0
+  ghostBulletDamage: 0
   deadBulletMin: 0.01
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
@@ -159,6 +160,7 @@ MonoBehaviour:
   bounceDull: 1
   knockBackAmount: 5000
   superKnockBackAmount: 15000
+  damage: 25
 --- !u!114 &7617410313985891840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,4 +238,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedDecrease: 0.7
-  maxDrag: 1
+  maxTime: 0

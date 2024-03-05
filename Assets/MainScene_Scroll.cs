@@ -17,6 +17,7 @@ public class MainScene_Scroll : MonoBehaviour
     private bool startedEnd = false;
     public GameObject FX;
     public AnimationManager animFX;
+    public float timeToStart;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,7 @@ public class MainScene_Scroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mainSO.setUpOver && startedEnd == false)
+        if (mainSO.inStartUpMov && startedEnd == false)
         {
             startedEnd= true;
             StartCoroutine(End());
@@ -39,6 +40,8 @@ public class MainScene_Scroll : MonoBehaviour
 
     IEnumerator Open(GameObject openedMenu)
     {
+        animMan.ChangeAnimationState("MainScene_Scroll_ClosedIdle");
+        yield return new WaitForSeconds(timeToStart);
         animMan.ChangeAnimationState("MainSceneScroll_Open");
         yield return new WaitForSeconds(timeToParticle);
         animFX.ChangeAnimationState("Particle_Open");
@@ -48,6 +51,7 @@ public class MainScene_Scroll : MonoBehaviour
         animFX.ChangeAnimationState("Particle_Idle");
         yield return new WaitForSeconds(timeToOpen - (openParticleTime + timeToParticle));
         animMan.ChangeAnimationState("MainScene_Scroll_Idle");
+        GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(3);
     }
 
     IEnumerator MapClose()
@@ -55,7 +59,7 @@ public class MainScene_Scroll : MonoBehaviour
         animMan.ChangeAnimationState("MainScene_Scroll_Close");
         yield return new WaitForSeconds(timeToMapOff);
         maps.SetActive(false);
-        yield return new WaitForSeconds(timeToClose - timeToMapOff);
+        //yield return new WaitForSeconds(timeToClose - time);
         mainSO.preGameSetUp = true;
         animMan.ChangeAnimationState("MainSceneScroll_Open");
         yield return new WaitForSeconds(timeToParticle);
@@ -64,17 +68,18 @@ public class MainScene_Scroll : MonoBehaviour
         animFX.ChangeAnimationState("Particle_Idle");
         yield return new WaitForSeconds(timeToOpen - (openParticleTime + timeToParticle));
         animMan.ChangeAnimationState("MainScene_Scroll_Idle");
+        GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(4);
     }
-
-    IEnumerator End()
-    {
-        animMan.ChangeAnimationState("MainScene_Scroll_End");
-        yield return new WaitForSeconds(timeToEnd);
-        gameObject.SetActive(false);
-    }
-
     public void MapSelected()
     {
         StartCoroutine(MapClose());
     }
+    IEnumerator End()
+    {
+        animMan.ChangeAnimationState("MainScene_Scroll_End");
+        yield return new WaitForSeconds(timeToEnd);
+        GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().Stop();
+        gameObject.SetActive(false);
+    }
+
 }

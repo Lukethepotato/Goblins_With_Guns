@@ -143,6 +143,7 @@ MonoBehaviour:
   bounceDull: 0
   knockBackAmount: 5000
   superKnockBackAmount: 25000
+  damage: 100
 --- !u!61 &1776853498987381948
 BoxCollider2D:
   m_ObjectHideFlags: 0

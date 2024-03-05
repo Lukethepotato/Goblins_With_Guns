@@ -17,14 +17,10 @@ public class SetUpPannelDestruction : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if (mainSO.setUpOver == false)
-        {
-            mainSO.freezeAllPlayer = true;
-        }else if (mainSO.setUpOver)
+        if (mainSO.inStartUpMov)
         {
             playSO[playerInput.playerIndex].oringalGunChosen = playSO[playerInput.playerIndex].gunChosen;
             Destroy(gameObject);
-            mainSO.freezeAllPlayer = false;
         }
     }
 }
