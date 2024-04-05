@@ -41,9 +41,8 @@ public class GameOverButtonsScript : MonoBehaviour
         playSO[2].rematchSetUpComplete = false;
         playSO[3].rematchSetUpComplete = false;
         print("rematch");
-
+        SceneManager.LoadScene(1);
         mapMusic.StopPlaying();
-        SceneManager.LoadScene("MainScene");
     }
 
     public void Quit()

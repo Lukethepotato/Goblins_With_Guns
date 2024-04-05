@@ -116,6 +116,15 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""0b2d3e4e-263f-4895-890b-6b9a43111339"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -402,6 +411,28 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Perk"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f89e8294-9984-4388-ab7b-488717aad4b3"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""40e10dbf-44e5-4637-bc9f-d662ec9b574c"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -988,6 +1019,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_Player_TurretFire = m_Player.FindAction("TurretFire", throwIfNotFound: true);
         m_Player_Charge = m_Player.FindAction("Charge", throwIfNotFound: true);
         m_Player_Perk = m_Player.FindAction("Perk", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1069,6 +1101,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_TurretFire;
     private readonly InputAction m_Player_Charge;
     private readonly InputAction m_Player_Perk;
+    private readonly InputAction m_Player_Pause;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -1083,6 +1116,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         public InputAction @TurretFire => m_Wrapper.m_Player_TurretFire;
         public InputAction @Charge => m_Wrapper.m_Player_Charge;
         public InputAction @Perk => m_Wrapper.m_Player_Perk;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1122,6 +1156,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Perk.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPerk;
                 @Perk.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPerk;
                 @Perk.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPerk;
+                @Pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1156,6 +1193,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Perk.started += instance.OnPerk;
                 @Perk.performed += instance.OnPerk;
                 @Perk.canceled += instance.OnPerk;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -1322,6 +1362,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         void OnTurretFire(InputAction.CallbackContext context);
         void OnCharge(InputAction.CallbackContext context);
         void OnPerk(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

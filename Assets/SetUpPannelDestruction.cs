@@ -17,7 +17,7 @@ public class SetUpPannelDestruction : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if (mainSO.inStartUpMov)
+        if (mainSO.setUpOver)
         {
             playSO[playerInput.playerIndex].oringalGunChosen = playSO[playerInput.playerIndex].gunChosen;
             Destroy(gameObject);

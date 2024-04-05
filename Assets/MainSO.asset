@@ -42,7 +42,7 @@ MonoBehaviour:
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
   startingTimer: 90
-  currentTimer: 41.574215
+  currentTimer: -45.0355
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
@@ -53,7 +53,7 @@ MonoBehaviour:
   perksAllowed: 3
   startingVampireHealth: 50
   rockMulptChange: 0.075
-  inSuddenDeath: 0
+  inSuddenDeath: 1
   reloadMoveSpeed: 7
   rankings: 0000000001000000
   playerInLightning: 0
@@ -84,9 +84,10 @@ MonoBehaviour:
   - {x: 60.99, y: 45.14}
   - {x: 29.9, y: 0.8}
   - {x: 60, y: 23}
-  playStartUpMov: 1
+  playStartUpMov: 0
   inStartUpMov: 0
   sentryTimeTweenShotsDamp: 0
   sentryBulletSpeedDamp: 0.75
-  sentryDamageDamp: 0.75
+  sentryDamageDamp: 0.45
   sentryReloadDamp: 1.5
+  gamePaused: 0

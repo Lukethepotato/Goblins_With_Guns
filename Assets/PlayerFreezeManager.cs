@@ -21,18 +21,13 @@ public class PlayerFreezeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mainSO.freezeAllPlayer)
+        if (mainSO.freezeAllPlayer || playSO[playInput.playerIndex].freeze || mainSO.gamePaused)
         {
             RB.drag = 100000000000;
         }
         else if (playSO[playInput.playerIndex].freeze == false)
         {
             RB.drag = 0;
-        }
-
-        if (playSO[playInput.playerIndex].freeze)
-        {
-            RB.drag = 100000000000;
         }
     }
 }

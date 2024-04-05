@@ -128,7 +128,7 @@ public class Roll : MonoBehaviour
 
     public void OnRoll()
     {
-        if (playSOs[playInput.playerIndex].isReloading == false)
+        if (playSOs[playInput.playerIndex].isReloading == false && mainSO.gamePaused == false)
         {
             if (isRolling == false)
             {

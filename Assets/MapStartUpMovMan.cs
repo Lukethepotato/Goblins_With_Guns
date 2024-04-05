@@ -7,6 +7,7 @@ public class MapStartUpMovMan : MonoBehaviour
     public float length;
     public MainSO mainSO;
     MapMusicPlayer mapSong;
+    public GameObject scroll;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,8 +41,10 @@ public class MapStartUpMovMan : MonoBehaviour
 
     public void EndStartUpMov()
     {
+        mapSong.PlayMapSong();
+        mainSO.inStartUpMov = true;
         mainSO.inStartUpMov = false;
         mainSO.setUpOver = true;
-        mapSong.PlayMapSong();
+        scroll.GetComponent<MainScene_Scroll>().PublicEnd();
     }
 }

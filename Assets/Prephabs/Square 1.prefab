@@ -899,7 +899,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1280978566461160547
@@ -6114,6 +6114,7 @@ GameObject:
   - component: {fileID: 1234652948131419284}
   - component: {fileID: 8446648999636239375}
   - component: {fileID: 6009975434799897377}
+  - component: {fileID: 668993714951013942}
   m_Layer: 0
   m_Name: Square 1
   m_TagString: Player
@@ -6592,6 +6593,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d32e84b7-5ca0-4c57-98d3-c00929ab9768
     m_ActionName: Player/Heal[/DualShock4GamepadHID/buttonNorth,/Keyboard/v]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 668993714951013942}
+        m_TargetAssemblyTypeName: PlayerPauseMan, Assembly-CSharp
+        m_MethodName: PauseButton
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0b2d3e4e-263f-4895-890b-6b9a43111339
+    m_ActionName: Player/Pause[/XInputControllerWindows/select,/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -7489,10 +7506,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   canMakeTurret: 1
-  coolDown: 5
+  coolDown: 3.5
   activeCoolDown: 0
   sentry: {fileID: 3433669826173071499, guid: 3018be94b8b3915478d30ccb624c1d46, type: 3}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  liveRegen: 0
+  turretAmountRegen: 0
 --- !u!114 &6009975434799897377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7506,6 +7525,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+--- !u!114 &668993714951013942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cacdae24df6e54197d0d0cde8d2065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 0}
+  mainSO: {fileID: 0}
 --- !u!1 &6600092420458733488
 GameObject:
   m_ObjectHideFlags: 0
@@ -8634,7 +8671,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7478776569961648651
@@ -8970,7 +9007,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8137363533694967017

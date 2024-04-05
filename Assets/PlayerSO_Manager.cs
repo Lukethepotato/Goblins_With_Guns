@@ -76,7 +76,7 @@ public class PlayerSO_Manager : MonoBehaviour
         {
             playSO[playInput.playerIndex].inGame = true;
             playInput.ActivateInput();
-            if (mainSO.inSuddenDeath == false)
+            if (mainSO.inSuddenDeath == false && playSO[playInput.playerIndex].health <= 0)
             {
                 gameObject.transform.position = mainSO.playersSpawnLocations[Random.Range(0, mainSO.playersSpawnLocations.Length)];
             }

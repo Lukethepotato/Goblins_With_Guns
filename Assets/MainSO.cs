@@ -59,4 +59,5 @@ public class MainSO : ScriptableObject
     public float sentryBulletSpeedDamp;
     public float sentryDamageDamp;
     public float sentryReloadDamp;
+    public bool gamePaused;
 }

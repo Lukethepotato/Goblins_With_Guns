@@ -12,6 +12,7 @@ public class TitleScreenMan : MonoBehaviour
     {
         animMan = gameObject.GetComponent<AnimationManager>();
         StartCoroutine(StartUpAnim());
+        GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(1);
     }
 
     // Update is called once per frame

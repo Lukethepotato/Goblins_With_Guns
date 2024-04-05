@@ -13,6 +13,9 @@ public class SentryPerkMan : MonoBehaviour
     public GameObject sentry;
     ObjectHealthMan objectHealth;
     public MainSO mainSO;
+    public bool liveRegen;
+    private int turretsLeft;
+    public int turretAmountRegen;
     // Start is called before the first frame update
     void Start()
     {

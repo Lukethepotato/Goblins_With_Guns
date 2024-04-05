@@ -11,6 +11,7 @@ public class MKwiiMusicLayering : MonoBehaviour
         GameObject.Find("Music").GetComponent<AudioManager>().Play("StartUpLayer2");
         GameObject.Find("Music").GetComponent<AudioManager>().Play("StartUpLayer3");
         GameObject.Find("Music").GetComponent<AudioManager>().Play("StartUpLayer4");
+        PlayLayer(1);
     }
 
     // Update is called once per frame
@@ -24,11 +25,13 @@ public class MKwiiMusicLayering : MonoBehaviour
         GameObject.Find("Music").GetComponent<AudioManager>().RaiseVolume("StartUpLayer" + layer.ToString(),1);
     }
 
+
     public void Stop()
     {
-        GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying("StartUpLayer1");
-        GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying("StartUpLayer2");
-        GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying("StartUpLayer3");
-        GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying("StartUpLayer4");
+        GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer1"), 1);
+        GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer2"), 1);
+        GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer3"), 1);
+        GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer4"), 1);
+        print("StopMuisc");
     }
 }

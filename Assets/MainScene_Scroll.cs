@@ -82,4 +82,9 @@ public class MainScene_Scroll : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void PublicEnd()
+    {
+        StartCoroutine(End());
+    }
+
 }

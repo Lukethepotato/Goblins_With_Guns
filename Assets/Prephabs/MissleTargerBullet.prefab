@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5045382510868268063
@@ -359,7 +359,7 @@ MonoBehaviour:
   radius: 305.3
   height: 13.31
   canMove: 1
-  maxSpeed: 25
+  maxSpeed: 28
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -378,8 +378,8 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 28
-  slowdownDistance: 2.5
-  pickNextWaypointDist: 26
+  slowdownDistance: 0
+  pickNextWaypointDist: 20
   endReachedDistance: 0
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 0

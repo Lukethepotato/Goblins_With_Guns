@@ -16,11 +16,16 @@ public class ReadyUpManager : MonoBehaviour
     TextMeshProUGUI cowntDownText;
     public GameObject cowntDownTextObject;
     public GameObject setupObject;
+    public GameObject scroll;
+    MapMusicPlayer mapSong;
+    public GameObject canvas;
     // Start is called before the first frame update
     void Start()
     {
         inputManager= inputManagerObject.GetComponent<PlayerInputManager>();
         cowntDownText = GetComponentInChildren<TextMeshProUGUI>();
+        mapSong = canvas.GetComponent<MapMusicPlayer>();
+        mainSO.playersReadiedUp = 0;
     }
 
     // Update is called once per frame
@@ -52,6 +57,8 @@ public class ReadyUpManager : MonoBehaviour
             cowntDownTextObject.SetActive(false);
             cowntDown = 3;
         }
+
+        print(inputManager.playerCount.ToString());
     }
 
     IEnumerator CowntDown()
@@ -66,11 +73,16 @@ public class ReadyUpManager : MonoBehaviour
 
         if(playerWhenCowntdownStarted == inputManager.playerCount)
         {
-            Destroy(setupObject);
+            print("setUpOver");
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            mainSO.inStartUpMov= true;
-            GameObject.Find("MainCanvas").GetComponent<MapStartUpMovMan>().start();
+            mapSong.PlayMapSong();
+            mainSO.inStartUpMov = true;
+            mainSO.inStartUpMov = false;
+            mainSO.setUpOver = true;
+            scroll.GetComponent<MainScene_Scroll>().PublicEnd();
+            print("setUpOver");
+            Destroy(setupObject);
         }
     }
 }

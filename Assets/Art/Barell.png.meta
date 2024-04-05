@@ -2780,7 +2780,7 @@ TextureImporter:
       Barell_37: -1470674712
       Barell_12: 686901618
       Barell_123: -811243926
-      Barell_64: -854364091
+      Barell_47: 783076586
       Barell_97: 1009036189
       Barell_26: -1843566929
       Barell_53: 669322373
@@ -2805,12 +2805,12 @@ TextureImporter:
       Barell_67: -924434794
       Barell_101: 1344094726
       Barell_121: -1786366663
-      Barell_73: -349589557
-      Barell_80: 1026973618
-      Barell_8: 1685954902
-      Barell_96: -206631520
-      Barell_25: 953919600
       Barell_117: 1773336955
+      Barell_73: -349589557
+      Barell_8: 1685954902
+      Barell_80: 1026973618
+      Barell_25: 953919600
+      Barell_96: -206631520
       Barell_125: 1085563539
       Barell_65: 1512414220
       Barell_60: -1129820607
@@ -2892,12 +2892,12 @@ TextureImporter:
       Barell_75: -1894394521
       Barell_36: -2075032328
       Barell_1: 268696750
+      Barell_64: -854364091
       Barell_79: -602597295
-      Barell_10: -615740062
       Barell_112: 174681506
-      Barell_47: 783076586
-      Barell_58: -1014157287
+      Barell_10: -615740062
       Barell_62: -2005162283
+      Barell_58: -1014157287
       Barell_98: 149913490
   spritePackingTag: 
   pSDRemoveMatte: 0
