@@ -23,6 +23,8 @@ public class PlayerSO_Manager : MonoBehaviour
     private bool touchingDrone = false;
     HealingDroneManager healDrone;
     VampPerkMan vampPerkMan;
+    public GameObject gun;
+    public GunPerkValueTeaks gunTweaks;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class PlayerSO_Manager : MonoBehaviour
         effectAnimMan = effects.GetComponent<AnimationManager>();
         vampPerkMan = gameObject.GetComponent<VampPerkMan>();
         floorColl = floorObject.GetComponent<BoxCollider2D>();
+        gunTweaks = gun.GetComponent<GunPerkValueTeaks>();
         playSO[playInput.playerIndex].inGame= true;
         
     }
@@ -96,6 +99,8 @@ public class PlayerSO_Manager : MonoBehaviour
             floorColl.enabled = true;
             playSO[playInput.playerIndex].isReloading = false;
             playSO[playInput.playerIndex].respawning = false;
+            playSO[playInput.playerIndex].bloodRaged = false;
+            gunTweaks.ApplyPerkGunStats(true);
         }
         gate = true;
     }

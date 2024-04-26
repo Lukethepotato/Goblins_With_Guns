@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f35cc0779c926c64fbeec9ee870a0240, type: 3}
-  m_Name: GunStats
+  m_Script: {fileID: 11500000, guid: bb4932ac88ab39840bf2b741bbda3f8c, type: 3}
+  m_Name: 10_Sentry
   m_EditorClassIdentifier: 
-  chamberSize: 0600000002000000010000000100000001000000
+  runSpeed: 11.5

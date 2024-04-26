@@ -108,7 +108,7 @@ public class BuffGoblinManager : MonoBehaviour
         yield return new WaitForSeconds(startAnimTime);
         GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
         GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().DisplayTheText("fire", inputDetect.GetControlType());
-        playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        playSO[playInput.playerIndex].movementSpeed = playSO[playInput.playerIndex].basePlayerSpeed;
         playSO[playInput.playerIndex].canMove = true;
         playSO[playInput.playerIndex].freeze = false;
         yield return new WaitForSeconds(buffTime);
@@ -121,7 +121,7 @@ public class BuffGoblinManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1.6f);
         playSO[playInput.playerIndex].freeze = false;
-        playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        playSO[playInput.playerIndex].movementSpeed = playSO[playInput.playerIndex].basePlayerSpeed;
         firePower = oringalFLyPower;
         playSO[playInput.playerIndex].canMove = true;
         playSO[playInput.playerIndex].buff = false;
@@ -144,7 +144,7 @@ public class BuffGoblinManager : MonoBehaviour
         attackBox.SetActive(false);
         //playInput.ActivateInput();
         yield return new WaitForSeconds(attackWaitTime);
-        playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        playSO[playInput.playerIndex].movementSpeed = playSO[playInput.playerIndex].basePlayerSpeed;
         attacking = false;
     }
 }

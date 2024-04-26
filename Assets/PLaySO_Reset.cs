@@ -36,7 +36,6 @@ public class PLaySO_Reset : MonoBehaviour
         playSO[playInput.playerIndex].magicBooksHeld = 0;
         playSO[playInput.playerIndex].lightingGoblin = false;
         playSO[playInput.playerIndex].canMove = true;
-        playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
         playSO[playInput.playerIndex].buff = false;
         playSO[playInput.playerIndex].state = 0;
         playSO[playInput.playerIndex].firing = false;
@@ -52,6 +51,7 @@ public class PLaySO_Reset : MonoBehaviour
         playSO[playInput.playerIndex].respawning= false;
         playSO[playInput.playerIndex].resetGunStats = false;
         playSO[playInput.playerIndex].perkButPressed= false;
+        playSO[playInput.playerIndex].bloodRaged = false;
 
         StartCoroutine(LateStart());
 

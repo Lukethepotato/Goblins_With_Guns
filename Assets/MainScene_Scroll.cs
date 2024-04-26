@@ -66,7 +66,7 @@ public class MainScene_Scroll : MonoBehaviour
         animFX.ChangeAnimationState("Particle_Open");
         yield return new WaitForSeconds(openParticleTime);
         animFX.ChangeAnimationState("Particle_Idle");
-        yield return new WaitForSeconds(timeToOpen - (openParticleTime + timeToParticle));
+        yield return new WaitForSeconds(timeToOpen - (openParticleTime));
         animMan.ChangeAnimationState("MainScene_Scroll_Idle");
         GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(4);
     }

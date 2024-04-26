@@ -51,7 +51,8 @@ public class StartScreenScrollMan : MonoBehaviour
         scrollAnim.ChangeAnimationState("StartSceneScroll_Close");
         yield return new WaitForSeconds(timeToMapOff);
         UI.SetActive(false);
-        //yield return new WaitForSeconds(timeToClose - timeToMapOff);
+        scrollAnim.ChangeAnimationState("StartSceneScroll_Closed");
+        yield return new WaitForSeconds(timeToMapOff);
         SceneManager.LoadScene(modeScene);
     }
 

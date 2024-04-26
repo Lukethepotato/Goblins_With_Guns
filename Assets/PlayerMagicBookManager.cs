@@ -153,7 +153,7 @@ public class PlayerMagicBookManager : MonoBehaviour
         SR.enabled= false;
         playSO[playInput.playerIndex].lightingGoblin = true;
         yield return new WaitForSeconds(activationTime);
-        lightningTrig.SetActive(true);
+        //lightningTrig.SetActive(true);
         GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
         GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().DisplayTheText("fire", inputDectect.GetControlType());
         SR.enabled = true;
@@ -179,7 +179,7 @@ public class PlayerMagicBookManager : MonoBehaviour
         playSO[playInput.playerIndex].lightingGoblin = false;
         coll.enabled = true;
         SR.sortingLayerName = "player";
-        playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        playSO[playInput.playerIndex].movementSpeed = playSO[playInput.playerIndex].basePlayerSpeed;
         playSO[playInput.playerIndex].magicBooksHeld = 0;
         groundColl.SetActive(true);
         transform.position = lecternLocation;
@@ -193,11 +193,12 @@ public class PlayerMagicBookManager : MonoBehaviour
 
     public void DisableLightning2()
     {
+        playSO[playInput.playerIndex].magicBooksHeld = 0;
         handsSR.playerGoneWizard = false; 
         playSO[playInput.playerIndex].lightingGoblin = false;
         coll.enabled = true;
         SR.sortingLayerName = "player";
-        playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        playSO[playInput.playerIndex].movementSpeed = playSO[playInput.playerIndex].basePlayerSpeed;
         groundColl.SetActive(true);
         gate = false;
         handsSR.startUpAnimationPlayed = false;

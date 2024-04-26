@@ -1340,7 +1340,7 @@ MonoBehaviour:
   openParticleTime: 0.58
   timeToOpen: 0.916
   UI: {fileID: 1007988304}
-  timeToMapOff: 0.25
+  timeToMapOff: 1
   timeToClose: 0.666
 --- !u!1 &1433371056
 GameObject:

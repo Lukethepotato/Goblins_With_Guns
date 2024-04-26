@@ -15,16 +15,13 @@ MonoBehaviour:
   playersDead: 0
   gameIsOver: 0
   winner: 0
-  playersReadiedUp: 2
+  playersReadiedUp: 1
   setUpOver: 1
   playersSpawnLocations:
-  - {x: 2, y: 1}
-  - {x: 55, y: 42}
-  - {x: 2, y: 43}
-  - {x: 59, y: 3}
-  - {x: 60, y: 23}
-  - {x: 22, y: 8}
-  - {x: 29, y: 45}
+  - {x: 1, y: 9}
+  - {x: 38, y: -9}
+  - {x: 34, y: 3}
+  - {x: 0, y: 0}
   playerBoxLocations:
   - {x: -680, y: 35, z: 0}
   - {x: -205, y: 35, z: 0}
@@ -38,11 +35,11 @@ MonoBehaviour:
   rematchSelected: 0
   stock: 3
   turretHealth: 200
-  map: 1
+  map: 9
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
   startingTimer: 90
-  currentTimer: -45.0355
+  currentTimer: 609980.7
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
@@ -52,8 +49,8 @@ MonoBehaviour:
   startingTurretHealth: 200
   perksAllowed: 3
   startingVampireHealth: 50
-  rockMulptChange: 0.075
-  inSuddenDeath: 1
+  rockMulptChange: 0.15
+  inSuddenDeath: 0
   reloadMoveSpeed: 7
   rankings: 0000000001000000
   playerInLightning: 0
@@ -63,7 +60,6 @@ MonoBehaviour:
   bounceyBulletsDamMult: 0.65
   bounceyBulletBounceIncrease: 3
   preGameSetUp: 1
-  scoutSpeed: 18
   scoutHealth: 65
   maxWidowMult: 5
   chosenTrivia: {fileID: 11400000, guid: cd19b835d0619e54a9825ed05335d689, type: 2}
@@ -74,20 +70,12 @@ MonoBehaviour:
   halfTimeEnabled: 0
   wayPoints:
   - {x: 0, y: 0}
-  - {x: 0.7, y: 44.7}
-  - {x: 61, y: 45}
-  - {x: 61, y: 1}
   - {x: 0, y: 0}
-  possibleLocas:
   - {x: 0, y: 0}
-  - {x: 0, y: 45}
-  - {x: 60.99, y: 45.14}
-  - {x: 29.9, y: 0.8}
-  - {x: 60, y: 23}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  possibleLocas: []
   playStartUpMov: 0
   inStartUpMov: 0
-  sentryTimeTweenShotsDamp: 0
-  sentryBulletSpeedDamp: 0.75
-  sentryDamageDamp: 0.45
-  sentryReloadDamp: 1.5
   gamePaused: 0
+  bloodRagedSpeed: 15.5

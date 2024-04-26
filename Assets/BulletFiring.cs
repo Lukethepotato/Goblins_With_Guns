@@ -262,7 +262,7 @@ public class BulletFiring : MonoBehaviour
             }
             else if (ctx.canceled && firingBullet == false)
             {
-                playerSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+                playerSO[playInput.playerIndex].movementSpeed = playerSO[playInput.playerIndex].basePlayerSpeed;
                 chargingTurret = false;
 
                 turAnimMan.Idle();
@@ -286,7 +286,7 @@ public class BulletFiring : MonoBehaviour
         }
         else if (ctx.canceled && firingBullet == false)
         {
-            playerSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+            playerSO[playInput.playerIndex].movementSpeed = playerSO[playInput.playerIndex].basePlayerSpeed;
             charging = false;
         }
     }

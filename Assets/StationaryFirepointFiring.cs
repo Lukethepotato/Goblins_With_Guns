@@ -21,7 +21,7 @@ public class StationaryFirepointFiring : MonoBehaviour
 
     [Header("Spawner Attributes")]
     [SerializeField] private SpawnerType spawnerType;
-    [SerializeField] private float firingRate = 1f;
+    public float firingRate = 1f;
     public GameObject parent; 
     public StationaryFirepoint_Data data;
 

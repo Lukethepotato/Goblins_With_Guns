@@ -39,6 +39,6 @@ public class Reloading : MonoBehaviour
         yield return new WaitForSeconds(playSO[playInput.playerIndex].bulletReloadTime);
         playSO[playInput.playerIndex].bulletsInChamber = playSO[playInput.playerIndex].magazineSize;
         playSO[playInput.playerIndex].isReloading = false;
-        playSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        playSO[playInput.playerIndex].movementSpeed = playSO[playInput.playerIndex].basePlayerSpeed;
     }
 }

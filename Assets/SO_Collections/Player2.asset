@@ -12,26 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d520ed38c03a07459c9f512971d47e5, type: 3}
   m_Name: Player2
   m_EditorClassIdentifier: 
-  health: 0
+  health: 100
   fireForece: 15
-  timeBetweenShots: 0.27
+  timeBetweenShots: 0
   magazineSize: 5
   bulletReloadTime: 0.75
-  bulletsInChamber: 6
+  bulletsInChamber: 5
   letterIn: 0
   moveInput: {x: 0, y: 0}
   Aim: {x: 0, y: 0}
-  livesLeft: 0
+  livesLeft: 287
   touchingSewage: 0
   isTurret: 0
   oringalColor: {r: 1, g: 1, b: 1, a: 1}
   turretDisabled: 0
   burning: 0
-  movementSpeed: 10.5
+  movementSpeed: 13.5
   magicBooksHeld: 0
   canMove: 1
   fatigue: 0
-  telaporting: 0
+  telaporting: 1
   buff: 0
   state: 0
   direction: 2
@@ -40,16 +40,16 @@ MonoBehaviour:
   wheelActivate: 0
   freeze: 0
   joyStickDown: 1
-  inGame: 0
+  inGame: 1
   playerName: 
   playerIndex: 2
   gunChosen: 0
   oringalGunChosen: 0
-  hasDied: 1
+  hasDied: 0
   rolling: 0
   invincble: 0
   isReloading: 0
-  isGamePad: 1
+  isGamePad: 0
   rematchSetUpComplete: 1
   lightingGoblin: 0
   perks: 010000000000000000000000
@@ -64,3 +64,10 @@ MonoBehaviour:
   ActiveMoveInput: {x: 0, y: 0}
   damageDealtMult: 1
   damageTakeMult: 1
+  orinagalChamberSize: 5
+  orinagalReloadSpeed: 0.75
+  respawning: 0
+  resetGunStats: 0
+  perkButPressed: 0
+  bloodRaged: 0
+  basePlayerSpeed: 13.5

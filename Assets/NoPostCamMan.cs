@@ -4,7 +4,7 @@ public class NoPostCamMan : MonoBehaviour
 {
     public GameObject manCam;
     public Camera mainCam;
-    public Camera cam;
+    Camera cam;
     // Start is called before the first frame update
     void Start()
     {

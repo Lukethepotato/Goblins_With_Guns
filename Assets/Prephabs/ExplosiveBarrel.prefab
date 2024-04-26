@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2060113385880585501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 361379258841729342}
+  - component: {fileID: 4067086534998786657}
+  m_Layer: 0
+  m_Name: PlayerCollision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &361379258841729342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060113385880585501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.159, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4355877584451769702}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &4067086534998786657
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060113385880585501}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000004050267, y: 0.102390304}
+  m_Size: {x: 1.6866182, y: 0.7952322}
+  m_Direction: 1
 --- !u!1 &3102020904120213833
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,7 +80,7 @@ Transform:
   - {fileID: 724952379590614843}
   - {fileID: 8893331826553654871}
   m_Father: {fileID: 4355877584451769702}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5831585319771071425
 Grid:
@@ -74,6 +122,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 361379258841729342}
   - {fileID: 4355877585798847384}
   - {fileID: 6744235605588066887}
   m_Father: {fileID: 0}
@@ -90,7 +139,7 @@ GameObject:
   - component: {fileID: 4355877585798847384}
   - component: {fileID: 4355877585798847385}
   - component: {fileID: 6178422205286488625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel
   m_TagString: Barrel
   m_Icon: {fileID: 0}
@@ -110,7 +159,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4355877584451769702}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4355877585798847385
 MonoBehaviour:
@@ -140,9 +189,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0015776963, y: 0.17431691}
-  m_Size: {x: 1.8140861, y: 1.0720142}
-  m_Direction: 1
+  m_Offset: {x: -0.022551537, y: 0.26490235}
+  m_Size: {x: 2.1646523, y: 3.4519863}
+  m_Direction: 0
 --- !u!1 &7375831549255577618
 GameObject:
   m_ObjectHideFlags: 0

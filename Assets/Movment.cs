@@ -14,12 +14,13 @@ public class Movment : MonoBehaviour
     PlayerInput playInput;
     public Vector2 curentInput;
     public MainSO mainSO;
+    PerkMovmentTweaks perkSpeedTweak;
 
     void Start()
     {
         RB= gameObject.GetComponent<Rigidbody2D>();
         playInput = gameObject.GetComponent<PlayerInput>();
-        playSOs[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        perkSpeedTweak = gameObject.GetComponent<PerkMovmentTweaks>();
     }
 
     public void OnMove(InputAction.CallbackContext cxt)
@@ -61,17 +62,7 @@ public class Movment : MonoBehaviour
             MoveDirection = Vector2.zero;
         }
 
-        if (playSOs[playInput.playerIndex].state == 0)
-        {
-            if (playSOs[playInput.playerIndex].perkOwned == 2)
-            {
-                playSOs[playInput.playerIndex].movementSpeed = mainSO.scoutSpeed;
-            }
-            else
-            {
-                playSOs[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
-            }
-        }
+        perkSpeedTweak.SetSpeed();
     }
 
     // Update is called once per frame

@@ -31,6 +31,7 @@ public class Gun_Value_Setting : MonoBehaviour
     public bool contstantFireSpeedUpdate = false;
     private bool nonOriganalGun = false;
     public bool isTurret = false;
+    public GunPerkValueTeaks perkValTweaks;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,7 @@ public class Gun_Value_Setting : MonoBehaviour
         gate = false;
         startSetting = false; 
         valueSetting = false;
+        perkValTweaks = GetComponentInParent<GunPerkValueTeaks>();
     }
 
     // Update is called once per frame
@@ -51,6 +53,7 @@ public class Gun_Value_Setting : MonoBehaviour
             {
                 playSO[playInput.playerIndex].orinagalChamberSize = ChamberSize;
                 playSO[playInput.playerIndex].orinagalReloadSpeed = ReloadTime;
+                /*
                 if (playSO[playInput.playerIndex].perkOwned == 8)
                 {
                     ChamberSize *= mainSO.megaBulletsToAdd;
@@ -60,17 +63,19 @@ public class Gun_Value_Setting : MonoBehaviour
                 else if (playSO[playInput.playerIndex].perkOwned == 1)
                 {
                     bulletSpeed *= .5f;
-                }else if (playSO[playInput.playerIndex].perkOwned == 10)
+                }else if (playSO[playInput.playerIndex].perkOwned == 11)
                 {
-                    ReloadTime *= mainSO.sentryReloadDamp;
-                    bulletSpeed *= mainSO.sentryBulletSpeedDamp;
+                    
                 }
+                */
+
                 startSetting = true;
+
+                perkValTweaks.ApplyPerkGunStats(false);
             }
 
             playSO[playInput.playerIndex].timeBetweenShots = timeInBetweenShots;
-            if (valueSetting == false)
-            {
+
                 playSO[playInput.playerIndex].fireForece = bulletSpeed;
                 playSO[playInput.playerIndex].bulletReloadTime = ReloadTime;
                 playSO[playInput.playerIndex].magazineSize = ChamberSize;
@@ -88,19 +93,9 @@ public class Gun_Value_Setting : MonoBehaviour
                 }
 
                 valueSetting = true;
-            }
 
-            if (contstantFireSpeedUpdate)
-            {
                 playSO[playInput.playerIndex].fireForece = bulletSpeed;
-            }
 
-
-            //StatsSet= true;
-            if (playSO[playInput.playerIndex].gunChosen == playSO[playInput.playerIndex].oringalGunChosen && playSO[playInput.playerIndex].fireForece != bulletSpeed)
-            {
-                valueSetting= false;
-            }
 
         }
         else

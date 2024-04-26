@@ -42,7 +42,6 @@ public class MainSO : ScriptableObject
     public float bounceyBulletsDamMult;
     public int bounceyBulletBounceIncrease;
     public bool preGameSetUp;
-    public float scoutSpeed;
     public float scoutHealth;
     public int maxWidowMult;
     public TriviaSO chosenTrivia;
@@ -55,9 +54,7 @@ public class MainSO : ScriptableObject
     public Vector2[] possibleLocas;
     public bool playStartUpMov;
     public bool inStartUpMov;
-    public float sentryTimeTweenShotsDamp;
-    public float sentryBulletSpeedDamp;
-    public float sentryDamageDamp;
-    public float sentryReloadDamp;
     public bool gamePaused;
+    public float bloodRagedSpeed;
+    //public float sentryRollPower;
 }

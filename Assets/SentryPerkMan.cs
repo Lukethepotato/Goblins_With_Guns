@@ -35,16 +35,11 @@ public class SentryPerkMan : MonoBehaviour
             canMakeTurret= false;
         }
 
-        if (playSO[playInput.playerIndex].perkButPressed && canMakeTurret && playSO[playInput.playerIndex].perkOwned == 10)
+        if (playSO[playInput.playerIndex].perkButPressed && canMakeTurret && playSO[playInput.playerIndex].perkOwned == 10 && mainSO.suddenDeathInitiated == false)
         {
             activeCoolDown = coolDown;
-            GameObject instanSent = Instantiate(sentry, gameObject.transform.position, Quaternion.identity);
+            GameObject instanSent = Instantiate(sentry, playSO[playInput.playerIndex].ActiveMoveInput + (Vector2)gameObject.transform.position, Quaternion.identity);
             instanSent.GetComponent<StationaryFirepoint_Data>().owner = playInput.playerIndex;
-        }
-
-        if (playSO[playInput.playerIndex].perkOwned == 10)
-        {
-            playSO[playInput.playerIndex].damageDealtMult = mainSO.sentryDamageDamp;
         }
 
         activeCoolDown -= Time.deltaTime;

@@ -176,7 +176,7 @@ public class Roll : MonoBehaviour
     public void Reguvenation()
     {
         rollPower = startingRollPower;
-        playSOs[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
+        playSOs[playInput.playerIndex].movementSpeed = playSOs[playInput.playerIndex].basePlayerSpeed;
         playSOs[playInput.playerIndex].fatigue = 0;
     }
 

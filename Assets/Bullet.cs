@@ -93,7 +93,7 @@ public class Bullet : MonoBehaviour
     {
         rb2d.velocity *= ricochetSpeedUp;
 
-        if(mainSO.freezeAllPlayer)
+        if(mainSO.freezeAllPlayer || mainSO.suddenDeathInitiated)
         {
             Destroy(gameObject);
         }

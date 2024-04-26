@@ -45,8 +45,8 @@ TagManager:
   - SUPER_UI
   - Bullets_Ignore
   - Obsticals
-  - PostProccsing
-  - NoPost
+  - 
+  - 
   - TraversableWalls
   - GhostPlayer
   - 
@@ -66,8 +66,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - PostProccsing
+  - NoPost
   m_SortingLayers:
   - name: Background
     uniqueID: 3469531241

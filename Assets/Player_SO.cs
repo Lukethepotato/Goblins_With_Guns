@@ -65,4 +65,6 @@ public class Player_SO : ScriptableObject
     public bool respawning;
     public bool resetGunStats;
     public bool perkButPressed;
+    public bool bloodRaged;
+    public float basePlayerSpeed;
 }

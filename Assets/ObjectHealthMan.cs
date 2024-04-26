@@ -12,6 +12,7 @@ public class ObjectHealthMan : MonoBehaviour
     public Player_SO[] playSO;
     public bool exploDestruct;
     public GameObject explosion;
+    public float explosionDamage = 25;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,24 @@ public class ObjectHealthMan : MonoBehaviour
         { 
             health -= other.gameObject.GetComponent<Bullet>().damage * localDamageMult;
             Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
+
+        if (other.gameObject.CompareTag("Explosion") && mainSO.freezeAllPlayer == false)
+        {
+            health -= explosionDamage * localDamageMult;
+            Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
+        }
+
+        if (other.gameObject.CompareTag("Lightning") && mainSO.freezeAllPlayer == false)
+        {
+            health -= 100 * localDamageMult;
+            Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
+        }
+
+
     }
 
     public void Destroy()

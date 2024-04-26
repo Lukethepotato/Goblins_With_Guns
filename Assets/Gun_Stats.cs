@@ -6,5 +6,10 @@ using UnityEngine;
 
 public class Gun_Stats : ScriptableObject
 {
-    public int[] chamberSize;
+    public float damageMult;
+    public float fireRateMult;
+    public float fireForceMult;
+    public float reloadTimeMult;
+    public int chamberSizeAdd;
+    public int chamberSizeMult;
 }
