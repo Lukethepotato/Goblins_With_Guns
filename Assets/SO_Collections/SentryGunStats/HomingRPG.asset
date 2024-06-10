@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HomingRPG
   m_EditorClassIdentifier: 
   fireForce: 100
-  fireRate: 0.6
+  fireRate: 0.85
   pulse: 0

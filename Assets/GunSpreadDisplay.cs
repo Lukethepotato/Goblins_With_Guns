@@ -22,8 +22,6 @@ public class GunSpreadDisplay : MonoBehaviour
     private bool inCourtine = false;
     private bool leenTweenOut = false;
     private bool leenTweenIn = false;
-    public BulletFiring bulletFirring;
-    public GameObject parent;
     public bool alwaysShow = false;
     // Start is called before the first frame update
     // Update is called once per frame
@@ -32,7 +30,6 @@ public class GunSpreadDisplay : MonoBehaviour
     {
         playInput = GetComponentInParent<PlayerInput>();
         finalLength = length;
-        bulletFirring = parent.GetComponent<BulletFiring>();
 
         if (alwaysShow == false)
         {

@@ -24,6 +24,7 @@ public class groundColliderDamageTaking : MonoBehaviour
     public BoxCollider2D mainObjectColl;
     public Vector2 oldPos;
     private bool inCoyoteJump = false;
+    public GameObject closestSUS;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +50,22 @@ public class groundColliderDamageTaking : MonoBehaviour
 
         if (raycast)
         {
-            mainObject.transform.position = oldPos * closestPointMult;
+            for (int i = 0; i < GameObject.FindGameObjectsWithTag("SUS").Length; i++)
+            {
+                if (i == 0)
+                {
+                    closestSUS = GameObject.FindGameObjectsWithTag("SUS")[i];
+                }
+                float thisDistance = Vector3.Distance(gameObject.transform.position, GameObject.FindGameObjectsWithTag("SUS")[i].transform.position);
+                float bestDistance = Vector3.Distance(gameObject.transform.position, closestSUS.transform.position);
+                if (thisDistance < bestDistance && i != 0)
+                {
+                    closestSUS = GameObject.FindGameObjectsWithTag("SUS")[i];
+                }
+            }
+
+
+            mainObject.transform.position = closestSUS.transform.position;
             raycast = false;
             playSO[playInput.playerIndex].touchingSewage = false;
             inCourtine = false;

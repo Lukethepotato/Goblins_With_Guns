@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Grenade Launcher
   m_EditorClassIdentifier: 
   fireForce: 1000
-  fireRate: 0.9
+  fireRate: 1.5
   pulse: 0

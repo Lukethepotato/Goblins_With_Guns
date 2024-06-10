@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 3.2, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5045382510868268063
@@ -232,6 +232,7 @@ MonoBehaviour:
   speedUpMultiply: 0.0001
   noBouce: 0
   ghostBullet: 0
+  ghostBulletDamage: 0
   deadBulletMin: 0
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
@@ -244,6 +245,7 @@ MonoBehaviour:
   bounceDull: 1
   knockBackAmount: 5000
   superKnockBackAmount: 25000
+  damage: 0
 --- !u!114 &5330619259104558838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +327,9 @@ MonoBehaviour:
   followVector: {fileID: 1383399466869692661}
   bulletPattern: 2
   speedIncrease: 0
+  firePointSpeed: 0
+  rotationModifier: 0
+  rotationSpeed: 0
   firePointFiredAt: {x: 0, y: 0}
   maxDistanceTime: 0.5
   startingSpeed: 15000000

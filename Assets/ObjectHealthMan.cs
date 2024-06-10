@@ -39,7 +39,10 @@ public class ObjectHealthMan : MonoBehaviour
             Instantiate(explosionPrephab, transform.position, Quaternion.identity);
             GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.gameObject.CompareTag("Explosion") && mainSO.freezeAllPlayer == false)
         {
             health -= explosionDamage * localDamageMult;
@@ -53,8 +56,6 @@ public class ObjectHealthMan : MonoBehaviour
             Instantiate(explosionPrephab, transform.position, Quaternion.identity);
             GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
-
-
     }
 
     public void Destroy()

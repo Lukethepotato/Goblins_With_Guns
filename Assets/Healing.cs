@@ -14,19 +14,28 @@ public class Healing : MonoBehaviour
     public bool held = false;
     public float unHoldDelay;
     public MainSO mainSO;
+    public float startUpTime;
+    AnimationManager animMan;
+    public GameObject effects;
+    public AnimationManager effectAnimMan;
+    public bool down = false;
+    public float downTime;
     // Start is called before the first frame update
     void Start()
     {
         playerInput = gameObject.GetComponent<PlayerInput>();
         unHoldDelay = healTime;
+        animMan = gameObject.GetComponent<AnimationManager>();
+        effectAnimMan = effects.GetComponent<AnimationManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (mainSO.setUpOver && mainSO.suddenDeathInitiated == false)
         {
-            if (held)
+            if (held && down == false)
             {
                 runTimeHeal -= Time.deltaTime;
             }
@@ -38,18 +47,20 @@ public class Healing : MonoBehaviour
 
             if (runTimeHeal < 0)
             {
+                StartCoroutine(DownTime());
                 playSO[playerInput.playerIndex].health += 50;
                 playSO[playerInput.playerIndex].freeze = false;
-                held = false;
+                StartCoroutine(HealAnimation());
             }
 
-            if (playSO[playerInput.playerIndex].perkOwned == 4)
+            if (playSO[playerInput.playerIndex].perkOwned == 4 && down == false)
             {
                 if (playSO[playerInput.playerIndex].perkButPressed && held == false)
                 {
                     held = true;
                     playSO[playerInput.playerIndex].freeze = true;
                     print("start");
+                    StartCoroutine(Animation());
                 }
                 if (playSO[playerInput.playerIndex].perkButPressed == false && held)
                 {
@@ -64,7 +75,33 @@ public class Healing : MonoBehaviour
 
     IEnumerator UnHold()
     {
+        StartCoroutine(DownTime());
+        StopCoroutine(Animation());
         yield return new WaitForSeconds(unHoldDelay);
-        playSO[playerInput.playerIndex].freeze = false;
     }
+
+    IEnumerator Animation()
+    {
+        playSO[playerInput.playerIndex].moveAnimsPlayable = false;
+        animMan.ChangeAnimationState("VampMuntStart");
+        yield return new WaitForSeconds(startUpTime);
+        animMan.ChangeAnimationState("VampMuntAnim");
+    }
+
+    IEnumerator HealAnimation()
+    {
+        effectAnimMan.ChangeAnimationState("Effects_Heal");
+        yield return new WaitForSeconds(.59f);
+        effectAnimMan.ChangeAnimationState("Effects_Idle");
+    }
+
+    
+    IEnumerator DownTime()
+    {
+        playSO[playerInput.playerIndex].moveAnimsPlayable = true;
+        down = true;
+        yield return new WaitForSeconds(downTime);
+        down = false;
+    }
+    
 }

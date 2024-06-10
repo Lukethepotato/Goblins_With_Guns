@@ -114,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &-6846171391620086369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +147,9 @@ MonoBehaviour:
   bounceDull: 0
   knockBackAmount: 5000
   superKnockBackAmount: 25000
+  damage: 0
+  ownerInvincTime: 0.25
+  rotateSprite: 0
 --- !u!114 &5330619259104558838
 MonoBehaviour:
   m_ObjectHideFlags: 0

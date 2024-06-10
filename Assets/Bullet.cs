@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 public class Bullet : MonoBehaviour
@@ -31,6 +33,11 @@ public class Bullet : MonoBehaviour
     public float damage;
     BulletData bulletData;
     Collider2D coll2d;
+    public float ownerInvincTime = .25f;
+    public bool rotateSprite = false;
+    private quaternion OGspriteRot;
+
+    //public bool ownerInvinc = true;
 
     private void Start()
     {
@@ -45,15 +52,22 @@ public class Bullet : MonoBehaviour
         {
             maxWallHits += mainSO.bounceyBulletBounceIncrease;
         }
+
+        OGspriteRot = sp2d.transform.rotation;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("portal") != true && collisionsDectectable && noBouce == false)
+        if (collision.gameObject.CompareTag("Barrel") || collision.gameObject.CompareTag("Object"))
+        {
+            destroyNow = true;
+        }
+
+        if (collision.gameObject.CompareTag("portal") != true && collisionsDectectable && noBouce == false && collision.gameObject.CompareTag("Object") == false)
         {
             timesHitWall += 1;
             var speed = lastVelocity.magnitude;
-            Vector3 direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
+            Vector2 direction = (Vector2)Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 /*
             if (bounceDull)
             {
@@ -70,22 +84,21 @@ public class Bullet : MonoBehaviour
             collisionsDectectable = false;
             rb2d.rotation = -rb2d.rotation;
         }
-        else if (collision.gameObject.CompareTag("portal") != true && noBouce || collision.gameObject.CompareTag("Barrel"))
+        else if (collision.gameObject.CompareTag("portal") != true && noBouce)
         {
             destroyNow = true;
+            print("ObjectDestory");
         }
 
-        if (collision.gameObject.CompareTag("Player") && ghostBullet == false)
-        {  
-            if (playSO[gameObject.GetComponent<BulletData>().owner].perks[4] == false && playerDestroyTouch)
+
+
+        if (collision.gameObject.CompareTag("Player") && ghostBullet == false && collision.gameObject.layer != 7)
+        {
+            if (playSO[gameObject.GetComponent<BulletData>().owner].perks[4] == false && playerDestroyTouch )
             {
                 destroyNow = true;
+                print("PlayerDestory");
             }
-        }
-
-        if (collision.gameObject.CompareTag("Object"))
-        {
-            destroyNow = true;
         }
     }
 
@@ -111,10 +124,20 @@ public class Bullet : MonoBehaviour
         {
             knockBackAmount = superKnockBackAmount;
         }
+
+        if (rotateSprite == false)
+        {
+            sp2d.transform.rotation = OGspriteRot;
+        }
     }
 
     private void LateUpdate()
     {
+
+        if (rotateSprite == false)
+        {
+            sp2d.transform.localRotation= OGspriteRot;
+        }
         if (destroyNow)
         {
             Destroy(gameObject);
@@ -135,7 +158,14 @@ public class Bullet : MonoBehaviour
             }
         }
     }
-
+/*
+    IEnumerator OwnerInvincable()
+    {
+        yield return new WaitForSeconds(ownerInvincTime);
+        ownerInvinc = false;
+        coll2d.isTrigger = false;
+    }
+*/
     IEnumerator deadBulletTest()
     {
         yield return new WaitForSeconds(.5f);

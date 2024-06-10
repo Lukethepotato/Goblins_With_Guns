@@ -40,6 +40,7 @@ public class MainScene_Scroll : MonoBehaviour
 
     IEnumerator Open(GameObject openedMenu)
     {
+        print("open Courtine");
         animMan.ChangeAnimationState("MainScene_Scroll_ClosedIdle");
         yield return new WaitForSeconds(timeToStart);
         animMan.ChangeAnimationState("MainSceneScroll_Open");
@@ -56,10 +57,11 @@ public class MainScene_Scroll : MonoBehaviour
 
     IEnumerator MapClose()
     {
+        print("Close Courtine");
         animMan.ChangeAnimationState("MainScene_Scroll_Close");
         yield return new WaitForSeconds(timeToMapOff);
         maps.SetActive(false);
-        //yield return new WaitForSeconds(timeToClose - time);
+        yield return new WaitForSeconds(timeToMapOff);
         mainSO.preGameSetUp = true;
         animMan.ChangeAnimationState("MainSceneScroll_Open");
         yield return new WaitForSeconds(timeToParticle);

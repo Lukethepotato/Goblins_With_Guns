@@ -56,5 +56,6 @@ public class MainSO : ScriptableObject
     public bool inStartUpMov;
     public bool gamePaused;
     public float bloodRagedSpeed;
+    public float lightingFireingSpeed;
     //public float sentryRollPower;
 }

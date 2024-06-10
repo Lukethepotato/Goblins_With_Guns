@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMult: 0.35
   fireRateMult: 2
-  fireForceMult: 0.6
+  fireForceMult: 0.4
   reloadTimeMult: 2
   chamberSizeAdd: 0
   chamberSizeMult: 1

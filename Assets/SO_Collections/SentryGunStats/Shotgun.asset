@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Shotgun
   m_EditorClassIdentifier: 
   fireForce: 300
-  fireRate: 0.7
+  fireRate: 0.85
   pulse: 500

@@ -56,7 +56,7 @@ public class aimingAnimationDisplay : MonoBehaviour
             aimXInactive = false;
         }
 
-        if (playSO[playInput.playerIndex].rolling == false && playSO[playInput.playerIndex].lightingGoblin ==false && playSO[playInput.playerIndex].buff == false && playSO[playInput.playerIndex].touchingSewage == false)
+        if (playSO[playInput.playerIndex].rolling == false && playSO[playInput.playerIndex].lightingGoblin ==false && playSO[playInput.playerIndex].buff == false && playSO[playInput.playerIndex].touchingSewage == false && playSO[playIndex].moveAnimsPlayable)
         {
             if (aim.y > stickThreshold && aimXInactive && playSO[playIndex].moveInput != Vector2.zero)
             {

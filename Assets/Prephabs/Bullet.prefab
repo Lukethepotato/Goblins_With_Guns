@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 5045382510868268063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.71, y: 0.71, z: 0.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: -1611159201
   m_SortingLayer: 3
   m_SortingOrder: -1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.99415463, g: 1, b: 0.6273585, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2ee0023e03f5e9747ae4a93759f1241a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -161,6 +161,8 @@ MonoBehaviour:
   knockBackAmount: 5000
   superKnockBackAmount: 15000
   damage: 35
+  ownerInvincTime: 0.25
+  rotateSprite: 1
 --- !u!114 &5330619259104558838
 MonoBehaviour:
   m_ObjectHideFlags: 0

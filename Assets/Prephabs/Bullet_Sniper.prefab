@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 5045382510868268057}
   - component: {fileID: 5045382510868268056}
-  - component: {fileID: 5045382510868268058}
   - component: {fileID: -1144810256183549134}
   - component: {fileID: -6846171391620086369}
   - component: {fileID: 3263079636766557105}
   - component: {fileID: 2871579141757098775}
   - component: {fileID: -709628081687717643}
   - component: {fileID: 7684183650115247051}
+  - component: {fileID: 5672136073092075408}
   m_Layer: 7
   m_Name: Bullet_Sniper
   m_TagString: Bullet_Sniper
@@ -33,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 5045382510868268063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6862208, y: 0.6862208, z: 0.6862208}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: -1611159201
   m_SortingLayer: 3
   m_SortingOrder: -1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.99415463, g: 1, b: 0.6273585, a: 1}
+  m_Sprite: {fileID: 21300000, guid: da5c5766a0e3bfa4eb19f6fc6af7341f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,22 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &5045382510868268058
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5045382510868268063}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0067629665}
-  serializedVersion: 2
-  m_Radius: 0.18
 --- !u!50 &-1144810256183549134
 Rigidbody2D:
   serializedVersion: 4
@@ -125,7 +109,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!114 &-6846171391620086369
@@ -147,6 +131,7 @@ MonoBehaviour:
   speedUpMultiply: 0.0002
   noBouce: 0
   ghostBullet: 0
+  ghostBulletDamage: 0
   deadBulletMin: 0.01
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
@@ -159,6 +144,9 @@ MonoBehaviour:
   bounceDull: 1
   knockBackAmount: 5000
   superKnockBackAmount: 15000
+  damage: 10
+  ownerInvincTime: 0.25
+  rotateSprite: 1
 --- !u!114 &3263079636766557105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,3 +226,19 @@ MonoBehaviour:
   healthModifier: 0.5
   maxHealth: 200
   destroyAfter: 1
+--- !u!70 &5672136073092075408
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045382510868268063}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 0a417dc859462b845a26aacd4efca0c1, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0010557771, y: 0.041983306}
+  m_Size: {x: 0.39767158, y: 0.8067552}
+  m_Direction: 0

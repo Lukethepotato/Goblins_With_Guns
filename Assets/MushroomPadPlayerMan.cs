@@ -66,7 +66,7 @@ public class MushroomPadPlayerMan : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "MushroomPropel" && boucning == false)
         {
@@ -83,7 +83,7 @@ public class MushroomPadPlayerMan : MonoBehaviour
 
     IEnumerator MushroomPropel()
     {
-        yield return new WaitForSeconds(timeBeforePush);
+        //yield return new WaitForSeconds(timeBeforePush);
         LeanTween.value(gameObject, startingPower, endingPower, bounceTime).setEaseInBack().setOnUpdate(LengthSetting);
         boucning = true;
         yield return new WaitForSeconds(bounceTime);

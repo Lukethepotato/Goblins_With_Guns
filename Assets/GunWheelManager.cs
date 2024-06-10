@@ -13,24 +13,24 @@ public class GunWheelManager : MonoBehaviour
     public int[] possibleGuns;
     private bool gunRolling = false;
     public int moneyNeeded;
+    public GameObject gunParent;
+    public GunPerkValueTeaks gunValueTweaks;
     // Start is called before the first frame update
     void Start()
     {
         gunWheelAnimMan = gunWheel.GetComponent<AnimationManager>();
+        gunValueTweaks = gunParent.GetComponent<GunPerkValueTeaks>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playSO[playInput.playerIndex].health < 1)
-        {
-            playSO[playInput.playerIndex].gunChosen = playSO[playInput.playerIndex].oringalGunChosen;
-        }
 
         if (playSO[playInput.playerIndex].wheelActivate)
         {
             playSO[playInput.playerIndex].wheelActivate = false;
             StartCoroutine(GunWheel());
+            gunValueTweaks.ApplyPerkGunStats(true);
             playSO[playInput.playerIndex].money -= moneyNeeded;
         }
 
@@ -61,10 +61,10 @@ public class GunWheelManager : MonoBehaviour
         }
         gunWheelAnimMan.ChangeAnimationState(gunWheelAnims[newGun]);
         yield return new WaitForSeconds(1.2f);
-        playSO[playInput.playerIndex].bulletsInChamber = 0;
         playSO[playInput.playerIndex].gunChosen = possibleGuns[newGun];
         gunRolling= false;
         gunWheelAnimMan.ChangeAnimationState("GunWheel.Idle");
         playSO[playInput.playerIndex].resetGunStats = true;
+        gunValueTweaks.ApplyPerkGunStats(false);
     }
 }

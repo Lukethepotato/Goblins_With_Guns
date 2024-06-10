@@ -14,7 +14,7 @@ public class TitleScreenStartButton : MonoBehaviour
     void Start()
     {
         animMan = pannel.GetComponent<AnimationManager>();
-        
+        gameModeSelect.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,6 +33,7 @@ public class TitleScreenStartButton : MonoBehaviour
         animMan.ChangeAnimationState("TitleScreenEnd");
         yield return new WaitForSeconds(animTime);
         gameModeSelect.SetActive(true);
+        gameModeSelect.GetComponent<StartScreenScrollMan>().StartUp();
         gameObject.SetActive(false);
     }
 }

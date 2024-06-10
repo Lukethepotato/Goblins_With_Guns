@@ -34,7 +34,7 @@ public class randomBulletSpread : MonoBehaviour
     {
         bulletSpread = playSO[input.playerIndex].BulletSpread;
 
-        if (playSO[input.playerIndex].firing && guns[playSO[input.playerIndex].gunChosen] != null)
+        if (playSO[input.playerIndex].bulletSpread && guns[playSO[input.playerIndex].gunChosen] != null)
         {
             guns[playSO[input.playerIndex].gunChosen].localEulerAngles = new Vector3(guns[playSO[input.playerIndex].gunChosen].localEulerAngles.x, guns[playSO[input.playerIndex].gunChosen].localEulerAngles.y, Random.Range(bulletSpread.x / spreadMultipler, bulletSpread.y * spreadMultipler));
 
@@ -44,9 +44,9 @@ public class randomBulletSpread : MonoBehaviour
             }
 
             StartCoroutine(IncreaseBulletSpread());
-            playSO[input.playerIndex].firing = false;
+            playSO[input.playerIndex].bulletSpread = false;
         }
-        else if (playSO[input.playerIndex].gunChosen == 1 && playSO[input.playerIndex].firing)
+        else if (playSO[input.playerIndex].gunChosen == 1 && playSO[input.playerIndex].bulletSpread)
         {
             shotty[0].localEulerAngles = new Vector3(shotty[0].localEulerAngles.x, shotty[0].localEulerAngles.y, Random.Range(bulletSpread.x / spreadMultipler, bulletSpread.y * spreadMultipler));
             shotty[1].localEulerAngles = new Vector3(shotty[1].localEulerAngles.x, shotty[1].localEulerAngles.y, Random.Range(bulletSpread.x / spreadMultipler, bulletSpread.y * spreadMultipler));
@@ -58,7 +58,7 @@ public class randomBulletSpread : MonoBehaviour
     IEnumerator IncreaseBulletSpread()
     {
         yield return new WaitForSeconds(timeTillReset);
-        if (playSO[input.playerIndex].firing == false)
+        if (playSO[input.playerIndex].bulletSpread == false)
         spreadMultipler = 1;
         
     }

@@ -13,6 +13,7 @@ public class GunFlips : MonoBehaviour
     public GameObject firePoint;
     public Vector2 firePointBaseLocation;
     private bool firePointNeg;
+    public bool SRFlip = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +46,10 @@ public class GunFlips : MonoBehaviour
 
         if (aim.x ==1) 
         {
-            SR.flipY =false;
+            if (SRFlip)
+            {
+                SR.flipY = false;
+            }
             //firePoint.transform.position = firePointBaseLocation;
             if (firePointNeg && firePoint != null)
             {
@@ -55,7 +59,10 @@ public class GunFlips : MonoBehaviour
         }
         else
         {
-            SR.flipY=true;
+            if (SRFlip)
+            {
+                SR.flipY = true;
+            }
             if (firePointNeg == false && firePoint != null)
             {
                 firePoint.transform.localPosition = new Vector2(firePoint.transform.localPosition.x, -firePoint.transform.localPosition.y);

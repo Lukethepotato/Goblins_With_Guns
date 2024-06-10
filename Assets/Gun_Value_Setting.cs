@@ -32,6 +32,8 @@ public class Gun_Value_Setting : MonoBehaviour
     private bool nonOriganalGun = false;
     public bool isTurret = false;
     public GunPerkValueTeaks perkValTweaks;
+    public bool parentAnimControl = true;
+    public bool automaticAnim = false;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +51,7 @@ public class Gun_Value_Setting : MonoBehaviour
     {
         if (mainSO.setUpOver)
         {
-            if (startSetting == false  )
+            if (startSetting == false)
             {
                 playSO[playInput.playerIndex].orinagalChamberSize = ChamberSize;
                 playSO[playInput.playerIndex].orinagalReloadSpeed = ReloadTime;
@@ -85,7 +87,7 @@ public class Gun_Value_Setting : MonoBehaviour
 
                 if (playSO[playInput.playerIndex].perkOwned == 6)
                 {
-                    playSO[playInput.playerIndex].recoilPower = superRecoilPower;
+                    playSO[playInput.playerIndex].recoilPower = (superRecoilPower / 1.5f);
                 }
                 else
                 {

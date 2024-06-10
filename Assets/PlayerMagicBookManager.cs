@@ -131,14 +131,14 @@ public class PlayerMagicBookManager : MonoBehaviour
         handsSR.LightingFireIntiated = true;
         fireLocation = gameObject.transform.position;
         canFire= false;
-        playSO[playInput.playerIndex].canMove = false;
+        playSO[playInput.playerIndex].movementSpeed = mainSO.lightingFireingSpeed;
         animMan.ChangeAnimationState("Target_strike");
         yield return new WaitForSeconds(lightiningStartUp);
         lightningTrig.SetActive(true);
         yield return new WaitForSeconds(strikeAnimation);
         handsSR.LightingFireIntiated = false;
         lightningTrig.SetActive(false);
-        playSO[playInput.playerIndex].canMove = true;
+        playSO[playInput.playerIndex].movementSpeed = targetSpeed;
         animMan.ChangeAnimationState("Target_Idle");
         yield return new WaitForSeconds(cantFireTime);
         canFire = true;

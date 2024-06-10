@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SMG
   m_EditorClassIdentifier: 
   fireForce: 450
-  fireRate: 0.15
+  fireRate: 0.2
   pulse: 0

@@ -39,7 +39,7 @@ public class damageTaking : MonoBehaviour
     private Vector2 knockbackPosition;
     public float moveInputDamp = 1;
     private float localDamageMult = 1;
-    
+
 
 
     // Start is called before the first frame update
@@ -66,7 +66,7 @@ public class damageTaking : MonoBehaviour
 
         if (knockBack)
         {
-            RB.AddForce(-knockbackPosition * knockbackAmount * Time.deltaTime);
+            RB.AddForce(knockbackPosition * knockbackAmount * Time.deltaTime);
         }
 
         if (playSO[playInput.playerIndex].health < 1 && playSO[playInput.playerIndex].burning && mainSO.freezeAllPlayer == false)
@@ -130,7 +130,14 @@ public class damageTaking : MonoBehaviour
             if (knockBack == false)
             {
                 knockbackAmount = other.gameObject.GetComponent<Bullet>().knockBackAmount;
-                knockbackPosition = other.gameObject.transform.up;
+                if (playSO[other.gameObject.GetComponent<BulletData>().owner].perkOwned == 6)
+                {
+                    knockbackPosition = (GameObject.Find("player" + ((other.gameObject.GetComponent<BulletData>().owner) + 1).ToString()).transform.position - gameObject.transform.position).normalized;
+                }
+                else
+                {
+                    knockbackPosition = other.gameObject.transform.up;
+                }
                 StartCoroutine(KnockBack());
             }
 
@@ -165,8 +172,9 @@ public class damageTaking : MonoBehaviour
                 {
                     other.gameObject.GetComponent<VampBulletMan>().AddHealth(other.gameObject.GetComponent<Bullet>().damage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult);
                 }
+
+                GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
             }
-            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
 
         if (other.gameObject.CompareTag("bullet_FlameThrower") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
@@ -183,7 +191,7 @@ public class damageTaking : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Explosion") && mainSO.freezeAllPlayer ==false)
+        if (other.gameObject.CompareTag("Explosion") && mainSO.freezeAllPlayer == false)
         {
             explosionLoca = other.gameObject.transform.position;
             explosionID = other.gameObject.GetComponent<BulletData>().owner;
@@ -248,8 +256,8 @@ public class damageTaking : MonoBehaviour
 
     IEnumerator HitImunityTime()
     {
-        hitImunity= true;
-        playSO[playInput.playerIndex].invincble= true;
+        hitImunity = true;
+        playSO[playInput.playerIndex].invincble = true;
         yield return new WaitForSeconds(hitITime);
 
         playSO[playInput.playerIndex].invincble = false;
@@ -298,7 +306,7 @@ public class damageTaking : MonoBehaviour
 
     IEnumerator KnockBack()
     {
-        knockBack= true;
+        knockBack = true;
         yield return new WaitForSeconds(knockbackTime);
         knockBack = false;
     }
@@ -307,7 +315,7 @@ public class damageTaking : MonoBehaviour
     {
         effectAnimMan.ChangeAnimationState("Effects_Burning");
         playSO[playInput.playerIndex].burning = true;
-        if (playSO[playInput.playerIndex].burning== true && playSO[playInput.playerIndex].health > 0)
+        if (playSO[playInput.playerIndex].burning == true && playSO[playInput.playerIndex].health > 0)
         {
             yield return new WaitForSeconds(burnIntervals);
             playSO[playInput.playerIndex].health -= burnDamage * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;

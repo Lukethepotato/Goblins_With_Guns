@@ -6184,7 +6184,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Goblin Aids
+  m_text: 'Blood
+
+    Rage'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9683,7 +9685,7 @@ GameObject:
   - component: {fileID: 3346867324376643843}
   - component: {fileID: 4818355876746563501}
   m_Layer: 5
-  m_Name: Goblin Aids
+  m_Name: BloodRage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11823,7 +11825,7 @@ GameObject:
   - component: {fileID: 4836221111691558403}
   - component: {fileID: 5754969100501064849}
   m_Layer: 5
-  m_Name: GoblinAids
+  m_Name: Blood Rage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12558,11 +12560,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f7316c92f970647a1b28cbfa9ba9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beforeText: 'Goblin Aids
+  beforeText: 'Blood Rage
 
     +press '
   inputType: interact
-  afterText: to give the goblin giga cancer
+  afterText: "to enter and exit blood rage \n+when not in blood rage slowly gain
+    health\n-when in blood rage slowly drain health"
   mainPlayer: {fileID: 6432804955263000321}
   inputDectection: {fileID: 7018200633643692749}
   textMesh: {fileID: 245213652973579703}
@@ -20150,7 +20153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8508174618306521905
 RectTransform:
   m_ObjectHideFlags: 0

@@ -69,6 +69,13 @@ public class BulletFiring : MonoBehaviour
     private bool minigunBust = false;
     public int minTurretCharge = 37;
     private bool outOfTurret = true;
+    public float minigunBloodRageRevMult;
+    private float runtimeMiniGunRevBRM;
+    public float bloodRageSMGDamp;
+    private float runtimeSMGDamp;
+    private bool gate = false;
+    public float moveInputDamp;
+    public bool revingMiniGun = false;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +95,35 @@ public class BulletFiring : MonoBehaviour
 
     private void Update()
     {
+        if (mainSO.setUpOver)
+        {
+            if (playerSO[playInput.playerIndex].gunChosen == 9 && gate == false)
+            {
+                baseSmgSpeed = smgValueSetting.timeInBetweenShots;
+                baseSMGBulletSpead = smgValueSetting.bulletSpeed;
+                gate = true;
+            }
+        }
+
+        if (playerSO[playInput.playerIndex].perkOwned == 11)
+        {
+            if (playerSO[playInput.playerIndex].bloodRaged)
+            {
+                runtimeMiniGunRevBRM = minigunBloodRageRevMult;
+                runtimeSMGDamp = bloodRageSMGDamp;
+            }else
+            {
+                runtimeMiniGunRevBRM = .75f;
+                runtimeSMGDamp = 1;
+            }
+        }
+        else
+        {
+            runtimeMiniGunRevBRM = 1;
+            runtimeSMGDamp = 1;
+        }
+
+
         //randomBulletSpread = Random.Range(1 , 10);
 
         if (canShoot && playerSO[playInput.playerIndex].bulletsInChamber > 0 && playerSO[playInput.playerIndex].isReloading == false && playerSO[playInput.playerIndex].rolling == false && isFiringContinously && playerSO[playInput.playerIndex].gunChosen != 4 && playerSO[playInput.playerIndex].gunChosen != 6)
@@ -117,12 +153,20 @@ public class BulletFiring : MonoBehaviour
 
         if (playerSO[playInput.playerIndex].gunChosen == 9 && charging && playerSO[playInput.playerIndex].bulletsInChamber > 0)
         {
-            smgValueSetting.timeInBetweenShots -= (Time.deltaTime * smgBulletTweenDamp);
-            smgValueSetting.bulletSpeed += (Time.deltaTime * SMGBulletChargeSpead);
-            if (smgValueSetting.timeInBetweenShots < 0)
+            if (playerSO[playInput.playerIndex].perkOwned == 11 && playerSO[playInput.playerIndex].bloodRaged || playerSO[playInput.playerIndex].perkOwned != 11)
             {
-                smgValueSetting.timeInBetweenShots = 0;
-                
+                smgValueSetting.timeInBetweenShots -= (Time.deltaTime * smgBulletTweenDamp / runtimeSMGDamp);
+                smgValueSetting.bulletSpeed += (Time.deltaTime * SMGBulletChargeSpead / runtimeSMGDamp);
+                if (smgValueSetting.timeInBetweenShots < 0)
+                {
+                    smgValueSetting.timeInBetweenShots = 0;
+
+                }
+            }
+            else
+            {
+                smgValueSetting.timeInBetweenShots = baseSmgSpeed;
+                smgValueSetting.bulletSpeed = baseSMGBulletSpead;
             }
         }
         else
@@ -148,7 +192,18 @@ public class BulletFiring : MonoBehaviour
 
         if (recoiling)
         {
-            playerBody.AddForce(-firePoint[playerSO[playInput.playerIndex].gunChosen].transform.up.normalized * playerSO[playInput.playerIndex].recoilPower * Time.deltaTime, ForceMode2D.Force);
+            Vector2 direction = firePoint[playerSO[playInput.playerIndex].gunChosen].transform.up.normalized;
+            Vector2 moveBias = playerSO[playInput.playerIndex].ActiveMoveInput;
+            if (playerSO[playInput.playerIndex].perkOwned == 6)
+            {
+                playerBody.AddForce((direction + (moveBias * moveInputDamp)) * playerSO[playInput.playerIndex].recoilPower * Time.deltaTime, ForceMode2D.Force);
+            }
+            else
+            {
+                playerBody.AddForce((-direction + (moveBias * moveInputDamp)) * playerSO[playInput.playerIndex].recoilPower * Time.deltaTime, ForceMode2D.Force);
+
+                //((direction + (moveBias * moveInputDamp)) * knockbackAmount * Time.deltaTime, ForceMode2D.Force)
+            }
         }
 
         if (spellOut && charging == false)
@@ -181,17 +236,20 @@ public class BulletFiring : MonoBehaviour
 
         if (isFiringContinously && playerSO[playInput.playerIndex].gunChosen == 4 && playerSO[playInput.playerIndex].rolling == false && playerSO[playInput.playerIndex].bulletsInChamber > 0)
         {
-            revAmount += Time.deltaTime * minigunRevSpeed;
+            revAmount += Time.deltaTime * minigunRevSpeed * runtimeMiniGunRevBRM;
+            revingMiniGun = true;
         }
         else if (playerSO[playInput.playerIndex].rolling == false && playerSO[playInput.playerIndex].gunChosen == 4 && playerSO[playInput.playerIndex].bulletsInChamber > 0 && revAmount > 0 && revTimeLeft < 0)
         {
             StartCoroutine(Fire());
             revAmount -= Time.deltaTime * minigunRevSpeed;
+            revingMiniGun = false;
         }
         else
         {
             revAmount = 0;
             revTimeLeft = playerSO[playInput.playerIndex].revUpTime;
+            revingMiniGun = false;
         }
 
         //big fwqat fucking boobs
@@ -213,8 +271,6 @@ public class BulletFiring : MonoBehaviour
             {
                 spellBullet = bullet;
             }
-            playerSO[playInput.playerIndex].firing = firingBullet;
-            playerSO[playInput.playerIndex].firing = true;
         }
     }
 
@@ -235,7 +291,7 @@ public class BulletFiring : MonoBehaviour
         GameObject bullet4 = Instantiate(bulletPrephab[1], shotgunFirePoints[3].position, shotgunFirePoints[3].rotation);
         bullet4.GetComponent<Rigidbody2D>().AddForce(shotgunFirePoints[3].up * playerSO[playInput.playerIndex].fireForece * playerSO[playInput.playerIndex].magicRockMult, ForceMode2D.Impulse);
         bullet4.GetComponent<BulletData>().Asignment(playInput.playerIndex, playerSO[playInput.playerIndex].perkOwned, playerSO[playInput.playerIndex].magicRockMult);
-        playerSO[playInput.playerIndex].firing = true;
+        playerSO[playInput.playerIndex].bulletSpread = true;
     }
 
     public void TurretFire(InputAction.CallbackContext ctx)
@@ -399,6 +455,7 @@ public class BulletFiring : MonoBehaviour
         if (playerSO[playInput.playerIndex].state == 0 && revTimeLeft <= 0 && canShoot && playerSO[playInput.playerIndex].health > 0)
         {
             playerSO[playInput.playerIndex].firing = true;
+            playerSO[playInput.playerIndex].bulletSpread = true;
             //playerSO[playInput.playerIndex].movementSpeed = shootMoveSpeed;
             if (playerSO[playInput.playerIndex].isTurret)
             {
@@ -443,6 +500,7 @@ public class BulletFiring : MonoBehaviour
             yield return new WaitForSeconds(playerSO[playInput.playerIndex].timeBetweenShots);
             canShoot = true;
             firingBullet = false;
+            playerSO[playInput.playerIndex].firing = false;
             //playerSO[playInput.playerIndex].movementSpeed = mainSO.baseMoveSpeed;
         }
 

@@ -13,6 +13,7 @@ public class TurretEmptyOnOff : MonoBehaviour
     public GameObject exploRange;
     public TurretActivation activation;
     public GameObject turnerEmpty;
+    public GameObject turretBurnEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +45,9 @@ public class TurretEmptyOnOff : MonoBehaviour
 
     IEnumerator Explosion()
     {
+        turretBurnEffect.SetActive(true);
         yield return new WaitForSeconds(timeTillExplode);
+        turretBurnEffect.SetActive(false);
         Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
         Instantiate(exploRange, gameObject.transform.position, Quaternion.identity);
         playSO[0].isTurret = false;

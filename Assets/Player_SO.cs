@@ -31,6 +31,7 @@ public class Player_SO : ScriptableObject
     public int state;
     public int direction;
     public bool firing;
+    public bool bulletSpread;
     public int money;
     public bool wheelActivate;
     public bool freeze;
@@ -67,4 +68,5 @@ public class Player_SO : ScriptableObject
     public bool perkButPressed;
     public bool bloodRaged;
     public float basePlayerSpeed;
+    public bool moveAnimsPlayable;
 }

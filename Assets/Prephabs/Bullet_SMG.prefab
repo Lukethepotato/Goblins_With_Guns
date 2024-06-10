@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: -1611159201
   m_SortingLayer: 3
   m_SortingOrder: -1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.99415463, g: 1, b: 0.6273585, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ee44ae803f9be734cb4c3326ffa67522, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -160,6 +160,8 @@ MonoBehaviour:
   knockBackAmount: 5000
   superKnockBackAmount: 15000
   damage: 20
+  ownerInvincTime: 0.25
+  rotateSprite: 1
 --- !u!114 &-7518428992467370210
 MonoBehaviour:
   m_ObjectHideFlags: 0

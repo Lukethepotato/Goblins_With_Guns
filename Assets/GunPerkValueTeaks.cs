@@ -20,6 +20,12 @@ public class GunPerkValueTeaks : MonoBehaviour
     private float OGFireRate;
     private float OGDamage;
 
+    private int superOGChamberSize;
+    private float superOGReloadTime;
+    private float superOGBulletSpeed;
+    private float superOGFireRate;
+    public bool[] gunsPerkified;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +44,13 @@ public class GunPerkValueTeaks : MonoBehaviour
         OGvalueSetting = guns[playSO[playInput.playerIndex].gunChosen].GetComponent<Gun_Value_Setting>();
         if (refresh == false)
         {
+            gunsPerkified[playSO[playInput.playerIndex].gunChosen] = true;
+            superOGChamberSize = OGvalueSetting.ChamberSize;
+            superOGReloadTime = OGvalueSetting.ReloadTime;
+            superOGBulletSpeed = OGvalueSetting.bulletSpeed;
+            superOGFireRate = OGvalueSetting.timeInBetweenShots;
+
+            // SuperOG stats are gun stats before perk stuff applied
 
             OGvalueSetting.ChamberSize *= gunStats[perkNum].chamberSizeMult;
             OGvalueSetting.ChamberSize += gunStats[perkNum].chamberSizeAdd;
@@ -50,7 +63,9 @@ public class GunPerkValueTeaks : MonoBehaviour
             OGReloadTime = OGvalueSetting.ReloadTime;
             OGBulletSpeed = OGvalueSetting.bulletSpeed;
             OGFireRate = OGvalueSetting.timeInBetweenShots;
-            OGDamage = gunStats[perkNum].damageMult;
+
+            // OG stats before after perk stuff applied
+
             playSO[playInput.playerIndex].bulletsInChamber = OGvalueSetting.ChamberSize;
         }
         else
@@ -61,16 +76,17 @@ public class GunPerkValueTeaks : MonoBehaviour
                 OGvalueSetting.bulletSpeed = OGBulletSpeed;
                 OGvalueSetting.timeInBetweenShots = OGFireRate;
                 OGvalueSetting.ReloadTime = OGReloadTime;
-                playSO[playInput.playerIndex].damageDealtMult = OGDamage;
+                playSO[playInput.playerIndex].damageDealtMult = gunStats[perkNum].damageMult;
                 playSO[playInput.playerIndex].bulletsInChamber = OGvalueSetting.ChamberSize;
             }
             else
             {
-                OGvalueSetting.ChamberSize *= bloodRage.chamberSizeMult;
-                OGvalueSetting.ChamberSize += bloodRage.chamberSizeAdd;
-                OGvalueSetting.ReloadTime *= bloodRage.reloadTimeMult;
-                OGvalueSetting.bulletSpeed *= bloodRage.fireForceMult;
-                OGvalueSetting.timeInBetweenShots *= bloodRage.fireRateMult;
+                OGvalueSetting.ChamberSize = superOGChamberSize * bloodRage.chamberSizeMult;
+                //OGvalueSetting.ChamberSize += bloodRage.chamberSizeAdd;
+                OGvalueSetting.ReloadTime = superOGReloadTime * bloodRage.reloadTimeMult;
+                OGvalueSetting.bulletSpeed = superOGBulletSpeed * bloodRage.fireForceMult;
+                OGvalueSetting.timeInBetweenShots = superOGFireRate * bloodRage.fireRateMult;
+
                 playSO[playInput.playerIndex].bulletsInChamber = OGvalueSetting.ChamberSize;
                 playSO[playInput.playerIndex].damageDealtMult = bloodRage.damageMult;
                 print("BloodRageStats");

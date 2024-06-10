@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using XInputDotNetPure;
 
 public class PLaySO_Reset : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class PLaySO_Reset : MonoBehaviour
         playSO[playInput.playerIndex].canMove = true;
         playSO[playInput.playerIndex].buff = false;
         playSO[playInput.playerIndex].state = 0;
+        playSO[playInput.playerIndex].bulletSpread = false;
         playSO[playInput.playerIndex].firing = false;
         playSO[playInput.playerIndex].money = mainSO.startingCash;
         playSO[playInput.playerIndex].wheelActivate = false;
@@ -52,6 +54,7 @@ public class PLaySO_Reset : MonoBehaviour
         playSO[playInput.playerIndex].resetGunStats = false;
         playSO[playInput.playerIndex].perkButPressed= false;
         playSO[playInput.playerIndex].bloodRaged = false;
+        playSO[playInput.playerIndex].moveAnimsPlayable = true;
 
         StartCoroutine(LateStart());
 

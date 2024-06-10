@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartScreenScrollMan : MonoBehaviour
 {
+    public Animator scrollAnitor;
     public AnimationManager scrollAnim;
     public GameObject scrollPannel;
     public GameObject FX;
@@ -17,11 +18,18 @@ public class StartScreenScrollMan : MonoBehaviour
     public float timeToMapOff;
     public float timeToClose;
     private bool endind = false;
+    private bool loadScene = false;
+    private int sceneLoadTo = 0;
     // Start is called before the first frame update
     void Start()
     {
+        scrollAnitor = scrollPannel.GetComponent<Animator>();
         scrollAnim = scrollPannel.GetComponent<AnimationManager>();
         animFX = FX.GetComponent<AnimationManager>();
+    }
+
+    public void StartUp()
+    {
         StartCoroutine(StartUpCoroutine());
         GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(2);
     }
@@ -29,7 +37,11 @@ public class StartScreenScrollMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (loadScene == true) 
+        {
+            loadScene = false;
+            SceneManager.LoadScene(sceneLoadTo);
+        }
     }
 
     IEnumerator StartUpCoroutine()
@@ -51,17 +63,18 @@ public class StartScreenScrollMan : MonoBehaviour
         scrollAnim.ChangeAnimationState("StartSceneScroll_Close");
         yield return new WaitForSeconds(timeToMapOff);
         UI.SetActive(false);
+        yield return new WaitForSeconds(timeToClose);
         scrollAnim.ChangeAnimationState("StartSceneScroll_Closed");
-        yield return new WaitForSeconds(timeToMapOff);
-        SceneManager.LoadScene(modeScene);
+        sceneLoadTo = modeScene;
+        loadScene = true;
     }
 
     public void ModeButtonPressed(int chosenMode)
     {
         if (endind == false)
         {
+            endind = true;
             StartCoroutine(Close(chosenMode));
-            endind= true;
         }
     }
 }

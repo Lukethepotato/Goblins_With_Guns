@@ -100,7 +100,8 @@ public class PlayerSO_Manager : MonoBehaviour
             playSO[playInput.playerIndex].isReloading = false;
             playSO[playInput.playerIndex].respawning = false;
             playSO[playInput.playerIndex].bloodRaged = false;
-            gunTweaks.ApplyPerkGunStats(true);
+            playSO[playInput.playerIndex].gunChosen = playSO[playInput.playerIndex].oringalGunChosen;
+            gunTweaks.ApplyPerkGunStats(false);
         }
         gate = true;
     }

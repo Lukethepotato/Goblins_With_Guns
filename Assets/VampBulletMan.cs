@@ -12,10 +12,6 @@ public class VampBulletMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (playSO[data.owner].gunChosen == 1)
-        {
-            print("ShottyBulletSpawned");
-        }
     }
 
     // Update is called once per frame

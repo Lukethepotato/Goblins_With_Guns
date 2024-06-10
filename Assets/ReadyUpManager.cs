@@ -58,7 +58,6 @@ public class ReadyUpManager : MonoBehaviour
             cowntDown = 3;
         }
 
-        print(inputManager.playerCount.ToString());
     }
 
     IEnumerator CowntDown()

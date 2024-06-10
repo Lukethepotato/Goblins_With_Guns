@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35cc0779c926c64fbeec9ee870a0240, type: 3}
   m_Name: 11_BloodRage
   m_EditorClassIdentifier: 
-  damageMult: 2
-  fireRateMult: 0.5
-  fireForceMult: 1.2
+  damageMult: 1.5
+  fireRateMult: 0.55
+  fireForceMult: 1.1
   reloadTimeMult: 1
   chamberSizeAdd: 0
-  chamberSizeMult: 3
+  chamberSizeMult: 4

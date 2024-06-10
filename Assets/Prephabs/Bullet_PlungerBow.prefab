@@ -144,6 +144,8 @@ MonoBehaviour:
   knockBackAmount: 5000
   superKnockBackAmount: 25000
   damage: 100
+  ownerInvincTime: 0.25
+  rotateSprite: 1
 --- !u!61 &1776853498987381948
 BoxCollider2D:
   m_ObjectHideFlags: 0

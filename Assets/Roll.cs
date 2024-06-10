@@ -1,3 +1,4 @@
+using MultiplayerBasicExample;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -190,10 +191,10 @@ public class Roll : MonoBehaviour
 
     IEnumerator Rolling()
     {
+        coll2.isTrigger = true;
         if (playSOs[playInput.playerIndex].perkOwned == 5)
         {
             travserableWallColl.SetActive(true);
-            coll2.isTrigger= true;
             coll.isTrigger= true;
         }
         playSOs[playInput.playerIndex].inRollState= true;
@@ -212,6 +213,7 @@ public class Roll : MonoBehaviour
         if (playSOs[playInput.playerIndex].perkOwned != 2)
         {
             gameObject.layer = LayerMask.NameToLayer("Bullets_Ignore");
+            groundColl.layer = LayerMask.NameToLayer("Bullets_Ignore"); 
         }
 
         if (playSOs[playInput.playerIndex].moveInput.y > .5 && xInactive)
@@ -238,6 +240,8 @@ public class Roll : MonoBehaviour
         LeanTween.value(gameObject, startingRollPower, endingRollPower, invisTime).setEaseInExpo().setOnUpdate(LengthSetting);
         //RB.AddForce((playSOs[playInput.playerIndex].moveInput * rollPower * SDMultiplierRunTime * playSOs[playInput.playerIndex].magicRockMult) / playSOs[playInput.playerIndex].fatigue * Time.deltaTime, ForceMode2D.Impulse);
         yield return new WaitForSeconds(invisTime * SDMultiplierRunTime);
+        groundColl.layer = 3;
+        gameObject.layer = 9;
         playSOs[playInput.playerIndex].invincble = false;
         roll = false;
         yield return new WaitForSeconds(vunbilTime / SDMultiplierRunTime);
@@ -246,7 +250,6 @@ public class Roll : MonoBehaviour
         coll.isTrigger = false;
         animManager.ChangeAnimationState(animManager.IDLE);
         playSOs[playInput.playerIndex].rolling = false;
-        gameObject.layer = default;
         float timeToWait;
         float borrowRollWait;
 

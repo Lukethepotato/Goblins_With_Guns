@@ -17,6 +17,8 @@ public class HealingDroneManager : MonoBehaviour
     public bool goingDown = false;
     public AIPath aiPath;
     AIDestinationSetter destinationSetter;
+    public GameObject Target;
+    public Player_SO[] playSO;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +27,26 @@ public class HealingDroneManager : MonoBehaviour
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         aiPath = gameObject.GetComponent<AIPath>();
         destinationSetter = gameObject.GetComponent<AIDestinationSetter>();
-
-        destinationSetter.target = GameObject.Find("Main Camera").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        for (int I = mainSO.playersReadiedUp - 1; I >= 0; I--)
+        {
+            if (playSO[mainSO.rankings[I]].hasDied == false)
+            {
+                Target.transform.position = GameObject.Find("player" + (mainSO.rankings[I] + 1).ToString()).transform.position;
+                I = -1;
+                print("newTarget");
+            }
+            else
+            {
+                print("notDecided");
+            }
+            
+        }
+
 
         if (playersInLandingZone == 1 && droneDeployed == false && cowntdownStarted == false)
         {
