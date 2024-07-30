@@ -200,7 +200,7 @@ public class damageTaking : MonoBehaviour
 
         if (other.gameObject.CompareTag("Lightning") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
         {
-            playSO[playInput.playerIndex].health -= 100 * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
+            playSO[playInput.playerIndex].health -= 300 * playSO[playInput.playerIndex].damageTakeMult * localDamageMult;
             Instantiate(explosionPrephab, transform.position, Quaternion.identity);
             GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }

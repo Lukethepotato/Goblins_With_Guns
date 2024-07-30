@@ -19,7 +19,6 @@ public class SettingsTweeks: MonoBehaviour
         mainSO.healingDroneSpawnChance = baseHealingDroneSpawnChance;
         mainSO.healingDroneLivesToAdd = baseHealingDroneLivesToAdd;
         mainSO.stock = baseStock;
-        mainSO.startingTimer = baseGameLength;
         mainSO.suddenDeathHealth = baseSuddenDeathHealth;
         mainSO.suddenDeathInitiated = false;
 

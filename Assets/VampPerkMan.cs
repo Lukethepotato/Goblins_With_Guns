@@ -34,7 +34,15 @@ public class VampPerkMan : MonoBehaviour
             maxHealth = maxNormHealth;
         }
 
-        
+        if (mainSO.suddenDeathInitiated && playSO[playInput.playerIndex].perkOwned != 4)
+        {
+            maxHealth = 100;
+        }
+        else if (mainSO.suddenDeathInitiated)
+        {
+            maxHealth = 200;
+        }
+
         if (mainSO.setUpOver == false && playSO[playInput.playerIndex].perkOwned == 4 || mainSO.rematchSelected && playSO[playInput.playerIndex].perkOwned == 4)
         {
             playSO[playInput.playerIndex].health = mainSO.startingVampireHealth;
@@ -44,7 +52,7 @@ public class VampPerkMan : MonoBehaviour
         }
         else if (mainSO.setUpOver == false)
         {
-            playSO[playInput.playerIndex].health = 100;
+            playSO[playInput.playerIndex].health = 200;
         }
 
 

@@ -69,4 +69,5 @@ public class Player_SO : ScriptableObject
     public bool bloodRaged;
     public float basePlayerSpeed;
     public bool moveAnimsPlayable;
+    public bool grappling;
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d520ed38c03a07459c9f512971d47e5, type: 3}
   m_Name: Player2
   m_EditorClassIdentifier: 
-  health: 75
+  health: 30.000038
   fireForece: 15
   timeBetweenShots: 0.27
   magazineSize: 5
@@ -21,7 +21,7 @@ MonoBehaviour:
   letterIn: 0
   moveInput: {x: 0, y: 0}
   Aim: {x: 0, y: 0}
-  livesLeft: 198
+  livesLeft: 1
   touchingSewage: 0
   isTurret: 0
   oringalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -36,6 +36,7 @@ MonoBehaviour:
   state: 0
   direction: 2
   firing: 0
+  bulletSpread: 0
   money: 25
   wheelActivate: 0
   freeze: 0
@@ -52,7 +53,7 @@ MonoBehaviour:
   isGamePad: 0
   rematchSetUpComplete: 1
   lightingGoblin: 0
-  perks: 010000000000000000000000
+  perks: 01000000000000000000000000
   perkOwned: 0
   rocksCollected: 3
   magicRockMult: 1
@@ -72,3 +73,4 @@ MonoBehaviour:
   bloodRaged: 0
   basePlayerSpeed: 13.5
   moveAnimsPlayable: 1
+  grappling: 0

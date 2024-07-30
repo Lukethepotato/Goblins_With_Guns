@@ -75,28 +75,28 @@ public class groundColliderDamageTaking : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage && mainSO.freezeAllPlayer == false && raycast == false && playSO[playInput.playerIndex].touchingSewage == false && playSO[playInput.playerIndex].health > 0)
-        {
-            playSO[playInput.playerIndex].health -= sewageDamage;
-            playSO[playInput.playerIndex].touchingSewage = true;
-            print("shouldDie");
-            if (inCourtine == false)
-            {
-                StartCoroutine(sewageNonKill());
-                inCourtine = true;
-                collsion = other;
-            }
-        }
-        else if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage == false && inCoyoteJump == false)
-        {
-            StartCoroutine(CoytoeJump());
-            inCoyoteJump = true;
-        }
-        else if (checkIfTouchingSewage == false && raycast == false && inCourtine == false && playSO[playInput.playerIndex].touchingSewage)
-        {
-            playSO[playInput.playerIndex].touchingSewage = false;
-        }
 
+            if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage && mainSO.freezeAllPlayer == false && raycast == false && playSO[playInput.playerIndex].touchingSewage == false && playSO[playInput.playerIndex].health > 0)
+            {
+                playSO[playInput.playerIndex].health -= sewageDamage;
+                playSO[playInput.playerIndex].touchingSewage = true;
+                print("shouldDie");
+                if (inCourtine == false)
+                {
+                    StartCoroutine(sewageNonKill());
+                    inCourtine = true;
+                    collsion = other;
+                }
+            }
+            else if (other.gameObject.CompareTag("ToxicSewage") && playSO[playInput.playerIndex].inRollState == false && playSO[playInput.playerIndex].health > 0 && checkIfTouchingSewage == false && inCoyoteJump == false)
+            {
+                StartCoroutine(CoytoeJump());
+                inCoyoteJump = true;
+            }
+            else if (checkIfTouchingSewage == false && raycast == false && inCourtine == false && playSO[playInput.playerIndex].touchingSewage)
+            {
+                playSO[playInput.playerIndex].touchingSewage = false;
+            }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -153,7 +153,7 @@ public class BulletFiring : MonoBehaviour
 
         if (playerSO[playInput.playerIndex].gunChosen == 9 && charging && playerSO[playInput.playerIndex].bulletsInChamber > 0)
         {
-            if (playerSO[playInput.playerIndex].perkOwned == 11 && playerSO[playInput.playerIndex].bloodRaged || playerSO[playInput.playerIndex].perkOwned != 11)
+            if ((playerSO[playInput.playerIndex].perkOwned == 11 && playerSO[playInput.playerIndex].bloodRaged) || playerSO[playInput.playerIndex].perkOwned != 11)
             {
                 smgValueSetting.timeInBetweenShots -= (Time.deltaTime * smgBulletTweenDamp / runtimeSMGDamp);
                 smgValueSetting.bulletSpeed += (Time.deltaTime * SMGBulletChargeSpead / runtimeSMGDamp);
@@ -420,7 +420,7 @@ public class BulletFiring : MonoBehaviour
             turretBulletSize = 0;
         }
 
-        if (playerSO[playInput.playerIndex].gunChosen == 10)
+        if (playerSO[playInput.playerIndex].gunChosen == 10 && playerSO[playInput.playerIndex].state == 0 && chargingTurret)
         {
 
             if (charging && playerSO[playInput.playerIndex].bulletsInChamber > 0)

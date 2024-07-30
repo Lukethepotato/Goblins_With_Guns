@@ -384,10 +384,21 @@
                 {
                     "name": "",
                     "id": "202a0f7b-e508-4a8f-8de4-a1acb6237ddb",
-                    "path": "<Keyboard>/v",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Perk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "300ac276-4994-4470-86a2-0e23348e4f30",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Perk",
                     "isComposite": false,
                     "isPartOfComposite": false

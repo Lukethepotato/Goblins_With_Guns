@@ -75,7 +75,7 @@ public class PlayerMagicBookManager : MonoBehaviour
 
     public void MagicBookPickedUp(int bookId)
     {
-        if (playSO[playInput.playerIndex].health > 0)
+        if (playSO[playInput.playerIndex].health > .1 && playSO[playInput.playerIndex].livesLeft > 0)
         {
             playSO[playInput.playerIndex].magicBooksHeld += 1;
 
@@ -164,6 +164,7 @@ public class PlayerMagicBookManager : MonoBehaviour
         animMan.ChangeAnimationState("Target_Idle");
         StartCoroutine(timeTillDisable());
         playSO[playInput.playerIndex].movementSpeed = targetSpeed;
+        playSO[playInput.playerIndex].magicBooksHeld = 0;
     }
 
     IEnumerator timeTillDisable()

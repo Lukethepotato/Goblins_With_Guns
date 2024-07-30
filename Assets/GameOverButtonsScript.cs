@@ -48,6 +48,8 @@ public class GameOverButtonsScript : MonoBehaviour
     public void Quit()
     {
         mapMusic.StopPlaying();
+        GameObject.Find("Music").GetComponent<AudioManager>().Play("StartUpLayer1");
+        GameObject.Find("Music").GetComponent<AudioManager>().Play("StartUpLayer2");
         SceneManager.LoadScene(0);
     }
 

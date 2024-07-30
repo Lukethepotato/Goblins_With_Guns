@@ -59,8 +59,10 @@ public class GunWheelManager : MonoBehaviour
         {
             newGun= Random.Range(0, 4);
         }
+
         gunWheelAnimMan.ChangeAnimationState(gunWheelAnims[newGun]);
         yield return new WaitForSeconds(1.2f);
+        gunValueTweaks.SetGunsBackToNormal();
         playSO[playInput.playerIndex].gunChosen = possibleGuns[newGun];
         gunRolling= false;
         gunWheelAnimMan.ChangeAnimationState("GunWheel.Idle");

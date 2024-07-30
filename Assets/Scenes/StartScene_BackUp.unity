@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35c37a339a42b6478b0004b6449401e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distGuitarVol: 0.6
 --- !u!1 &308839698
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -992,7 +993,7 @@ GameObject:
   - component: {fileID: 973239689}
   m_Layer: 5
   m_Name: InputField (TMP)
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1237,25 +1238,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: StartUpLayer1
-    clip: {fileID: 8300000, guid: 03db874e6d33aba458367300ac61aee2, type: 3}
+    clip: {fileID: 8300000, guid: 099c6a725833ab5428599a2f277e4f05, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: StartUpLayer2
-    clip: {fileID: 8300000, guid: 8c91b981c7e4ab744accd70528d7c690, type: 3}
+    clip: {fileID: 8300000, guid: d700ac385410a264b828ca205b661b27, type: 3}
     volume: 0
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: StartUpLayer3
-    clip: {fileID: 8300000, guid: f12e109129ef1fc4fb4d1e5586e0122f, type: 3}
+    clip: {fileID: 8300000, guid: 34e78dfb7a8a23d4ca773c7d5ad9d80c, type: 3}
     volume: 0
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: StartUpLayer4
-    clip: {fileID: 8300000, guid: 0f81d6acd6198a044ba924b3d1ae4ca2, type: 3}
+    clip: {fileID: 8300000, guid: 1cf0defaf98354e49bc1c7e49df55498, type: 3}
     volume: 0
     pitch: 1
     loop: 1
@@ -1267,13 +1268,19 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: Casino
-    clip: {fileID: 8300000, guid: acae8903e4ae8dc4c8c97488309953e4, type: 3}
+    clip: {fileID: 8300000, guid: 2b5d0158383f4a647b8c124b3766ea3b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Misc
     clip: {fileID: 8300000, guid: 196f28c0e1e018441acada1d127e681b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Wungeon Dungeon
+    clip: {fileID: 8300000, guid: 659e663977fd1d943b482bb8ff448a0d, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -1588,6 +1595,7 @@ GameObject:
   - component: {fileID: 1553141594}
   - component: {fileID: 1553141593}
   - component: {fileID: 1553141597}
+  - component: {fileID: 1553141598}
   m_Layer: 5
   m_Name: Public Canvas
   m_TagString: Untagged
@@ -1691,6 +1699,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameModeSelect: {fileID: 1320530411}
+--- !u!114 &1553141598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553141591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9d175534a61644ebb51fcdf70559a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1553903484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,8 +2129,9 @@ GameObject:
   - component: {fileID: 1805877917}
   - component: {fileID: 1805877916}
   - component: {fileID: 1805877915}
+  - component: {fileID: 1805877918}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Main Camera (Cursor Disable)
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2182,6 +2203,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1805877918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805877914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9605bb155a3640a09a6a8bf91f2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1845656327
 GameObject:
   m_ObjectHideFlags: 0

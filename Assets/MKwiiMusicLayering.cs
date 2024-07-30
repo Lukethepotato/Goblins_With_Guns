@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class MKwiiMusicLayering : MonoBehaviour
 {
+    public float distGuitarVol;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
         GameObject.Find("Music").GetComponent<AudioManager>().Play("StartUpLayer1");
@@ -22,7 +28,17 @@ public class MKwiiMusicLayering : MonoBehaviour
 
     public void PlayLayer(int layer)
     {
-        GameObject.Find("Music").GetComponent<AudioManager>().RaiseVolume("StartUpLayer" + layer.ToString(),1);
+        /*
+        if (layer == 4)
+        {
+            GameObject.Find("Music").GetComponent<AudioManager>().RaiseVolume("StartUpLayer" + layer.ToString(), distGuitarVol);
+        }
+        else
+        */
+
+        {
+            GameObject.Find("Music").GetComponent<AudioManager>().RaiseVolume("StartUpLayer" + layer.ToString(), .5f);
+        }
     }
 
 

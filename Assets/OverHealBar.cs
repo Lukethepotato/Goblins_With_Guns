@@ -10,6 +10,7 @@ public class OverHealBar : MonoBehaviour
     public GameObject mainObject;
     public PlayerInput playInput;
     public Player_SO[] playSO;
+    public float detractingAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,6 @@ public class OverHealBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.value = playSO[playInput.playerIndex].health - 100;
+        slider.value = playSO[playInput.playerIndex].health - detractingAmount;
     }
 }

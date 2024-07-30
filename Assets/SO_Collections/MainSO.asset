@@ -15,16 +15,16 @@ MonoBehaviour:
   playersDead: 0
   gameIsOver: 0
   winner: 0
-  playersReadiedUp: 1
+  playersReadiedUp: 2
   setUpOver: 1
   playersSpawnLocations:
-  - {x: 2, y: 1}
-  - {x: 55, y: 42}
-  - {x: 2, y: 43}
-  - {x: 59, y: 3}
-  - {x: 60, y: 23}
-  - {x: 22, y: 8}
-  - {x: 29, y: 45}
+  - {x: 2.03, y: 4.44}
+  - {x: 63.41, y: 4.44}
+  - {x: 63.8, y: 40.56}
+  - {x: 2.11, y: 40.56}
+  - {x: 33, y: 20}
+  - {x: 32, y: 1}
+  - {x: 63, y: 23}
   playerBoxLocations:
   - {x: -680, y: 35, z: 0}
   - {x: -205, y: 35, z: 0}
@@ -38,11 +38,11 @@ MonoBehaviour:
   rematchSelected: 0
   stock: 3
   turretHealth: 200
-  map: 1
+  map: 6
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
-  startingTimer: 90
-  currentTimer: 100000010
+  startingTimer: 160
+  currentTimer: 6000000.5
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
@@ -51,11 +51,11 @@ MonoBehaviour:
   startingCash: 25
   startingTurretHealth: 200
   perksAllowed: 3
-  startingVampireHealth: 50
-  rockMulptChange: 0.15
+  startingVampireHealth: 100
+  rockMulptChange: 0.075
   inSuddenDeath: 0
   reloadMoveSpeed: 7
-  rankings: 0000000001000000
+  rankings: 0100000000000000
   playerInLightning: 0
   bulletPlayerLess: 0
   megaBulletsToAdd: 2
@@ -63,7 +63,7 @@ MonoBehaviour:
   bounceyBulletsDamMult: 0.65
   bounceyBulletBounceIncrease: 3
   preGameSetUp: 1
-  scoutHealth: 65
+  scoutHealth: 120
   maxWidowMult: 5
   chosenTrivia: {fileID: 11400000, guid: cd19b835d0619e54a9825ed05335d689, type: 2}
   inHalfTime: 0
@@ -73,18 +73,13 @@ MonoBehaviour:
   halfTimeEnabled: 0
   wayPoints:
   - {x: 0, y: 0}
-  - {x: 0.7, y: 44.7}
-  - {x: 61, y: 45}
-  - {x: 61, y: 1}
   - {x: 0, y: 0}
-  possibleLocas:
   - {x: 0, y: 0}
-  - {x: 0, y: 45}
-  - {x: 60.99, y: 45.14}
-  - {x: 29.9, y: 0.8}
-  - {x: 60, y: 23}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  possibleLocas: []
   playStartUpMov: 0
   inStartUpMov: 0
-  gamePaused: 1
+  gamePaused: 0
   bloodRagedSpeed: 15.5
   lightingFireingSpeed: 7.5

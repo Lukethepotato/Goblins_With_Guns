@@ -71,6 +71,7 @@ public class MushroomPadPlayerMan : MonoBehaviour
         if (collision.gameObject.tag == "MushroomPropel" && boucning == false)
         {
             StartCoroutine(MushroomPropel());
+            collision.gameObject.GetComponent<MushCollScript>().PlayBunce();
             explosionLoca = collision.transform.position;
             print("propel");
         }

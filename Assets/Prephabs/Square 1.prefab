@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &2354721335152049125
 CircleCollider2D:
@@ -225,6 +225,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 33
+  OGTimeBetweenShots: 0
   ReloadTime: 1
   ChamberSize: 1
   timeInBetweenShots: 0.25
@@ -242,6 +243,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &2357325126283765243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,6 +1223,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 4
+  OGTimeBetweenShots: 0
   ReloadTime: 0.75
   ChamberSize: 1
   timeInBetweenShots: 0.5
@@ -1238,6 +1241,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 0
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &4923069086888269864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1828,6 +1832,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2d72d46bf8929cd42b3651f42cb813f5, type: 2}
   - {fileID: 11400000, guid: 2d72d46bf8929cd42b3651f42cb813f5, type: 2}
   - {fileID: 11400000, guid: cf484fe5e2fba8840b28bf13454f35f7, type: 2}
+  - {fileID: 11400000, guid: 2d72d46bf8929cd42b3651f42cb813f5, type: 2}
   parent: {fileID: 6597591818688195374}
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
@@ -1850,7 +1855,18 @@ MonoBehaviour:
   - {fileID: 2380528094741841708}
   - {fileID: 8765004944186103777}
   bloodRage: {fileID: 11400000, guid: fd3b7ae842eb7534f8a38a51eecb1171, type: 2}
+  gunAbstineceStat: {fileID: 11400000, guid: cf484fe5e2fba8840b28bf13454f35f7, type: 2}
   gunsPerkified: 0000000000000000000000000000
+  BR_ChamberSize: 0
+  BR_ReloadTime: 0
+  BR_FireRate: 0
+  BR_DamageMult: 0
+  BR_FireForce: 0
+  Ab_ChamberSize: 0
+  Ab_ReloadTime: 0
+  Ab_FireRate: 0
+  Ab_DamageMult: 0
+  Ab_FireForce: 0
 --- !u!114 &2338847710250189695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2090,6 +2106,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 15
+  OGTimeBetweenShots: 0
   ReloadTime: 0.8
   ChamberSize: 3
   timeInBetweenShots: 0.6
@@ -2107,6 +2124,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &4469572432927709105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2690,6 +2708,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  detractingAmount: 100
 --- !u!1 &2144979537215749685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,6 +2950,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 17
+  OGTimeBetweenShots: 0
   ReloadTime: 0.75
   ChamberSize: 200
   timeInBetweenShots: 0.1
@@ -2948,6 +2968,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &3340841321027630414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3345,6 +3366,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 17.5
+  OGTimeBetweenShots: 0
   ReloadTime: 1.2
   ChamberSize: 25
   timeInBetweenShots: 0.065
@@ -3362,6 +3384,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 1
+  casinoWeapon: 0
 --- !u!114 &1532871902351057563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3439,6 +3462,7 @@ RectTransform:
   m_Children:
   - {fileID: 5868660856296978099}
   - {fileID: 3260144563921498119}
+  - {fileID: 7453989205683152535}
   m_Father: {fileID: 2910731100970707687}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3568,6 +3592,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   copyFP: {fileID: 0}
+--- !u!1 &2928637155261560531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2914838785386973882}
+  - component: {fileID: 32285513478491123}
+  - component: {fileID: 6247320836454375685}
+  m_Layer: 31
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2914838785386973882
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928637155261560531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0619, y: 1.0619, z: 1.0619}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88185460144919297}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.5000076, y: 0.06599712}
+  m_SizeDelta: {x: 1, y: -1.7839994}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &32285513478491123
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928637155261560531}
+  m_CullTransparentMesh: 1
+--- !u!114 &6247320836454375685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928637155261560531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 19a9abb883540be48b75b951a927ae03, type: 3}
+  m_Color: {r: 1, g: 0.9093014, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e96d9e3cec6ad6245bf4ff3f3d82d0fa, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2964046030288427517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,6 +3929,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 14
+  OGTimeBetweenShots: 0
   ReloadTime: 0.85
   ChamberSize: 11
   timeInBetweenShots: 0.08
@@ -3846,6 +3947,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 1
+  casinoWeapon: 0
 --- !u!114 &3987188693456745866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4218,6 +4320,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6166c6b483731e147bdac0679bbf5261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4153959158894570873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3092259907919809504}
+  - component: {fileID: 2563170220287052626}
+  - component: {fileID: 5354108544283602680}
+  m_Layer: 31
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &3092259907919809504
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153959158894570873}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8506790128627334400}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2563170220287052626
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153959158894570873}
+  m_CullTransparentMesh: 1
+--- !u!114 &5354108544283602680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153959158894570873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4220781500064978203
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,6 +4526,118 @@ MonoBehaviour:
   Run_Backward_Left: Run_Backward_Left
   Roll_Left: Roll_Left
   Roll_Right: Roll_Right
+--- !u!1 &4430206368250063785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7453989205683152535}
+  - component: {fileID: 7728956120947626182}
+  - component: {fileID: 121054169522564892}
+  m_Layer: 31
+  m_Name: OverHeal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7453989205683152535
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4430206368250063785}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 88185460144919297}
+  - {fileID: 8506790128627334400}
+  m_Father: {fileID: 2532168570909718019}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -532.67017, y: -298.55927}
+  m_SizeDelta: {x: 100.6233, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7728956120947626182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4430206368250063785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+    m_HighlightedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_PressedColor: {r: 0.14509805, g: 0.10588236, b: 0.03137255, a: 1}
+    m_SelectedColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 5354108544283602680}
+  m_FillRect: {fileID: 2914838785386973882}
+  m_HandleRect: {fileID: 3092259907919809504}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 0
+  m_Value: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &121054169522564892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4430206368250063785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3974faa2b9c1854a822a75372e56f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 7728956120947626182}
+  mainObject: {fileID: 6597591818688195374}
+  playInput: {fileID: 6597591818688195373}
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  detractingAmount: 200
 --- !u!1 &4503133034470403147
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +5057,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 28
+  OGTimeBetweenShots: 0
   ReloadTime: 1
   ChamberSize: 1
   timeInBetweenShots: 0.5
@@ -4784,6 +5075,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &7691450014430240196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5090,6 +5382,43 @@ Transform:
   m_Father: {fileID: 590304528070533876}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5287906302271913737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88185460144919297}
+  m_Layer: 31
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &88185460144919297
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5287906302271913737}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2914838785386973882}
+  m_Father: {fileID: 7453989205683152535}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -27.405, y: 0.06899595}
+  m_SizeDelta: {x: -57.328, y: -4.785}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5313990430703508449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,6 +5545,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 23
+  OGTimeBetweenShots: 0
   ReloadTime: 0
   ChamberSize: 1
   timeInBetweenShots: 0.2
@@ -5233,6 +5563,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 0
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &729816599429556360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5425,7 +5756,7 @@ Transform:
   m_Children:
   - {fileID: 3911806038814517230}
   m_Father: {fileID: 6597591818688195371}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &126710147386744264
 MonoBehaviour:
@@ -6327,6 +6658,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 18
+  OGTimeBetweenShots: 0
   ReloadTime: 1
   ChamberSize: 100
   timeInBetweenShots: 0.02
@@ -6344,6 +6676,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 0
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &2592033850301784048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6535,6 +6868,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 35
+  OGTimeBetweenShots: 0
   ReloadTime: 1
   ChamberSize: 0
   timeInBetweenShots: 0.7
@@ -6552,6 +6886,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 0
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &7594390715876349716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6666,6 +7001,8 @@ GameObject:
   - component: {fileID: 34013713183955441}
   - component: {fileID: 1533975225636957488}
   - component: {fileID: 7569874392868954680}
+  - component: {fileID: 7667819261104092188}
+  - component: {fileID: 3453586684170473402}
   m_Layer: 9
   m_Name: Square 1
   m_TagString: Player
@@ -6696,8 +7033,8 @@ Transform:
   - {fileID: 3656249639605434877}
   - {fileID: 8184625020360708055}
   - {fileID: 2352365555831082083}
-  - {fileID: 4577193900243459810}
   - {fileID: 2120209457444072545}
+  - {fileID: 4577193900243459810}
   - {fileID: 6762994327018305042}
   - {fileID: 246361505861664636}
   - {fileID: 8464208612826128705}
@@ -7256,8 +7593,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   basicBulletDamage: 25
-  startingHealth: 100
+  startingHealth: 200
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  gate: 1
   respawnTime: 3.5
   inputAction:
     m_Name: Input
@@ -7854,9 +8192,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
-  maxHealth: 200
-  maxNormHealth: 100
-  maxVampHealth: 200
+  maxHealth: 300
+  maxNormHealth: 200
+  maxVampHealth: 300
 --- !u!114 &2585901434030624755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8069,7 +8407,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   canMakeTurret: 1
-  coolDown: 4
+  coolDown: 2.5
   activeCoolDown: 0
   sentry: {fileID: 3433669826173071499, guid: 3018be94b8b3915478d30ccb624c1d46, type: 3}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
@@ -8201,7 +8539,138 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 11400000, guid: 101a2ccddad402c4882628faa4183357, type: 2}
   - {fileID: 11400000, guid: 6a6e9a2932cb7ae49b59b42e75038559, type: 2}
+  - {fileID: 0}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+--- !u!114 &7667819261104092188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc2150befc890343aec61a929861e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hook: {fileID: 1981985102293419580, guid: 4253db9cb12f7d0499e5bbca391a3871, type: 3}
+  LinRend: {fileID: 3453586684170473402}
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  playInput: {fileID: 6597591818688195373}
+  grapplesAvible: 1
+  fireForce: 35
+  leiusureTime: 0.65
+  RB2d: {fileID: 6597591818688195375}
+  pullForce: 7500
+  firePointCopy: {fileID: 5762662365024190397}
+  pull: 0
+  displayGrap: 0
+  timeTillOveride: 2.5
+  hookedPlayer: -1
+  groundColl: {fileID: 6176158824914369220}
+--- !u!120 &3453586684170473402
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 87dee5d03323e4003a9785eface0284a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1611159201
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.00705719
+        value: 0.515625
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 1
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
 --- !u!1 &6600092420458733488
 GameObject:
   m_ObjectHideFlags: 0
@@ -8434,7 +8903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4203501447081788717
 Transform:
   m_ObjectHideFlags: 0
@@ -8559,6 +9028,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 27
+  OGTimeBetweenShots: 0
   ReloadTime: 0.78
   ChamberSize: 1
   timeInBetweenShots: 0.3
@@ -8576,6 +9046,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &8562374793696851240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9174,6 +9645,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 14
+  OGTimeBetweenShots: 0
   ReloadTime: 0.75
   ChamberSize: 2
   timeInBetweenShots: 0.5
@@ -9191,6 +9663,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &509868446969844669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9266,6 +9739,43 @@ Transform:
   m_Father: {fileID: 590304528070533876}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7185830679160316985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8506790128627334400}
+  m_Layer: 31
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8506790128627334400
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7185830679160316985}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3092259907919809504}
+  m_Father: {fileID: 7453989205683152535}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.0000019073486}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7400942635479595599
 GameObject:
   m_ObjectHideFlags: 0
@@ -9758,6 +10268,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 15
+  OGTimeBetweenShots: 0
   ReloadTime: 0.75
   ChamberSize: 5
   timeInBetweenShots: 0.27
@@ -9775,6 +10286,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &2563975902713488140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10110,7 +10622,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8252889942074894896}
   m_LocalRotation: {x: -0, y: -0, z: 0.7079461, w: -0.7062664}
-  m_LocalPosition: {x: 1.44, y: -0, z: 0}
+  m_LocalPosition: {x: 1.493, y: 0.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10793,7 +11305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4049177058656572354
 Transform:
   m_ObjectHideFlags: 0
@@ -10896,8 +11408,8 @@ MonoBehaviour:
   playerObject: {fileID: 6597591818688195374}
   aimCircle: {fileID: 8645670103882581331}
   aim: {x: 0, y: 0}
-  firePoint: {fileID: 0}
-  firePointBaseLocation: {x: 0, y: 0}
+  firePoint: {fileID: 8252889942074894896}
+  firePointBaseLocation: {x: 1.493, y: 0.44}
   SRFlip: 1
 --- !u!114 &3046426232672205382
 MonoBehaviour:
@@ -10918,6 +11430,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   playInput: {fileID: 6597591818688195373}
   bulletSpeed: 8
+  OGTimeBetweenShots: 0
   ReloadTime: 1
   ChamberSize: 3
   timeInBetweenShots: 0.2
@@ -10935,6 +11448,7 @@ MonoBehaviour:
   perkValTweaks: {fileID: 1960558713113004690}
   parentAnimControl: 1
   automaticAnim: 0
+  casinoWeapon: 0
 --- !u!114 &7311277139737312274
 MonoBehaviour:
   m_ObjectHideFlags: 0

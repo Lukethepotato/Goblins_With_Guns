@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
   m_Name: XboxSheet
   m_EditorClassIdentifier: 
-  hashCode: -797299210
-  material: {fileID: 537917979738564189}
+  hashCode: -520138975
+  material: {fileID: 4678163529407996297}
   materialHashCode: 0
   m_Version: 1.1.0
   m_FaceInfo:
@@ -38,100 +38,144 @@ MonoBehaviour:
     m_StrikethroughOffset: 0
     m_StrikethroughThickness: 0
     m_TabWidth: 0
-  spriteSheet: {fileID: 2800000, guid: 6fec180aecfb255478c17fc62d9a77ec, type: 3}
+  spriteSheet: {fileID: 2800000, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
   m_SpriteCharacterTable:
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 0
-    m_Scale: 1.7
+    m_GlyphIndex: 1
+    m_Scale: 2.1
     m_Name: fire
     m_HashCode: 3711640
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 1
-    m_Scale: 1.7
+    m_GlyphIndex: 0
+    m_Scale: 2.1
     m_Name: roll
     m_HashCode: 4140125
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 2
-    m_Scale: 1.7
+    m_Scale: 2.1
     m_Name: reload
     m_HashCode: 211666481
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 3
-    m_Scale: 1.7
+    m_Scale: 2.1
     m_Name: interact
     m_HashCode: 54661522
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 5
+    m_Scale: 2.1
+    m_Name: perk
+    m_HashCode: 3926476
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 5
+    m_Scale: 2.1
+    m_Name: roll 2
+    m_HashCode: 213627727
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
-      m_Width: 100
-      m_Height: 100
-      m_HorizontalBearingX: 4
-      m_HorizontalBearingY: 63
-      m_HorizontalAdvance: 100
+      m_Width: 18.666666
+      m_Height: 21
+      m_HorizontalBearingX: -4.11
+      m_HorizontalBearingY: 12.38
+      m_HorizontalAdvance: 15.5
     m_GlyphRect:
       m_X: 0
       m_Y: 0
-      m_Width: 100
-      m_Height: 100
+      m_Width: 18
+      m_Height: 21
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-    sprite: {fileID: -664137632, guid: 6fec180aecfb255478c17fc62d9a77ec, type: 3}
+    sprite: {fileID: 978713542, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
   - m_Index: 1
     m_Metrics:
-      m_Width: 100
-      m_Height: 100
-      m_HorizontalBearingX: 4
-      m_HorizontalBearingY: 63
-      m_HorizontalAdvance: 100
+      m_Width: 18.666666
+      m_Height: 21
+      m_HorizontalBearingX: -4.11
+      m_HorizontalBearingY: 12.38
+      m_HorizontalAdvance: 15.5
     m_GlyphRect:
-      m_X: 100
+      m_X: 18
       m_Y: 0
-      m_Width: 100
-      m_Height: 100
+      m_Width: 18
+      m_Height: 21
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-    sprite: {fileID: 423099754, guid: 6fec180aecfb255478c17fc62d9a77ec, type: 3}
+    sprite: {fileID: -152592923, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
   - m_Index: 2
     m_Metrics:
-      m_Width: 100
-      m_Height: 100
-      m_HorizontalBearingX: 4
-      m_HorizontalBearingY: 63
-      m_HorizontalAdvance: 100
+      m_Width: 18.666666
+      m_Height: 21
+      m_HorizontalBearingX: -4.11
+      m_HorizontalBearingY: 12.38
+      m_HorizontalAdvance: 15.5
     m_GlyphRect:
-      m_X: 200
+      m_X: 36
       m_Y: 0
-      m_Width: 100
-      m_Height: 100
+      m_Width: 18
+      m_Height: 21
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-    sprite: {fileID: 1743694231, guid: 6fec180aecfb255478c17fc62d9a77ec, type: 3}
+    sprite: {fileID: -441768667, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
   - m_Index: 3
     m_Metrics:
-      m_Width: 100
-      m_Height: 100
-      m_HorizontalBearingX: 4
-      m_HorizontalBearingY: 63
-      m_HorizontalAdvance: 100
+      m_Width: 18.666666
+      m_Height: 21
+      m_HorizontalBearingX: -4.11
+      m_HorizontalBearingY: 12.38
+      m_HorizontalAdvance: 15.5
     m_GlyphRect:
-      m_X: 300
+      m_X: 54
       m_Y: 0
-      m_Width: 100
-      m_Height: 100
+      m_Width: 18
+      m_Height: 21
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-    sprite: {fileID: 2078824929, guid: 6fec180aecfb255478c17fc62d9a77ec, type: 3}
+    sprite: {fileID: -713682913, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 18.666666
+      m_Height: 21
+      m_HorizontalBearingX: -4.11
+      m_HorizontalBearingY: 12.38
+      m_HorizontalAdvance: 15.5
+    m_GlyphRect:
+      m_X: 72
+      m_Y: 0
+      m_Width: 18
+      m_Height: 21
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 1404612835, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
+  - m_Index: 5
+    m_Metrics:
+      m_Width: 18.666666
+      m_Height: 21
+      m_HorizontalBearingX: -4.11
+      m_HorizontalBearingY: 12.38
+      m_HorizontalAdvance: 15.5
+    m_GlyphRect:
+      m_X: 90
+      m_Y: 0
+      m_Width: 18
+      m_Height: 21
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 1662303050, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []
---- !u!21 &537917979738564189
+--- !u!21 &4678163529407996297
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 1
@@ -152,7 +196,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6fec180aecfb255478c17fc62d9a77ec, type: 3}
+        m_Texture: {fileID: 2800000, guid: ff18ce962f52396499c36aa21c0ef651, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []

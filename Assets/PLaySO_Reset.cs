@@ -55,6 +55,7 @@ public class PLaySO_Reset : MonoBehaviour
         playSO[playInput.playerIndex].perkButPressed= false;
         playSO[playInput.playerIndex].bloodRaged = false;
         playSO[playInput.playerIndex].moveAnimsPlayable = true;
+        playSO[playInput.playerIndex].grappling= false;
 
         StartCoroutine(LateStart());
 

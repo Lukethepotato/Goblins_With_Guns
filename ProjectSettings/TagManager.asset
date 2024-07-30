@@ -36,6 +36,8 @@ TagManager:
   - TargetBulletBox
   - Object
   - SUS
+  - Hook
+  - wall
   layers:
   - Default
   - TransparentFX

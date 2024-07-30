@@ -75,6 +75,7 @@ public class ReadyUpManager : MonoBehaviour
             print("setUpOver");
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            InputSystem.EnableDevice(Mouse.current);
             mapSong.PlayMapSong();
             mainSO.inStartUpMov = true;
             mainSO.inStartUpMov = false;

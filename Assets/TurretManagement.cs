@@ -37,11 +37,8 @@ public class TurretManagement : MonoBehaviour
     {
         if (playSO[playInput.playerIndex].isTurret)
         {
-            guns[0].SetActive(false);
-            guns[1].SetActive(false);
-            guns[2].SetActive(false);
+            guns[playSO[playInput.playerIndex].gunChosen].GetComponent<GunPerkValueTeaks>().SetGunsBackToNormal();
             guns[3].SetActive(true);
-            guns[4].SetActive(false);
 
             if (collBig == false)
             {
@@ -69,6 +66,7 @@ public class TurretManagement : MonoBehaviour
         if (playSO[playInput.playerIndex].isTurret == false && touchingCollider) 
         {
             guns[3].SetActive(false);
+            guns[playSO[playInput.playerIndex].gunChosen].GetComponent<GunPerkValueTeaks>().SetGunsBackToNormal();
             guns[playSO[playInput.playerIndex].gunChosen].SetActive(true);
             //gunValueTweaks.ApplyPerkGunStats(true);
             print("ehfhfu");

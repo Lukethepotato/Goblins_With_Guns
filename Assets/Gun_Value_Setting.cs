@@ -10,6 +10,7 @@ public class Gun_Value_Setting : MonoBehaviour
     public PlayerInput playInput;
 
     public float bulletSpeed;
+    public float OGTimeBetweenShots;
     public float ReloadTime;
     public int ChamberSize;
     public float timeInBetweenShots;
@@ -34,7 +35,12 @@ public class Gun_Value_Setting : MonoBehaviour
     public GunPerkValueTeaks perkValTweaks;
     public bool parentAnimControl = true;
     public bool automaticAnim = false;
+    public bool casinoWeapon = false;
 
+    private void Awake()
+    {
+        OGTimeBetweenShots = timeInBetweenShots;
+    }
     // Start is called before the first frame update
     void Start()
     {

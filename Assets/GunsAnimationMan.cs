@@ -40,6 +40,12 @@ public class GunsAnimationMan : MonoBehaviour
                     guns[currentGun].GetComponent<AnimationManager>().ChangeAnimationState(shootAnimName + guns[currentGun].name);
                 }
             }
+            /*
+            else if (currentGun == 10 &&)
+            {
+
+            }
+            */
             else if (guns[currentGun].GetComponent<Gun_Value_Setting>().automaticAnim)
             {
                 if (playSO[playInput.playerIndex].gunChosen == 4 && firing.revingMiniGun)
@@ -58,7 +64,7 @@ public class GunsAnimationMan : MonoBehaviour
     {
         inAnim= true;
         guns[currentGun].GetComponent<AnimationManager>().ChangeAnimationState(shootAnimName + guns[currentGun].name);
-        yield return new WaitForSeconds(guns[currentGun].GetComponent<Gun_Value_Setting>().timeInBetweenShots);
+        yield return new WaitForSeconds(guns[currentGun].GetComponent<Gun_Value_Setting>().OGTimeBetweenShots);
         guns[currentGun].GetComponent<AnimationManager>().ChangeAnimationState("Gun_Idle" + guns[currentGun].name);
         inAnim = false;
     }

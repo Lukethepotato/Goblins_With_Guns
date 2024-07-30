@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 3918695096124948467}
   - component: {fileID: 3573782984152231694}
   - component: {fileID: 135579771363873826}
+  - component: {fileID: 6402868450790333023}
+  - component: {fileID: 1115487657651203309}
+  - component: {fileID: 6486368053373888936}
   m_Layer: 0
   m_Name: MushroomJumpad
   m_TagString: MushroomPropel
@@ -74,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60c4a230560db1a478b58e18031afb32, type: 3}
+  m_Sprite: {fileID: -1278619986, guid: d6f04d388cd47c044bc16c913d401140, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +105,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.5, y: 7.5}
+    oldSize: {x: 7, y: 7}
     newSize: {x: 7.5, y: 7.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -111,3 +114,62 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3.5}
   m_EdgeRadius: 0
+--- !u!114 &6402868450790333023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3848166917394035903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab5fe67f7601af44a6206a90ac133ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBeforeBouce: 0.1
+  animTime: 0.42
+  animMan: {fileID: 1115487657651203309}
+--- !u!114 &1115487657651203309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3848166917394035903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae944d207c0e8334194449a3f4f254c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6486368053373888936}
+  ROLL: Roll
+  ROLL_FORWARD: Roll_Forward
+  IDLE: Idle
+  Run_Forward: Run_Forward
+  Run_Forward_Left: Run_Forward_Left
+  Run_Forward_Right: Run_Forward_Right
+  Run_Backward: Run_Backward
+  Run_Backward_Right: Run_Backward_Right
+  Run_Backward_Left: Run_Backward_Left
+  Roll_Left: Roll_Left
+  Roll_Right: Roll_Right
+--- !u!95 &6486368053373888936
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3848166917394035903}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d8d54991bbd7320449c7dc0261975386, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

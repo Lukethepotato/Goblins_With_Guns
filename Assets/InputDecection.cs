@@ -42,6 +42,14 @@ public class InputDecection : MonoBehaviour
         {
             return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"reload\">";
         }
+        else if (inputType == "perk")
+        {
+            return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"perk\">";
+        }
+        else if (inputType == "roll 2")
+        {
+            return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"roll 2\">";
+        }
         else
         {
             return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"roll\">";

@@ -12,7 +12,7 @@ public class PlayerSO_Manager : MonoBehaviour
     public float basicBulletDamage;
     public float startingHealth;
     public MainSO mainSO;
-    private bool gate = true;
+    public bool gate = true;
     public float respawnTime = 0.5f;
     public InputActionMap inputAction;
     BoxCollider2D BoxCollider2D;
@@ -41,7 +41,7 @@ public class PlayerSO_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playSO[playInput.playerIndex].health < 1 && playSO[playInput.playerIndex].hasDied == false && mainSO.setUpOver && gate) 
+        if (playSO[playInput.playerIndex].health <= .1f && playSO[playInput.playerIndex].hasDied == false && mainSO.setUpOver && gate) 
         {
             StartCoroutine(Respawn());
             effectAnimMan.ChangeAnimationState("Effects_Idle");
@@ -77,6 +77,7 @@ public class PlayerSO_Manager : MonoBehaviour
         print("Life-1");
         if (playSO[playInput.playerIndex].livesLeft > 0)
         {
+
             playSO[playInput.playerIndex].inGame = true;
             playInput.ActivateInput();
             if (mainSO.inSuddenDeath == false && playSO[playInput.playerIndex].health <= 0)
@@ -93,7 +94,7 @@ public class PlayerSO_Manager : MonoBehaviour
             }
             else
             {
-                playSO[playInput.playerIndex].health = 100;
+                playSO[playInput.playerIndex].health = 200;
             }
             BoxCollider2D.enabled = true;
             floorColl.enabled = true;

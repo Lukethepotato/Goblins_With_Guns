@@ -36,6 +36,7 @@ MonoBehaviour:
   state: 0
   direction: 2
   firing: 0
+  bulletSpread: 0
   money: 0
   wheelActivate: 0
   freeze: 0
@@ -52,7 +53,7 @@ MonoBehaviour:
   isGamePad: 0
   rematchSetUpComplete: 0
   lightingGoblin: 0
-  perks: 000000000000000000000000
+  perks: 00000000000000000000000000
   perkOwned: 0
   rocksCollected: 3
   magicRockMult: 1
@@ -64,3 +65,12 @@ MonoBehaviour:
   ActiveMoveInput: {x: 0, y: 0}
   damageDealtMult: 0
   damageTakeMult: 0
+  orinagalChamberSize: 0
+  orinagalReloadSpeed: 0
+  respawning: 0
+  resetGunStats: 0
+  perkButPressed: 0
+  bloodRaged: 0
+  basePlayerSpeed: 0
+  moveAnimsPlayable: 0
+  grappling: 0

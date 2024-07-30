@@ -48,11 +48,11 @@ public class BloodRageMan : MonoBehaviour
                     }
                 }
 
-                if (playSO[playInput.playerIndex].bloodRaged && playSO[playInput.playerIndex].health > 0)
+                if (playSO[playInput.playerIndex].bloodRaged && playSO[playInput.playerIndex].health > .1f)
                 {
                     playSO[playInput.playerIndex].health -= Time.deltaTime * bloodRageDrain;
                 }
-                else if (playSO[playInput.playerIndex].health > 0)
+                else if (playSO[playInput.playerIndex].health > .1f)
                 {
                     playSO[playInput.playerIndex].health += Time.deltaTime * BlueBallsHealthIncrease;
                 }
