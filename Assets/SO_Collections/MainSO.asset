@@ -15,21 +15,21 @@ MonoBehaviour:
   playersDead: 0
   gameIsOver: 0
   winner: 0
-  playersReadiedUp: 2
-  setUpOver: 1
+  playersReadiedUp: 0
+  setUpOver: 0
   playersSpawnLocations:
-  - {x: 2.03, y: 4.44}
-  - {x: 63.41, y: 4.44}
-  - {x: 63.8, y: 40.56}
-  - {x: 2.11, y: 40.56}
-  - {x: 33, y: 20}
-  - {x: 32, y: 1}
-  - {x: 63, y: 23}
+  - {x: 2, y: 1}
+  - {x: 55, y: 42}
+  - {x: 2, y: 43}
+  - {x: 59, y: 3}
+  - {x: 60, y: 23}
+  - {x: 22, y: 8}
+  - {x: 29, y: 45}
   playerBoxLocations:
-  - {x: -680, y: 35, z: 0}
-  - {x: -205, y: 35, z: 0}
-  - {x: 260, y: 35, z: 0}
-  - {x: 720, y: 35, z: 0}
+  - {x: -528.9, y: 25, z: 0}
+  - {x: -177.3, y: 25, z: 0}
+  - {x: 196.6, y: 25, z: 0}
+  - {x: 558.7, y: 25, z: 0}
   playerSuddenDeathSpawnLocations:
   - {x: 4.11, y: -0.5}
   - {x: 16.48, y: 7}
@@ -38,24 +38,24 @@ MonoBehaviour:
   rematchSelected: 0
   stock: 3
   turretHealth: 200
-  map: 6
+  map: 1
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
   startingTimer: 160
-  currentTimer: 6000000.5
+  currentTimer: 160
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
-  freezeAllPlayer: 0
+  freezeAllPlayer: 1
   baseMoveSpeed: 13.5
   startingCash: 25
   startingTurretHealth: 200
   perksAllowed: 3
   startingVampireHealth: 100
-  rockMulptChange: 0.075
+  rockMulptChange: 0.15
   inSuddenDeath: 0
   reloadMoveSpeed: 7
-  rankings: 0100000000000000
+  rankings: 00000000010000000200000003000000
   playerInLightning: 0
   bulletPlayerLess: 0
   megaBulletsToAdd: 2
@@ -73,11 +73,16 @@ MonoBehaviour:
   halfTimeEnabled: 0
   wayPoints:
   - {x: 0, y: 0}
+  - {x: 0.7, y: 44.7}
+  - {x: 61, y: 45}
+  - {x: 61, y: 1}
   - {x: 0, y: 0}
+  possibleLocas:
   - {x: 0, y: 0}
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
-  possibleLocas: []
+  - {x: 0, y: 45}
+  - {x: 60.99, y: 45.14}
+  - {x: 29.9, y: 0.8}
+  - {x: 60, y: 23}
   playStartUpMov: 0
   inStartUpMov: 0
   gamePaused: 0
