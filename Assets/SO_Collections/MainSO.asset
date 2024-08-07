@@ -15,8 +15,8 @@ MonoBehaviour:
   playersDead: 0
   gameIsOver: 0
   winner: 0
-  playersReadiedUp: 0
-  setUpOver: 0
+  playersReadiedUp: 2
+  setUpOver: 1
   playersSpawnLocations:
   - {x: 2, y: 1}
   - {x: 55, y: 42}
@@ -42,20 +42,20 @@ MonoBehaviour:
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
   startingTimer: 160
-  currentTimer: 160
+  currentTimer: 1400007.2
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
-  freezeAllPlayer: 1
+  freezeAllPlayer: 0
   baseMoveSpeed: 13.5
   startingCash: 25
   startingTurretHealth: 200
   perksAllowed: 3
   startingVampireHealth: 100
-  rockMulptChange: 0.15
+  rockMulptChange: 0.075
   inSuddenDeath: 0
   reloadMoveSpeed: 7
-  rankings: 00000000010000000200000003000000
+  rankings: 0000000001000000
   playerInLightning: 0
   bulletPlayerLess: 0
   megaBulletsToAdd: 2

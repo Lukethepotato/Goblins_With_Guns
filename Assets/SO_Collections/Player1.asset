@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d520ed38c03a07459c9f512971d47e5, type: 3}
   m_Name: Player1
   m_EditorClassIdentifier: 
-  health: 146.07079
-  fireForece: 16
+  health: 170
+  fireForece: 33
   timeBetweenShots: 0.25
-  magazineSize: 44
-  bulletReloadTime: 1.7
-  bulletsInChamber: 0
+  magazineSize: 1
+  bulletReloadTime: 1
+  bulletsInChamber: 1
   letterIn: 0
   moveInput: {x: 0, y: 0}
   Aim: {x: 0, y: 0}
-  livesLeft: 1
+  livesLeft: 300
   touchingSewage: 0
   isTurret: 0
   oringalColor: {r: 1, g: 1, b: 1, a: 1}
   turretDisabled: 0
   burning: 0
-  movementSpeed: 15.5
+  movementSpeed: 13.5
   magicBooksHeld: 0
   canMove: 1
   fatigue: 0
@@ -44,33 +44,33 @@ MonoBehaviour:
   inGame: 1
   playerName: 
   playerIndex: 1
-  gunChosen: 9
-  oringalGunChosen: 9
+  gunChosen: 10
+  oringalGunChosen: 10
   hasDied: 0
   rolling: 0
   invincble: 0
-  isReloading: 1
-  isGamePad: 0
+  isReloading: 0
+  isGamePad: 1
   rematchSetUpComplete: 1
   lightingGoblin: 0
-  perks: 00000000000000000000000100
-  perkOwned: 11
+  perks: 01000000000000000000000000
+  perkOwned: 0
   rocksCollected: 3
   magicRockMult: 1
   inRollState: 0
   recoilGun: 0
-  recoilPower: 9500
+  recoilPower: 10500
   revUpTime: 0
-  BulletSpread: {x: 250, y: 280}
+  BulletSpread: {x: 0, y: 0}
   ActiveMoveInput: {x: 0, y: 0}
-  damageDealtMult: 1.5
+  damageDealtMult: 1
   damageTakeMult: 1
   orinagalChamberSize: 1
-  orinagalReloadSpeed: 0
+  orinagalReloadSpeed: 1
   respawning: 0
   resetGunStats: 0
   perkButPressed: 0
-  bloodRaged: 1
-  basePlayerSpeed: 11.75
+  bloodRaged: 0
+  basePlayerSpeed: 13.5
   moveAnimsPlayable: 1
   grappling: 0

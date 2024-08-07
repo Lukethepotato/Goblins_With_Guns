@@ -162,6 +162,7 @@ MonoBehaviour:
   damage: 20
   ownerInvincTime: 0.25
   rotateSprite: 1
+  destroyOnContactWithObject: 1
 --- !u!114 &823053672073232686
 MonoBehaviour:
   m_ObjectHideFlags: 0

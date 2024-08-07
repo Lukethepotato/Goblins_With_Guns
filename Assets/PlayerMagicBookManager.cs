@@ -71,11 +71,13 @@ public class PlayerMagicBookManager : MonoBehaviour
             playSO[playInput.playerIndex].magicBooksHeld = 0;
         }
 
+
+
     }
 
     public void MagicBookPickedUp(int bookId)
     {
-        if (playSO[playInput.playerIndex].health > .1 && playSO[playInput.playerIndex].livesLeft > 0)
+        if (playSO[playInput.playerIndex].health > .1 && playSO[playInput.playerIndex].livesLeft > 0 && playSO[playInput.playerIndex].magicBooksHeld < 4)
         {
             playSO[playInput.playerIndex].magicBooksHeld += 1;
 

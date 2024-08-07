@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour
     public bool rotateSprite = false;
     private quaternion OGspriteRot;
 
+    public bool destroyOnContactWithObject = true;
     //public bool ownerInvinc = true;
 
     private void Start()
@@ -58,7 +59,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Barrel") || collision.gameObject.CompareTag("Object"))
+        if (collision.gameObject.CompareTag("Barrel") && destroyOnContactWithObject == false || collision.gameObject.CompareTag("Object") && destroyOnContactWithObject == false)
         {
             destroyNow = true;
         }

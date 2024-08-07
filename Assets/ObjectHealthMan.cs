@@ -56,6 +56,13 @@ public class ObjectHealthMan : MonoBehaviour
             Instantiate(explosionPrephab, transform.position, Quaternion.identity);
             GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }
+
+        if (other.gameObject.GetComponent<Bullet>().damage > 0)
+        {
+            health = 0;
+            Instantiate(explosionPrephab, transform.position, Quaternion.identity);
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
+        }
     }
 
     public void Destroy()
