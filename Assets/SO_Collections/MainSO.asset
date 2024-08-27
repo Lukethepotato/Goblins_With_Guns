@@ -41,8 +41,8 @@ MonoBehaviour:
   map: 1
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
-  startingTimer: 160
-  currentTimer: 1400007.2
+  startingTimer: 150
+  currentTimer: 127.36043
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
@@ -88,3 +88,4 @@ MonoBehaviour:
   gamePaused: 0
   bloodRagedSpeed: 15.5
   lightingFireingSpeed: 7.5
+  gamesPlayed: 0

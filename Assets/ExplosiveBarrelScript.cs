@@ -7,6 +7,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class ExplosiveBarrelScript : MonoBehaviour
 {
     public GameObject explosionParticle;
+    public GameObject explosionRange;
     public float timeBeforeExplosion;
     public GameObject parent;
     // Start is called before the first frame update
@@ -30,7 +31,8 @@ public class ExplosiveBarrelScript : MonoBehaviour
     IEnumerator BarrelExplosion()
     {
         yield return new WaitForSeconds(timeBeforeExplosion);
-        Instantiate(explosionParticle, transform.position, Quaternion.identity);
+        Instantiate(explosionParticle, parent.transform.position, Quaternion.identity);
+        Instantiate(explosionRange, parent.transform.position, Quaternion.identity);
         Destroy(parent);
     }
 }

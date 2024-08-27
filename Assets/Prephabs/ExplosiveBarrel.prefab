@@ -174,6 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 6541981403982699509, guid: 18afd12d3fd75ab49ba6feb2f46c902e, type: 3}
+  explosionRange: {fileID: 3226321101005462060, guid: 2de76813b18f40a4d82643f100c7cdd5, type: 3}
   timeBeforeExplosion: 0.15
   parent: {fileID: 4355877584451769697}
 --- !u!70 &6178422205286488625

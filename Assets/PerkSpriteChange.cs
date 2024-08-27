@@ -11,8 +11,8 @@ public class PerkSpriteChange : MonoBehaviour
     public Player_SO[] playSO;
     public PlayerInput input;
     public GameObject player;
-    public Color activeColor;
-    public Color inactiveColor;
+    public GameObject undercoat;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +25,11 @@ public class PerkSpriteChange : MonoBehaviour
     {
         if (playSO[input.playerIndex].perks[perkNum] == true)
         {
-            image.color = activeColor;
+            undercoat.SetActive(true);
         }
         else
         {
-            image.color = inactiveColor;
+            undercoat.SetActive(false);
         }
     }
 }

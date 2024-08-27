@@ -6,6 +6,7 @@ public class PlayerSelectionCanvasMan : MonoBehaviour
 {
     public int currentPannel;
     public GameObject[] pannels;
+    public MainSO mainSO;
 
     // Start is called before the first frame update
     void Start()
@@ -16,26 +17,30 @@ public class PlayerSelectionCanvasMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int I = 0; I < pannels.Length; I++) 
-        {
-            if (I == currentPannel)
+        
+        
+            for (int I = 0; I < pannels.Length; I++)
             {
-                pannels[I].SetActive(true);
+                if (I == currentPannel)
+                {
+                    pannels[I].SetActive(true);
+                }
+                else
+                {
+                    pannels[I].SetActive(false);
+                }
             }
-            else
+
+            if (currentPannel < 0)
             {
-                pannels[I].SetActive(false);
+                currentPannel = 0;
             }
-        }
 
-        if (currentPannel < 0)
-        {
-            currentPannel= 0;
-        }
+            if (currentPannel > pannels.Length - 1)
+            {
+                currentPannel = pannels.Length - 1;
+            }
+        
 
-        if (currentPannel > pannels.Length -1)
-        {
-            currentPannel= pannels.Length - 1;
-        }
     }
 }

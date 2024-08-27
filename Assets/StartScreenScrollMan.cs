@@ -20,6 +20,9 @@ public class StartScreenScrollMan : MonoBehaviour
     private bool endind = false;
     private bool loadScene = false;
     private int sceneLoadTo = 0;
+    public float unactiveTime;
+    public bool disabled = true;
+    private bool coyotePress = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,17 +59,30 @@ public class StartScreenScrollMan : MonoBehaviour
         animFX.ChangeAnimationState("StartScrene_FX_Idle");
         yield return new WaitForSeconds(timeToOpen - (openParticleTime + timeToParticle));
         scrollAnim.ChangeAnimationState("StartSceneScroll_Idle");
+        yield return new WaitForSeconds(unactiveTime);
+        disabled = false;
+        if (coyotePress) 
+        {
+            StartCoroutine(Close(1));
+        }
     }
 
     IEnumerator Close(int modeScene)
     {
-        scrollAnim.ChangeAnimationState("StartSceneScroll_Close");
-        yield return new WaitForSeconds(timeToMapOff);
-        UI.SetActive(false);
-        yield return new WaitForSeconds(timeToClose);
-        scrollAnim.ChangeAnimationState("StartSceneScroll_Closed");
-        sceneLoadTo = modeScene;
-        loadScene = true;
+        if (disabled == false)
+        {
+            scrollAnim.ChangeAnimationState("StartSceneScroll_Close");
+            yield return new WaitForSeconds(timeToMapOff);
+            UI.SetActive(false);
+            yield return new WaitForSeconds(timeToClose);
+            scrollAnim.ChangeAnimationState("StartSceneScroll_Closed");
+            sceneLoadTo = modeScene;
+            loadScene = true;
+        }
+        else
+        {
+            coyotePress = true;
+        }
     }
 
     public void ModeButtonPressed(int chosenMode)

@@ -28,6 +28,8 @@ public class CanvasManager : MonoBehaviour
         if ((playerManager.playerCount - mainSo.playersDead == 1) && playerManager.playerCount != 1)
         {
             mainSo.gameIsOver = true;
+
+            //mainSo.gamesPlayed++;
         }
     }
 }

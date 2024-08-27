@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d520ed38c03a07459c9f512971d47e5, type: 3}
   m_Name: Player1
   m_EditorClassIdentifier: 
-  health: 170
-  fireForece: 33
+  health: 200
+  fireForece: 16
   timeBetweenShots: 0.25
-  magazineSize: 1
-  bulletReloadTime: 1
-  bulletsInChamber: 1
+  magazineSize: 11
+  bulletReloadTime: 0.85
+  bulletsInChamber: 11
   letterIn: 0
   moveInput: {x: 0, y: 0}
   Aim: {x: 0, y: 0}
-  livesLeft: 300
+  livesLeft: 99
   touchingSewage: 0
   isTurret: 0
   oringalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -44,8 +44,8 @@ MonoBehaviour:
   inGame: 1
   playerName: 
   playerIndex: 1
-  gunChosen: 10
-  oringalGunChosen: 10
+  gunChosen: 9
+  oringalGunChosen: 9
   hasDied: 0
   rolling: 0
   invincble: 0
@@ -59,14 +59,14 @@ MonoBehaviour:
   magicRockMult: 1
   inRollState: 0
   recoilGun: 0
-  recoilPower: 10500
+  recoilPower: 9500
   revUpTime: 0
-  BulletSpread: {x: 0, y: 0}
+  BulletSpread: {x: 250, y: 280}
   ActiveMoveInput: {x: 0, y: 0}
   damageDealtMult: 1
   damageTakeMult: 1
-  orinagalChamberSize: 1
-  orinagalReloadSpeed: 1
+  orinagalChamberSize: 11
+  orinagalReloadSpeed: 0.85
   respawning: 0
   resetGunStats: 0
   perkButPressed: 0

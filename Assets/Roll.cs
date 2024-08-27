@@ -66,6 +66,8 @@ public class Roll : MonoBehaviour
     void Update()
     {
         
+
+
         if (playSOs[playInput.playerIndex].perks[2])
         {
             SDMultiplierRunTime = SDMultiplerAmount;

@@ -7692,11 +7692,11 @@ MonoBehaviour:
   rollMoveInputDamp: 4.5
   fatgiueOff: 1
   borrowRollSettleTime: 0.2
-  borrowRollRechargeTime: 1.75
+  borrowRollRechargeTime: 1
   borrowRollTime: 0.8
   BorrowRollStartingPower: 75
   BorrowRollEndingPower: 0
-  BorrowRollControl: 6
+  BorrowRollControl: 7
   travserableWallColl: {fileID: 3727912995914667922}
   coll: {fileID: 4651436213466558394}
   coll2: {fileID: 7524499772460784830}
@@ -8444,6 +8444,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 0}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  pauseObject: {fileID: 0}
+  pauseScript: {fileID: 0}
 --- !u!114 &1548074412237177536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9623,7 +9625,7 @@ MonoBehaviour:
   playerObject: {fileID: 6597591818688195374}
   aimCircle: {fileID: 8645670103882581331}
   aim: {x: 0, y: 0}
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 6037443811465509753}
   firePointBaseLocation: {x: 0, y: 0}
   SRFlip: 1
 --- !u!114 &1189281247854611508

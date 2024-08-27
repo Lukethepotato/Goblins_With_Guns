@@ -18,7 +18,6 @@ public class PauseScreenMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
     
     public void Pause(int player)
@@ -28,6 +27,7 @@ public class PauseScreenMan : MonoBehaviour
             player = pausePlayer;
             parent.SetActive(true);
             mainSO.gamePaused = true;
+            mainSO.setUpOver = false;
             Time.timeScale = .01f;
             GameObject.Find("Music").GetComponent<AudioManager>().Pause(songNames.names[mainSO.map]);
         }
@@ -40,6 +40,7 @@ public class PauseScreenMan : MonoBehaviour
             Time.timeScale = 1;
             SceneManager.LoadScene(0);
             GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying(songNames.names[mainSO.map]);
+            mainSO.gamePaused = false;
         }
     }
 
@@ -50,6 +51,7 @@ public class PauseScreenMan : MonoBehaviour
             Time.timeScale = 1;
             parent.SetActive(false);
             mainSO.gamePaused = false;
+            mainSO.setUpOver = true;
             GameObject.Find("Music").GetComponent<AudioManager>().UnPause(songNames.names[mainSO.map]);
         }
     }

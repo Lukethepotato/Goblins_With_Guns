@@ -17,12 +17,17 @@ public class PlayerPannelRankingMan : MonoBehaviour
     {
         rectTrans = gameObject.GetComponent<RectTransform>();
         nameText = gameObject.GetComponentInChildren<TextMeshProUGUI>();
+        LeanTween.move(rectTrans, rankingLocations[mainSO.rankings.IndexOf(player)], .75f);
+        nameText.text = playSO[player].playerName;
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
+        LeanTween.init(800);
         LeanTween.move(rectTrans, rankingLocations[mainSO.rankings.IndexOf(player)], .75f);
         nameText.text = playSO[player].playerName;
+        */
     }
 }

@@ -10,10 +10,16 @@ public class PerkMenuSingle : MonoBehaviour
     public PlayerInput playInput;
     public MainSO mainSO;
     private int lastPerk = 0;
+    LockedPercMain lockedPerkMain;
+    public GameObject[] perks;
+
+
     // Start is called before the first frame update
     void Start()
     {
         playInput = player.GetComponent<PlayerInput>();
+        lockedPerkMain = gameObject.GetComponent<LockedPercMain>();
+
         playSO[playInput.playerIndex].perks[0] = true;
         
         for (int I = 0; I < playSO[playInput.playerIndex].perks.Length; I++)
@@ -32,8 +38,15 @@ public class PerkMenuSingle : MonoBehaviour
 
     public void PerkSelection(int perk)
     {
-        playSO[playInput.playerIndex].perks[lastPerk] = false;
-        playSO[playInput.playerIndex].perks[perk] = true;
-        lastPerk = perk;
+        if (lockedPerkMain.lockedPerks[perk] == false)
+        {
+            playSO[playInput.playerIndex].perks[lastPerk] = false;
+            playSO[playInput.playerIndex].perks[perk] = true;
+            lastPerk = perk;
+        }
+        else
+        {
+            perks[perk].GetComponent<LockedPercScript>().WhenPressOnLocked();
+        }
     }
 }

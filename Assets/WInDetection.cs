@@ -22,6 +22,7 @@ public class WInDetection : MonoBehaviour
         {
             winText.text = (players[mainSO.winner - 1].playerName) + " has won!!!";
             winUI.SetActive(true);
+            mainSO.gamesPlayed++;
         }
         else
         {

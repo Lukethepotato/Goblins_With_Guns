@@ -18,6 +18,7 @@ public class MainScene_Scroll : MonoBehaviour
     public GameObject FX;
     public AnimationManager animFX;
     public float timeToStart;
+    public GameObject pressAnyJoin;
     // Start is called before the first frame update
     void Start()
     {
@@ -71,6 +72,7 @@ public class MainScene_Scroll : MonoBehaviour
         yield return new WaitForSeconds(timeToOpen - (openParticleTime));
         animMan.ChangeAnimationState("MainScene_Scroll_Idle");
         GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(4);
+        pressAnyJoin.SetActive(true) ;
     }
     public void MapSelected()
     {

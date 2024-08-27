@@ -9,6 +9,7 @@ public class SetUpPannelDestruction : MonoBehaviour
     public PlayerInput playerInput;
     public GameObject player;
     public Player_SO[] playSO;
+    public GameObject pannel;
 
     private void Start()
     {
@@ -20,7 +21,7 @@ public class SetUpPannelDestruction : MonoBehaviour
         if (mainSO.setUpOver)
         {
             playSO[playerInput.playerIndex].oringalGunChosen = playSO[playerInput.playerIndex].gunChosen;
-            Destroy(gameObject);
+            Destroy(pannel);
         }
     }
 }
