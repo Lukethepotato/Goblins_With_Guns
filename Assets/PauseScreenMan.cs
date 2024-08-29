@@ -22,7 +22,7 @@ public class PauseScreenMan : MonoBehaviour
     
     public void Pause(int player)
     {
-        if (mainSO.gamePaused == false)
+        if (mainSO.gamePaused == false && mainSO.setUpOver && mainSO.gameIsOver == false)
         {
             player = pausePlayer;
             parent.SetActive(true);

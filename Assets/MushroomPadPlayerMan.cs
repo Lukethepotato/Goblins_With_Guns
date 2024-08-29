@@ -65,13 +65,19 @@ public class MushroomPadPlayerMan : MonoBehaviour
             RB.AddForce((-explosionDirection + (moveBias * bounceInputControl)) * (boucePower - distance), ForceMode2D.Force);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "MushroomPropel" && boucning == false)
+        {
+            collision.gameObject.GetComponent<MushCollScript>().PlayBunce();
+        }
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "MushroomPropel" && boucning == false)
         {
             StartCoroutine(MushroomPropel());
-            collision.gameObject.GetComponent<MushCollScript>().PlayBunce();
             explosionLoca = collision.transform.position;
             print("propel");
         }

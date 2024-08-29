@@ -33,20 +33,9 @@ public class InteractDisplay : MonoBehaviour
     {
 
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Interactable") && interacted == false)
-        {
-            setText.DisplayText(inputDetect.DisplayButton("interact") +" to interact");
-            interactionDectection = collision.gameObject.GetComponent<InteractionInputDectection>();
-            inZone= true;
-        }
-        else
-        {
-            interacted = false;
-        }
-
         if (collision.gameObject.CompareTag("HoldInteractable") && holding == false)
         {
             setText.DisplayText("hold " + inputDetect.DisplayButton("interact") + " to interact");
@@ -59,11 +48,26 @@ public class InteractDisplay : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Interactable") && interacted == false && setText.pressDisabled == false)
+        {
+            setText.DisplayText(inputDetect.DisplayButton("interact") + " to interact");
+            interactionDectection = collision.gameObject.GetComponent<InteractionInputDectection>();
+            inZone = true;
+        }
+        else
+        {
+            interacted = false;
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Interactable"))
         {
-            setText.UnDisplayText();
+            setText.UnDisplayText(true);
             interactionDectection = null;
             inZone = false;
         }
@@ -74,7 +78,7 @@ public class InteractDisplay : MonoBehaviour
             {
                 interactionDectection.releaseInteraction(playInput.playerIndex);
             }
-            setText.UnDisplayText();
+            setText.UnDisplayText(true);
             interactionDectection = null;
             playSO[playInput.playerIndex].freeze = false;
             playSO[playInput.playerIndex].state = 0;
@@ -85,9 +89,9 @@ public class InteractDisplay : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext ctx)
     {
-        if (inZone == true && interacted == false)
+        if (inZone == true && interacted == false && setText.pressDisabled == false)
         {
-            setText.UnDisplayText();
+            setText.UnDisplayText(false);
             interacted = true;
             interactionDectection.interaction(playInput.playerIndex);
             print("Interacted");

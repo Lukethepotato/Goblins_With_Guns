@@ -54,7 +54,6 @@ public class InputDecection : MonoBehaviour
         {
             return "<sprite=" + "\"" + GetControlType() + "\"" + " name=\"roll\">";
         }
-        print("Displayed");
     }
 
 }

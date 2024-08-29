@@ -52,7 +52,7 @@ public class ObjectHealthMan : MonoBehaviour
 
         if (other.gameObject.CompareTag("Lightning") && mainSO.freezeAllPlayer == false)
         {
-            health -= 100 * localDamageMult;
+            health -= 200 * localDamageMult;
             Instantiate(explosionPrephab, transform.position, Quaternion.identity);
             GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("HitSound");
         }

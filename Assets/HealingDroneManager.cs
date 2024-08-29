@@ -38,11 +38,11 @@ public class HealingDroneManager : MonoBehaviour
             {
                 Target.transform.position = GameObject.Find("player" + (mainSO.rankings[I] + 1).ToString()).transform.position;
                 I = -1;
-                print("newTarget");
+                //print("newTarget");
             }
             else
             {
-                print("notDecided");
+                //print("notDecided");
             }
             
         }

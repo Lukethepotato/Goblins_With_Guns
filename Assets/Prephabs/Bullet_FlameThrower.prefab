@@ -162,6 +162,9 @@ MonoBehaviour:
   knockBackAmount: 5000
   superKnockBackAmount: 25000
   damage: 22
+  ownerInvincTime: 5000
+  rotateSprite: 0
+  destroyOnContactWithObject: 1
 --- !u!114 &8701639955129047196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +219,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
-  fireSpeed: 5000
+  fireSpeed: 1000
   SpeedUpStop: {x: 0.005, y: 0.005}
   firePointPos: {x: 0, y: 0}
   superControll: 1

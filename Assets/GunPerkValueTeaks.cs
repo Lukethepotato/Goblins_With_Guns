@@ -151,9 +151,9 @@ public class GunPerkValueTeaks : MonoBehaviour
 
     void Update()
     {
-        if (playSO[playInput.playerIndex].perkOwned == 11)
+        if (playSO[playInput.playerIndex].perkOwned == 11 && playSO[playInput.playerIndex].gunChosen != 6)
         {
-            if (playSO[playInput.playerIndex].bloodRaged && playSO[playInput.playerIndex].health > 0)
+            if (playSO[playInput.playerIndex].bloodRaged && playSO[playInput.playerIndex].health > 0  )
             {
                 OGvalueSetting.ChamberSize = BR_ChamberSize;
                 OGvalueSetting.bulletSpeed = BR_FireForce;

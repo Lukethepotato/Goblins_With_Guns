@@ -10,6 +10,7 @@ public class SetUpPannelDestruction : MonoBehaviour
     public GameObject player;
     public Player_SO[] playSO;
     public GameObject pannel;
+    private bool gate = false;
 
     private void Start()
     {
@@ -18,8 +19,9 @@ public class SetUpPannelDestruction : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if (mainSO.setUpOver)
+        if (mainSO.setUpOver && gate == false)
         {
+            gate= true;
             playSO[playerInput.playerIndex].oringalGunChosen = playSO[playerInput.playerIndex].gunChosen;
             Destroy(pannel);
         }

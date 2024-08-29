@@ -48,6 +48,14 @@ public class SettingsTweeks: MonoBehaviour
         mainSO.startingTimer = length;
     }
 
+    public void GameLengthAdd(float length)
+    {
+        if ((mainSO.startingTimer + length) > 0)
+        {
+            mainSO.startingTimer += length;
+        }
+    }
+
     public void PlayIntro(bool chosen)
     {
         mainSO.playStartUpMov = chosen;

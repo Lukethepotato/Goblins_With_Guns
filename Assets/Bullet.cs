@@ -147,7 +147,7 @@ public class Bullet : MonoBehaviour
 
     private void deadBulletTesting()
     {
-        if (gracePeriod == false)
+        if (gracePeriod == false && playSO[gameObject.GetComponent<BulletData>().owner].perks[1] == false)
         {
             if (lastVelocity.y < deadBulletMin && lastVelocity.y > -deadBulletMin)
             {

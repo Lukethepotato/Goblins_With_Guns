@@ -22,6 +22,9 @@ public class SetTextToTextBox : MonoBehaviour
     public InteractDisplay interactDisplay;
     public GameObject parent;
 
+    public bool pressDisabled =false;
+
+    private string lastInputType;
     // Start is called before the first frame update
 
     private void Start()
@@ -39,31 +42,38 @@ public class SetTextToTextBox : MonoBehaviour
     public void DisplayText(string inputType)
     {
         textBox.text = inputType;
+        lastInputType = inputType;
     }
 
-    public void UnDisplayText()
+    public void UnDisplayText(bool ExitTriggerDisable)
     {
-        if (mainSO.map == 10 && playerSO[playInput.playerIndex].money < 100 && interactDisplay.inZone)
-        {
-            StartCoroutine(NotEnoughMoney());
-        }
-        else
+        if (ExitTriggerDisable)
         {
             textBox.text = "";
         }
+        else
+        {
+            StartCoroutine(PressDisableCourtine());
+        }
     }
 
-    IEnumerator NotEnoughMoney()
+    IEnumerator PressDisableCourtine()
     {
-        if (interactDisplay.inZone)
+        textBox.text = "";
+        pressDisabled = true;
+        if (mainSO.map == 10 && interactDisplay.inZone && playerSO[playInput.playerIndex].money < 100)
         {
             textBox.text = "not enough money";
         }
+        yield return new WaitForSeconds(.5f);
+        pressDisabled = false;
+        if (interactDisplay.inZone)
+        {
+            textBox.text = lastInputType;
+        }
         else
         {
             textBox.text = "";
         }
-        yield return new WaitForSeconds(.5f);
-        textBox.text = "";
     }
 }

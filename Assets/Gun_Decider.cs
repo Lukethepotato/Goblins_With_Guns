@@ -33,6 +33,7 @@ public class Gun_Decider : MonoBehaviour
        {
            playSO[playInput.playerIndex].oringalGunChosen = playSO[playInput.playerIndex].gunChosen;
            gate = true;
+            print("gyfei");
        }
 
        if (playSO[playInput.playerIndex].isTurret)

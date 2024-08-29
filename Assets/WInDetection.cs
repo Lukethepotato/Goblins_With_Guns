@@ -10,6 +10,7 @@ public class WInDetection : MonoBehaviour
     public GameObject winUI;
     public Player_SO[] players;
     public GameObject gameOverUI;
+    private bool gamesPlayedGate = false;
 
     private void Start()
     {
@@ -22,7 +23,12 @@ public class WInDetection : MonoBehaviour
         {
             winText.text = (players[mainSO.winner - 1].playerName) + " has won!!!";
             winUI.SetActive(true);
-            mainSO.gamesPlayed++;
+            if (gamesPlayedGate == false)
+            {
+                gamesPlayedGate = true;
+                mainSO.gamesPlayed++;
+                GameObject.Find("SaveManager").GetComponent<SaveDataMan>().SaveInt("GamesPlayed", mainSO.gamesPlayed);
+            }
         }
         else
         {

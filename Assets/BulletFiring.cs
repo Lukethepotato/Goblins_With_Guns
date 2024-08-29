@@ -383,10 +383,11 @@ public class BulletFiring : MonoBehaviour
             if (ctx.started && playerSO[playInput.playerIndex].rolling == false)
             {
                 chargingBow = true;
+                //playerSO[playInput.playerIndex].firing = false;
             }
 
 
-            if (ctx.canceled && playerSO[playInput.playerIndex].rolling == false && plungerValueSetting.bulletSpeed > 20)
+            if (ctx.canceled && playerSO[playInput.playerIndex].rolling == false)
             {
                 StartCoroutine(Fire());
                 chargingBow = false;

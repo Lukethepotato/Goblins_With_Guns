@@ -17,8 +17,9 @@ public class PlayerSelectionCanvasMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+
+        if (mainSO.setUpOver == false)
+        {
             for (int I = 0; I < pannels.Length; I++)
             {
                 if (I == currentPannel)
@@ -40,7 +41,7 @@ public class PlayerSelectionCanvasMan : MonoBehaviour
             {
                 currentPannel = pannels.Length - 1;
             }
-        
+        }
 
     }
 }

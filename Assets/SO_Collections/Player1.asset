@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Player1
   m_EditorClassIdentifier: 
   health: 200
-  fireForece: 16
-  timeBetweenShots: 0.25
-  magazineSize: 11
-  bulletReloadTime: 0.85
-  bulletsInChamber: 11
+  fireForece: 27
+  timeBetweenShots: 0.3
+  magazineSize: 1
+  bulletReloadTime: 0.78
+  bulletsInChamber: 0
   letterIn: 0
   moveInput: {x: 0, y: 0}
   Aim: {x: 0, y: 0}
-  livesLeft: 99
+  livesLeft: 3
   touchingSewage: 0
   isTurret: 0
   oringalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -36,21 +36,21 @@ MonoBehaviour:
   state: 0
   direction: 2
   firing: 0
-  bulletSpread: 0
-  money: 25
+  bulletSpread: 1
+  money: 6700
   wheelActivate: 0
   freeze: 0
   joyStickDown: 1
   inGame: 1
   playerName: 
   playerIndex: 1
-  gunChosen: 9
-  oringalGunChosen: 9
+  gunChosen: 5
+  oringalGunChosen: 0
   hasDied: 0
   rolling: 0
   invincble: 0
   isReloading: 0
-  isGamePad: 1
+  isGamePad: 0
   rematchSetUpComplete: 1
   lightingGoblin: 0
   perks: 01000000000000000000000000
@@ -59,14 +59,14 @@ MonoBehaviour:
   magicRockMult: 1
   inRollState: 0
   recoilGun: 0
-  recoilPower: 9500
+  recoilPower: 10500
   revUpTime: 0
-  BulletSpread: {x: 250, y: 280}
+  BulletSpread: {x: 0, y: 0}
   ActiveMoveInput: {x: 0, y: 0}
   damageDealtMult: 1
   damageTakeMult: 1
-  orinagalChamberSize: 11
-  orinagalReloadSpeed: 0.85
+  orinagalChamberSize: 100
+  orinagalReloadSpeed: 1
   respawning: 0
   resetGunStats: 0
   perkButPressed: 0

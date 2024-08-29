@@ -11,7 +11,7 @@ public class SuddenDeathManager : MonoBehaviour
 {
     public GameObject suddenDeathEmpty;
     public MainSO mainSO;
-    TextMeshProUGUI textMeshPro;
+    public TextMeshProUGUI textMeshPro;
     public GameObject[] maps;
     public AnimationManager animMan;
     private bool courtineStarted = false;
