@@ -44,9 +44,5 @@ public class PerkMenuSingle : MonoBehaviour
             playSO[playInput.playerIndex].perks[perk] = true;
             lastPerk = perk;
         }
-        else
-        {
-            perks[perk].GetComponent<LockedPercScript>().WhenPressOnLocked();
-        }
     }
 }
