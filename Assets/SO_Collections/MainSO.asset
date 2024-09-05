@@ -42,7 +42,7 @@ MonoBehaviour:
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
   startingTimer: 150
-  currentTimer: -32.126694
+  currentTimer: 139614.28
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
   rockMulptChange: 0.15
   inSuddenDeath: 0
   reloadMoveSpeed: 7
-  rankings: 00000000
+  rankings: 000000000100000001000000
   playerInLightning: 0
   bulletPlayerLess: 0
   megaBulletsToAdd: 2

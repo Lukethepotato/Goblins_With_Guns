@@ -77,7 +77,7 @@ public class Roll : MonoBehaviour
             SDMultiplierRunTime = 1;
         }
         
-        if (rollInput && isRolling == false && playSOs[playInput.playerIndex].state == 0)
+        if (rollInput && isRolling == false && playSOs[playInput.playerIndex].state == 0 && playSOs[playInput.playerIndex].perks[5] == false)
         {
             StopCoroutine(Rolling());
             if (playSOs[playInput.playerIndex].fatigue != 0)
@@ -117,6 +117,7 @@ public class Roll : MonoBehaviour
             //RB.AddForce((playSOs[playInput.playerIndex].moveInput * rollPower * SDMultiplierRunTime * playSOs[playInput.playerIndex].magicRockMult) / playSOs[playInput.playerIndex].fatigue * Time.deltaTime, ForceMode2D.Force);
         }
 
+        /*
         if (playSOs[playInput.playerIndex].perks[5] && mainSO.setUpOver)
         {
             vunbilTime = 0;
@@ -125,6 +126,7 @@ public class Roll : MonoBehaviour
             startingRollPower = BorrowRollStartingPower;
             endingRollPower= BorrowRollEndingPower;
         }
+        */
         
         RollChecking();
     }
@@ -194,11 +196,13 @@ public class Roll : MonoBehaviour
     IEnumerator Rolling()
     {
         coll2.isTrigger = true;
+        /*
         if (playSOs[playInput.playerIndex].perkOwned == 5)
         {
             travserableWallColl.SetActive(true);
             coll.isTrigger= true;
         }
+        */
         playSOs[playInput.playerIndex].inRollState= true;
         float pastFatigue = playSOs[playInput.playerIndex].fatigue;
         yield return new WaitForSeconds(0);

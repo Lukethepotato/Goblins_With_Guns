@@ -21,6 +21,11 @@ public class SaveDataMan : MonoBehaviour
         PlayerPrefs.SetInt(Key, num);
     }
 
+    public void AddInt(string Key, int num)
+    {
+        PlayerPrefs.SetInt(Key, PlayerPrefs.GetInt(Key) + num);
+    }
+
     public void SaveFloat(string Key, float num)
     {
         PlayerPrefs.SetFloat(Key, num);

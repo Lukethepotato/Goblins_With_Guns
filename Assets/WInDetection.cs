@@ -26,8 +26,7 @@ public class WInDetection : MonoBehaviour
             if (gamesPlayedGate == false)
             {
                 gamesPlayedGate = true;
-                mainSO.gamesPlayed++;
-                GameObject.Find("SaveManager").GetComponent<SaveDataMan>().SaveInt("GamesPlayed", mainSO.gamesPlayed);
+                GameObject.Find("SaveManager").GetComponent<SaveDataMan>().AddInt("GamesPlayed", 1);
             }
         }
         else

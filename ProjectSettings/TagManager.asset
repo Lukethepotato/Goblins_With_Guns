@@ -49,7 +49,7 @@ TagManager:
   - Bullets_Ignore
   - Obsticals
   - Player
-  - 
+  - playerIgnore
   - TraversableWalls
   - GhostPlayer
   - 

@@ -17,7 +17,7 @@ public class ReadyUpManager : MonoBehaviour
     public GameObject cowntDownTextObject;
     public GameObject setupObject;
     public GameObject scroll;
-    MapMusicPlayer mapSong;
+    public MapMusicPlayer mapSong;
     public GameObject canvas;
     // Start is called before the first frame update
     void Start()

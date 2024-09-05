@@ -55,7 +55,7 @@ public class LockedPercScript : MonoBehaviour
             lockArt.SetActive(false);
         }
 
-        if (gameUnloackedAt == mainSO.gamesPlayed && inAnim == false && selectionScript.currentPannel == 2)
+        if (gameUnloackedAt == GameObject.Find("SaveManager").GetComponent<SaveDataMan>().loadInt("GamesPlayed") && inAnim == false && selectionScript.currentPannel == 2)
         {
             inAnim= true;
             StartCoroutine(UnlockAnimation());

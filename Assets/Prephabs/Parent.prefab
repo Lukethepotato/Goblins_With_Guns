@@ -14671,6 +14671,22 @@ PrefabInstance:
       propertyPath: m_DefaultControlScheme
       value: Keyboard&Mouse
       objectReference: {fileID: 0}
+    - target: {fileID: 6597591818688195373, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6460580243499247761}
+    - target: {fileID: 6597591818688195373, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: BorrowRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597591818688195373, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: BorrowRollScipt, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597591818688195373, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6597591818688195374, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}
       propertyPath: m_Name
       value: Square 1
@@ -14771,6 +14787,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6597591818688195371, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}
   m_PrefabInstance: {fileID: 201167521682568239}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6460580243499247761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6584868812381871294, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}
+  m_PrefabInstance: {fileID: 201167521682568239}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6432804955263000321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e066f9a1e4bf429ec4c40aeb8e218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7018200633643692749 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7182986874569148130, guid: ea0fcd65e819e0b4ab88e07eef05d320, type: 3}

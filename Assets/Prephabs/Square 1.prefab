@@ -7003,6 +7003,7 @@ GameObject:
   - component: {fileID: 7569874392868954680}
   - component: {fileID: 7667819261104092188}
   - component: {fileID: 3453586684170473402}
+  - component: {fileID: 6584868812381871294}
   m_Layer: 9
   m_Name: Square 1
   m_TagString: Player
@@ -7320,6 +7321,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerStartUpMov, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8675,6 +8688,31 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &6584868812381871294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e066f9a1e4bf429ec4c40aeb8e218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  rollInput: 0
+  telaportationTime: 0.5
+  decidedTelaportLocation: {x: 0, y: 0}
+  telaportLocationMult: 45
+  postTeleportWaitTime: 0.75
+  telaportDist: 10
+  teleportLocationCol: {fileID: 8413305665866777812, guid: 1f14979b9b0562649b61c6cf77aebcac, type: 3}
 --- !u!1 &6600092420458733488
 GameObject:
   m_ObjectHideFlags: 0
