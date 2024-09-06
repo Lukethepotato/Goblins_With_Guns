@@ -22,6 +22,10 @@ public class AnimationManager : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        if (animator == null)
+        {
+            print(gameObject.name + " animationMan needs an animator");
+        }
     }
 
     public void ChangeAnimationState(string NewState)

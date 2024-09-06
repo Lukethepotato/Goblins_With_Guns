@@ -1390,7 +1390,7 @@ MonoBehaviour:
   UI: {fileID: 1007988304}
   timeToMapOff: 0.25
   timeToClose: 0.75
-  unactiveTime: 0.5
+  unactiveTime: 0.1
   disabled: 1
 --- !u!1 &1433371056
 GameObject:

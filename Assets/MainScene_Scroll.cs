@@ -11,7 +11,6 @@ public class MainScene_Scroll : MonoBehaviour
     public float timeToParticle;
     public float openParticleTime;
     public float timeToMapOff;
-    public float timeToClose;
     public float timeToEnd;
     public GameObject maps;
     private bool startedEnd = false;
@@ -19,6 +18,9 @@ public class MainScene_Scroll : MonoBehaviour
     public AnimationManager animFX;
     public float timeToStart;
     public GameObject pressAnyJoin;
+
+    private bool InMapClose = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +53,7 @@ public class MainScene_Scroll : MonoBehaviour
         openedMenu.SetActive(true);
         yield return new WaitForSeconds(openParticleTime - timeToParticle);
         animFX.ChangeAnimationState("Particle_Idle");
-        yield return new WaitForSeconds(timeToOpen - (openParticleTime + timeToParticle));
+        yield return new WaitForSeconds(timeToOpen);
         animMan.ChangeAnimationState("MainScene_Scroll_Idle");
         GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(3);
     }
@@ -59,24 +61,28 @@ public class MainScene_Scroll : MonoBehaviour
     IEnumerator MapClose()
     {
         print("Close Courtine");
-        animMan.ChangeAnimationState("MainScene_Scroll_Close");
         yield return new WaitForSeconds(timeToMapOff);
+        animMan.ChangeAnimationState("MainScene_ScrollClose");
+        //yield return new WaitForSeconds(timeToMapOff);
         maps.SetActive(false);
         yield return new WaitForSeconds(timeToMapOff);
-        mainSO.preGameSetUp = true;
         animMan.ChangeAnimationState("MainSceneScroll_Open");
         yield return new WaitForSeconds(timeToParticle);
         animFX.ChangeAnimationState("Particle_Open");
         yield return new WaitForSeconds(openParticleTime);
         animFX.ChangeAnimationState("Particle_Idle");
-        yield return new WaitForSeconds(timeToOpen - (openParticleTime));
         animMan.ChangeAnimationState("MainScene_Scroll_Idle");
         GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(4);
+        mainSO.preGameSetUp = true;
         pressAnyJoin.SetActive(true) ;
     }
     public void MapSelected()
     {
-        StartCoroutine(MapClose());
+        if (InMapClose == false)
+        {
+            InMapClose = true;
+            StartCoroutine(MapClose());
+        }
     }
     IEnumerator End()
     {

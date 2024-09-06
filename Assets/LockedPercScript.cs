@@ -72,7 +72,9 @@ public class LockedPercScript : MonoBehaviour
     }
     IEnumerator UnlockAnimation()
     {
+        lockAnimMan.ChangeAnimationState("Lock_unlock");
         //lockAnimMan PLAY THE ANIMATION MR TICKLE MAN
+        print("Tickle my Pickle and Call me a Dickle and slap by Shickle and Fuck My Jickle");
         yield return new WaitForSeconds(UnlockAnimTime);
         lockArt.SetActive(false);
         percLocked = false;
