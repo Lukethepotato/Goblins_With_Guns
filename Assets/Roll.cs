@@ -133,7 +133,7 @@ public class Roll : MonoBehaviour
 
     public void OnRoll()
     {
-        if (playSOs[playInput.playerIndex].isReloading == false && mainSO.gamePaused == false)
+        if (playSOs[playInput.playerIndex].isReloading == false && mainSO.gamePaused == false && playSOs[playInput.playerIndex].perks[5] == false)
         {
             if (isRolling == false)
             {
@@ -195,6 +195,7 @@ public class Roll : MonoBehaviour
 
     IEnumerator Rolling()
     {
+        print("RollMaxing");
         coll2.isTrigger = true;
         /*
         if (playSOs[playInput.playerIndex].perkOwned == 5)

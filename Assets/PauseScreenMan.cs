@@ -6,9 +6,15 @@ using UnityEngine.SceneManagement;
 public class PauseScreenMan : MonoBehaviour
 {
     public GameObject parent;
+    public GameObject underTransition;
+    public GameObject tranisitionObject;
     public MainSO mainSO;
     public int pausePlayer = -1;
     public MapSongNames songNames;
+
+    public float pauseTransitionTimeIn;
+    public float pauseTransitionTimeOut;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +26,11 @@ public class PauseScreenMan : MonoBehaviour
     {
     }
     
-    public void Pause(int player)
+    public void Pause()
     {
         if (mainSO.gamePaused == false && mainSO.setUpOver && mainSO.gameIsOver == false)
         {
-            player = pausePlayer;
-            parent.SetActive(true);
-            mainSO.gamePaused = true;
-            mainSO.setUpOver = false;
-            Time.timeScale = .01f;
-            GameObject.Find("Music").GetComponent<AudioManager>().Pause(songNames.names[mainSO.map]);
+            StartCoroutine(PauseIn());
         }
     }
 
@@ -48,11 +49,37 @@ public class PauseScreenMan : MonoBehaviour
     {
         if (mainSO.gamePaused)
         {
-            Time.timeScale = 1;
-            parent.SetActive(false);
-            mainSO.gamePaused = false;
-            mainSO.setUpOver = true;
-            GameObject.Find("Music").GetComponent<AudioManager>().UnPause(songNames.names[mainSO.map]);
+            StartCoroutine(PauseOut());
         }
     }
+
+
+    IEnumerator PauseIn()
+    {
+        parent.SetActive(true);
+        GameObject.Find("Music").GetComponent<AudioManager>().Pause(songNames.names[mainSO.map]);
+        mainSO.gamePaused = true;
+        mainSO.setUpOver = false;
+        yield return new WaitForSeconds(pauseTransitionTimeIn);
+        underTransition.SetActive(true);
+        yield return new WaitForSeconds(pauseTransitionTimeOut);
+        tranisitionObject.SetActive(false);
+        Time.timeScale = .01f;
+        print("JFEI");
+    }
+
+    IEnumerator PauseOut()
+    {
+        Time.timeScale = 1;
+        tranisitionObject.SetActive(true);
+        yield return new WaitForSeconds(pauseTransitionTimeIn);
+        underTransition.SetActive(false);
+        yield return new WaitForSeconds(pauseTransitionTimeOut);
+        parent.SetActive(false);
+        mainSO.gamePaused = false;
+        mainSO.setUpOver = true;
+        GameObject.Find("Music").GetComponent<AudioManager>().UnPause(songNames.names[mainSO.map]);
+    }
 }
+
+

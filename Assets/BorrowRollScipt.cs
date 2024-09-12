@@ -16,9 +16,11 @@ public class BorrowRollScipt : MonoBehaviour
     public GameObject teleportLocationCol;
     PlayerInput playInput;
     Rigidbody2D rb2d;
+    AnimationManager animMan;
 
     private bool inCourtine = false;
     private bool mistyStepDisabled =false;
+    public GameObject mistyStepEffectBack;
     
     
 
@@ -27,6 +29,7 @@ public class BorrowRollScipt : MonoBehaviour
     {
         playInput = gameObject.GetComponent<PlayerInput>(); 
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+        animMan = gameObject.GetComponent<AnimationManager>();
     }
 
     // Update is called once per frame
@@ -49,7 +52,6 @@ public class BorrowRollScipt : MonoBehaviour
 
             if (inCourtine)
             {
-                playSO[playInput.playerIndex].invincble = true;
                 rb2d.drag = 100000000000000;
             }
         }
@@ -62,6 +64,7 @@ public class BorrowRollScipt : MonoBehaviour
 
     IEnumerator MistyStep()
     {
+        playSO[playInput.playerIndex].moveAnimsPlayable = false;
         inCourtine = true;
         //rb2d.drag = 100000000000000;
         Vector2 realTeleportLocation = Vector2.zero;
@@ -69,17 +72,22 @@ public class BorrowRollScipt : MonoBehaviour
         mistyStepDisabled =true;
         GameObject prephab = Instantiate(teleportLocationCol, (Vector3)decidedTelaportLocation, Quaternion.identity);
         prephab.GetComponent<TeleportLocoColScript>().OnCreation(playInput.playerIndex);
-        playSO[playInput.playerIndex].canMove = false;
+        playSO[playInput.playerIndex].freeze = true;
+        Instantiate(mistyStepEffectBack, gameObject.transform.position, Quaternion.identity);
+        animMan.ChangeAnimationState("Goblin_Invisble");
+
         yield return new WaitForSeconds(telaportationTime);
 
         realTeleportLocation = (Vector2)prephab.transform.position;
         //Destroy(prephab);
         gameObject.transform.position = realTeleportLocation;
-        playSO[playInput.playerIndex].canMove = true;
+        playSO[playInput.playerIndex].freeze = false;
         rb2d.drag = 0;
 
         inCourtine = false;
         prephab.GetComponent<TeleportLocoColScript>().Explode();
+
+        playSO[playInput.playerIndex].moveAnimsPlayable = true;
         yield return new WaitForSeconds(postTeleportWaitTime);
 
         mistyStepDisabled = false;

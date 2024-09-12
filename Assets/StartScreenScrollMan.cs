@@ -92,5 +92,7 @@ public class StartScreenScrollMan : MonoBehaviour
             endind = true;
             StartCoroutine(Close(chosenMode));
         }
+
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("ClickSound1");
     }
 }

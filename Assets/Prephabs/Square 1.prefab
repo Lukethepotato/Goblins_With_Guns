@@ -8713,6 +8713,7 @@ MonoBehaviour:
   postTeleportWaitTime: 0.75
   telaportDist: 10
   teleportLocationCol: {fileID: 8413305665866777812, guid: 1f14979b9b0562649b61c6cf77aebcac, type: 3}
+  mistyStepEffectBack: {fileID: 3494629753909755278, guid: 4a55d06c3226dc6448164b23c8c40ced, type: 3}
 --- !u!1 &6600092420458733488
 GameObject:
   m_ObjectHideFlags: 0

@@ -40,6 +40,6 @@ public class PlayerPauseMan : MonoBehaviour
     public void PauseButton(InputAction.CallbackContext cxt)
     {
         playInput.uiInputModule = inputModule;
-        pauseScript.Pause(playInput.playerIndex);
+        pauseScript.Pause();
     }
 }

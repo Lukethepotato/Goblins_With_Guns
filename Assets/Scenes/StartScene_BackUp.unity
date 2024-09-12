@@ -184,6 +184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distGuitarVol: 0.6
+  fadeInTime: 2
+  leenTweenVolume: 0
+  Layer: 0
 --- !u!1 &308839698
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +882,12 @@ MonoBehaviour:
   sounds:
   - name: LockedSound
     clip: {fileID: 8300000, guid: 4652cf7c24ad8b84b81b5ababf081cd0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ClickSound1
+    clip: {fileID: 8300000, guid: 763793d0d001f7a4ebc4d2b92d160184, type: 3}
     volume: 1
     pitch: 1
     loop: 0

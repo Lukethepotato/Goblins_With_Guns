@@ -18,6 +18,9 @@ public class MainScene_Scroll : MonoBehaviour
     public AnimationManager animFX;
     public float timeToStart;
     public GameObject pressAnyJoin;
+    public GameObject MatchLoadCover;
+    public float matchLoadCoverTimeIn;
+    public float matchLoadCoverTimeOut;
 
     private bool InMapClose = false;
 
@@ -86,10 +89,21 @@ public class MainScene_Scroll : MonoBehaviour
     }
     IEnumerator End()
     {
+        animMan.ChangeAnimationState("MainScene_ScrollClose");
+        mainSO.preMapLoadAnim = false;
+        yield return new WaitForSeconds(timeToMapOff);
+
         animMan.ChangeAnimationState("MainScene_Scroll_End");
-        yield return new WaitForSeconds(timeToEnd);
         GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().Stop();
+        MatchLoadCover.SetActive(true);
+        yield return new WaitForSeconds(matchLoadCoverTimeIn);
+
+        animMan.ChangeAnimationState("MainScene_Scroll_End");
+        yield return new WaitForSeconds(matchLoadCoverTimeOut);
+
+        MatchLoadCover.SetActive(false);
         gameObject.SetActive(false);
+        mainSO.setUpOver = true;
     }
 
     public void PublicEnd()

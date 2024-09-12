@@ -42,9 +42,7 @@ public class MapStartUpMovMan : MonoBehaviour
     public void EndStartUpMov()
     {
         mapSong.PlayMapSong();
-        mainSO.inStartUpMov = true;
-        mainSO.inStartUpMov = false;
-        mainSO.setUpOver = true;
+        // mainso setupOver is set to true first in the mainSceneScroll
         scroll.GetComponent<MainScene_Scroll>().PublicEnd();
     }
 }

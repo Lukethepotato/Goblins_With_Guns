@@ -18,7 +18,7 @@ public class PlayerSelectionCanvasMan : MonoBehaviour
     void Update()
     {
 
-        if (mainSO.setUpOver == false)
+        if (mainSO.setUpOver == false && mainSO.gamePaused == false)
         {
             for (int I = 0; I < pannels.Length; I++)
             {

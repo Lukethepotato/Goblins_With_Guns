@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class MKwiiMusicLayering : MonoBehaviour
 {
     public float distGuitarVol;
+    public float fadeInTime = .25f;
+    public float leenTweenVolume;
+    public int Layer;
     // Start is called before the first frame update
 
     private void Awake()
@@ -35,10 +39,16 @@ public class MKwiiMusicLayering : MonoBehaviour
         }
         else
         */
+        Layer= layer;
 
-        {
-            GameObject.Find("Music").GetComponent<AudioManager>().RaiseVolume("StartUpLayer" + layer.ToString(), .5f);
-        }
+        LeanTween.value(gameObject, 0, .5f, fadeInTime).setEaseInBack().setOnUpdate(LengthSetting);
+        
+    }
+
+    private void LengthSetting(float value)
+    {
+        leenTweenVolume = value;
+        GameObject.Find("Music").GetComponent<AudioManager>().RaiseVolume("StartUpLayer" + Layer.ToString(), leenTweenVolume);
     }
 
 
