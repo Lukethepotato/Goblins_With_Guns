@@ -27,6 +27,7 @@ public class HealingDroneManager : MonoBehaviour
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         aiPath = gameObject.GetComponent<AIPath>();
         destinationSetter = gameObject.GetComponent<AIDestinationSetter>();
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("HealthDroneFly");
     }
 
     // Update is called once per frame
@@ -86,6 +87,8 @@ public class HealingDroneManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         if (droneDeployed == false && playersInLandingZone == 1)
         {
+            GameObject.Find("SFX").GetComponent<AudioManager>().StopPlaying("HealthDroneFly");
+            GameObject.Find("SFX").GetComponent<AudioManager>().Play("HealthDroneDrop");
             droneAnim.ChangeAnimationState("Heal_Deploy");
             goingDown = true;
             aiPath.enabled = false;

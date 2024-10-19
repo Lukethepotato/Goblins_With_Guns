@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Networking.Types;
 
 public class MainScene_Scroll : MonoBehaviour
@@ -21,6 +22,9 @@ public class MainScene_Scroll : MonoBehaviour
     public GameObject MatchLoadCover;
     public float matchLoadCoverTimeIn;
     public float matchLoadCoverTimeOut;
+    public GameObject canvas;
+    public MapMusicPlayer mapSong;
+    public bool inFootballStartUp = false;
 
     private bool InMapClose = false;
 
@@ -32,15 +36,24 @@ public class MainScene_Scroll : MonoBehaviour
         maps.SetActive(false);
         StartCoroutine(Open(maps)) ;
         animFX = FX.GetComponent<AnimationManager>();
+
+        mapSong = canvas.GetComponent<MapMusicPlayer>();
+        mainSO.freezeAllPlayer= true;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (mainSO.inStartUpMov && startedEnd == false)
         {
             startedEnd= true;
             StartCoroutine(End());
+        }
+
+        if (GameObject.Find("player1").GetComponent<CompleteInputDectection>().input && inFootballStartUp)
+        {
+            SkipCutScene();
+            print("AHHHHHHHH");
         }
     }
 
@@ -91,6 +104,7 @@ public class MainScene_Scroll : MonoBehaviour
     {
         animMan.ChangeAnimationState("MainScene_ScrollClose");
         mainSO.preMapLoadAnim = false;
+        pressAnyJoin.SetActive(false) ;
         yield return new WaitForSeconds(timeToMapOff);
 
         animMan.ChangeAnimationState("MainScene_Scroll_End");
@@ -98,12 +112,29 @@ public class MainScene_Scroll : MonoBehaviour
         MatchLoadCover.SetActive(true);
         yield return new WaitForSeconds(matchLoadCoverTimeIn);
 
+        mainSO.setUpOver = true;
+        inFootballStartUp = true;
+        GameObject.Find("Music").GetComponent<AudioManager>().Play("FOOTBALL_NonLooop");
         animMan.ChangeAnimationState("MainScene_Scroll_End");
         yield return new WaitForSeconds(matchLoadCoverTimeOut);
 
+        inFootballStartUp = false;
+        mapSong.PlayMapSong();
         MatchLoadCover.SetActive(false);
         gameObject.SetActive(false);
         mainSO.setUpOver = true;
+        mainSO.freezeAllPlayer = false;
+    }
+
+    public void SkipCutScene()
+    {
+        GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying("FOOTBALL_NonLooop");
+        mapSong.PlayMapSong();
+        MatchLoadCover.SetActive(false);
+        gameObject.SetActive(false);
+        mainSO.setUpOver = true;
+        mainSO.freezeAllPlayer = false;
+        inFootballStartUp = false;
     }
 
     public void PublicEnd()

@@ -37,6 +37,8 @@ public class LecternManager : MonoBehaviour
 
     IEnumerator LecternActivation()
     {
+        //LightningAsecsion
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("LightningAsecsion");
         animMan.ChangeAnimationState("LecternActivate");
         yield return new WaitForSeconds(animTime);
         animMan.ChangeAnimationState("LecternIdle");

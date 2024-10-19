@@ -39,6 +39,7 @@ public class damageTaking : MonoBehaviour
     private Vector2 knockbackPosition;
     public float moveInputDamp = 1;
     private float localDamageMult = 1;
+    public AnouncerSO anouncerSO;
 
 
 
@@ -127,6 +128,19 @@ public class damageTaking : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Bullet>() != null)
         {
+            if ((playSO[playInput.playerIndex].health - other.gameObject.GetComponent<Bullet>().damage) <= 0 && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)
+            {
+                playSO[other.gameObject.GetComponent<BulletData>().owner].kills += 1;
+
+                int maxVoiceLineNum = anouncerSO.killVoiceLineNames.Length;
+                int randomNum = Random.Range(0, 1);
+                
+                if (randomNum == 0)
+                {
+                    GameObject.Find("AnouncerManager").GetComponent<AnouncerMan>().playKillLine();
+                }
+            }
+
             if (knockBack == false)
             {
                 knockbackAmount = other.gameObject.GetComponent<Bullet>().knockBackAmount;
@@ -193,9 +207,18 @@ public class damageTaking : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Explosion") && mainSO.freezeAllPlayer == false)
         {
-            explosionLoca = other.gameObject.transform.position;
-            explosionID = other.gameObject.GetComponent<BulletData>().owner;
-            StartCoroutine(Explosion());
+            if (other.gameObject.GetComponentInParent<TeleportLocoColScript>() != null && other.gameObject.GetComponent<BulletData>().owner != playInput.playerIndex) 
+            {
+                explosionLoca = other.gameObject.transform.position;
+                explosionID = other.gameObject.GetComponent<BulletData>().owner;
+                StartCoroutine(Explosion());
+            }
+            else if (other.gameObject.GetComponentInParent<TeleportLocoColScript>() == null)
+            {
+                explosionLoca = other.gameObject.transform.position;
+                explosionID = other.gameObject.GetComponent<BulletData>().owner;
+                StartCoroutine(Explosion());
+            }
         }
 
         if (other.gameObject.CompareTag("Lightning") && playSO[playInput.playerIndex].invincble == false && mainSO.freezeAllPlayer == false)

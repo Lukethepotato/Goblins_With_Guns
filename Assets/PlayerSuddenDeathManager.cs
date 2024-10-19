@@ -10,11 +10,14 @@ public class PlayerSuddenDeathManager : MonoBehaviour
     public MainSO mainSO;
     PlayerMagicBookManager magicBooksMan;
     private bool gate = false;
+    public GameObject gunParent;
+    public GunPerkValueTeaks gunValueTweaks;
     // Start is called before the first frame update
     void Start()
     {
         playInput = gameObject.GetComponent<PlayerInput>();
         magicBooksMan = gameObject.GetComponent<PlayerMagicBookManager>();
+        gunValueTweaks = gunParent.GetComponent<GunPerkValueTeaks>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class PlayerSuddenDeathManager : MonoBehaviour
             gameObject.transform.position = mainSO.playerSuddenDeathSpawnLocations[playInput.playerIndex];
             playSO[playInput.playerIndex].health = mainSO.suddenDeathHealth;
             playSO[playInput.playerIndex].livesLeft = mainSO.suddenDeathLives;
+            gunValueTweaks.SetGunsBackToNormal();
             playSO[playInput.playerIndex].gunChosen = playSO[playInput.playerIndex].oringalGunChosen;
             playSO[playInput.playerIndex].magicBooksHeld = 0;
             playSO[playInput.playerIndex].isTurret = false;

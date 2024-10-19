@@ -16,7 +16,10 @@ public class MapMusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (mainSO.gameIsOver)
+        {
+            StopPlaying();
+        }
     }
 
     public void PlayMapSong()

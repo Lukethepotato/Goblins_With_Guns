@@ -76,7 +76,6 @@ public class ReadyUpManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             InputSystem.EnableDevice(Mouse.current);
-            mapSong.PlayMapSong();
             mainSO.inStartUpMov = false;
             //mainSO.setUpOver = true;
             scroll.GetComponent<MainScene_Scroll>().PublicEnd();

@@ -12,6 +12,7 @@ public class HomingMissleMan : MonoBehaviour
     public Player_SO[] playSO;
     private int bestSoFar = 0;
     private bool turnBack = false;
+    public MainSO mainSO;
 
     // Start is called before the first frame update
     void Start()
@@ -55,7 +56,7 @@ public class HomingMissleMan : MonoBehaviour
     private void TargetAssgiment()
     {
         float bestSoFarDistance = -1;
-        for (int player = 0; player <= 3; player++) 
+        for (int player = 0; player <= mainSO.playersReadiedUp -1; player++) 
         {
             if (playSO[player].inGame && playSO[player].health > 0 && player != bulletData.owner)
             {

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class MKwiiMusicLayering : MonoBehaviour
 {
@@ -9,6 +8,7 @@ public class MKwiiMusicLayering : MonoBehaviour
     public float fadeInTime = .25f;
     public float leenTweenVolume;
     public int Layer;
+    public float fadeOutTime;
     // Start is called before the first frame update
 
     private void Awake()
@@ -41,8 +41,15 @@ public class MKwiiMusicLayering : MonoBehaviour
         */
         Layer= layer;
 
-        LeanTween.value(gameObject, 0, .5f, fadeInTime).setEaseInBack().setOnUpdate(LengthSetting);
+        LeanTween.value(gameObject, 0, .05f, fadeInTime).setEaseInBack().setOnUpdate(LengthSetting);
         
+    }
+
+    public void FadeOutLayer(int layer)
+    {
+        Layer = layer;
+        LeanTween.value(gameObject, .5f, 0, fadeOutTime).setEaseInBack().setOnUpdate(LengthSetting);
+
     }
 
     private void LengthSetting(float value)
@@ -51,13 +58,25 @@ public class MKwiiMusicLayering : MonoBehaviour
         GameObject.Find("Music").GetComponent<AudioManager>().RaiseVolume("StartUpLayer" + Layer.ToString(), leenTweenVolume);
     }
 
+    private void LengthSettingAll(float value)
+    {
+        leenTweenVolume = value;
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer1", leenTweenVolume);
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer2", leenTweenVolume);
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer3", leenTweenVolume);
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer4", leenTweenVolume);
+    }
+
 
     public void Stop()
     {
+        /*
         GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer1"), 1);
         GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer2"), 1);
         GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer3"), 1);
         GameObject.Find("Music").GetComponent<AudioManager>().LowerVolume(("StartUpLayer4"), 1);
+        */
+        LeanTween.value(gameObject, .25f, 0, fadeOutTime).setEaseLinear().setOnUpdate(LengthSettingAll);
         print("StopMuisc");
     }
 }

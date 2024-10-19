@@ -253,6 +253,7 @@ MonoBehaviour:
   damage: 35
   ownerInvincTime: 0.25
   rotateSprite: 0
+  destroyOnContactWithObject: 1
 --- !u!114 &5330619259104558838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +422,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
 --- !u!114 &1554056513735941828
 MonoBehaviour:
   m_ObjectHideFlags: 0

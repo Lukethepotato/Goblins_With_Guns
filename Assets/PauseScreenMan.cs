@@ -15,6 +15,10 @@ public class PauseScreenMan : MonoBehaviour
     public float pauseTransitionTimeIn;
     public float pauseTransitionTimeOut;
 
+    public GameObject[] slides;
+    public int slideOn = 0;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +28,20 @@ public class PauseScreenMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (mainSO.gamePaused) 
+        {
+            for (int I = 0; I < slides.Length; I++)
+            {
+                if (I != slideOn)
+                {
+                    slides[I].SetActive(false);
+                }
+                else
+                {
+                    slides[I].SetActive(true);
+                }
+            }
+        }
     }
     
     public void Pause()
@@ -50,6 +68,14 @@ public class PauseScreenMan : MonoBehaviour
         if (mainSO.gamePaused)
         {
             StartCoroutine(PauseOut());
+        }
+    }
+
+    public void ChangeSlide(int slideToChangeTo)
+    {
+        if (mainSO.gamePaused)
+        {
+            slideOn = slideToChangeTo;
         }
     }
 

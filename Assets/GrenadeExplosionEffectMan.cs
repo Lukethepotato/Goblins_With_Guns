@@ -10,7 +10,8 @@ public class GrenadeExplosionEffectMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //BasicExplosion
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("BasicExplosion");
     }
 
     public void Asignment(int playSO, int perkNum, float magicRockMult)

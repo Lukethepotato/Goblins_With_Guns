@@ -30,6 +30,7 @@ public class MagicBookManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerMagicBookManager>().MagicBookPickedUp(bookColor);
+            GameObject.Find("SFX").GetComponent<AudioManager>().Play("BookCollect");
             Destroy(gameObject);
         }
     }

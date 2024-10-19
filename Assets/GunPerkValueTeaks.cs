@@ -46,8 +46,12 @@ public class GunPerkValueTeaks : MonoBehaviour
     void Start()
     {
         playInput = parent.GetComponent<PlayerInput>();
-
+        /*
         ApplyPerkGunStats(false);
+        playSO[playInput.playerIndex].resetGunStats = true;
+        playSO[playInput.playerIndex].resetGunStats = false;
+        */
+
     }
 
     public void ApplyPerkGunStats(bool refresh)
@@ -63,7 +67,10 @@ public class GunPerkValueTeaks : MonoBehaviour
 
             if (playSO[playInput.playerIndex].perkOwned != 11)
             {
-
+                OGChamberSize = OGvalueSetting.ChamberSize;
+                OGReloadTime = OGvalueSetting.ReloadTime;
+                OGBulletSpeed = OGvalueSetting.bulletSpeed;
+                OGFireRate = OGvalueSetting.timeInBetweenShots;
                 // SuperOG stats are gun stats before perk stuff applied\
 
                 OGvalueSetting.ChamberSize *= gunStats[perkNum].chamberSizeMult;
@@ -73,10 +80,6 @@ public class GunPerkValueTeaks : MonoBehaviour
                 OGvalueSetting.timeInBetweenShots *= gunStats[perkNum].fireRateMult;
                 playSO[playInput.playerIndex].damageDealtMult = gunStats[perkNum].damageMult;
 
-                OGChamberSize = OGvalueSetting.ChamberSize;
-                OGReloadTime = OGvalueSetting.ReloadTime;
-                OGBulletSpeed = OGvalueSetting.bulletSpeed;
-                OGFireRate = OGvalueSetting.timeInBetweenShots;
 
                 // OG stats before after perk stuff applied
 
@@ -151,7 +154,7 @@ public class GunPerkValueTeaks : MonoBehaviour
 
     void Update()
     {
-        if (playSO[playInput.playerIndex].perkOwned == 11 && playSO[playInput.playerIndex].gunChosen != 6)
+        if (playSO[playInput.playerIndex].perkOwned == 11 && playSO[playInput.playerIndex].gunChosen != 6 && mainSO.setUpOver)
         {
             if (playSO[playInput.playerIndex].bloodRaged && playSO[playInput.playerIndex].health > 0  )
             {

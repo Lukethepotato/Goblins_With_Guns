@@ -26,7 +26,7 @@ public class TitleScreenStartButton : MonoBehaviour
     public void startButtonPress()
     {
         StartCoroutine(TitleEnd());
-        GameObject.Find("SFX").GetComponent<AudioManager>().Play("ClickSound1");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound1");
     }
 
     IEnumerator TitleEnd()

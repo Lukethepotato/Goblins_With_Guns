@@ -130,6 +130,7 @@ public class PlayerMagicBookManager : MonoBehaviour
 
     IEnumerator Fire()
     {
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("TargetStrikeSFX");
         handsSR.LightingFireIntiated = true;
         fireLocation = gameObject.transform.position;
         canFire= false;
@@ -144,6 +145,7 @@ public class PlayerMagicBookManager : MonoBehaviour
         animMan.ChangeAnimationState("Target_Idle");
         yield return new WaitForSeconds(cantFireTime);
         canFire = true;
+
     }
 
     IEnumerator Activation()

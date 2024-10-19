@@ -156,6 +156,12 @@ Transform:
   - {fileID: 952902784}
   - {fileID: 1175774452}
   - {fileID: 1937076739}
+  - {fileID: 866587662}
+  - {fileID: 1617836437}
+  - {fileID: 1533261008}
+  - {fileID: 1629783054}
+  - {fileID: 935397514}
+  - {fileID: 1753018379}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -171,6 +177,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aeef6d85d0a29a4fae34fea2316bbcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnesToDisableOnStart:
+  - {fileID: 952902783}
+  - {fileID: 1937076738}
+  - {fileID: 1617836436}
+  - {fileID: 1629783053}
+  - {fileID: 1533261007}
+  - {fileID: 935397513}
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
 --- !u!114 &114442379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,10 +197,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35c37a339a42b6478b0004b6449401e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distGuitarVol: 0.6
-  fadeInTime: 2
+  distGuitarVol: 0.05
+  fadeInTime: 1.25
   leenTweenVolume: 0
   Layer: 0
+  fadeOutTime: 1
 --- !u!1 &308839698
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 44.86, y: 40.92, z: 24.89, w: 41.32}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -675,7 +690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -835,6 +850,222 @@ MonoBehaviour:
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
   m_PlayerRoot: {fileID: 1553141591}
+--- !u!1 &866587661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866587662}
+  - component: {fileID: 866587663}
+  m_Layer: 0
+  m_Name: Announcers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866587662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866587661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 114442377}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866587663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866587661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228ab9f3f363c3343a1da70ae8ff66a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: RandChitChat1
+    clip: {fileID: 8300000, guid: 1f75f8ae8846d5d438307bbfd588341e, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: KillSound1
+    clip: {fileID: 8300000, guid: 9404c8472fe242e43adaf071e43c9667, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!1 &935397513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935397514}
+  - component: {fileID: 935397515}
+  m_Layer: 0
+  m_Name: PlayerSFX_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935397514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935397513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 114442377}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &935397515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935397513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228ab9f3f363c3343a1da70ae8ff66a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Pistol_Shot
+    clip: {fileID: 8300000, guid: 4cba3faa041e8d843b78470d6d513bf4, type: 3}
+    volume: 0.304
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SMG_Firing
+    clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
+    volume: 0.284
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Rev
+    clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
+    volume: 0.181
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Shoot
+    clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
+    volume: 0.154
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: RPG_Shoot
+    clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
+    volume: 0.398
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Shoot
+    clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flamethower_Shoot
+    clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
+    volume: 0.63
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Wand_Fire
+    clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
+    volume: 0.434
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Charge
+    clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Charge
+    clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
+    volume: 1.176
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Shoot
+    clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
+    volume: 1.081
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Charge
+    clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
+    volume: 1.122
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Shot
+    clip: {fileID: 8300000, guid: 35144c30518ca4e479cef5f972996db6, type: 3}
+    volume: 0.444
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shotgun_Shot
+    clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
+    volume: 0.271
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sniper_Shot
+    clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
+    volume: 0.281
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MissleLauncher_Shot
+    clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
+    volume: 0.33
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntStartFX
+    clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntFX
+    clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GambleSFX
+    clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &952902783
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,9 +1117,57 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: ClickSound1
-    clip: {fileID: 8300000, guid: 763793d0d001f7a4ebc4d2b92d160184, type: 3}
+  - name: Audience
+    clip: {fileID: 8300000, guid: 21b39a52ccfd0df48bb01b889c63e710, type: 3}
+    volume: 0.115
+    pitch: 0.85
+    loop: 1
+    source: {fileID: 0}
+  - name: BasicExplosion
+    clip: {fileID: 8300000, guid: aad9c797d5b51dc4f863f58aa2bdde74, type: 3}
     volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MagicExplosion
+    clip: {fileID: 8300000, guid: f6e1d479071925c49beae739ac5d229f, type: 3}
+    volume: 0.656
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: BookCollect
+    clip: {fileID: 8300000, guid: 4046de64b1e6e7448a35a158c6a77634, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MistyStepExplo
+    clip: {fileID: 8300000, guid: 632fd706fc3c1e748bad7e7b70b8dcb8, type: 3}
+    volume: 0.357
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CantInteract
+    clip: {fileID: 8300000, guid: ecf5c6b0da4ce15458d349c5909af264, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HealthDroneFly
+    clip: {fileID: 8300000, guid: 7f1a9027ff3409b469ca0f9f024daa59, type: 3}
+    volume: 0.172
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: HealthDroneDrop
+    clip: {fileID: 8300000, guid: 20d1d50096a4b0e47be99f3c6a88ecd1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MushroomBounce
+    clip: {fileID: 8300000, guid: 0c60171c87308054c9411f521d593b9a, type: 3}
+    volume: 0.674
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -1153,7 +1432,7 @@ MonoBehaviour:
   sounds:
   - name: StartUpLayer1
     clip: {fileID: 8300000, guid: 099c6a725833ab5428599a2f277e4f05, type: 3}
-    volume: 1
+    volume: 0.896
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -1188,7 +1467,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: Misc
-    clip: {fileID: 8300000, guid: 196f28c0e1e018441acada1d127e681b, type: 3}
+    clip: {fileID: 8300000, guid: 4993029efa0cd3e46935a80ee1b25bed, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -1198,6 +1477,24 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: MUSHROOM
+    clip: {fileID: 8300000, guid: 45a3b8284e3c9e44997f39609619df2b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GameCompleteTheme
+    clip: {fileID: 8300000, guid: 82145b61ac2c86e4e95555714f17c3da, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: FOOTBALL_NonLooop
+    clip: {fileID: 8300000, guid: 5e7bebc09b2cb054198f58a67a8d17bc, type: 3}
+    volume: 1.109
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!1 &1212932646
 GameObject:
@@ -1634,6 +1931,165 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1533261007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533261008}
+  - component: {fileID: 1533261009}
+  m_Layer: 0
+  m_Name: PlayerSFX_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1533261008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533261007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 114442377}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1533261009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533261007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228ab9f3f363c3343a1da70ae8ff66a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Pistol_Shot
+    clip: {fileID: 8300000, guid: 4cba3faa041e8d843b78470d6d513bf4, type: 3}
+    volume: 0.304
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SMG_Firing
+    clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
+    volume: 0.284
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Rev
+    clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
+    volume: 0.181
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Shoot
+    clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
+    volume: 0.154
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: RPG_Shoot
+    clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
+    volume: 0.398
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Shoot
+    clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flamethower_Shoot
+    clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
+    volume: 0.63
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Wand_Fire
+    clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
+    volume: 0.434
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Charge
+    clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Charge
+    clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
+    volume: 1.176
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Shoot
+    clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
+    volume: 1.081
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Charge
+    clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
+    volume: 1.122
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Shot
+    clip: {fileID: 8300000, guid: 35144c30518ca4e479cef5f972996db6, type: 3}
+    volume: 0.444
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shotgun_Shot
+    clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
+    volume: 0.271
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sniper_Shot
+    clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
+    volume: 0.281
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MissleLauncher_Shot
+    clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
+    volume: 0.33
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntStartFX
+    clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntFX
+    clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GambleSFX
+    clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &1553141591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,6 +2354,324 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d2e26f58db76145a95fcef5e1b1d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1617836436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1617836437}
+  - component: {fileID: 1617836438}
+  m_Layer: 0
+  m_Name: PlayerSFX_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1617836437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617836436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 114442377}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1617836438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617836436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228ab9f3f363c3343a1da70ae8ff66a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Pistol_Shot
+    clip: {fileID: 8300000, guid: 4cba3faa041e8d843b78470d6d513bf4, type: 3}
+    volume: 0.304
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SMG_Firing
+    clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
+    volume: 0.284
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Rev
+    clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
+    volume: 0.181
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Shoot
+    clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
+    volume: 0.154
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: RPG_Shoot
+    clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
+    volume: 0.398
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Shoot
+    clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flamethower_Shoot
+    clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
+    volume: 0.63
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Wand_Fire
+    clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
+    volume: 0.434
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Charge
+    clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Charge
+    clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
+    volume: 1.176
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Shoot
+    clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
+    volume: 1.081
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Charge
+    clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
+    volume: 1.122
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Shot
+    clip: {fileID: 8300000, guid: 35144c30518ca4e479cef5f972996db6, type: 3}
+    volume: 0.444
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shotgun_Shot
+    clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
+    volume: 0.271
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sniper_Shot
+    clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
+    volume: 0.281
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MissleLauncher_Shot
+    clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
+    volume: 0.33
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntStartFX
+    clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntFX
+    clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GambleSFX
+    clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!1 &1629783053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629783054}
+  - component: {fileID: 1629783055}
+  m_Layer: 0
+  m_Name: PlayerSFX_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1629783054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629783053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 114442377}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1629783055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629783053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228ab9f3f363c3343a1da70ae8ff66a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Pistol_Shot
+    clip: {fileID: 8300000, guid: 4cba3faa041e8d843b78470d6d513bf4, type: 3}
+    volume: 0.304
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SMG_Firing
+    clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
+    volume: 0.284
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Rev
+    clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
+    volume: 0.181
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Minigun_Shoot
+    clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
+    volume: 0.154
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: RPG_Shoot
+    clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
+    volume: 0.398
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Shoot
+    clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flamethower_Shoot
+    clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
+    volume: 0.63
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Wand_Fire
+    clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
+    volume: 0.434
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bow_Charge
+    clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Charge
+    clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
+    volume: 1.176
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Turret_Shoot
+    clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
+    volume: 1.081
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Charge
+    clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
+    volume: 1.122
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeLauncher_Shot
+    clip: {fileID: 8300000, guid: 35144c30518ca4e479cef5f972996db6, type: 3}
+    volume: 0.444
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shotgun_Shot
+    clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
+    volume: 0.271
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sniper_Shot
+    clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
+    volume: 0.281
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MissleLauncher_Shot
+    clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
+    volume: 0.33
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntStartFX
+    clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MuntFX
+    clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GambleSFX
+    clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &1711342763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,6 +2944,87 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1753018378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753018379}
+  - component: {fileID: 1753018380}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1753018379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753018378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 114442377}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1753018380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753018378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228ab9f3f363c3343a1da70ae8ff66a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: ClickSound1
+    clip: {fileID: 8300000, guid: dcf0f6823f0dfce49b9a7e492ffde0dd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ResultsIdle
+    clip: {fileID: 8300000, guid: 9a48b7fb8d457184a87946fac27a483f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: ResultsStartUp
+    clip: {fileID: 8300000, guid: 66bc7a818930a6444987e4247ff20fc0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ResultsRematch
+    clip: {fileID: 8300000, guid: 814b72ab7af2d4c4fb39546d8e36f1df, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ScrollPoof
+    clip: {fileID: 8300000, guid: 5ed6221a84cc43e45bbc06748f7f6f4f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TitleIdle
+    clip: {fileID: 8300000, guid: 94e949715c139fe4cb2f6f45fdd1c704, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!1 &1805877914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,13 +3392,79 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: KillSound
-    clip: {fileID: 8300000, guid: 31dec891265a99c4db4a2c225ae945e2, type: 3}
+    clip: {fileID: 8300000, guid: 365143df945126a459cbf185ef91bf25, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: HitSound
     clip: {fileID: 8300000, guid: 4652cf7c24ad8b84b81b5ababf081cd0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BuffModeStart
+    clip: {fileID: 8300000, guid: 615a0e750c29ac2488f6c0bd78f0bdb8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BuffModeSmash
+    clip: {fileID: 8300000, guid: 6d03566de1520ea4ba470a2ec5de96b5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BuffMove
+    clip: {fileID: 8300000, guid: 47e5dc2a2b3e17e47b6c61c40c7627df, type: 3}
+    volume: 0.561
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathAngelSound
+    clip: {fileID: 8300000, guid: f4eb39af2529240409943582d225afc2, type: 3}
+    volume: 0.561
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GoingBloodRage
+    clip: {fileID: 8300000, guid: 122582e0ee786d245b141f0f53b487f3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BonerOff
+    clip: {fileID: 8300000, guid: c02812e52c412b94fabbf5e3751343c4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BuffPop
+    clip: {fileID: 8300000, guid: da05881363ea95740b691fc17759aa71, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TargetStrikeSFX
+    clip: {fileID: 8300000, guid: b9bf1fb2294a2674396b5f518362ae66, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MistyStepIn
+    clip: {fileID: 8300000, guid: f053db0c51664b749a0bb95ba667aa8f, type: 3}
+    volume: 0.684
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LightningAsecsion
+    clip: {fileID: 8300000, guid: d103734d52aabc14fa436af7adf7a5e0, type: 3}
+    volume: 1.335
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HealSFX
+    clip: {fileID: 8300000, guid: 6eb47038bdcafc04c8b3f1e09f96fa00, type: 3}
     volume: 1
     pitch: 1
     loop: 0

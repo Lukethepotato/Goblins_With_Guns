@@ -22,6 +22,7 @@ public class WandExplosionDamage : MonoBehaviour
 
     IEnumerator Destroy()
     {
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("MagicExplosion");
         animMan.ChangeAnimationState("WandExplosionStart");
         yield return new WaitForSeconds(.2f);
         animMan.ChangeAnimationState("WandExplosion");

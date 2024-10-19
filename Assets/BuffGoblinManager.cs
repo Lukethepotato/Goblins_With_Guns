@@ -104,6 +104,7 @@ public class BuffGoblinManager : MonoBehaviour
         playSO[playInput.playerIndex].invincble = true;
         playSO[playInput.playerIndex].movementSpeed = 0;
         playSO[playInput.playerIndex].freeze= true;
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("BuffModeStart");
         animMan.ChangeAnimationState("Buff_Start");
         yield return new WaitForSeconds(startAnimTime);
         GameObject.Find("MainCanvas").GetComponent<CanvasButtonPrompts>().prompt = prompt;
@@ -115,6 +116,7 @@ public class BuffGoblinManager : MonoBehaviour
         if (playSO[playInput.playerIndex].buff)
         {
             animMan.ChangeAnimationState("Buff_WareOff");
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("BuffPop");
             playSO[playInput.playerIndex].canMove = false;
             playSO[playInput.playerIndex].freeze = true;
             firePower = 0;
@@ -130,6 +132,7 @@ public class BuffGoblinManager : MonoBehaviour
 
     IEnumerator Attack(string anim) 
     {
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("BuffModeSmash");
         attacking = true;
         animMan.ChangeAnimationState(anim);
         playSO[playInput.playerIndex].movementSpeed = fireMoveSpeed;

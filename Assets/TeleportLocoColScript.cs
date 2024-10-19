@@ -15,6 +15,8 @@ public class TeleportLocoColScript : MonoBehaviour
     {
         coll= gameObject.GetComponent<Collider2D>();
         animMan= gameObject.GetComponent<AnimationManager>();
+        StartCoroutine(lateUpdate());
+        //GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("MistyTelegraph");
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class TeleportLocoColScript : MonoBehaviour
     IEnumerator Explosion()
     {
         animMan.ChangeAnimationState("Blink_explode");
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("MistyStepExplo");
         //GameObject triggerPrephab = Instantiate(exploTrigger, gameObject.transform.position, Quaternion.identity);
         //triggerPrephab.GetComponent<BulletData>().Asignment(playIndex, playSO[playIndex].perkOwned, 0);
         exploTrigger.SetActive(true);
@@ -51,5 +54,11 @@ public class TeleportLocoColScript : MonoBehaviour
         yield return new WaitForSeconds(exploLength);
         //Destroy(triggerPrephab);
         Destroy(gameObject);
+    }
+
+    IEnumerator lateUpdate()
+    {
+        yield return new WaitForSeconds(.1f);
+        coll.enabled = false;
     }
 }

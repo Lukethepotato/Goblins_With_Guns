@@ -70,4 +70,5 @@ public class Player_SO : ScriptableObject
     public float basePlayerSpeed;
     public bool moveAnimsPlayable;
     public bool grappling;
+    public int kills;
 }

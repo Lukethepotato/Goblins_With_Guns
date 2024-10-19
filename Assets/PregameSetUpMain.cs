@@ -23,5 +23,9 @@ public class PregameSetUpMain : MonoBehaviour
             playMan.EnableJoining();
         }
 
+        if (mainSO.setUpOver == true)
+        {
+            playMan.DisableJoining();
+        }
     }
 }

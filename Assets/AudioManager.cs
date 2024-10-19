@@ -64,6 +64,19 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
     }
 
+    public bool StillPlaying(string name)
+    {
+        Sound s = Array.Find(sounds, item => item.name == name);
+        if (s.source.isPlaying)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void PlayOneShot(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -91,6 +104,12 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.volume += plus;
+    }
+
+    public void SetVolume(string name, float set)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.volume = set;
     }
 
     public void Destroy(string name)

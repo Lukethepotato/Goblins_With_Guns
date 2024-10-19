@@ -1548,6 +1548,7 @@ GameObject:
   - component: {fileID: 5729482396029531226}
   - component: {fileID: 1960558713113004690}
   - component: {fileID: 2338847710250189695}
+  - component: {fileID: 1627252076554794175}
   m_Layer: 0
   m_Name: Guns
   m_TagString: Untagged
@@ -1902,6 +1903,60 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
   - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+--- !u!114 &1627252076554794175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689638122507495940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c038f911db6084283ead06492bc852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6597591818688195374}
+  playInput: {fileID: 6597591818688195373}
+  playSO:
+  - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
+  - {fileID: 11400000, guid: fb6ee1c39942fae4cb03cbfccb50d88a, type: 2}
+  - {fileID: 11400000, guid: bd74e63c62ac0964f9accaa01a4e6be8, type: 2}
+  - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  gunSFXNames:
+  - Pistol_Shot
+  - Shotgun_Shot
+  - Sniper_Shot
+  - Pistol_Shot
+  - Minigun_Shoot
+  - RPG_Shoot
+  - Bow_Shoot
+  - Flamethower_Shoot
+  - Wand_Fire
+  - SMG_Firing
+  - GrenadeLauncher_Shot
+  - Pistol_Shot
+  - MissleLauncher_Shot
+  - Pistol_Shot
+  attomaticGuns: 00000000010000010001000000
+  chargeGuns:
+  - 
+  - 
+  - 
+  - Bow_Charge
+  - 
+  - 
+  - Bow_Charge
+  - 
+  - 
+  - 
+  - GrenadeLauncher_Charge
+  - 
+  - 
+  miniGunRevSFXName: Minigun_Rev
+  charging: 0
+  turretChargeName: Turret_Charge
+  turretShootName: Turret_Shoot
 --- !u!1 &1698558024375775453
 GameObject:
   m_ObjectHideFlags: 0
@@ -7004,6 +7059,7 @@ GameObject:
   - component: {fileID: 7667819261104092188}
   - component: {fileID: 3453586684170473402}
   - component: {fileID: 6584868812381871294}
+  - component: {fileID: 661410398218338806}
   m_Layer: 9
   m_Name: Square 1
   m_TagString: Player
@@ -7258,6 +7314,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 661410398218338806}
+        m_TargetAssemblyTypeName: CompleteInputDectection, Assembly-CSharp
+        m_MethodName: Input
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
@@ -7333,6 +7401,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 661410398218338806}
+        m_TargetAssemblyTypeName: CompleteInputDectection, Assembly-CSharp
+        m_MethodName: Input
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7512,6 +7592,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0b2d3e4e-263f-4895-890b-6b9a43111339
     m_ActionName: Player/Pause[/XInputControllerWindows/select,/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 67874679-2b55-45e1-bca9-f374d5abd63e
+    m_ActionName: Player/LitterlyAnything[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -7749,6 +7833,7 @@ MonoBehaviour:
   knockbackAmount: 25000
   knockbackTime: 0.2
   moveInputDamp: 1
+  anouncerSO: {fileID: 11400000, guid: 360be346976228f4e9eccc8e2e755c9a, type: 2}
 --- !u!114 &2938049791737583138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7823,6 +7908,7 @@ MonoBehaviour:
   rayCast: 0
   acidEmergeTime: 10
   closestPointMult: 1.15
+  gate: 0
 --- !u!114 &4583352218110608794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8707,13 +8793,26 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a88b95b01cd47fe41b96f21f158580b4, type: 2}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
   rollInput: 0
-  telaportationTime: 0.5
+  telaportationTime: 0.5833333
   decidedTelaportLocation: {x: 0, y: 0}
   telaportLocationMult: 45
   postTeleportWaitTime: 0.75
   telaportDist: 10
   teleportLocationCol: {fileID: 8413305665866777812, guid: 1f14979b9b0562649b61c6cf77aebcac, type: 3}
   mistyStepEffectBack: {fileID: 3494629753909755278, guid: 4a55d06c3226dc6448164b23c8c40ced, type: 3}
+--- !u!114 &661410398218338806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597591818688195374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e932149fea58374483305be5220429b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: 0
 --- !u!1 &6600092420458733488
 GameObject:
   m_ObjectHideFlags: 0
@@ -11349,7 +11448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4049177058656572354
 Transform:
   m_ObjectHideFlags: 0

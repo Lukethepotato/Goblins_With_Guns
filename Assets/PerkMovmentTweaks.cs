@@ -32,7 +32,6 @@ public class PerkMovmentTweaks : MonoBehaviour
             if (playSO[playInput.playerIndex].bloodRaged)
             {
                 playSO[playInput.playerIndex].movementSpeed = mainSO.bloodRagedSpeed;
-                print("BloodRageSpeed");
             }
             else if (speedSO[perkNum] != null)
             {

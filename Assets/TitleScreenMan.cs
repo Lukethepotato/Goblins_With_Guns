@@ -23,6 +23,7 @@ public class TitleScreenMan : MonoBehaviour
 
     IEnumerator StartUpAnim()
     {
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("TitleIdle");
         yield return new WaitForSeconds(startUpAnimTime);
         animMan.ChangeAnimationState("TitleScreen");
         button.SetActive(true);

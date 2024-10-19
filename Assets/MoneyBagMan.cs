@@ -25,5 +25,6 @@ public class MoneyBagMan : MonoBehaviour
     public void collected()
     {
         Destroy(gameObject);
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("BookCollect");
     }
 }

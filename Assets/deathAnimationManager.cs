@@ -16,6 +16,7 @@ public class deathAnimationManager : MonoBehaviour
     public float acidEmergeTime;
     private bool inCourtine;
     public float closestPointMult;
+    public bool gate = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +30,17 @@ public class deathAnimationManager : MonoBehaviour
         //hit = Physics2D.Raycast(gameObject.transform.position, gameObject.transform.TransformDirection(Vector2.up), 100);
         //Debug.DrawRay(gameObject.transform.position, transform.TransformDirection(Vector2.up) * 100, Color.red);
 
-        if (dead)
-        animationManager.ChangeAnimationState(deathAnimation);
+        if (dead && gate == false)
+        {
+            animationManager.ChangeAnimationState(deathAnimation);
+
+            if (deathAnimation == "Angel_Death")
+            {
+                GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("DeathAngelSound");
+            }
+
+            gate = true;
+        }
 
         if (playSO[playInput.playerIndex].health < 1)
         {
@@ -39,6 +49,7 @@ public class deathAnimationManager : MonoBehaviour
         else
         {
             dead= false;
+            gate= false;
         }
 
         if (dead)

@@ -37,10 +37,12 @@ public class Gun_Value_Setting : MonoBehaviour
     public bool automaticAnim = false;
     public bool casinoWeapon = false;
 
-    private void Awake()
+
+    void Awake()
     {
         OGTimeBetweenShots = timeInBetweenShots;
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +54,7 @@ public class Gun_Value_Setting : MonoBehaviour
         perkValTweaks = GetComponentInParent<GunPerkValueTeaks>();
     }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
         if (mainSO.setUpOver)
@@ -115,6 +117,7 @@ public class Gun_Value_Setting : MonoBehaviour
         {
             oldGun = playSO[playInput.playerIndex].gunChosen;
             playSO[playInput.playerIndex].bulletsInChamber = ChamberSize;
+            playSO[playInput.playerIndex].fireForece = bulletSpeed;
             playSO[playInput.playerIndex].resetGunStats= false;
             valueSetting = false;
         }

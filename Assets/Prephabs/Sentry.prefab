@@ -386,6 +386,7 @@ MonoBehaviour:
   parent: {fileID: 3433669826173071499}
   objectHeath: {fileID: 5969012548493675278}
   healthDecreRate: 10
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
 --- !u!1 &3433669826173071499
 GameObject:
   m_ObjectHideFlags: 0

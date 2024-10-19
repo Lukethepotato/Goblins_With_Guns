@@ -49,6 +49,8 @@ public class StartScreenScrollMan : MonoBehaviour
 
     IEnumerator StartUpCoroutine()
     {
+        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("TitleIdle");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollPoof");
         yield return new WaitForSeconds(startUpAnim);
         scrollAnim.ChangeAnimationState("StartSceneScroll_Open");
         yield return new WaitForSeconds(timeToParticle);
@@ -66,6 +68,7 @@ public class StartScreenScrollMan : MonoBehaviour
             StartCoroutine(Close(1));
         }
     }
+
 
     IEnumerator Close(int modeScene)
     {
@@ -93,6 +96,6 @@ public class StartScreenScrollMan : MonoBehaviour
             StartCoroutine(Close(chosenMode));
         }
 
-        GameObject.Find("SFX").GetComponent<AudioManager>().Play("ClickSound1");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound1");
     }
 }

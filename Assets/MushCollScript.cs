@@ -29,6 +29,7 @@ public class MushCollScript : MonoBehaviour
 
     IEnumerator Bounce()
     {
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("MushroomBounce");
         //yield return new WaitForSeconds(timeBeforeBouce);
         animMan.ChangeAnimationState("MushroomAnim");
         yield return new WaitForSeconds(animTime);

@@ -84,12 +84,16 @@ public class Healing : MonoBehaviour
     {
         playSO[playerInput.playerIndex].moveAnimsPlayable = false;
         animMan.ChangeAnimationState("VampMuntStart");
+        //MuntStartSFX
+        GameObject.Find("PlayerSFX_" + playerInput.playerIndex.ToString()).GetComponent<AudioManager>().Play("MuntStartFX");
         yield return new WaitForSeconds(startUpTime);
         animMan.ChangeAnimationState("VampMuntAnim");
+        GameObject.Find("PlayerSFX_" + playerInput.playerIndex.ToString()).GetComponent<AudioManager>().Play("MuntFX");
     }
 
     IEnumerator HealAnimation()
     {
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().PlayOneShot("HealSFX");
         effectAnimMan.ChangeAnimationState("Effects_Heal");
         yield return new WaitForSeconds(.59f);
         effectAnimMan.ChangeAnimationState("Effects_Idle");
@@ -98,6 +102,8 @@ public class Healing : MonoBehaviour
     
     IEnumerator DownTime()
     {
+        GameObject.Find("PlayerSFX_" + playerInput.playerIndex.ToString()).GetComponent<AudioManager>().StopPlaying("MuntFX");
+        GameObject.Find("PlayerSFX_" + playerInput.playerIndex.ToString()).GetComponent<AudioManager>().StopPlaying("MuntStartFX");
         playSO[playerInput.playerIndex].moveAnimsPlayable = true;
         down = true;
         yield return new WaitForSeconds(downTime);

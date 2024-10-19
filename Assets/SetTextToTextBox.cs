@@ -63,6 +63,10 @@ public class SetTextToTextBox : MonoBehaviour
         pressDisabled = true;
         if (mainSO.map == 10 && interactDisplay.inZone && playerSO[playInput.playerIndex].money < 100)
         {
+            if (textBox.text != "not enough money")
+            {
+                GameObject.Find("SFX").GetComponent<AudioManager>().Play("CantInteract");
+            }
             textBox.text = "not enough money";
         }
         yield return new WaitForSeconds(.5f);

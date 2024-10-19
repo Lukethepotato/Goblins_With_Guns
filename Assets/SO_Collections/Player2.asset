@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d520ed38c03a07459c9f512971d47e5, type: 3}
   m_Name: Player2
   m_EditorClassIdentifier: 
-  health: 35
+  health: 200
   fireForece: 15
   timeBetweenShots: 0.27
   magazineSize: 5
   bulletReloadTime: 0.75
   bulletsInChamber: 5
-  letterIn: 1
+  letterIn: 0
   moveInput: {x: 0, y: 0}
   Aim: {x: 0, y: 0}
-  livesLeft: 3
+  livesLeft: 0
   touchingSewage: 0
   isTurret: 0
   oringalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -42,19 +42,19 @@ MonoBehaviour:
   freeze: 0
   joyStickDown: 1
   inGame: 1
-  playerName: A
+  playerName: 
   playerIndex: 2
   gunChosen: 0
   oringalGunChosen: 0
-  hasDied: 0
+  hasDied: 1
   rolling: 0
   invincble: 0
   isReloading: 0
-  isGamePad: 0
-  rematchSetUpComplete: 1
+  isGamePad: 1
+  rematchSetUpComplete: 0
   lightingGoblin: 0
-  perks: 00000000000100000000000000
-  perkOwned: 5
+  perks: 01000000000000000000000000
+  perkOwned: 0
   rocksCollected: 3
   magicRockMult: 1
   inRollState: 0
@@ -74,3 +74,4 @@ MonoBehaviour:
   basePlayerSpeed: 13.5
   moveAnimsPlayable: 1
   grappling: 0
+  kills: 0

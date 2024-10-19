@@ -22,13 +22,16 @@ public class PlayerSelectionCanvasMan : MonoBehaviour
         {
             for (int I = 0; I < pannels.Length; I++)
             {
-                if (I == currentPannel)
+                if (pannels[I]!= null)
                 {
-                    pannels[I].SetActive(true);
-                }
-                else
-                {
-                    pannels[I].SetActive(false);
+                    if (I == currentPannel)
+                    {
+                        pannels[I].SetActive(true);
+                    }
+                    else
+                    {
+                        pannels[I].SetActive(false);
+                    }
                 }
             }
 

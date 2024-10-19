@@ -125,6 +125,15 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LitterlyAnything"",
+                    ""type"": ""Button"",
+                    ""id"": ""67874679-2b55-45e1-bca9-f374d5abd63e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -444,6 +453,17 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""35c42ccd-ed67-4695-ab99-80e837d42227"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""LitterlyAnything"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1031,6 +1051,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_Player_Charge = m_Player.FindAction("Charge", throwIfNotFound: true);
         m_Player_Perk = m_Player.FindAction("Perk", throwIfNotFound: true);
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
+        m_Player_LitterlyAnything = m_Player.FindAction("LitterlyAnything", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1113,6 +1134,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Charge;
     private readonly InputAction m_Player_Perk;
     private readonly InputAction m_Player_Pause;
+    private readonly InputAction m_Player_LitterlyAnything;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -1128,6 +1150,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         public InputAction @Charge => m_Wrapper.m_Player_Charge;
         public InputAction @Perk => m_Wrapper.m_Player_Perk;
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
+        public InputAction @LitterlyAnything => m_Wrapper.m_Player_LitterlyAnything;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1170,6 +1193,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
                 @Pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
                 @Pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @LitterlyAnything.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLitterlyAnything;
+                @LitterlyAnything.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLitterlyAnything;
+                @LitterlyAnything.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLitterlyAnything;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1207,6 +1233,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Pause.started += instance.OnPause;
                 @Pause.performed += instance.OnPause;
                 @Pause.canceled += instance.OnPause;
+                @LitterlyAnything.started += instance.OnLitterlyAnything;
+                @LitterlyAnything.performed += instance.OnLitterlyAnything;
+                @LitterlyAnything.canceled += instance.OnLitterlyAnything;
             }
         }
     }
@@ -1374,6 +1403,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         void OnCharge(InputAction.CallbackContext context);
         void OnPerk(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnLitterlyAnything(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

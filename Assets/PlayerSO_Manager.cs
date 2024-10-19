@@ -64,6 +64,7 @@ public class PlayerSO_Manager : MonoBehaviour
     IEnumerator Respawn()
     {
         GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("KillSound");
+
         playInput.DeactivateInput();
         BoxCollider2D.enabled = false;
         floorColl.enabled = false;

@@ -42,6 +42,7 @@ public class BorrowRollScipt : MonoBehaviour
                 rollInput = false;
                 mistyStepDisabled = true;
                 decidedTelaportLocation = (playSO[playInput.playerIndex].moveInput * telaportDist) + (Vector2)gameObject.transform.position;
+                GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("MistyStepIn");
                 StartCoroutine(MistyStep());
             }
 
@@ -69,14 +70,17 @@ public class BorrowRollScipt : MonoBehaviour
         //rb2d.drag = 100000000000000;
         Vector2 realTeleportLocation = Vector2.zero;
 
-        mistyStepDisabled =true;
+
+        mistyStepDisabled = true;
         GameObject prephab = Instantiate(teleportLocationCol, (Vector3)decidedTelaportLocation, Quaternion.identity);
         prephab.GetComponent<TeleportLocoColScript>().OnCreation(playInput.playerIndex);
         playSO[playInput.playerIndex].freeze = true;
         Instantiate(mistyStepEffectBack, gameObject.transform.position, Quaternion.identity);
         animMan.ChangeAnimationState("Goblin_Invisble");
-
-        yield return new WaitForSeconds(telaportationTime);
+        yield return new WaitForSeconds(telaportationTime/ 3);
+        playSO[playInput.playerIndex].invincble = true;
+        yield return new WaitForSeconds(telaportationTime - (telaportationTime/3));
+        playSO[playInput.playerIndex].invincble = false;
 
         realTeleportLocation = (Vector2)prephab.transform.position;
         //Destroy(prephab);

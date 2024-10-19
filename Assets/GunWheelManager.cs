@@ -53,6 +53,7 @@ public class GunWheelManager : MonoBehaviour
     IEnumerator GunWheel()
     {
         print("GunWheelProcessed");
+        GameObject.Find("PlayerSFX_" + playInput.playerIndex.ToString()).GetComponent<AudioManager>().Play("GambleSFX");
         //int newGun = Random.Range(0, 4);
         var newGun = Random.Range(0, 4);
         if (newGun == playSO[playInput.playerIndex].gunChosen)

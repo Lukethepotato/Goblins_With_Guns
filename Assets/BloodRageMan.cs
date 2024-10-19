@@ -67,6 +67,7 @@ public class BloodRageMan : MonoBehaviour
 
     IEnumerator Zerging()
     {
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("GoingBloodRage");
         playSO[playInput.playerIndex].moveAnimsPlayable = false;
         transistion = true;
         goblinAnim.ChangeAnimationState("GoingBloodRage");
@@ -82,6 +83,7 @@ public class BloodRageMan : MonoBehaviour
 
     IEnumerator LosingBoner()
     {
+        GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("BonerOff");
         transistion = true;
         playSO[playInput.playerIndex].freeze = true;
         playSO[playInput.playerIndex].moveAnimsPlayable = false;

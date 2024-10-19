@@ -20,6 +20,8 @@ public class SuddenDeathManager : MonoBehaviour
     public GameObject camObject;
     public PostProcessVolume PPVolume;
     public PostProcessProfile Profile;
+    public GameObject scroll;
+    public MainScene_Scroll scrollScript;
 
     // Start is called before the first frame update
     void Start()
@@ -29,12 +31,13 @@ public class SuddenDeathManager : MonoBehaviour
         textMeshPro = gameObject.GetComponent<TextMeshProUGUI>();
         animMan = GetComponentInChildren<AnimationManager>();
         playerManager= playerManObject.GetComponent<PlayerInputManager>();
+        scrollScript = scroll.GetComponent<MainScene_Scroll>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (mainSO.gameIsOver == false && mainSO.setUpOver && mainSO.rematchSelected == false)
+        if (mainSO.gameIsOver == false && mainSO.setUpOver && mainSO.rematchSelected == false && scrollScript.inFootballStartUp == false)
         {
             mainSO.currentTimer -= Time.deltaTime;
         }else if (mainSO.rematchSelected)

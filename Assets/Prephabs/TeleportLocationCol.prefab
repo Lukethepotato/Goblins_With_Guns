@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8413305665866777812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.139, y: 0.023, z: 0}
+  m_LocalPosition: {x: -0.32, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 1af5fa8389d2f6542bebec6e70ed9e3b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -301080519, guid: ae4f1cc12aafe994aa2f05f290c82339, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,18 +103,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.013296127, y: 0.06575549}
+  m_Offset: {x: -0.06890571, y: -0.34734488}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
+    oldSize: {x: 9, y: 8}
     newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.6972857, y: 4.504401}
+  m_Size: {x: 5.602928, y: 5.3306017}
   m_EdgeRadius: 0
 --- !u!114 &8396918272491967586
 MonoBehaviour:
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playIndex: 0
-  exploLength: 0.4
+  exploLength: 0.7
   exploTrigger: {fileID: 4066736033969585344}
   playSO:
   - {fileID: 11400000, guid: 9e19069c4ce2667478b4bc9954039b46, type: 2}
@@ -208,13 +208,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5125840384128195109}
     m_Modifications:
+    - target: {fileID: 372318707254761609, guid: 2de76813b18f40a4d82643f100c7cdd5, type: 3}
+      propertyPath: explosionTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 460956079928149676, guid: 2de76813b18f40a4d82643f100c7cdd5, type: 3}
       propertyPath: m_Radius
-      value: 0.4098837
+      value: 0.47517875
       objectReference: {fileID: 0}
     - target: {fileID: 460956079928149676, guid: 2de76813b18f40a4d82643f100c7cdd5, type: 3}
       propertyPath: m_Offset.y
-      value: 0.007307366
+      value: -0.05798769
       objectReference: {fileID: 0}
     - target: {fileID: 3226321101005462060, guid: 2de76813b18f40a4d82643f100c7cdd5, type: 3}
       propertyPath: m_Name

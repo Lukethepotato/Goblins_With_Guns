@@ -14,6 +14,7 @@ public class SentryObjMan : MonoBehaviour
     public GameObject parent;
     public ObjectHealthMan objectHeath;
     public float healthDecreRate;
+    public MainSO mainSO;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +50,7 @@ public class SentryObjMan : MonoBehaviour
     private void TargetAssgiment()
     {
         float bestSoFarDistance = -1;
-        for (int player = 0; player <= 3; player++)
+        for (int player = 0; player < mainSO.playersReadiedUp; player++)
         {
             if (playSO[player].inGame && playSO[player].health > 0 && player != data.owner)
             {

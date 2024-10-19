@@ -20,7 +20,7 @@ public class GunVisibilityManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(mainSO.setUpOver && gate ==false)
+        if (mainSO.setUpOver && gate == false)
         {
             gate = true;
             gunSR[playSO[playInput.playerIndex].gunChosen] = gun.GetComponentInChildren<SpriteRenderer>();
@@ -30,7 +30,8 @@ public class GunVisibilityManager : MonoBehaviour
         {
             gunSR[playSO[playInput.playerIndex].gunChosen].enabled = false;
 
-        }else if (playSO[playInput.playerIndex].rolling)
+        }
+        else if (playSO[playInput.playerIndex].rolling)
         {
             gunSR[playSO[playInput.playerIndex].gunChosen].enabled = false;
         }
@@ -43,5 +44,6 @@ public class GunVisibilityManager : MonoBehaviour
         {
             gunSR[playSO[playInput.playerIndex].gunChosen].enabled = false;
         }
+
     }
 }

@@ -15,16 +15,13 @@ MonoBehaviour:
   playersDead: 0
   gameIsOver: 0
   winner: 0
-  playersReadiedUp: 1
-  setUpOver: 1
+  playersReadiedUp: 0
+  setUpOver: 0
   playersSpawnLocations:
-  - {x: 2, y: 1}
-  - {x: 55, y: 42}
-  - {x: 2, y: 43}
-  - {x: 59, y: 3}
-  - {x: 60, y: 23}
-  - {x: 22, y: 8}
-  - {x: 29, y: 45}
+  - {x: -0.76, y: 22}
+  - {x: 58, y: 22}
+  - {x: 27, y: -0.5}
+  - {x: 27, y: 25}
   playerBoxLocations:
   - {x: -528.9, y: 25, z: 0}
   - {x: -177.3, y: 25, z: 0}
@@ -38,15 +35,15 @@ MonoBehaviour:
   rematchSelected: 0
   stock: 3
   turretHealth: 200
-  map: 1
+  map: 0
   healingDroneLivesToAdd: 0
   healingDroneSpawnChance: 2
   startingTimer: 150
-  currentTimer: 135.19022
+  currentTimer: 150
   suddenDeathInitiated: 0
   suddenDeathHealth: 100
   suddenDeathLives: 1
-  freezeAllPlayer: 0
+  freezeAllPlayer: 1
   baseMoveSpeed: 13.5
   startingCash: 25
   startingTurretHealth: 200
@@ -55,17 +52,17 @@ MonoBehaviour:
   rockMulptChange: 0.15
   inSuddenDeath: 0
   reloadMoveSpeed: 7
-  rankings: 00000000
+  rankings: 
   playerInLightning: 0
   bulletPlayerLess: 0
   megaBulletsToAdd: 2
   megaBulletsReloadAdd: 2
   bounceyBulletsDamMult: 0.65
   bounceyBulletBounceIncrease: 3
-  preGameSetUp: 1
+  preGameSetUp: 0
   scoutHealth: 120
   maxWidowMult: 5
-  chosenTrivia: {fileID: 11400000, guid: cd19b835d0619e54a9825ed05335d689, type: 2}
+  chosenTrivia: {fileID: 0}
   inHalfTime: 0
   displayHalfTimeInput: 0
   halfTimeCount: 0
@@ -73,19 +70,14 @@ MonoBehaviour:
   halfTimeEnabled: 0
   wayPoints:
   - {x: 0, y: 0}
-  - {x: 0.7, y: 44.7}
-  - {x: 61, y: 45}
-  - {x: 61, y: 1}
   - {x: 0, y: 0}
-  possibleLocas:
   - {x: 0, y: 0}
-  - {x: 0, y: 45}
-  - {x: 60.99, y: 45.14}
-  - {x: 29.9, y: 0.8}
-  - {x: 60, y: 23}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  possibleLocas: []
   playStartUpMov: 0
   inStartUpMov: 0
-  gamePaused: 1
+  gamePaused: 0
   bloodRagedSpeed: 15.5
   lightingFireingSpeed: 7.5
-  preMapLoadAnim: 0
+  preMapLoadAnim: 1

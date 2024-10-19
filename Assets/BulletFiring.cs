@@ -76,6 +76,7 @@ public class BulletFiring : MonoBehaviour
     private bool gate = false;
     public float moveInputDamp;
     public bool revingMiniGun = false;
+    GunFireSFX gunFireSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +89,7 @@ public class BulletFiring : MonoBehaviour
         smgValueSetting = smg.GetComponent<Gun_Value_Setting>();
         turAnimMan = turret.GetComponent<TurretAnimationManager>();
         playerBody = GetComponentInParent<Rigidbody2D>();
+        gunFireSFX = gameObject.GetComponent<GunFireSFX>();
         //firePointRBs = GetComponents<Rigidbody2D>();
 
         startingPillToExplode = pillTimeToExplode;
@@ -455,6 +457,7 @@ public class BulletFiring : MonoBehaviour
     {
         if (playerSO[playInput.playerIndex].state == 0 && revTimeLeft <= 0 && canShoot && playerSO[playInput.playerIndex].health > 0)
         {
+            gunFireSFX.OneBulletFired();
             playerSO[playInput.playerIndex].firing = true;
             playerSO[playInput.playerIndex].bulletSpread = true;
             //playerSO[playInput.playerIndex].movementSpeed = shootMoveSpeed;
