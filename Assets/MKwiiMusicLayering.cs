@@ -27,6 +27,7 @@ public class MKwiiMusicLayering : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
     }
 
@@ -41,7 +42,7 @@ public class MKwiiMusicLayering : MonoBehaviour
         */
         Layer= layer;
 
-        LeanTween.value(gameObject, 0, .05f, fadeInTime).setEaseInBack().setOnUpdate(LengthSetting);
+        LeanTween.value(gameObject, 0, .02f, fadeInTime).setEaseInBack().setOnUpdate(LengthSetting);
         
     }
 

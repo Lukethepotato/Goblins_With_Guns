@@ -13,6 +13,7 @@ public class MapMenu_MapNameText : MonoBehaviour
     public MultiplayerEventSystem multEventSys;
     public GameObject eventSysObject;
     TextMeshProUGUI menuText;
+    private GameObject lastGameObject = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,17 @@ public class MapMenu_MapNameText : MonoBehaviour
             {
                 menuText.text = mapNames[I];
             }
+        }
+            
+        if (lastGameObject == null)
+        {
+            lastGameObject = multEventSys.currentSelectedGameObject;
+        }
+
+        if (multEventSys.currentSelectedGameObject != lastGameObject)
+        {
+            GameObject.Find("UI").GetComponent<AudioManager>().Play("SelectChange1");
+            lastGameObject = multEventSys.currentSelectedGameObject;
         }
     }
 }

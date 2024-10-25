@@ -35,6 +35,7 @@ public class ReadyUpScript : MonoBehaviour
         {
             isReadied = true;
             mainSO.playersReadiedUp++;
+            GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound2");
         }
     }
 

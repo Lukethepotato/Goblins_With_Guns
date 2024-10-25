@@ -62,6 +62,7 @@ public class MainScene_Scroll : MonoBehaviour
         print("open Courtine");
         animMan.ChangeAnimationState("MainScene_Scroll_ClosedIdle");
         yield return new WaitForSeconds(timeToStart);
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollOpen");
         animMan.ChangeAnimationState("MainSceneScroll_Open");
         yield return new WaitForSeconds(timeToParticle);
         animFX.ChangeAnimationState("Particle_Open");
@@ -79,10 +80,12 @@ public class MainScene_Scroll : MonoBehaviour
         print("Close Courtine");
         yield return new WaitForSeconds(timeToMapOff);
         animMan.ChangeAnimationState("MainScene_ScrollClose");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollClose");
         //yield return new WaitForSeconds(timeToMapOff);
         maps.SetActive(false);
         yield return new WaitForSeconds(timeToMapOff);
         animMan.ChangeAnimationState("MainSceneScroll_Open");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollOpen");
         yield return new WaitForSeconds(timeToParticle);
         animFX.ChangeAnimationState("Particle_Open");
         yield return new WaitForSeconds(openParticleTime);
@@ -103,6 +106,7 @@ public class MainScene_Scroll : MonoBehaviour
     IEnumerator End()
     {
         animMan.ChangeAnimationState("MainScene_ScrollClose");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollClose");
         mainSO.preMapLoadAnim = false;
         pressAnyJoin.SetActive(false) ;
         yield return new WaitForSeconds(timeToMapOff);

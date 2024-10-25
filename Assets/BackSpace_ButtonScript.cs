@@ -22,5 +22,6 @@ public class BackSpace_ButtonScript : MonoBehaviour
         {
             playSO[playInput.playerIndex].letterIn--;
         }
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound2");
     }
 }

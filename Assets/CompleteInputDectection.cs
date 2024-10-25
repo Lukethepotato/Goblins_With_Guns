@@ -21,7 +21,7 @@ public class CompleteInputDectection : MonoBehaviour
     public void Input(InputAction.CallbackContext ctx)
     {
         StartCoroutine(InputExploitTime());
-        print("YAHHHHHHHH");
+        //print("YAHHHHHHHH");
     }
 
     IEnumerator InputExploitTime()

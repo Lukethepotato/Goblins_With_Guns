@@ -11,9 +11,10 @@ public class TitleScreenStartButton : MonoBehaviour
     public float animTime;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         animMan = pannel.GetComponent<AnimationManager>();
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("GunPolish");
         gameModeSelect.SetActive(false);
     }
 
@@ -31,7 +32,9 @@ public class TitleScreenStartButton : MonoBehaviour
 
     IEnumerator TitleEnd()
     {
+        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("GunPolish");
         animMan.ChangeAnimationState("TitleScreenEnd");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("TitleScreenStartUp");
         yield return new WaitForSeconds(animTime);
         gameModeSelect.SetActive(true);
         gameModeSelect.GetComponent<StartScreenScrollMan>().StartUp();

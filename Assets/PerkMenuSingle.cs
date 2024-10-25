@@ -43,6 +43,7 @@ public class PerkMenuSingle : MonoBehaviour
             playSO[playInput.playerIndex].perks[lastPerk] = false;
             playSO[playInput.playerIndex].perks[perk] = true;
             lastPerk = perk;
+            GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound2");
         }
     }
 }

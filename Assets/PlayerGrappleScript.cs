@@ -66,6 +66,7 @@ public class PlayerGrappleScript : MonoBehaviour
                 currentHook.GetComponent<MainHookScript>().SetUp(playIndex);
                 currentHook.GetComponent<Rigidbody2D>().AddForce(firePointCopy.transform.up * fireForce, ForceMode2D.Impulse);
                 StartCoroutine(HookCourtine());
+                GameObject.Find("PlayerSFX_" + playInput.playerIndex.ToString()).GetComponent<AudioManager>().Play("GrappleShoot");
             }
 
             if (pull)
@@ -108,6 +109,8 @@ public class PlayerGrappleScript : MonoBehaviour
 
     public void ResetPlayerHook()
     {
+
+        GameObject.Find("PlayerSFX_" + playInput.playerIndex.ToString()).GetComponent<AudioManager>().StopPlaying("GrappleFly");
         LinRend.enabled = false;
         StopCoroutine(HookCourtine());
         if (currentHook != null)
@@ -134,6 +137,7 @@ public class PlayerGrappleScript : MonoBehaviour
         displayGrap = true;
         int localHookNum = hookNum;
         yield return new WaitForSeconds(leiusureTime);
+        GameObject.Find("PlayerSFX_" + playInput.playerIndex.ToString()).GetComponent<AudioManager>().Play("GrappleFly");
         if (hookNum == localHookNum)
         {
             pull = true;

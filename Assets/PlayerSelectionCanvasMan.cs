@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.UI;
 
 public class PlayerSelectionCanvasMan : MonoBehaviour
 {
     public int currentPannel;
     public GameObject[] pannels;
     public MainSO mainSO;
+    public MultiplayerEventSystem multEventSys;
+    public GameObject eventSysObject;
+    private GameObject lastGameObject = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        multEventSys = eventSysObject.GetComponent<MultiplayerEventSystem>();
     }
 
     // Update is called once per frame
@@ -44,6 +48,17 @@ public class PlayerSelectionCanvasMan : MonoBehaviour
             {
                 currentPannel = pannels.Length - 1;
             }
+        }
+
+        if (lastGameObject == null)
+        {
+            lastGameObject = multEventSys.currentSelectedGameObject;
+        }
+
+        if (multEventSys.currentSelectedGameObject != lastGameObject)
+        {
+            GameObject.Find("UI").GetComponent<AudioManager>().Play("SelectChange2");
+            lastGameObject = multEventSys.currentSelectedGameObject;
         }
 
     }

@@ -35,6 +35,7 @@ public class StartScreenScrollMan : MonoBehaviour
     {
         StartCoroutine(StartUpCoroutine());
         GameObject.Find("AudioManagers").GetComponent<MKwiiMusicLayering>().PlayLayer(2);
+
     }
 
     // Update is called once per frame
@@ -52,6 +53,7 @@ public class StartScreenScrollMan : MonoBehaviour
         GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("TitleIdle");
         GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollPoof");
         yield return new WaitForSeconds(startUpAnim);
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollOpen");
         scrollAnim.ChangeAnimationState("StartSceneScroll_Open");
         yield return new WaitForSeconds(timeToParticle);
         animFX.ChangeAnimationState("StartScrene_FX_Play");
@@ -74,6 +76,7 @@ public class StartScreenScrollMan : MonoBehaviour
     {
         if (disabled == false)
         {
+            GameObject.Find("UI").GetComponent<AudioManager>().Play("ScrollClose");
             scrollAnim.ChangeAnimationState("StartSceneScroll_Close");
             yield return new WaitForSeconds(timeToMapOff);
             UI.SetActive(false);

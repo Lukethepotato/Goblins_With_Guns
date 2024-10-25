@@ -21,6 +21,7 @@ public class WeaponMenuManager : MonoBehaviour
     {
         //gunValTweaks.SetGunsBackToNormal();
         playSO[playInput.playerIndex].gunChosen= gunSelected;
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound2");
         //gunValTweaks.ApplyPerkGunStats(false);
     }
 }

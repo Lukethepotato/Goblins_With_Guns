@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveDataMan : MonoBehaviour
 {
+    private static SaveDataMan instance;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,19 @@ public class SaveDataMan : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public void SaveInt(string Key, int num)

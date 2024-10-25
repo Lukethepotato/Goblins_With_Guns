@@ -21,6 +21,8 @@ public class LetterButtonScript : MonoBehaviour
         {
             playSO[playInput.playerIndex].playerName += letter;
             playSO[playInput.playerIndex].letterIn++;
+
+            GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound2");
         }
     }
 }

@@ -21,5 +21,6 @@ public class PlayerSelectionNextBack : MonoBehaviour
     public void NextOrBack(int change)
     {
         selectionMain.currentPannel += change;
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound2");
     }
 }

@@ -16,6 +16,7 @@ public class SaveSetter : MonoBehaviour
             saveDataMan.SaveInt("GamesPlayed", setGamesPlayedTo);
             print("gamesPlayed set to" + saveDataMan.loadInt("GamesPlayed"));
         }
+
     }
 
     // Update is called once per frame

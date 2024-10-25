@@ -7,12 +7,28 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     private static AudioManager instance;
+    public VolumePlaySO volumeSO;
+    public int volumeTypeNum;
     //public AudioMixerGroup audioMixer;
     // Start is called before the first frame update
 
     private void Start()
     {
-
+        if (GameObject.Find("SaveManager").GetComponent<SaveDataMan>().loadInt("GamesPlayed") == 0)
+        {
+            for (int I = 0; I< sounds.Length; I++)
+            {
+                GameObject.Find("SaveManager").GetComponent<SaveDataMan>().SaveFloat(sounds[I].name, sounds[I].volume);
+                sounds[I].baseVolume = sounds[I].volume;
+            }
+        }
+        else
+        {
+            for (int I = 0; I < sounds.Length; I++)
+            {
+                sounds[I].baseVolume = GameObject.Find("SaveManager").GetComponent<SaveDataMan>().loadFloat(sounds[I].name);
+            }
+        }
     }
     void Awake()
     {
@@ -38,6 +54,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            
 
         }
     }

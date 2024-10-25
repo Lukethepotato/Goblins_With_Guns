@@ -19,6 +19,7 @@ public class MapSelect : MonoBehaviour
         {
             mainSO.map = mapId;
             scrollScript.MapSelected();
+            GameObject.Find("UI").GetComponent<AudioManager>().Play("ClickSound1");
         }
     }
 }
