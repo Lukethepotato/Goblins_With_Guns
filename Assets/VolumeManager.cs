@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class VolumeManager : MonoBehaviour
 {
     public VolumePlaySO VolumeSO;
     public float newPlayerVol = 1;
-    public bool activeVolLocked = false;
     public AudioManager[] audioManagers;
     // Start is called before the first frame update
     void Start()
     {
+        VolumeSO.activeVolLocked = false;
+
+
         for (int i = 0;i < audioManagers.Length; i++)
         {
             audioManagers[i] = gameObject.GetComponentInChildren<AudioManager>();
@@ -20,44 +23,33 @@ public class VolumeManager : MonoBehaviour
 
         if (GameObject.Find("SaveManager").GetComponent<SaveDataMan>().loadInt("GamesPlayed") == 0)
         {
-            for (int I = 0; I < VolumeSO.setVolumes.Length - 1; I++)
+            for (int I = 0; I < VolumeSO.setVolumes.Length; I++)
             {
                 VolumeSO.setVolumes[I] = newPlayerVol;
             }
         }
         else
         {
-            for (int I = 0; I < VolumeSO.setVolumes.Length - 1; I++)
+            for (int I = 0; I < VolumeSO.setVolumes.Length; I++)
             {
                 VolumeSO.setVolumes[I] = GameObject.Find("SaveManager").GetComponent<SaveDataMan>().loadFloat("Volume" + I.ToString());
             }
         }
-    }
 
-    public void ChangeVolume(int VolType)
-    {
-        for (int I = 0; I < audioManagers.Length; I++)
+        for (int I = 0; I < VolumeSO.activeVolumes.Length; I++)
         {
-            if (audioManagers[I].volumeTypeNum== VolType)
-            {
-                for (int eachSound = 0; eachSound < audioManagers[I].sounds.Length; eachSound++) 
-                {
-                    audioManagers[I].SetVolume(audioManagers[I].sounds[eachSound].name, audioManagers[I].sounds[eachSound].baseVolume * VolumeSO.activeVolumes[VolType]);
-                }
-            }
+            VolumeSO.activeVolumes[I] = VolumeSO.setVolumes[I];
         }
+
+
+        //VolumeSO.activeVolumes[4] = 0;
+        //VolumeSO.activeVolumes[2] = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        for (int I = 0; I < VolumeSO.activeVolumes.Length; I++)
-        {
-            ChangeVolume(I);
-        }
-
-
-        for (int I = 0; I < VolumeSO.setVolumes.Length - 1; I++)
+        for (int I = 0; I < VolumeSO.setVolumes.Length; I++)
         {
             GameObject.Find("SaveManager").GetComponent<SaveDataMan>().SaveFloat("Volume" + I.ToString(), VolumeSO.setVolumes[I]);
         }
@@ -65,7 +57,7 @@ public class VolumeManager : MonoBehaviour
 
         if (VolumeSO.activeVolLocked)
         {
-            for (int I = 0; I < VolumeSO.activeVolumes.Length - 1; I++)
+            for (int I = 0; I < VolumeSO.activeVolumes.Length; I++)
             {
                 VolumeSO.activeVolumes[I] = VolumeSO.setVolumes[I];
             }

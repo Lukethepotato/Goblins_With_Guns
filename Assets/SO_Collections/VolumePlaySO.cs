@@ -11,7 +11,8 @@ public class VolumePlaySO : ScriptableObject
     // The actuall volumes used in game, can be changed for moments but always set back to player set one eventually
     public float[] activeVolumes;
     public bool activeVolLocked;
-    // 0 = All,
+
+    // 0 = none;
     // 1 = Music,
     // 2 = SFX,
     // 3 = UI

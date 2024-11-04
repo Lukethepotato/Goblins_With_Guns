@@ -178,13 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aeef6d85d0a29a4fae34fea2316bbcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnesToDisableOnStart:
-  - {fileID: 952902783}
-  - {fileID: 1937076738}
-  - {fileID: 1617836436}
-  - {fileID: 1629783053}
-  - {fileID: 1533261007}
-  - {fileID: 935397513}
   mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
 --- !u!114 &114442379
 MonoBehaviour:
@@ -200,9 +193,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distGuitarVol: 0.02
   fadeInTime: 1.25
-  leenTweenVolume: 0
+  leenTweenVolume: 0.75
   Layer: 0
   fadeOutTime: 1
+  volSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
 --- !u!114 &114442380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VolumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   newPlayerVol: 1
-  activeVolLocked: 0
   audioManagers:
   - {fileID: 952902785}
   - {fileID: 1175774453}
@@ -926,17 +919,19 @@ MonoBehaviour:
     volume: 2
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: KillSound1
     clip: {fileID: 8300000, guid: 9404c8472fe242e43adaf071e43c9667, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   volumeTypeNum: 4
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &935397513
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,77 +982,77 @@ MonoBehaviour:
     volume: 0.304
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.3
     source: {fileID: 0}
   - name: SMG_Firing
     clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
     volume: 0.284
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.2
     source: {fileID: 0}
   - name: Minigun_Rev
     clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
     volume: 0.181
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.1
     source: {fileID: 0}
   - name: Minigun_Shoot
     clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
     volume: 0.154
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.154
     source: {fileID: 0}
   - name: RPG_Shoot
     clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
     volume: 0.398
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.398
     source: {fileID: 0}
   - name: Bow_Shoot
     clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Flamethower_Shoot
     clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
     volume: 0.63
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.63
     source: {fileID: 0}
   - name: Wand_Fire
     clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
     volume: 0.434
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.43
     source: {fileID: 0}
   - name: Bow_Charge
     clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
     volume: 2
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 2
     source: {fileID: 0}
   - name: Turret_Charge
     clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
     volume: 1.176
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1.76
     source: {fileID: 0}
   - name: Turret_Shoot
     clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
     volume: 1.081
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrenadeLauncher_Charge
     clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
@@ -1071,73 +1066,75 @@ MonoBehaviour:
     volume: 0.444
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.44
     source: {fileID: 0}
   - name: Shotgun_Shot
     clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
     volume: 0.271
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.27
     source: {fileID: 0}
   - name: Sniper_Shot
     clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
     volume: 0.281
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.28
     source: {fileID: 0}
   - name: MissleLauncher_Shot
     clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
     volume: 0.33
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.33
     source: {fileID: 0}
   - name: MuntStartFX
     clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MuntFX
     clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GambleSFX
     clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleShoot
     clip: {fileID: 8300000, guid: 953e3d6cf7424ae438602316b316989f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleStick
     clip: {fileID: 8300000, guid: ed115db0171d0a8409893e79cc07485c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleFly
     clip: {fileID: 8300000, guid: 061e79d8599f75842a625c4d941064a4, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   volumeTypeNum: 2
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &952902783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,73 +1185,103 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Audience
     clip: {fileID: 8300000, guid: 21b39a52ccfd0df48bb01b889c63e710, type: 3}
     volume: 0.115
     pitch: 0.85
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.1
     source: {fileID: 0}
   - name: BasicExplosion
     clip: {fileID: 8300000, guid: aad9c797d5b51dc4f863f58aa2bdde74, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MagicExplosion
     clip: {fileID: 8300000, guid: f6e1d479071925c49beae739ac5d229f, type: 3}
     volume: 0.656
     pitch: 1.36
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.6
     source: {fileID: 0}
   - name: BookCollect
     clip: {fileID: 8300000, guid: 4046de64b1e6e7448a35a158c6a77634, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MistyStepExplo
     clip: {fileID: 8300000, guid: 632fd706fc3c1e748bad7e7b70b8dcb8, type: 3}
     volume: 0.357
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.35
     source: {fileID: 0}
   - name: CantInteract
     clip: {fileID: 8300000, guid: ecf5c6b0da4ce15458d349c5909af264, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: HealthDroneFly
     clip: {fileID: 8300000, guid: 7f1a9027ff3409b469ca0f9f024daa59, type: 3}
     volume: 0.172
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.1
     source: {fileID: 0}
   - name: HealthDroneDrop
     clip: {fileID: 8300000, guid: 20d1d50096a4b0e47be99f3c6a88ecd1, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MushroomBounce
     clip: {fileID: 8300000, guid: 0c60171c87308054c9411f521d593b9a, type: 3}
     volume: 0.674
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.67
+    source: {fileID: 0}
+  - name: WitchEnd
+    clip: {fileID: 8300000, guid: c313ce4901140bf4aa5eeeeb3cc8d4b1, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    baseVolume: 0.6
+    source: {fileID: 0}
+  - name: WitchStir
+    clip: {fileID: 8300000, guid: f58591d3af373a249952d1240e1d452d, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 1
+    baseVolume: 0.6
+    source: {fileID: 0}
+  - name: WitchSpawn
+    clip: {fileID: 8300000, guid: d80dfde58746cd444b20503667f04828, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    baseVolume: 0.6
+    source: {fileID: 0}
+  - name: CastleAmbience
+    clip: {fileID: 8300000, guid: a930cc651a357604e852cea9646cfeaa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   volumeTypeNum: 2
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &973239688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,6 +1564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175774452}
   - component: {fileID: 1175774453}
+  - component: {fileID: 1175774454}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -1577,80 +1605,103 @@ MonoBehaviour:
     volume: 0.896
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: StartUpLayer2
     clip: {fileID: 8300000, guid: d700ac385410a264b828ca205b661b27, type: 3}
     volume: 0
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: StartUpLayer3
     clip: {fileID: 8300000, guid: 34e78dfb7a8a23d4ca773c7d5ad9d80c, type: 3}
     volume: 0
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: StartUpLayer4
     clip: {fileID: 8300000, guid: 1cf0defaf98354e49bc1c7e49df55498, type: 3}
     volume: 0
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MoistyMire
     clip: {fileID: 8300000, guid: 145ff9cb43fee1247957aa8b0db0cf5c, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Casino
     clip: {fileID: 8300000, guid: 2b5d0158383f4a647b8c124b3766ea3b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Misc
     clip: {fileID: 8300000, guid: 4993029efa0cd3e46935a80ee1b25bed, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Wungeon Dungeon
     clip: {fileID: 8300000, guid: 659e663977fd1d943b482bb8ff448a0d, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MUSHROOM
     clip: {fileID: 8300000, guid: 45a3b8284e3c9e44997f39609619df2b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GameCompleteTheme
     clip: {fileID: 8300000, guid: 82145b61ac2c86e4e95555714f17c3da, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: FOOTBALL_NonLooop
     clip: {fileID: 8300000, guid: 5e7bebc09b2cb054198f58a67a8d17bc, type: 3}
     volume: 1.109
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
+    source: {fileID: 0}
+  - name: FOOTBALL_Loop
+    clip: {fileID: 8300000, guid: 5e7bebc09b2cb054198f58a67a8d17bc, type: 3}
+    volume: 1.109
+    pitch: 1
+    loop: 1
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
-  volumeTypeNum: 0
+  volumeTypeNum: 1
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 0
+--- !u!114 &1175774454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175774451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046eb80e9a1a13841b03afcaf9563e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
 --- !u!1 &1212932646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,77 +2187,77 @@ MonoBehaviour:
     volume: 0.304
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.3
     source: {fileID: 0}
   - name: SMG_Firing
     clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
     volume: 0.284
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.2
     source: {fileID: 0}
   - name: Minigun_Rev
     clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
     volume: 0.181
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.1
     source: {fileID: 0}
   - name: Minigun_Shoot
     clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
     volume: 0.154
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.154
     source: {fileID: 0}
   - name: RPG_Shoot
     clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
     volume: 0.398
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.398
     source: {fileID: 0}
   - name: Bow_Shoot
     clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Flamethower_Shoot
     clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
     volume: 0.63
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.63
     source: {fileID: 0}
   - name: Wand_Fire
     clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
     volume: 0.434
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.43
     source: {fileID: 0}
   - name: Bow_Charge
     clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
     volume: 2
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 2
     source: {fileID: 0}
   - name: Turret_Charge
     clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
     volume: 1.176
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1.76
     source: {fileID: 0}
   - name: Turret_Shoot
     clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
     volume: 1.081
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrenadeLauncher_Charge
     clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
@@ -2220,73 +2271,75 @@ MonoBehaviour:
     volume: 0.444
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.44
     source: {fileID: 0}
   - name: Shotgun_Shot
     clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
     volume: 0.271
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.27
     source: {fileID: 0}
   - name: Sniper_Shot
     clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
     volume: 0.281
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.28
     source: {fileID: 0}
   - name: MissleLauncher_Shot
     clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
     volume: 0.33
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.33
     source: {fileID: 0}
   - name: MuntStartFX
     clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MuntFX
     clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GambleSFX
     clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleShoot
     clip: {fileID: 8300000, guid: 953e3d6cf7424ae438602316b316989f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleStick
     clip: {fileID: 8300000, guid: ed115db0171d0a8409893e79cc07485c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleFly
     clip: {fileID: 8300000, guid: 061e79d8599f75842a625c4d941064a4, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   volumeTypeNum: 2
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &1553141591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,77 +2654,77 @@ MonoBehaviour:
     volume: 0.304
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.3
     source: {fileID: 0}
   - name: SMG_Firing
     clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
     volume: 0.284
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.2
     source: {fileID: 0}
   - name: Minigun_Rev
     clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
     volume: 0.181
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.1
     source: {fileID: 0}
   - name: Minigun_Shoot
     clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
     volume: 0.154
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.154
     source: {fileID: 0}
   - name: RPG_Shoot
     clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
     volume: 0.398
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.398
     source: {fileID: 0}
   - name: Bow_Shoot
     clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Flamethower_Shoot
     clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
     volume: 0.63
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.63
     source: {fileID: 0}
   - name: Wand_Fire
     clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
     volume: 0.434
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.43
     source: {fileID: 0}
   - name: Bow_Charge
     clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
     volume: 2
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 2
     source: {fileID: 0}
   - name: Turret_Charge
     clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
     volume: 1.176
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1.76
     source: {fileID: 0}
   - name: Turret_Shoot
     clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
     volume: 1.081
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrenadeLauncher_Charge
     clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
@@ -2685,73 +2738,75 @@ MonoBehaviour:
     volume: 0.444
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.44
     source: {fileID: 0}
   - name: Shotgun_Shot
     clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
     volume: 0.271
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.27
     source: {fileID: 0}
   - name: Sniper_Shot
     clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
     volume: 0.281
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.28
     source: {fileID: 0}
   - name: MissleLauncher_Shot
     clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
     volume: 0.33
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.33
     source: {fileID: 0}
   - name: MuntStartFX
     clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MuntFX
     clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GambleSFX
     clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleShoot
     clip: {fileID: 8300000, guid: 953e3d6cf7424ae438602316b316989f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleStick
     clip: {fileID: 8300000, guid: ed115db0171d0a8409893e79cc07485c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleFly
     clip: {fileID: 8300000, guid: 061e79d8599f75842a625c4d941064a4, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   volumeTypeNum: 2
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &1629783053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,77 +2857,77 @@ MonoBehaviour:
     volume: 0.304
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.3
     source: {fileID: 0}
   - name: SMG_Firing
     clip: {fileID: 8300000, guid: 0d50c785644a17e4ca1846a2a56b2ae9, type: 3}
     volume: 0.284
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.2
     source: {fileID: 0}
   - name: Minigun_Rev
     clip: {fileID: 8300000, guid: 304f1314c5e903944b19df4e21ee2cae, type: 3}
     volume: 0.181
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.1
     source: {fileID: 0}
   - name: Minigun_Shoot
     clip: {fileID: 8300000, guid: 729aa8e16e4cd594aaac44ccecd61d29, type: 3}
     volume: 0.154
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.154
     source: {fileID: 0}
   - name: RPG_Shoot
     clip: {fileID: 8300000, guid: 98b2b96c2d27c0e4b88ffcbe506952e6, type: 3}
     volume: 0.398
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.398
     source: {fileID: 0}
   - name: Bow_Shoot
     clip: {fileID: 8300000, guid: a6e2ff0fb79101a4388064fcbaf9be07, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: Flamethower_Shoot
     clip: {fileID: 8300000, guid: 859d3efe0e29ab44f8053c06a46d0778, type: 3}
     volume: 0.63
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 0.63
     source: {fileID: 0}
   - name: Wand_Fire
     clip: {fileID: 8300000, guid: 33a87e74fbd84b449b716f5e4ff32109, type: 3}
     volume: 0.434
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.43
     source: {fileID: 0}
   - name: Bow_Charge
     clip: {fileID: 8300000, guid: 04c3ee8f9fc64d347a7dfcaa8b2192e5, type: 3}
     volume: 2
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 2
     source: {fileID: 0}
   - name: Turret_Charge
     clip: {fileID: 8300000, guid: 78017699370a08145a3396a2c0413538, type: 3}
     volume: 1.176
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1.76
     source: {fileID: 0}
   - name: Turret_Shoot
     clip: {fileID: 8300000, guid: 95aab61a8649a674fa3e2185824b1bd5, type: 3}
     volume: 1.081
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrenadeLauncher_Charge
     clip: {fileID: 8300000, guid: 81c726c96873576469fef23740e06da6, type: 3}
@@ -2886,73 +2941,75 @@ MonoBehaviour:
     volume: 0.444
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.44
     source: {fileID: 0}
   - name: Shotgun_Shot
     clip: {fileID: 8300000, guid: 7eb178dad0a786f45adf6052c4b8fff9, type: 3}
     volume: 0.271
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.27
     source: {fileID: 0}
   - name: Sniper_Shot
     clip: {fileID: 8300000, guid: 64a686c92bb50334ca21766d849e6a78, type: 3}
     volume: 0.281
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.28
     source: {fileID: 0}
   - name: MissleLauncher_Shot
     clip: {fileID: 8300000, guid: dce2a7298ef695d429e51a1c33a01c04, type: 3}
     volume: 0.33
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.33
     source: {fileID: 0}
   - name: MuntStartFX
     clip: {fileID: 8300000, guid: 239b307b9f3465b42a5c24e39ec0c41c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MuntFX
     clip: {fileID: 8300000, guid: 31e5f0be03f5106499dfe9ddd3808a65, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GambleSFX
     clip: {fileID: 8300000, guid: 2e820cab8219e284191c53f1556a9f41, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleShoot
     clip: {fileID: 8300000, guid: 953e3d6cf7424ae438602316b316989f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleStick
     clip: {fileID: 8300000, guid: ed115db0171d0a8409893e79cc07485c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GrappleFly
     clip: {fileID: 8300000, guid: 061e79d8599f75842a625c4d941064a4, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   volumeTypeNum: 2
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &1711342763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,6 +3147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startUpAnimTime: 1.58
   button: {fileID: 475362685}
+  VolumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
 --- !u!1 &1727060823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,94 +3333,103 @@ MonoBehaviour:
     volume: 0.697
     pitch: 1
     loop: 0
-    baseVolume: 0
-    source: {fileID: 0}
-  - name: ResultsIdle
-    clip: {fileID: 8300000, guid: 9a48b7fb8d457184a87946fac27a483f, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: ResultsStartUp
     clip: {fileID: 8300000, guid: 66bc7a818930a6444987e4247ff20fc0, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: ResultsRematch
-    clip: {fileID: 8300000, guid: 814b72ab7af2d4c4fb39546d8e36f1df, type: 3}
+    clip: {fileID: 8300000, guid: 5369479c4aaf47f47a1a62fdc7be3038, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: ScrollPoof
     clip: {fileID: 8300000, guid: 5ed6221a84cc43e45bbc06748f7f6f4f, type: 3}
     volume: 0.661
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: TitleIdle
     clip: {fileID: 8300000, guid: 94e949715c139fe4cb2f6f45fdd1c704, type: 3}
     volume: 0.15
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: SelectChange1
     clip: {fileID: 8300000, guid: 313f227d3d39b4c4c81b5c56db6a6da5, type: 3}
     volume: 0.176
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: ScrollOpen
     clip: {fileID: 8300000, guid: 96785b91c6995cf44a84f5025735a757, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: ScrollClose
     clip: {fileID: 8300000, guid: 4f43cbbe3b4f87b4b9b154719a09f492, type: 3}
     volume: 0.488
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: GunPolish
     clip: {fileID: 8300000, guid: fb0d4db6492644e49b6faf6bb25fe53b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: TitleScreenStartUp
     clip: {fileID: 8300000, guid: 48486c68c491b1e4f80a1755afb91d3f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: SelectChange2
     clip: {fileID: 8300000, guid: af54c6d5600af024da1fb78b5347213e, type: 3}
     volume: 0.841
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: ClickSound2
     clip: {fileID: 8300000, guid: 666469c3e825c4642b0aef2650d4ea78, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
+    source: {fileID: 0}
+  - name: ResultsKnife
+    clip: {fileID: 8300000, guid: 4a5d9f082e0fb8a4d8b41866849b98e4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    baseVolume: 1
+    source: {fileID: 0}
+  - name: ResultsAudience
+    clip: {fileID: 8300000, guid: 2f249ec85cd3ad44d8db75df120a09dd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
   volumeTypeNum: 3
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &1805877914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3730,98 +3797,114 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: KillSound
-    clip: {fileID: 8300000, guid: 365143df945126a459cbf185ef91bf25, type: 3}
+    clip: {fileID: 8300000, guid: 25c654c2b6ec5464c8b514fcf4de6c06, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: HitSound
-    clip: {fileID: 8300000, guid: 4652cf7c24ad8b84b81b5ababf081cd0, type: 3}
+    clip: {fileID: 8300000, guid: d99cf9cd6189dd84e8d562146e7cee8c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: BuffModeStart
     clip: {fileID: 8300000, guid: 615a0e750c29ac2488f6c0bd78f0bdb8, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: BuffModeSmash
     clip: {fileID: 8300000, guid: 6d03566de1520ea4ba470a2ec5de96b5, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: BuffMove
     clip: {fileID: 8300000, guid: 47e5dc2a2b3e17e47b6c61c40c7627df, type: 3}
     volume: 0.561
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.5
     source: {fileID: 0}
   - name: DeathAngelSound
     clip: {fileID: 8300000, guid: f4eb39af2529240409943582d225afc2, type: 3}
     volume: 0.561
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.5
     source: {fileID: 0}
   - name: GoingBloodRage
     clip: {fileID: 8300000, guid: 122582e0ee786d245b141f0f53b487f3, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: BonerOff
     clip: {fileID: 8300000, guid: c02812e52c412b94fabbf5e3751343c4, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: BuffPop
     clip: {fileID: 8300000, guid: da05881363ea95740b691fc17759aa71, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: TargetStrikeSFX
     clip: {fileID: 8300000, guid: b9bf1fb2294a2674396b5f518362ae66, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
     source: {fileID: 0}
   - name: MistyStepIn
     clip: {fileID: 8300000, guid: f053db0c51664b749a0bb95ba667aa8f, type: 3}
     volume: 0.684
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 0.6
     source: {fileID: 0}
   - name: LightningAsecsion
     clip: {fileID: 8300000, guid: d103734d52aabc14fa436af7adf7a5e0, type: 3}
     volume: 1.335
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1.35
     source: {fileID: 0}
   - name: HealSFX
     clip: {fileID: 8300000, guid: 6eb47038bdcafc04c8b3f1e09f96fa00, type: 3}
     volume: 1
     pitch: 1
     loop: 0
-    baseVolume: 0
+    baseVolume: 1
+    source: {fileID: 0}
+  - name: TurretBuild
+    clip: {fileID: 8300000, guid: ae822ec608d49d342814f708774db905, type: 3}
+    volume: 0.709
+    pitch: 1
+    loop: 0
+    baseVolume: 1
+    source: {fileID: 0}
+  - name: TurretShoot
+    clip: {fileID: 8300000, guid: 0959a7e0419c8c746a2d2ff1e5221bc5, type: 3}
+    volume: 1.2
+    pitch: 1
+    loop: 0
+    baseVolume: 1
     source: {fileID: 0}
   volumeSO: {fileID: 11400000, guid: 2b5554833cce3544c92a55ad66df1f0a, type: 2}
-  volumeTypeNum: 0
+  volumeTypeNum: 2
+  mainSO: {fileID: 11400000, guid: 6e3a4ae565066544c9eefda69f75c4a2, type: 2}
+  setBaseVolumes: 1
 --- !u!1 &2068311082
 GameObject:
   m_ObjectHideFlags: 0

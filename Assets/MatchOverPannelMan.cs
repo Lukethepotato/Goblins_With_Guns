@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class MatchOverPannelMan : MonoBehaviour
@@ -25,6 +26,7 @@ public class MatchOverPannelMan : MonoBehaviour
     public GameObject names;
     public GameObject Kills;
     private int playersIn;
+    public VolumePlaySO volSO;
     // Start is called before the first frame update
     void Start()
     {
@@ -83,6 +85,8 @@ public class MatchOverPannelMan : MonoBehaviour
 
     IEnumerator StartUp()
     {
+        volSO.activeVolLocked = false;
+        volSO.activeVolumes[2] = 0;
         GameObject.Find("UI").GetComponent<AudioManager>().Play("ResultsStartUp");
         //GameCompleteTheme
         animMan.ChangeAnimationState("MatchOver_Start"+playersIn.ToString());
@@ -93,7 +97,8 @@ public class MatchOverPannelMan : MonoBehaviour
         names.SetActive(true);
         Kills.SetActive(true);
         GameObject.Find("Music").GetComponent<AudioManager>().Play("GameCompleteTheme");
-        GameObject.Find("UI").GetComponent<AudioManager>().Play("ResultsIdle");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ResultsKnife");
+        GameObject.Find("UI").GetComponent<AudioManager>().Play("ResultsAudience");
         yield return new WaitForSeconds(startUpAnimTimeOut);
         animMan.ChangeAnimationState("MatchOver_idle" + playersIn.ToString());
         print("MAtchOverIdle");
@@ -104,7 +109,8 @@ public class MatchOverPannelMan : MonoBehaviour
     IEnumerator RematchAnim()
     {
         GameObject.Find("UI").GetComponent<AudioManager>().Play("ResultsRematch");
-        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("ResultsIdle");
+        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("ResultsKnife");
+        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("ResultsAudience");
         readyToChange = false;
         rematchAnimMan.ChangeAnimationState("RematchSelected");
         quitAnimMan.ChangeAnimationState("QuitUnselected");
@@ -117,11 +123,15 @@ public class MatchOverPannelMan : MonoBehaviour
         quitAnimMan.ChangeAnimationState("GameOverButtonPressed2");
         rematchAnimMan.ChangeAnimationState("GameOverButtonPressed");
         yield return new WaitForSeconds(rematchAnimTime);
+        volSO.activeVolLocked = true;
+        volSO.activeVolumes[4] = 0;
+        volSO.activeVolumes[2] = 0;
         gameOverButtonsScript.Rematch();
     }
     IEnumerator QuitAnim()
     {
-        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("ResultsIdle");
+        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("ResultsKnife");
+        GameObject.Find("UI").GetComponent<AudioManager>().StopPlaying("ResultsAudience");
         readyToChange = false;
         rematchAnimMan.ChangeAnimationState("RematchUnselected");
         quitAnimMan.ChangeAnimationState("QuitSelected");
@@ -134,6 +144,8 @@ public class MatchOverPannelMan : MonoBehaviour
         rematchAnimMan.ChangeAnimationState("GameOverButtonPressed");
         animMan.ChangeAnimationState("MatchOver_Quit" + playersIn.ToString());
         yield return new WaitForSeconds(quitAnimTime);
+        volSO.activeVolumes[4] = 0;
+        volSO.activeVolumes[2] = 0;
         gameOverButtonsScript.Quit();
     }
 

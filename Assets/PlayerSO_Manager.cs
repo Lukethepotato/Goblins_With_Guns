@@ -35,6 +35,7 @@ public class PlayerSO_Manager : MonoBehaviour
         floorColl = floorObject.GetComponent<BoxCollider2D>();
         gunTweaks = gun.GetComponent<GunPerkValueTeaks>();
         playSO[playInput.playerIndex].inGame= true;
+        print("heyp fatty");
         
     }
 

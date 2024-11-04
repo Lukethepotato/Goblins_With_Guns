@@ -63,6 +63,15 @@ public class WitchManager : MonoBehaviour
             StartCoroutine(Done());
             done= true;
         }
+
+        if (stirring && GameObject.Find("SFX").GetComponent<AudioManager>().StillPlaying("WitchStir") == false)
+        {
+            GameObject.Find("SFX").GetComponent<AudioManager>().Play("WitchStir");
+        }else if (stirring == false)
+        {
+            GameObject.Find("SFX").GetComponent<AudioManager>().StopPlaying("WitchStir");
+        }
+
     }
 
     IEnumerator StartUp()
@@ -94,6 +103,7 @@ public class WitchManager : MonoBehaviour
     {
         if (off == false)
         {
+            GameObject.Find("SFX").GetComponent<AudioManager>().Play("WitchEnd");
             animationManager.ChangeAnimationState("witch_done");
             off = true;
             yield return new WaitForSeconds(potionDropTime);
@@ -110,6 +120,7 @@ public class WitchManager : MonoBehaviour
         if (off)
         {
             yield return new WaitForSeconds(respawnTime);
+            GameObject.Find("SFX").GetComponent<AudioManager>().Play("WitchSpawn");
             animationManager.ChangeAnimationState("Witch_Spawn");
             yield return new WaitForSeconds(.8f);
             animationManager.ChangeAnimationState("witch_sleep");
@@ -122,6 +133,7 @@ public class WitchManager : MonoBehaviour
     }
     IEnumerator WitchReset()
     {
+        GameObject.Find("SFX").GetComponent<AudioManager>().Play("WitchSpawn");
         animationManager.ChangeAnimationState("Witch_Spawn");
         yield return new WaitForSeconds(.8f);
         off = false;

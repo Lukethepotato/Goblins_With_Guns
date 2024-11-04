@@ -59,7 +59,10 @@ public class AnouncerMan : MonoBehaviour
     {
         restartChitChatCourtine = false;
         yield return new WaitForSeconds(chitChatInterval);
-        RandChitChatLine();
+        if (mainSO.gameIsOver == false && mainSO.setUpOver == true)
+        {
+            RandChitChatLine();
+        }
         restartChitChatCourtine = true;
     }
 }

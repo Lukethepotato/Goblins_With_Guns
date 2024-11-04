@@ -26,6 +26,7 @@ public class BuffGoblinManager : MonoBehaviour
     public bool attacking = false;
     public string prompt = "to attack!!";
     public InputDecection inputDetect;
+    public GameObject buffCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +79,8 @@ public class BuffGoblinManager : MonoBehaviour
         {
             RB.AddForce(pausedInput * firePower * Time.deltaTime, ForceMode2D.Force);
         }
+
+        buffCollider.SetActive(playSO[playInput.playerIndex].buff);
     }
 
     public void Fire(InputAction.CallbackContext ctx)

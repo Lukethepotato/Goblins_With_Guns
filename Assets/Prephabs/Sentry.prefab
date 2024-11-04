@@ -116,6 +116,7 @@ MonoBehaviour:
   firingRate: 0.15
   parent: {fileID: 3433669826173071499}
   data: {fileID: 3689103403662709145}
+  DoShootSFX: 0
 --- !u!114 &3631899145945040385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +226,7 @@ MonoBehaviour:
   firingRate: 0.15
   parent: {fileID: 3433669826173071499}
   data: {fileID: 3689103403662709145}
+  DoShootSFX: 1
 --- !u!114 &8201800436519085887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,6 +634,7 @@ MonoBehaviour:
   firingRate: 0.15
   parent: {fileID: 3433669826173071499}
   data: {fileID: 3689103403662709145}
+  DoShootSFX: 0
 --- !u!114 &6788457340287699677
 MonoBehaviour:
   m_ObjectHideFlags: 0

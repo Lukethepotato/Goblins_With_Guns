@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem;
 using UnityEngine.Networking.Types;
 
@@ -25,6 +26,7 @@ public class MainScene_Scroll : MonoBehaviour
     public GameObject canvas;
     public MapMusicPlayer mapSong;
     public bool inFootballStartUp = false;
+    public VolumePlaySO volSO;
 
     private bool InMapClose = false;
 
@@ -128,6 +130,7 @@ public class MainScene_Scroll : MonoBehaviour
         gameObject.SetActive(false);
         mainSO.setUpOver = true;
         mainSO.freezeAllPlayer = false;
+        volSO.activeVolLocked = true;
     }
 
     public void SkipCutScene()
@@ -139,6 +142,7 @@ public class MainScene_Scroll : MonoBehaviour
         mainSO.setUpOver = true;
         mainSO.freezeAllPlayer = false;
         inFootballStartUp = false;
+        volSO.activeVolLocked = true;
     }
 
     public void PublicEnd()

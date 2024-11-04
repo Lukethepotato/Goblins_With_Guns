@@ -13,13 +13,17 @@ MonoBehaviour:
   m_Name: VolumeSO
   m_EditorClassIdentifier: 
   setVolumes:
+  - 0.10000002
+  - 0.10000002
   - 0
-  - 0
-  - 0
+  - 0.70000005
+  - 0.1
   - 0
   activeVolumes:
+  - 0.10000002
+  - 0.10000002
   - 0
+  - 0.70000005
+  - 0.1
   - 0
-  - 0
-  - 0
-  activeVolLocked: 0
+  activeVolLocked: 1

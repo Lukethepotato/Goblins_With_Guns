@@ -9,6 +9,7 @@ public class MKwiiMusicLayering : MonoBehaviour
     public float leenTweenVolume;
     public int Layer;
     public float fadeOutTime;
+    public VolumePlaySO volSO;
     // Start is called before the first frame update
 
     private void Awake()
@@ -42,7 +43,7 @@ public class MKwiiMusicLayering : MonoBehaviour
         */
         Layer= layer;
 
-        LeanTween.value(gameObject, 0, .02f, fadeInTime).setEaseInBack().setOnUpdate(LengthSetting);
+        LeanTween.value(gameObject, 0, .075f, fadeInTime).setEaseInExpo().setOnUpdate(LengthSetting);
         
     }
 
@@ -62,10 +63,10 @@ public class MKwiiMusicLayering : MonoBehaviour
     private void LengthSettingAll(float value)
     {
         leenTweenVolume = value;
-        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer1", leenTweenVolume);
-        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer2", leenTweenVolume);
-        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer3", leenTweenVolume);
-        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer4", leenTweenVolume);
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer1", leenTweenVolume * volSO.activeVolumes[1]);
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer2", leenTweenVolume * volSO.activeVolumes[1]);
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer3", leenTweenVolume * volSO.activeVolumes[1]);
+        GameObject.Find("Music").GetComponent<AudioManager>().SetVolume("StartUpLayer4", leenTweenVolume * volSO.activeVolumes[1]);
     }
 
 

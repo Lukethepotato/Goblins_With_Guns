@@ -29,6 +29,7 @@ public class StationaryFirepointFiring : MonoBehaviour
     private bool inPulse;
     private float pulseTimer = 0f;
     private Vector2 startFirePoint;
+    public bool DoShootSFX = false;
 
     private float wandBulletSpeed;
     // Start is called before the first frame update
@@ -99,6 +100,10 @@ public class StationaryFirepointFiring : MonoBehaviour
     }
     private void Fire()
     {
+        if (DoShootSFX)
+        {
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().PlayOneShot("TurretShoot");
+        }
         GameObject spawnedBullet = Instantiate(bullet, transform.position + transform.up, transform.rotation);
 
         if (spawnedBullet.GetComponent<BulletData>() != null)

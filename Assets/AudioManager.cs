@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class AudioManager : MonoBehaviour
     private static AudioManager instance;
     public VolumePlaySO volumeSO;
     public int volumeTypeNum;
+    public MainSO mainSO;
+    public bool setBaseVolumes = true;
     //public AudioMixerGroup audioMixer;
     // Start is called before the first frame update
 
@@ -19,10 +22,13 @@ public class AudioManager : MonoBehaviour
             for (int I = 0; I< sounds.Length; I++)
             {
                 GameObject.Find("SaveManager").GetComponent<SaveDataMan>().SaveFloat(sounds[I].name, sounds[I].volume);
-                sounds[I].baseVolume = sounds[I].volume;
+                if (setBaseVolumes)
+                {
+                    sounds[I].baseVolume = sounds[I].volume;
+                }
             }
         }
-        else
+        else if (setBaseVolumes)
         {
             for (int I = 0; I < sounds.Length; I++)
             {
@@ -30,6 +36,16 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+
+    public void Update()
+    {
+        for (int I = 0; I < sounds.Length; I++)
+        {
+            if (setBaseVolumes)
+            SetVolume(sounds[I].name, sounds[I].baseVolume * volumeSO.activeVolumes[volumeTypeNum]);
+        }
+    }
+
     void Awake()
     {
         /*

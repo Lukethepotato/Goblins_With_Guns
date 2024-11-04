@@ -59,6 +59,7 @@ public class PauseScreenMan : MonoBehaviour
             Time.timeScale = 1;
             SceneManager.LoadScene(0);
             GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying(songNames.names[mainSO.map]);
+            GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying("FOOTBALL_Loop");
             mainSO.gamePaused = false;
         }
     }
@@ -89,6 +90,7 @@ public class PauseScreenMan : MonoBehaviour
         yield return new WaitForSeconds(pauseTransitionTimeIn);
         underTransition.SetActive(true);
         yield return new WaitForSeconds(pauseTransitionTimeOut);
+        GameObject.Find("Music").GetComponent<AudioManager>().Play("FOOTBALL_Loop");
         tranisitionObject.SetActive(false);
         Time.timeScale = .01f;
         print("JFEI");
@@ -105,6 +107,7 @@ public class PauseScreenMan : MonoBehaviour
         mainSO.gamePaused = false;
         mainSO.setUpOver = true;
         GameObject.Find("Music").GetComponent<AudioManager>().UnPause(songNames.names[mainSO.map]);
+        GameObject.Find("Music").GetComponent<AudioManager>().StopPlaying("FOOTBALL_Loop");
     }
 }
 

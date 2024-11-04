@@ -40,6 +40,8 @@ public class SentryPerkMan : MonoBehaviour
             activeCoolDown = coolDown;
             GameObject instanSent = Instantiate(sentry, playSO[playInput.playerIndex].ActiveMoveInput + (Vector2)gameObject.transform.position, Quaternion.identity);
             instanSent.GetComponent<StationaryFirepoint_Data>().owner = playInput.playerIndex;
+            //playSO[playInput.playerIndex].freeze = true;
+            GameObject.Find("PlayerSFX").GetComponent<AudioManager>().Play("TurretBuild");
         }
 
         activeCoolDown -= Time.deltaTime;
